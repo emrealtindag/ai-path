@@ -5,7 +5,7 @@ planned topics and study notes for mathematics and numerical optimization.
 ## topics to be covered
 
 - **[linear algebra](./linear-algebra)** — vector spaces, matrix operations and matrix decompositions
-- **spectral theory** — eigenvalues, eigenvectors and singular value decomposition
+- **[spectral theory](./vectors)** — eigenvalues, eigenvectors and singular value decomposition
 - **multivariate calculus** — partial derivatives, gradients, jacobians and hessians
 - **probability theory** — random variables, probability distributions and bayes theorem
 - **gaussian models** — multivariate normal distributions and covariance matrices
