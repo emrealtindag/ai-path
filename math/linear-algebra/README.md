@@ -1,4 +1,4 @@
-# linear algebra
+# Linear Algebra
 
 handwritten derivations and proofs for matrix algebra fundamentals
 
@@ -6,7 +6,7 @@ handwritten derivations and proofs for matrix algebra fundamentals
 
 ---
 
-## transpose and matrix symmetry
+## Transpose and Matrix Symmetry
 
 handwritten derivations for matrix transpose rules, addition commutativity and symmetry proofs
 
@@ -15,7 +15,7 @@ handwritten derivations for matrix transpose rules, addition commutativity and s
 
 ---
 
-## skew symmetry and inverse uniqueness
+## Skew Symmetry and Inverse Uniqueness
 
 proofs for skew symmetric decomposition, matrix inverse uniqueness and two sided inverse equality
 
@@ -24,7 +24,7 @@ proofs for skew symmetric decomposition, matrix inverse uniqueness and two sided
 
 ---
 
-## row operations and rectangular matrices
+## Row Operations and Rectangular Matrices
 
 elementary row operations, row equivalence of linear systems and inverse conditions on rectangular matrices
 
@@ -33,7 +33,7 @@ elementary row operations, row equivalence of linear systems and inverse conditi
 
 ---
 
-## determinants and cramer rule
+## Determinants and Cramer Rule
 
 determinant properties, derivation of cramer rule and step by step solution of 3x3 linear systems
 
@@ -42,7 +42,7 @@ determinant properties, derivation of cramer rule and step by step solution of 3
 
 ---
 
-## adjugate matrix properties
+## Adjugate Matrix Properties
 
 properties of the adjugate matrix and determinant calculations
 
