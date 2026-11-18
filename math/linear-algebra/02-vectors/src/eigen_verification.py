@@ -22,11 +22,12 @@ lambda2 = eigenvalues[1]
 v1 = eigenvectors[:, 0]
 v2 = eigenvectors[:, 1]
 
+'''
 print("eigenvalues1:", lambda1)
 print("eigenvectors1:\n", v1)
 print("eigenvalues2:", lambda2)
 print("eigenvectors2:\n", v2)
-
+'''
 
 for i in range(len(eigenvalues)):
     print(eigenvalues[i], eigenvectors[:, i])
