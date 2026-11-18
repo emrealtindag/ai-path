@@ -26,13 +26,6 @@ runnable script: [src/eigen_verification.py](./src/eigen_verification.py)
 
 ```text
 $ python src/eigen_verification.py
-eigenvalues1: -0.2360679774997898
-eigenvectors1:
- [-0.85065081  0.52573111]
-eigenvalues2: 4.23606797749979
-eigenvectors2:
- [-0.52573111 -0.85065081]
-
 eigenpair : 1
 eigenvalue: -0.2360679774997898
 eigenvector:
