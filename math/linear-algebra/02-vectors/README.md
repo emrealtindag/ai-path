@@ -127,3 +127,14 @@ algebraic versus geometric multiplicity and necessary conditions for matrix diag
 $$\Large A \text{ is diagonalizable} \iff \text{alg mult}(\lambda) = \text{geom mult}(\lambda) \quad \forall \lambda$$
 
 ![multiplicity and diagonalizability](./assets/page-07.png)
+
+---
+
+## Real-World and Robotics Applications
+
+where eigenvalues, eigenvectors and diagonalization run inside real systems code:
+
+- **kalman filter uncertainty ellipses**: the state estimation covariance matrix $\Sigma$ is symmetric positive semi-definite. its eigenvalues give the semi-axes of the drone position error ellipse, and its eigenvectors give the tilt angle in 2d/3d space.
+- **lidar ground and obstacle detection**: computing the covariance of local 3d laser points and taking the eigenvector of the smallest eigenvalue yields the surface normal vector. pointing up means driveable ground, pointing sideways means an obstacle or wall.
+- **decoupling flight dynamics**: aircraft roll, pitch and yaw are aerodynamically coupled. diagonalizing the continuous state matrix $A = P D P^{-1}$ uncouples the system into independent 1d modes, making pid and lqr flight control design straightforward.
+- **fast discrete-time state simulation**: stepping a linear state space model $k$ steps forward requires $A^k$. with diagonalization this is computed instantly as $P D^k P^{-1}$ by just taking powers of the scalar diagonal eigenvalues.
