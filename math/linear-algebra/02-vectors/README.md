@@ -14,6 +14,40 @@ $$\Large A v = \lambda v \iff (A - \lambda I) v = 0 \iff \det(A - \lambda I) = 0
 
 ![eigenvalues and eigenvectors definition](./assets/page-01.png)
 
+### Computational Verification and Visualization
+
+computational verification of $A v = \lambda v$ and 2d orthogonal eigenvector visualization for symmetric matrix $A$.
+
+$$\Large A v = \lambda v \quad \text{and} \quad v_1 \cdot v_2 = 0$$
+
+![eigenvector verification plot](./assets/eigenvectors_plot.png)
+
+runnable script: [src/eigen_verification.py](./src/eigen_verification.py)
+
+```text
+$ python src/eigen_verification.py
+eigenvalues1: -0.2360679774997898
+eigenvectors1:
+ [-0.85065081  0.52573111]
+eigenvalues2: 4.23606797749979
+eigenvectors2:
+ [-0.52573111 -0.85065081]
+
+eigenpair : 1
+eigenvalue: -0.2360679774997898
+eigenvector:
+ [-0.85065081  0.52573111]
+(A @ v == lambda * v)
+
+eigenpair : 2
+eigenvalue: 4.23606797749979
+eigenvector:
+ [-0.52573111 -0.85065081]
+(A @ v == lambda * v)
+
+plot saved to assets/eigenvectors_plot.png
+```
+
 ---
 
 ## Core Properties and Applications
@@ -64,6 +98,33 @@ $$\Large D = P^{-1} A P \iff A = P D P^{-1}$$
 
 ![matrix diagonalization](./assets/page-06.png)
 
+### Computational Verification
+
+verifying similarity transformation $D = P^{-1} A P$ using modal matrix $P$ constructed from eigenvectors.
+
+runnable script: [src/diagonalization.py](./src/diagonalization.py)
+
+```text
+$ python src/diagonalization.py
+matrix A:
+ [[1 2]
+ [2 3]]
+
+Modal matrix P (eigenvectors):
+ [[-0.85065081 -0.52573111]
+ [ 0.52573111 -0.85065081]]
+
+Expected D (diagonal):
+ [[-0.23606798  0.        ]
+ [ 0.          4.23606798]]
+
+Computed D (P_inv @ A @ P):
+ [[-2.36067977e-01  9.71445147e-17]
+ [ 4.44089210e-16  4.23606798e+00]]
+
+Diagonalization theorem is okey! (D == P_inv @ A @ P)
+```
+
 ---
 
 ## Multiplicity and Diagonalizability Conditions
@@ -73,41 +134,3 @@ algebraic versus geometric multiplicity and necessary conditions for matrix diag
 $$\Large A \text{ is diagonalizable} \iff \text{alg mult}(\lambda) = \text{geom mult}(\lambda) \quad \forall \lambda$$
 
 ![multiplicity and diagonalizability](./assets/page-07.png)
-
----
-
-## Computational Verification and Visualization
-
-computational verification of eigenvalues and eigenvectors using numpy and matplotlib. for any symmetric matrix, the eigenvectors are orthogonal ($v_1 \cdot v_2 = 0$), and multiplying the matrix by its eigenvector satisfies the spectral definition $A v = \lambda v$.
-
-$$\Large A v = \lambda v \quad \text{and} \quad v_1 \cdot v_2 = 0$$
-
-![eigenvector verification plot](./assets/eigenvectors_plot.png)
-
-### Execution and Output
-
-runnable script: [src/eigen_verification.py](./src/eigen_verification.py)
-
-```text
-$ python src/eigen_verification.py
-eigenvalues1: -0.2360679774997898
-eigenvectors1:
- [-0.85065081  0.52573111]
-eigenvalues2: 4.23606797749979
-eigenvectors2:
- [-0.52573111 -0.85065081]
-
-eigenpair : 1
-eigenvalue: -0.2360679774997898
-eigenvector:
- [-0.85065081  0.52573111]
-(A @ v == lambda * v)
-
-eigenpair : 2
-eigenvalue: 4.23606797749979
-eigenvector:
- [-0.52573111 -0.85065081]
-(A @ v == lambda * v)
-
-plot saved to assets/eigenvectors_plot.png
-```
