@@ -1,8 +1,8 @@
 # Linear Algebra Proofs
 
-handwritten derivations and proofs for fundamental matrix algebra operations
+handwritten derivations and proofs for fundamental matrix algebra operations with direct computational verifications
 
-[download full notes pdf](./linear-algebra-proofs.pdf)
+[download full notes pdf](./linear-algebra-proofs.pdf) | [runnable script: src/matrix_proofs.py](./src/matrix_proofs.py)
 
 ---
 
@@ -16,6 +16,25 @@ $$\Large A = \frac{1}{2}(A + A^T) + \frac{1}{2}(A - A^T)$$
 
 ![transpose proof](./assets/page-01.png)
 ![symmetry proofs](./assets/page-02.png)
+
+### Computational Verification
+
+```python
+# transpose of product: (AB)^T == B^T @ A^T
+left_t = (A @ B).T
+right_t = B.T @ A.T
+assert np.allclose(left_t, right_t)
+
+# symmetric and skew-symmetric decomposition: A == A_sym + A_skew
+sym = 0.5 * (A + A.T)
+skew = 0.5 * (A - A.T)
+assert np.allclose(A, sym + skew)
+```
+
+```text
+verification: SUCCESS ((AB)^T == B^T @ A^T)
+verification: SUCCESS (A == A_sym + A_skew)
+```
 
 ---
 
@@ -31,6 +50,19 @@ $$\Large (AB)^{-1} = B^{-1} A^{-1}$$
 
 ![skew symmetry and uniqueness](./assets/page-03.png)
 ![matrix inverses](./assets/page-04.png)
+
+### Computational Verification
+
+```python
+# inverse of product: (AB)^-1 == B^-1 @ A^-1
+inv_AB = np.linalg.inv(A @ B)
+inv_B_inv_A = np.linalg.inv(B) @ np.linalg.inv(A)
+assert np.allclose(inv_AB, inv_B_inv_A)
+```
+
+```text
+verification: SUCCESS ((AB)^-1 == B^-1 @ A^-1)
+```
 
 ---
 
@@ -56,6 +88,31 @@ $$\Large x_i = \frac{\det(A_i)}{\det(A)}$$
 ![determinant properties and cramer](./assets/page-07.png)
 ![cramer solution and alien cofactor](./assets/page-08.png)
 
+### Computational Verification
+
+```python
+# determinant multiplicative property: det(AB) == det(A) * det(B)
+det_AB = np.linalg.det(A @ B)
+det_A_det_B = np.linalg.det(A) * np.linalg.det(B)
+assert np.isclose(det_AB, det_A_det_B)
+
+# cramer's rule vs np.linalg.solve
+det_A = np.linalg.det(A)
+A0 = A.copy(); A0[:, 0] = b
+A1 = A.copy(); A1[:, 1] = b
+x_cramer = np.array([np.linalg.det(A0) / det_A, np.linalg.det(A1) / det_A])
+x_solve = np.linalg.solve(A, b)
+assert np.allclose(x_cramer, x_solve)
+```
+
+```text
+det(AB) = 50.0000, det(A)*det(B) = 50.0000
+det(A^-1) = 0.2000, 1/det(A) = 0.2000
+cramer's rule solution: [1.4 2.2]
+numpy linalg solve:     [1.4 2.2]
+verification: SUCCESS (cramer matches np.linalg.solve)
+```
+
 ---
 
 ## Adjugate Matrix Properties
@@ -67,36 +124,3 @@ $$\Large A \cdot \text{adj}(A) = \det(A) I \implies A^{-1} = \frac{\text{adj}(A)
 $$\Large \det(\text{adj}(A)) = (\det(A))^{n-1}$$
 
 ![adjugate properties](./assets/page-09.png)
-
----
-
-## Computational Verification
-
-computational verification of matrix transpose identities, symmetric decomposition, product inverses, determinant properties, and cramer's rule using numpy.
-
-$$\Large (AB)^T = B^T A^T, \quad (AB)^{-1} = B^{-1} A^{-1}, \quad \det(AB) = \det(A)\det(B)$$
-
-runnable script: [src/matrix_proofs.py](./src/matrix_proofs.py)
-
-```text
-$ python src/matrix_proofs.py
-=== 1. transpose of product: (AB)^T == B^T @ A^T ===
-verification: SUCCESS ((AB)^T == B^T @ A^T)
-
-=== 2. symmetric and skew-symmetric decomposition ===
-verification: SUCCESS (A == A_sym + A_skew)
-
-=== 3. inverse of product: (AB)^-1 == B^-1 @ A^-1 ===
-verification: SUCCESS ((AB)^-1 == B^-1 @ A^-1)
-
-=== 4. determinant properties ===
-det(AB) = 50.0000, det(A)*det(B) = 50.0000
-verification: SUCCESS (det(AB) == det(A) * det(B))
-det(A^-1) = 0.2000, 1/det(A) = 0.2000
-verification: SUCCESS (det(A^-1) == 1 / det(A))
-
-=== 5. cramer's rule vs numpy solve ===
-cramer's rule solution: [1.4 2.2]
-numpy linalg solve:     [1.4 2.2]
-verification: SUCCESS (cramer matches np.linalg.solve)
-```
