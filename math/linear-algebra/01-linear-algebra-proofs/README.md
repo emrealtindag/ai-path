@@ -67,3 +67,36 @@ $$\Large A \cdot \text{adj}(A) = \det(A) I \implies A^{-1} = \frac{\text{adj}(A)
 $$\Large \det(\text{adj}(A)) = (\det(A))^{n-1}$$
 
 ![adjugate properties](./assets/page-09.png)
+
+---
+
+## Computational Verification
+
+computational verification of matrix transpose identities, symmetric decomposition, product inverses, determinant properties, and cramer's rule using numpy.
+
+$$\Large (AB)^T = B^T A^T, \quad (AB)^{-1} = B^{-1} A^{-1}, \quad \det(AB) = \det(A)\det(B)$$
+
+runnable script: [src/matrix_proofs.py](./src/matrix_proofs.py)
+
+```text
+$ python src/matrix_proofs.py
+=== 1. transpose of product: (AB)^T == B^T @ A^T ===
+verification: SUCCESS ((AB)^T == B^T @ A^T)
+
+=== 2. symmetric and skew-symmetric decomposition ===
+verification: SUCCESS (A == A_sym + A_skew)
+
+=== 3. inverse of product: (AB)^-1 == B^-1 @ A^-1 ===
+verification: SUCCESS ((AB)^-1 == B^-1 @ A^-1)
+
+=== 4. determinant properties ===
+det(AB) = 50.0000, det(A)*det(B) = 50.0000
+verification: SUCCESS (det(AB) == det(A) * det(B))
+det(A^-1) = 0.2000, 1/det(A) = 0.2000
+verification: SUCCESS (det(A^-1) == 1 / det(A))
+
+=== 5. cramer's rule vs numpy solve ===
+cramer's rule solution: [1.4 2.2]
+numpy linalg solve:     [1.4 2.2]
+verification: SUCCESS (cramer matches np.linalg.solve)
+```
