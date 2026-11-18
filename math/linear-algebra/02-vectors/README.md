@@ -73,3 +73,15 @@ algebraic versus geometric multiplicity and necessary conditions for matrix diag
 $$\Large A \text{ is diagonalizable} \iff \text{alg mult}(\lambda) = \text{geom mult}(\lambda) \quad \forall \lambda$$
 
 ![multiplicity and diagonalizability](./assets/page-07.png)
+
+---
+
+## Software and Robotics Applications
+
+where eigenvalues and eigenvectors run inside autonomous systems code
+
+- **state estimation and kalman filters**: eigenvalues and eigenvectors of the position covariance matrix define the orientation and semi-axes of the uncertainty error ellipse
+- **lidar point cloud processing**: calculating the covariance of neighboring 3d points and taking the eigenvector of the smallest eigenvalue yields the surface normal vector for obstacle detection
+- **system stability and flight dynamics**: the real parts of eigenvalues of the continuous state matrix determine if aircraft and drone flight dynamics are stable or diverging
+
+runnable implementation: [src/eigen_robotics.py](./src/eigen_robotics.py)
