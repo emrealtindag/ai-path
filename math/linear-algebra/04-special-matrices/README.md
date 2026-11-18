@@ -24,7 +24,7 @@ assert np.allclose(left_star, right_star)
 ```
 
 ```text
-verification: SUCCESS ((AB)* == B* @ A*)
+conjugate transpose property holds: (AB)* == B* @ A*
 ```
 
 ---
@@ -47,7 +47,10 @@ assert np.allclose(U.conj().T @ U, np.eye(2))
 ```
 
 ```text
-verification: SUCCESS (U is unitary: U* == U^-1)
+U* @ U:
+ [[1.+0.j 0.+0.j]
+ [0.+0.j 1.+0.j]]
+U is unitary: U* @ U == I
 ```
 
 ---
@@ -75,7 +78,7 @@ assert np.all(np.isreal(eigenvalues))
 
 ```text
 eigenvalues of H: [-0.23606798+0.j  4.23606798+0.j]
-verification: SUCCESS (Hermitian matrix has strictly real eigenvalues: 2 ± sqrt(5))
+H is hermitian and all eigenvalues are real: 2 ± sqrt(5)
 ```
 
 ---
@@ -105,8 +108,8 @@ M^2:
  [[0.5 0.5]
  [0.5 0.5]]
 eigenvalues of M: [1. 0.]
-rank(M) = 1, trace(M) = 1
-verification: SUCCESS (M^2 == M, rank == trace, eigenvalues are strictly 0 and 1)
+rank = 1, trace = 1
+M is idempotent: M^2 == M and eigenvalues are 0 and 1
 ```
 
 ---

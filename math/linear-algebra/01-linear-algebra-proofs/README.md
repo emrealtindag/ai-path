@@ -32,8 +32,8 @@ assert np.allclose(A, sym + skew)
 ```
 
 ```text
-verification: SUCCESS ((AB)^T == B^T @ A^T)
-verification: SUCCESS (A == A_sym + A_skew)
+transpose property holds: (AB)^T == B^T @ A^T
+decomposition holds: A == A_sym + A_skew
 ```
 
 ---
@@ -61,7 +61,7 @@ assert np.allclose(inv_AB, inv_B_inv_A)
 ```
 
 ```text
-verification: SUCCESS ((AB)^-1 == B^-1 @ A^-1)
+inverse property holds: (AB)^-1 == B^-1 @ A^-1
 ```
 
 ---
@@ -108,9 +108,9 @@ assert np.allclose(x_cramer, x_solve)
 ```text
 det(AB) = 50.0000, det(A)*det(B) = 50.0000
 det(A^-1) = 0.2000, 1/det(A) = 0.2000
-cramer's rule solution: [1.4 2.2]
-numpy linalg solve:     [1.4 2.2]
-verification: SUCCESS (cramer matches np.linalg.solve)
+cramer solution: [1.4 2.2]
+numpy solve:     [1.4 2.2]
+cramer matches np.linalg.solve
 ```
 
 ---
