@@ -81,6 +81,11 @@ both of method give the same result
 
 where matrix exponential ($e^{At}$) runs inside real flight and autonomous systems code:
 
-- **linear time-invariant (lti) flight dynamics**: a continuous-time drone or aircraft state-space model is defined by $\dot{x}(t) = A x(t) + B u(t)$. the exact closed-form solution for state propagation from time $t_0$ to $t$ is $x(t) = e^{A(t - t_0)} x(t_0)$, known as the state transition matrix $\Phi(t)$.
-- **digital flight controller discretization**: flight control software runs on discrete clock ticks (e.g. 400 hz in px4 / ardupilot). converting continuous differential physics matrices $(A, B)$ into discrete update matrices $(A_d, B_d)$ is done by computing the matrix exponential $A_d = e^{A \Delta t}$.
+- **linear time-invariant (lti) flight dynamics**: a continuous-time drone or aircraft state-space model is defined by $\dot{x}(t) = A x(t) + B u(t)$. the exact closed-form solution for state propagation from initial state $x(0)$ is the state transition equation:
+
+  $$\Large x(t) = e^{At} x(0)$$
+
+- **digital flight controller discretization**: flight control software runs on discrete clock ticks (e.g. 400 hz in px4 / ardupilot). converting continuous differential physics matrices into discrete update matrices is computed using the matrix exponential:
+
+  $$\Large A_d = e^{A \Delta t}$$
 - **finite expansion via cayley-hamilton on microcontrollers**: calculating the infinite taylor series of $e^{At}$ directly is impossible in real-time embedded systems. cayley-hamilton reduces the infinite series to an exact polynomial of order $n-1$, allowing fast closed-form updates on stm32 flight microcontrollers.

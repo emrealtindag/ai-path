@@ -132,6 +132,10 @@ $$\Large \det(\text{adj}(A)) = (\det(A))^{n-1}$$
 where these matrix identities run inside real systems code:
 
 - **3d drone orientation and rotation**: a drone or robot orientation is stored as a rotation matrix $R$. because rotation matrices are orthogonal, inverting orientation is just transposing ($R^{-1} = R^T$), which costs almost zero cpu cycles on flight microcontrollers.
-- **coordinate frames and camera transforms**: transforming a detected target from camera coordinates to world coordinates is a chain of transformations ($T_{c \to w} = T_{b \to w} T_{c \to b}$). going backwards requires inverting the chain, where $(AB)^{-1} = B^{-1} A^{-1}$ flips the multiplication order.
+- **coordinate frames and camera transforms**: transforming a detected target from camera coordinates to world coordinates is a chain of transformations:
+
+  $$\Large T_{c \to w} = T_{b \to w} T_{c \to b}$$
+
+  going backwards requires inverting the chain, where $(AB)^{-1} = B^{-1} A^{-1}$ flips the multiplication order.
 - **robot arm singularity avoidance**: in manipulator kinematics, joint velocities map to end-effector velocity via the jacobian matrix $J$. when $\det(J) \to 0$, the inverse blows up, motor torque demands become infinite, and the arm locks up. real-time controllers check the determinant to avoid singularity boundaries.
 - **fast sensor calibration on microcontrollers**: solving small $2 \times 2$ or $3 \times 3$ calibration equations on stm32 or px4 flight computers is often done branchless using cramer's rule determinants without importing heavy linear algebra libraries.
