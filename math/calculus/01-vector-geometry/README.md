@@ -95,4 +95,6 @@ where vector geometry and spatial products run inside real flight, robotics and 
 - **drone motor torque and angular acceleration**: quadrotor attitude dynamics rely directly on cross products. each motor generates aerodynamic drag and thrust at distance $\vec{r}$ from the center of gravity, producing torque $\vec{\tau} = \vec{r} \times \vec{F}$.
 - **camera perspective projection in computer vision**: projecting 3d world landmarks onto a 2d camera sensor involves projecting point position vectors onto the camera optical axis and image plane basis vectors using dot products.
 - **surface normal generation for lidar slam**: calculating the cross product of two non-parallel tangent vectors on a 3d point cluster gives the true surface normal vector $\vec{n} = \vec{u} \times \vec{v}$, used by point-to-plane icp registration in slam.
-- **obstacle avoidance and line-of-sight guidance**: autonomous drone waypoint navigation normalizes relative position vectors $\hat{r} = \frac{\vec{p}_{\text{target}} - \vec{p}_{\text{drone}}}{\|\vec{p}_{\text{target}} - \vec{p}_{\text{drone}}\|}$ to compute unit velocity heading commands.
+- **obstacle avoidance and line-of-sight guidance**: autonomous drone waypoint navigation normalizes relative position vectors to compute unit velocity heading commands:
+
+  $$\Large \hat{r} = \frac{\vec{p}_{\text{target}} - \vec{p}_{\text{drone}}}{\|\vec{p}_{\text{target}} - \vec{p}_{\text{drone}}\|}$$
