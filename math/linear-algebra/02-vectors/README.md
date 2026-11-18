@@ -80,8 +80,34 @@ $$\Large A \text{ is diagonalizable} \iff \text{alg mult}(\lambda) = \text{geom 
 
 where eigenvalues and eigenvectors run inside autonomous systems code
 
-- **state estimation and kalman filters**: eigenvalues and eigenvectors of the position covariance matrix define the orientation and semi-axes of the uncertainty error ellipse
-- **lidar point cloud processing**: calculating the covariance of neighboring 3d points and taking the eigenvector of the smallest eigenvalue yields the surface normal vector for obstacle detection
-- **system stability and flight dynamics**: the real parts of eigenvalues of the continuous state matrix determine if aircraft and drone flight dynamics are stable or diverging
+![eigenvalues in robotics and autonomous systems](./assets/robotics_eigen_visual.png)
 
-runnable implementation: [src/eigen_robotics.py](./src/eigen_robotics.py)
+### 1. drone kalman filter: error ellipse
+
+in robot localization and sensor fusion, the kalman filter estimates state $(x, y)$ along with a covariance matrix $\Sigma$. the eigenvalues of $\Sigma$ give the squared lengths of the semi-axes, and the eigenvectors define the tilt of the uncertainty ellipse in 2d space.
+
+$$\Large \Sigma v = \lambda v \implies \text{semi-axes} = 2\sqrt{\lambda_1}, \, 2\sqrt{\lambda_2}$$
+
+### 2. lidar point cloud: surface normal estimation
+
+in 3d perception, an autonomous ground robot or drone fits a local plane to a cluster of lidar points. by taking the covariance of neighboring points, the eigenvector corresponding to the smallest eigenvalue $\lambda_3 \approx 0$ gives the surface normal vector $\vec{n}$.
+
+$$\Large \text{cov}(P) v_3 = \lambda_{\min} v_3 \implies \vec{n} = v_3$$
+
+### Execution and Output
+
+runnable script: [src/eigen_robotics.py](./src/eigen_robotics.py)
+
+```text
+$ python src/eigen_robotics.py
+--- drone kalman filter error ellipse ---
+semi-major axis (uncertainty): 1.067 m
+semi-minor axis (uncertainty): 0.511 m
+ellipse orientation angle:    23.42 deg
+
+--- lidar point cloud surface normal ---
+estimated normal vector: [0.001, 0.003, 1.000]
+expected normal vector:  [0.000, 0.000, 1.000] (flat ground)
+
+visual plot generated at: robotics_eigen_visual.png
+```
