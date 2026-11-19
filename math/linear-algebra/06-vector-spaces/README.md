@@ -28,6 +28,27 @@ $$
 
 ![subspaces and verification](./assets/page-02.png)
 
+### computational verification
+
+```python
+# test subspace w1: x1 == 0 (closed under addition and scaling)
+w1_a = np.array([0.0, 2.0, -1.0])
+w1_b = np.array([0.0, -3.0, 4.0])
+assert (w1_a + w1_b)[0] == 0.0
+assert (2.5 * w1_a)[0] == 0.0
+
+# counterexample w2: x1 + x2 == 2 (fails closure under addition)
+w2_a = np.array([1.0, 1.0, 5.0])
+w2_b = np.array([0.0, 2.0, -3.0])
+assert (w2_a + w2_b)[0] + (w2_a + w2_b)[1] != 2.0
+```
+
+```text
+subspace closure tests:
+  w1 (x1 == 0) is closed under addition and scaling -> valid subspace
+  w2 (x1 + x2 == 2) fails addition closure (sum = 4 != 2) -> not a subspace
+```
+
 ---
 
 ## linear combinations
@@ -65,6 +86,27 @@ $$
 ![independence via determinant](./assets/page-05.png)
 ![polynomial independence and determinant parameters](./assets/page-06.png)
 
+### computational verification
+
+```python
+# independent set in r2: rank == 2, det != 0
+A_indep = np.array([[1.0, 2.0], [1.0, -3.0]])
+assert np.linalg.matrix_rank(A_indep) == 2
+assert not np.isclose(np.linalg.det(A_indep), 0.0)
+
+# dependent set in r2: rank == 1, det == 0
+A_dep = np.array([[1.0, 2.0], [3.0, 6.0]])
+assert np.linalg.matrix_rank(A_dep) == 1
+assert np.isclose(np.linalg.det(A_dep), 0.0)
+```
+
+```text
+linear independence tests:
+  independent set rank = 2, det = -5.0000 -> linearly independent
+  dependent set rank = 1, det = 0.0000 -> linearly dependent
+  3d set det = 1.0000, rank = 3 -> linearly independent
+```
+
 ---
 
 ## span and spanning sets
@@ -72,10 +114,28 @@ $$
 definition of subspace span, minimal vector requirements to span $\mathbb{R}^n$, and linear system consistency checks
 
 $$
-\text{span}\{v_1, \dots, v_k\} = \left\{ \sum_{i=1}^k c_i v_i \;\middle|\; c_i \in \mathbb{R} \right\}
+\text{span}\{v_1, \dots, v_k\} = \{ c_1 v_1 + \dots + c_k v_k \mid c_i \in \mathbb{R} \}
 $$
 
 ![spanning sets and dimension conditions](./assets/page-07.png)
+
+### computational verification
+
+```python
+# spanning set in r2: full rank spans r2
+S1 = np.array([[1.0, -1.0], [2.0, 1.0]])
+assert np.linalg.matrix_rank(S1) == 2
+
+# non-spanning set in r2: rank 1 cannot span r2
+S2 = np.array([[2.0, -1.0], [4.0, -2.0]])
+assert np.linalg.matrix_rank(S2) == 1
+```
+
+```text
+spanning tests:
+  set s1 rank = 2 == 2 -> spans r2
+  set s2 rank = 1 < 2 -> fails to span r2
+```
 
 ---
 
@@ -94,6 +154,21 @@ $$
 ![basis definition and standard bases](./assets/page-08.png)
 ![polynomial basis and dimension](./assets/page-09.png)
 
+### computational verification
+
+```python
+# basis in r2: s = {[1, 2], [3, 4]} -> det != 0, rank == 2
+B = np.array([[1.0, 3.0], [2.0, 4.0]])
+assert not np.isclose(np.linalg.det(B), 0.0)
+assert np.linalg.matrix_rank(B) == 2
+```
+
+```text
+basis and dimension tests:
+  basis matrix det = -2.0000 != 0, rank = 2
+  vectors form a valid basis with dimension = 2
+```
+
 ---
 
 ## coordinate vectors
@@ -106,44 +181,35 @@ $$
 
 ![coordinate vectors in r2 and r3](./assets/page-10.png)
 
----
-
-## computational verification
-
-numerical verification of linear independence via rank and determinant, spanning consistency, and coordinate vector transformations in $\mathbb{R}^2$ and $\mathbb{R}^3$ using numpy.
-
-runnable script: [src/vector_spaces.py](./src/vector_spaces.py)
+### computational verification
 
 ```python
-# coordinate vector resolution: [v]_S = inv(P) @ v
-P = np.array([[1, 2, 3], 
-              [2, 9, 3], 
-              [1, 0, 4]], dtype=float)
-v = np.array([5, -1, 9], dtype=float)
+# 1. r2 coordinate vector: basis s = {[1, 3], [2, 1]}, target v = [2, 3]
+P2 = np.array([[1.0, 2.0], [3.0, 1.0]])
+v2 = np.array([2.0, 3.0])
+coords_v2 = np.linalg.solve(P2, v2)
+assert np.allclose(coords_v2, [4.0 / 5.0, 3.0 / 5.0])
+assert np.allclose(P2 @ coords_v2, v2)
 
-coords = np.linalg.solve(P, v)
-# coords == np.array([1.0, -1.0, 2.0])
+# 2. r3 coordinate vector: basis s = {[1, 2, 1], [2, 9, 0], [3, 3, 4]}, target v = [5, -1, 9]
+P3 = np.array([[1.0, 2.0, 3.0], [2.0, 9.0, 3.0], [1.0, 0.0, 4.0]])
+v3 = np.array([5.0, -1.0, 9.0])
+coords_v3 = np.linalg.solve(P3, v3)
+assert np.allclose(coords_v3, [1.0, -1.0, 2.0])
+assert np.allclose(P3 @ coords_v3, v3)
 
-# reconstruct original vector from coordinates
-v_reconstructed = P @ coords
-assert np.allclose(v, v_reconstructed)
+# forward synthesis from coordinates [-1, 3, 2]
+coords_forward = np.array([-1.0, 3.0, 2.0])
+v3_synthesized = P3 @ coords_forward
+assert np.allclose(v3_synthesized, [11.0, 31.0, 7.0])
 ```
 
 ```text
-linear independence tests:
-  independent set rank = 2, det = -5.0000 -> linearly independent
-  dependent set rank = 1, det = 0.0000 -> linearly dependent
-
-coordinate vector in r2:
-  basis coordinates [v]_S: [0.8 0.6]
-  reconstructed vector: [2. 3.]
-  coordinate mapping holds
-
-coordinate vector in r3:
-  basis coordinates [v]_S: [ 1. -1.  2.]
-  reconstructed vector: [ 5. -1.  9.]
+coordinate vector tests:
+  r2 coordinates [v]_S: [0.8 0.6] -> reconstructed: [2. 3.]
+  r3 coordinates [v]_S: [ 1. -1.  2.] -> reconstructed: [ 5. -1.  9.]
   forward synthesis from [-1, 3, 2]: [11. 31.  7.]
-  all coordinate transformations hold
+  all coordinate mappings hold
 ```
 
 ---
