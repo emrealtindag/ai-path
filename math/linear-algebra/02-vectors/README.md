@@ -10,7 +10,9 @@ handwritten notes and derivations for eigenvalues eigenvectors spectral properti
 
 fundamental definition of eigenvalues and eigenvectors from the characteristic equation with step by step two by two matrix solution
 
-$$\Large A v = \lambda v \iff (A - \lambda I) v = 0 \iff \det(A - \lambda I) = 0$$
+$$
+A v = \lambda v \iff (A - \lambda I) v = 0 \iff \det(A - \lambda I) = 0
+$$
 
 ![eigenvalues and eigenvectors definition](./assets/page-01.png)
 
@@ -18,7 +20,9 @@ $$\Large A v = \lambda v \iff (A - \lambda I) v = 0 \iff \det(A - \lambda I) = 0
 
 computational verification of $A v = \lambda v$ and 2d orthogonal eigenvector visualization for symmetric matrix $A$.
 
-$$\Large A v = \lambda v \quad \text{and} \quad v_1 \cdot v_2 = 0$$
+$$
+A v = \lambda v \quad \text{and} \quad v_1 \cdot v_2 = 0
+$$
 
 ![eigenvector verification plot](./assets/eigenvectors_plot.png)
 
@@ -47,7 +51,9 @@ plot saved to assets/eigenvectors_plot.png
 
 relationship between eigenvalues determinant and trace along with applications in diagonalization and differential systems
 
-$$\Large \det(A) = \prod_{i=1}^n \lambda_i \quad \text{and} \quad \text{tr}(A) = \sum_{i=1}^n \lambda_i$$
+$$
+\det(A) = \prod_{i=1}^n \lambda_i \quad \text{and} \quad \text{tr}(A) = \sum_{i=1}^n \lambda_i
+$$
 
 ![properties and applications](./assets/page-02.png)
 
@@ -57,7 +63,9 @@ $$\Large \det(A) = \prod_{i=1}^n \lambda_i \quad \text{and} \quad \text{tr}(A) =
 
 analysis of distinct real roots repeated roots and complex conjugate eigenvalue pairs in two by two systems
 
-$$\Large \lambda_{1, 2} = a \pm bi \implies v_{1, 2} = u \pm iw$$
+$$
+\lambda_{1, 2} = a \pm bi \implies v_{1, 2} = u \pm iw
+$$
 
 ![two by two cases and complex roots](./assets/page-03.png)
 
@@ -67,7 +75,9 @@ $$\Large \lambda_{1, 2} = a \pm bi \implies v_{1, 2} = u \pm iw$$
 
 characteristic polynomial derivation and eigenvector computation for three by three matrices using row reduction
 
-$$\Large p(\lambda) = \det(A - \lambda I) = 0 \implies (A - \lambda_k I) v_k = 0$$
+$$
+p(\lambda) = \det(A - \lambda I) = 0 \implies (A - \lambda_k I) v_k = 0
+$$
 
 ![three by three distinct roots](./assets/page-04.png)
 
@@ -77,7 +87,9 @@ $$\Large p(\lambda) = \det(A - \lambda I) = 0 \implies (A - \lambda_k I) v_k = 0
 
 handling repeated eigenvalues and determining eigenvectors in degenerate cases
 
-$$\Large \text{algebraic multiplicity} \ge \text{geometric multiplicity}$$
+$$
+\text{algebraic multiplicity} \ge \text{geometric multiplicity}
+$$
 
 ![repeated roots in three by three](./assets/page-05.png)
 
@@ -87,7 +99,9 @@ $$\Large \text{algebraic multiplicity} \ge \text{geometric multiplicity}$$
 
 constructing modal matrix and diagonal matrix with step by step verification of similarity transformations
 
-$$\Large D = P^{-1} A P \iff A = P D P^{-1}$$
+$$
+D = P^{-1} A P \iff A = P D P^{-1}
+$$
 
 ![matrix diagonalization](./assets/page-06.png)
 
@@ -124,7 +138,9 @@ Diagonalization theorem is okey! (D == P_inv @ A @ P)
 
 algebraic versus geometric multiplicity and necessary conditions for matrix diagonalizability
 
-$$\Large A \text{ is diagonalizable} \iff \text{alg mult}(\lambda) = \text{geom mult}(\lambda) \quad \forall \lambda$$
+$$
+A \text{ is diagonalizable} \iff \text{alg mult}(\lambda) = \text{geom mult}(\lambda) \quad \forall \lambda
+$$
 
 ![multiplicity and diagonalizability](./assets/page-07.png)
 

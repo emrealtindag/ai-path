@@ -1,6 +1,6 @@
 # Matrix Exponential and Cayley-Hamilton Theorem
 
-handwritten notes and derivations for the cayley-hamilton theorem and matrix exponential ($e^{At}$) computation using diagonalization and characteristic polynomial methods
+handwritten notes and derivations for the cayley-hamilton theorem and matrix exponential $e^{At}$ computation using diagonalization and characteristic polynomial methods
 
 [download full notes pdf](./matrix-exponential.pdf) | [runnable script: src/matrix_exponential.py](./src/matrix_exponential.py)
 
@@ -10,7 +10,9 @@ handwritten notes and derivations for the cayley-hamilton theorem and matrix exp
 
 definition of the cayley-hamilton theorem stating that every square matrix satisfies its own characteristic equation
 
-$$\Large P(\lambda) = \det(A - \lambda I) = 0 \implies P(A) = 0$$
+$$
+P(\lambda) = \det(A - \lambda I) = 0 \implies P(A) = 0
+$$
 
 ![cayley hamilton theorem](./assets/page-01.png)
 
@@ -20,7 +22,9 @@ $$\Large P(\lambda) = \det(A - \lambda I) = 0 \implies P(A) = 0$$
 
 derivation and step by step procedure for computing the matrix exponential $e^{At}$ using similarity transformation and the modal matrix $P$
 
-$$\Large e^{At} = P e^{Dt} P^{-1} \quad \text{where} \quad e^{Dt} = \text{diag}(e^{\lambda_1 t}, \dots, e^{\lambda_n t})$$
+$$
+e^{At} = P e^{Dt} P^{-1} \quad \text{where} \quad e^{Dt} = \text{diag}(e^{\lambda_1 t}, \dots, e^{\lambda_n t})
+$$
 
 ![matrix exponential diagonalization method](./assets/page-02.png)
 
@@ -30,7 +34,9 @@ $$\Large e^{At} = P e^{Dt} P^{-1} \quad \text{where} \quad e^{Dt} = \text{diag}(
 
 alternative evaluation of $e^{At}$ using the cayley-hamilton theorem to express the infinite matrix series as a finite matrix polynomial
 
-$$\Large e^{At} = \alpha_0 I + \alpha_1 A \quad \text{with} \quad e^{\lambda_i t} = \alpha_0 + \alpha_1 \lambda_i$$
+$$
+e^{At} = \alpha_0 I + \alpha_1 A \quad \text{with} \quad e^{\lambda_i t} = \alpha_0 + \alpha_1 \lambda_i
+$$
 
 ![matrix exponential cayley hamilton method](./assets/page-03.png)
 
@@ -40,7 +46,9 @@ $$\Large e^{At} = \alpha_0 I + \alpha_1 A \quad \text{with} \quad e^{\lambda_i t
 
 computational verification comparing both the diagonalization method and the cayley-hamilton method for $e^{At}$ using numpy.
 
-$$\Large P e^{Dt} P^{-1} = \alpha_0 I + \alpha_1 A = e^{At}$$
+$$
+P e^{Dt} P^{-1} = \alpha_0 I + \alpha_1 A = e^{At}
+$$
 
 runnable script: [src/matrix_exponential.py](./src/matrix_exponential.py)
 
@@ -79,13 +87,18 @@ both of method give the same result
 
 ## Real-World and Robotics Applications
 
-where matrix exponential ($e^{At}$) runs inside real flight and autonomous systems code:
+where matrix exponential $e^{At}$ runs inside real flight and autonomous systems code:
 
 - **linear time-invariant (lti) flight dynamics**: a continuous-time drone or aircraft state-space model is defined by $\dot{x}(t) = A x(t) + B u(t)$. the exact closed-form solution for state propagation from initial state $x(0)$ is the state transition equation:
 
-  $$\Large x(t) = e^{At} x(0)$$
+$$
+x(t) = e^{At} x(0)
+$$
 
 - **digital flight controller discretization**: flight control software runs on discrete clock ticks (e.g. 400 hz in px4 / ardupilot). converting continuous differential physics matrices into discrete update matrices is computed using the matrix exponential:
 
-  $$\Large A_d = e^{A \Delta t}$$
+$$
+A_d = e^{A \Delta t}
+$$
+
 - **finite expansion via cayley-hamilton on microcontrollers**: calculating the infinite taylor series of $e^{At}$ directly is impossible in real-time embedded systems. cayley-hamilton reduces the infinite series to an exact polynomial of order $n-1$, allowing fast closed-form updates on stm32 flight microcontrollers.

@@ -10,7 +10,9 @@ handwritten notes and derivations for 3d euclidean vectors, norm, unit vector no
 
 definition of geometric vectors in $\mathbb{R}^2$ and $\mathbb{R}^3$, position vectors, euclidean norm, and unit vector conversion
 
-$$\Large \|\vec{v}\| = \sqrt{x^2 + y^2 + z^2} \quad \text{and} \quad \hat{v} = \frac{\vec{v}}{\|\vec{v}\|}$$
+$$
+\|\vec{v}\| = \sqrt{x^2 + y^2 + z^2} \quad \text{and} \quad \hat{v} = \frac{\vec{v}}{\|\vec{v}\|}
+$$
 
 ![vectors, norms and unit vector normalization](./assets/page-01.png)
 
@@ -20,7 +22,9 @@ $$\Large \|\vec{v}\| = \sqrt{x^2 + y^2 + z^2} \quad \text{and} \quad \hat{v} = \
 
 scalar and vector projection of one vector onto another, triangle area in $\mathbb{R}^2$ using determinants, and spatial triangle and parallelogram areas using cross products
 
-$$\Large \text{proj}_{\vec{b}}\vec{a} = \frac{\vec{a} \cdot \vec{b}}{\|\vec{b}\|^2} \vec{b} \quad \text{and} \quad \text{Area}_{\triangle} = \frac{1}{2} \|\vec{u} \times \vec{v}\|$$
+$$
+\text{proj}_{\vec{b}}\vec{a} = \frac{\vec{a} \cdot \vec{b}}{\|\vec{b}\|^2} \vec{b} \quad \text{and} \quad \text{Area}_{\triangle} = \frac{1}{2} \|\vec{u} \times \vec{v}\|
+$$
 
 ![projections and area calculation](./assets/page-02.png)
 
@@ -30,7 +34,9 @@ $$\Large \text{proj}_{\vec{b}}\vec{a} = \frac{\vec{a} \cdot \vec{b}}{\|\vec{b}\|
 
 computational verification of euclidean norm, unit vector normalization, vector projection, 2d determinant area, and 3d cross product areas using numpy.
 
-$$\Large \hat{v} = \frac{\vec{v}}{\|\vec{v}\|}, \quad \text{proj}_{\vec{b}}\vec{a} = \frac{\vec{a} \cdot \vec{b}}{\|\vec{b}\|^2}\vec{b}, \quad \text{Area} = \frac{1}{2}\|\vec{u} \times \vec{v}\|$$
+$$
+\hat{v} = \frac{\vec{v}}{\|\vec{v}\|}, \quad \text{proj}_{\vec{b}}\vec{a} = \frac{\vec{a} \cdot \vec{b}}{\|\vec{b}\|^2}\vec{b}, \quad \text{Area} = \frac{1}{2}\|\vec{u} \times \vec{v}\|
+$$
 
 runnable script: [src/vector_geometry.py](./src/vector_geometry.py)
 
@@ -97,4 +103,6 @@ where vector geometry and spatial products run inside real flight, robotics and 
 - **surface normal generation for lidar slam**: calculating the cross product of two non-parallel tangent vectors on a 3d point cluster gives the true surface normal vector $\vec{n} = \vec{u} \times \vec{v}$, used by point-to-plane icp registration in slam.
 - **obstacle avoidance and line-of-sight guidance**: autonomous drone waypoint navigation normalizes relative position vectors to compute unit velocity heading commands:
 
-  $$\Large \hat{r} = \frac{\vec{p}_{\text{target}} - \vec{p}_{\text{drone}}}{\|\vec{p}_{\text{target}} - \vec{p}_{\text{drone}}\|}$$
+$$
+\hat{r} = \frac{\vec{p}_{\text{target}} - \vec{p}_{\text{drone}}}{\|\vec{p}_{\text{target}} - \vec{p}_{\text{drone}}\|}
+$$
