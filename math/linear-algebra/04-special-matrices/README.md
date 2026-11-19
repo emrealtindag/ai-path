@@ -10,9 +10,7 @@ handwritten notes and derivations for complex matrices, conjugate transpose, uni
 
 definition of real and complex matrices, conjugate transpose properties, and product conjugate rules
 
-$$
-A^* = \overline{A^T} \quad \text{and} \quad (AB)^* = B^* A^*
-$$
+$$\Large A^* = \overline{A^T} \quad \text{and} \quad (AB)^* = B^* A^*$$
 
 ![complex matrices and conjugate transpose](./assets/page-01.png)
 
@@ -35,9 +33,7 @@ conjugate transpose property holds: (AB)* == B* @ A*
 
 properties of unitary matrices where the inverse equals the conjugate transpose, preserving inner products and vector norms
 
-$$
-U^* U = U U^* = I \iff U^{-1} = U^*
-$$
+$$\Large U^* U = U U^* = I \iff U^{-1} = U^*$$
 
 ![unitary matrix](./assets/page-02.png)
 
@@ -63,9 +59,7 @@ U is unitary: U* @ U == I
 
 square complex matrices equal to their own conjugate transpose, with diagonal elements strictly real and guaranteed purely real eigenvalues
 
-$$
-H^* = H \implies \lambda_i \in \mathbb{R} \quad \forall i
-$$
+$$\Large H^* = H \implies \lambda_i \in \mathbb{R} \quad \forall i$$
 
 ![hermitian matrices](./assets/page-03.png)
 ![hermitian eigenvalues and idempotent matrix](./assets/page-04.png)
@@ -93,9 +87,7 @@ H is hermitian and all eigenvalues are real: 2 ± sqrt(5)
 
 projection matrices that remain unchanged when multiplied by themselves, with eigenvalues strictly restricted to zero or one and rank equal to trace
 
-$$
-M^2 = M \implies \lambda \in \{0, 1\} \quad \text{and} \quad \text{rank}(M) = \text{tr}(M)
-$$
+$$\Large M^2 = M \implies \lambda \in \{0, 1\} \quad \text{and} \quad \text{rank}(M) = \text{tr}(M)$$
 
 ### Computational Verification
 
@@ -126,7 +118,7 @@ M is idempotent: M^2 == M and eigenvalues are 0 and 1
 
 where special matrices run inside real robotics, signal processing and quantum systems code:
 
-- **radar and uav communication (i/q complex processing)**: drone rf telemetry and radar signals are sampled as in-phase and quadrature complex vectors $(I + jQ)$. channel estimation and beamforming matrices rely on conjugate transpose operations $A^*$ to compute optimal antenna gains.
-- **unitary transformations in quantum robotics and rotations**: unitary matrices preserve the euclidean norm, $(\|Ux\| = \|x\|)$, ensuring that physical energy or probability amplitude is conserved. all quantum computing logic gates and high-dimensional state rotations are unitary.
-- **hermitian matrices in sensor covariance and spectral estimation**: covariance matrices of complex sensory data are hermitian. because their eigenvalues are guaranteed to be purely real $(\lambda \in \mathbb{R})$, sensor uncertainty and power spectral density can always be physically interpreted as real positive energy.
-- **idempotent projection matrices in slam and least squares**: in robotic state estimation and visual slam, projecting high-dimensional observations onto a lower-dimensional constraint subspace uses projection matrices $P = A(A^T A)^{-1} A^T$. applying the projection twice changes nothing $(P^2 = P)$, which is the exact definition of an idempotent matrix.
+- **radar and uav communication (i/q complex processing)**: drone rf telemetry and radar signals are sampled as in-phase and quadrature complex vectors ($I + jQ$). channel estimation and beamforming matrices rely on conjugate transpose operations ($A^*$) to compute optimal antenna gains.
+- **unitary transformations in quantum robotics and rotations**: unitary matrices preserve the euclidean norm ($\|Ux\| = \|x\|$), ensuring that physical energy or probability amplitude is conserved. all quantum computing logic gates and high-dimensional state rotations are unitary.
+- **hermitian matrices in sensor covariance and spectral estimation**: covariance matrices of complex sensory data are hermitian. because their eigenvalues are guaranteed to be purely real ($\lambda \in \mathbb{R}$), sensor uncertainty and power spectral density can always be physically interpreted as real positive energy.
+- **idempotent projection matrices in slam and least squares**: in robotic state estimation and visual slam, projecting high-dimensional observations onto a lower-dimensional constraint subspace uses projection matrices $P = A(A^T A)^{-1} A^T$. applying the projection twice changes nothing ($P^2 = P$), which is the exact definition of an idempotent matrix.
