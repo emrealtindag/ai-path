@@ -1,4 +1,4 @@
-# Linear Algebra
+# linear algebra
 
 study notes mathematical proofs and vector theory for robotics and state estimation
 
@@ -9,3 +9,4 @@ study notes mathematical proofs and vector theory for robotics and state estimat
 - **[03-matrix-exponential/](./03-matrix-exponential)** — cayley-hamilton theorem and matrix exponential computation using diagonalization and characteristic polynomial methods
 - **[04-special-matrices/](./04-special-matrices)** — complex matrices, conjugate transpose, unitary matrices, hermitian matrices and idempotent projection matrices
 - **[05-vector-geometry/](./05-vector-geometry)** — 3d euclidean vectors, dot products, cross products, projections, and spatial geometry
+- **[06-vector-spaces/](./06-vector-spaces)** — vector spaces, subspaces, linear independence, span, basis, dimension, and coordinate vector transformations
