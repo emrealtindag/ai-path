@@ -31,22 +31,23 @@ $$
 ### computational verification
 
 ```python
-# test subspace w1: x1 == 0 (closed under addition and scaling)
+# subspace W1: x1 = 0 (plane passing through origin)
 w1_a = np.array([0.0, 2.0, -1.0])
 w1_b = np.array([0.0, -3.0, 4.0])
-assert (w1_a + w1_b)[0] == 0.0
-assert (2.5 * w1_a)[0] == 0.0
+w1_sum = w1_a + w1_b
 
-# counterexample w2: x1 + x2 == 2 (fails closure under addition)
+# non-subspace W2: x1 + x2 = 2 (plane not passing through origin)
 w2_a = np.array([1.0, 1.0, 5.0])
 w2_b = np.array([0.0, 2.0, -3.0])
-assert (w2_a + w2_b)[0] + (w2_a + w2_b)[1] != 2.0
+w2_sum = w2_a + w2_b
+
+print("W1 (x1 = 0) closed under addition:", w1_sum[0] == 0.0)
+print("W2 (x1 + x2 = 2) closed under addition:", (w2_sum[0] + w2_sum[1]) == 2.0)
 ```
 
 ```text
-subspace closure tests:
-  w1 (x1 == 0) is closed under addition and scaling -> valid subspace
-  w2 (x1 + x2 == 2) fails addition closure (sum = 4 != 2) -> not a subspace
+W1 (x1 = 0) closed under addition: True
+W2 (x1 + x2 = 2) closed under addition: False
 ```
 
 ---
@@ -184,32 +185,32 @@ $$
 ### computational verification
 
 ```python
-# 1. r2 coordinate vector: basis s = {[1, 3], [2, 1]}, target v = [2, 3]
-P2 = np.array([[1.0, 2.0], [3.0, 1.0]])
-v2 = np.array([2.0, 3.0])
-coords_v2 = np.linalg.solve(P2, v2)
-assert np.allclose(coords_v2, [4.0 / 5.0, 3.0 / 5.0])
-assert np.allclose(P2 @ coords_v2, v2)
+# camera detected target [v]_C (2m right, 0m down, 5m forward)
+v_cam = np.array([2.0, 0.0, 5.0])
 
-# 2. r3 coordinate vector: basis s = {[1, 2, 1], [2, 9, 0], [3, 3, 4]}, target v = [5, -1, 9]
-P3 = np.array([[1.0, 2.0, 3.0], [2.0, 9.0, 3.0], [1.0, 0.0, 4.0]])
-v3 = np.array([5.0, -1.0, 9.0])
-coords_v3 = np.linalg.solve(P3, v3)
-assert np.allclose(coords_v3, [1.0, -1.0, 2.0])
-assert np.allclose(P3 @ coords_v3, v3)
+# transition matrix P (camera -> body)
+transition_matrix = np.array([[0.0, 0.0, 1.0],
+                              [1.0, 0.0, 0.0],
+                              [0.0, 1.0, 0.0]])
 
-# forward synthesis from coordinates [-1, 3, 2]
-coords_forward = np.array([-1.0, 3.0, 2.0])
-v3_synthesized = P3 @ coords_forward
-assert np.allclose(v3_synthesized, [11.0, 31.0, 7.0])
+# forward transform: [v]_B = P @ [v]_C
+v_body = transition_matrix @ v_cam
+
+# inverse transform check: [v]_C = inv(P) @ [v]_B
+p_inverse = np.linalg.inv(transition_matrix)
+v_cam_recovered = p_inverse @ v_body
+
+print("camera frame:", v_cam)
+print("body frame (x: forward, y: right, z: down):", v_body)
+print("reconstructed camera frame:", v_cam_recovered)
+print("change of basis holds:", np.allclose(v_cam, v_cam_recovered))
 ```
 
 ```text
-coordinate vector tests:
-  r2 coordinates [v]_S: [0.8 0.6] -> reconstructed: [2. 3.]
-  r3 coordinates [v]_S: [ 1. -1.  2.] -> reconstructed: [ 5. -1.  9.]
-  forward synthesis from [-1, 3, 2]: [11. 31.  7.]
-  all coordinate mappings hold
+camera frame: [2. 0. 5.]
+body frame (x: forward, y: right, z: down): [5. 2. 0.]
+reconstructed camera frame: [2. 0. 5.]
+change of basis holds: True
 ```
 
 ---
@@ -233,36 +234,28 @@ $$
 ### computational verification
 
 ```python
-# transition matrix P (B' -> B) from page 12
-P = np.array([[3.0, -2.0], [1.0, 1.0]])
-P_inv = np.linalg.inv(P)
+# sensor A (lidar basis) and sensor B (camera basis)
+M_a = np.array([[2.0, 1.0], [1.0, 4.0]])
+M_b = np.array([[3.0, -2.0], [1.0, 1.0]])
 
-# coordinate forward mapping: [u]_B = P @ [u]_B'
-u_Bprime = np.array([2.0, 1.0])
-assert np.allclose(P @ u_Bprime, [4.0, 3.0])
+inv_M_b = np.linalg.inv(M_b)
+transition_A_to_B = inv_M_b @ M_a
 
-# coordinate inverse mapping: [v]_B' = P^-1 @ [v]_B
-v_B = np.array([1.0, 3.0])
-assert np.allclose(P_inv @ v_B, [7.0 / 5.0, 8.0 / 5.0])
+# coordinate vector in basis A transformed to basis B
+x_a = np.array([2.0, 1.0])
+x_b = transition_A_to_B @ x_a
 
-# transition matrix between two non-standard bases (A -> B) from page 13
-M_A = np.array([[2.0, 1.0], [1.0, 4.0]])
-M_B = np.array([[3.0, -2.0], [1.0, 1.0]])
-P_A_to_B = np.linalg.inv(M_B) @ M_A
-assert np.allclose(P_A_to_B, [[0.8, 1.8], [0.2, 2.2]])
+print("transition matrix (A -> B):\n", np.round(transition_A_to_B, 2))
+print("coordinates in basis B:", np.round(x_b, 2))
+print("both bases represent same physical vector:", np.allclose(M_a @ x_a, M_b @ x_b))
 ```
 
 ```text
-change of basis tests:
-  transition matrix P (B' -> B):
-[[ 3. -2.]
- [ 1.  1.]]
-  coordinate mapping [u]_B = P @ [u]_B': [4. 3.]
-  inverse mapping [v]_B' = P^-1 @ [v]_B: [1.4 1.6]
-  transition matrix between two non-standard bases (A -> B):
-[[0.8 1.8]
+transition matrix (A -> B):
+ [[0.8 1.8]
  [0.2 2.2]]
-  change of basis properties hold
+coordinates in basis B: [3.4 2.6]
+both bases represent same physical vector: True
 ```
 
 ---
@@ -285,25 +278,32 @@ $$
 ### computational verification
 
 ```python
-# 1. row space 4x5 matrix from page 13
-A_row = np.array([[1.0, -2.0, 0.0, 0.0, 3.0], 
-                  [2.0, -5.0, -3.0, -2.0, 6.0], 
-                  [0.0, 5.0, 15.0, 10.0, 0.0], 
-                  [2.0, 6.0, 18.0, 8.0, 6.0]])
-assert np.linalg.matrix_rank(A_row) == 3
+# last row is linear combination of first two rows (row3 = row1 + row2)
+A = np.array([[1.0, 2.0, 0.0, 3.0],
+              [0.0, 1.0, 1.0, 2.0],
+              [1.0, 3.0, 1.0, 5.0]])
 
-# 2. column space 3x5 matrix from page 14
-A_col = np.array([[2.0, 4.0, 6.0, -2.0, 0.0], 
-                  [3.0, 1.0, -2.0, 4.0, 5.0], 
-                  [6.0, 2.0, -4.0, 8.0, 10.0]])
-assert np.linalg.matrix_rank(A_col) == 2
+rank_A = np.linalg.matrix_rank(A)
+column_space_dim = rank_A
+
+# dynamic pivot column extraction using :rank_A
+column_space_basis = A[:, :rank_A]
+rank_basis = np.linalg.matrix_rank(column_space_basis)
+
+print("matrix rank:", rank_A)
+print("column space dimension:", column_space_dim)
+print("column space basis columns:\n", column_space_basis)
+print("basis rank:", rank_basis)
 ```
 
 ```text
-row and column space tests:
-  row space matrix rank = 3 -> dimension of row space = 3
-  column space matrix rank = 2 -> dimension of column space = 2
-  pivot columns form a linearly independent basis for column space
+matrix rank: 2
+column space dimension: 2
+column space basis columns:
+ [[1. 2.]
+ [0. 1.]
+ [1. 3.]]
+basis rank: 2
 ```
 
 ---
@@ -325,30 +325,46 @@ $$
 ### computational verification
 
 ```python
-# 4x6 matrix from page 15
-A = np.array([[-1.0, 2.0, 0.0, 4.0, 5.0, -3.0], 
-              [3.0, -7.0, 2.0, 0.0, 1.0, 4.0], 
-              [2.0, -5.0, 2.0, 4.0, 6.0, 1.0], 
-              [4.0, -9.0, 2.0, -4.0, -4.0, 7.0]])
+# hexacopter control allocation matrix B (4 outputs: thrust, roll, pitch, yaw from 6 motors)
+B = np.array([[1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+              [1.0, 0.5, -0.5, -1.0, -0.5, 0.5],
+              [0.0, 1.0, 1.0, 0.0, -1.0, -1.0],
+              [1.0, -1.0, 1.0, -1.0, 1.0, -1.0]])
 
-rank_A = np.linalg.matrix_rank(A)
-nullity_A = A.shape[1] - rank_A
-assert rank_A == 2
-assert nullity_A == 4
-assert rank_A + nullity_A == 6
+rank_B = np.linalg.matrix_rank(B)
+columns_B = B.shape[1]
+nullity_B = columns_B - rank_B
 
-# verify null space vectors satisfy A @ v == 0
-null_basis = scipy.linalg.null_space(A)
-assert np.allclose(A @ null_basis, 0.0)
+# orthonormal basis for the null space (Ax = 0)
+Z = null_space(B)
+
+print("matrix B rank:", rank_B)
+print("number of motors (columns):", columns_B)
+print("nullity (free variables / degrees of redundancy):", nullity_B)
+print("null space basis Z shape:", Z.shape)
+print("B @ Z == 0 condition holds:", np.allclose(B @ Z, 0.0))
+
+# motor 1 overheats: redistribute thrust using null space vector Z[:, 0]
+u0 = np.array([5.0, 5.0, 5.0, 5.0, 5.0, 5.0])
+y_initial = B @ u0
+u_null = Z[:, 0] * 2.0
+u_new = u0 + u_null
+y_new = B @ u_new
+
+print("baseline motor thrusts:", u0)
+print("adjusted motor thrusts (motor 1 relieved):", np.round(u_new, 2))
+print("net forces and torques preserved:", np.allclose(y_initial, y_new))
 ```
 
 ```text
-null space and rank-nullity theorem tests:
-  matrix shape: (4, 6) (rows x columns)
-  rank = 2 (number of pivot columns)
-  nullity = 4 (number of free variables)
-  rank + nullity = 2 + 4 = 6 (number of columns)
-  all null space basis vectors satisfy A @ v == 0
+matrix B rank: 4
+number of motors (columns): 6
+nullity (free variables / degrees of redundancy): 2
+null space basis Z shape: (6, 2)
+B @ Z == 0 condition holds: True
+baseline motor thrusts: [5. 5. 5. 5. 5. 5.]
+adjusted motor thrusts (motor 1 relieved): [4.22 6.13 4.65 4.22 6.13 4.65]
+net forces and torques preserved: True
 ```
 
 ---
