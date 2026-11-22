@@ -1,6 +1,6 @@
 # vector spaces
 
-handwritten notes, mathematical derivations and numerical verifications for vector spaces, subspaces, linear independence, spanning sets, bases, dimension, and coordinate vector representations
+handwritten notes, mathematical derivations and numerical verifications for vector spaces, subspaces, linear independence, spanning sets, bases, dimension, coordinate vectors, change of basis, row and column spaces, null space and the rank-nullity theorem
 
 [download full notes pdf](./vector-spaces.pdf) | [runnable script: src/vector_spaces.py](./src/vector_spaces.py)
 
@@ -214,11 +214,157 @@ coordinate vector tests:
 
 ---
 
+## change of basis and transition matrices
+
+transition matrix $P$ transforming coordinates from basis $\mathcal{B}'$ to basis $\mathcal{B}$, coordinate conversion rules, and changing representation between two non-standard bases
+
+$$
+[v]_\mathcal{B} = P [v]_{\mathcal{B}'} \iff [v]_{\mathcal{B}'} = P^{-1} [v]_\mathcal{B}
+$$
+
+$$
+P_{A \to B} = M_B^{-1} M_A
+$$
+
+![change of basis theory](./assets/page-11.png)
+![change of basis examples](./assets/page-12.png)
+![transition between two bases](./assets/page-13.png)
+
+### computational verification
+
+```python
+# transition matrix P (B' -> B) from page 12
+P = np.array([[3.0, -2.0], [1.0, 1.0]])
+P_inv = np.linalg.inv(P)
+
+# coordinate forward mapping: [u]_B = P @ [u]_B'
+u_Bprime = np.array([2.0, 1.0])
+assert np.allclose(P @ u_Bprime, [4.0, 3.0])
+
+# coordinate inverse mapping: [v]_B' = P^-1 @ [v]_B
+v_B = np.array([1.0, 3.0])
+assert np.allclose(P_inv @ v_B, [7.0 / 5.0, 8.0 / 5.0])
+
+# transition matrix between two non-standard bases (A -> B) from page 13
+M_A = np.array([[2.0, 1.0], [1.0, 4.0]])
+M_B = np.array([[3.0, -2.0], [1.0, 1.0]])
+P_A_to_B = np.linalg.inv(M_B) @ M_A
+assert np.allclose(P_A_to_B, [[0.8, 1.8], [0.2, 2.2]])
+```
+
+```text
+change of basis tests:
+  transition matrix P (B' -> B):
+[[ 3. -2.]
+ [ 1.  1.]]
+  coordinate mapping [u]_B = P @ [u]_B': [4. 3.]
+  inverse mapping [v]_B' = P^-1 @ [v]_B: [1.4 1.6]
+  transition matrix between two non-standard bases (A -> B):
+[[0.8 1.8]
+ [0.2 2.2]]
+  change of basis properties hold
+```
+
+---
+
+## row space, column space and rank
+
+row echelon reduction, determining bases for row space and column space, and geometric dimension relations
+
+$$
+\dim(\text{row space}) = \dim(\text{column space}) = \text{rank}(A)
+$$
+
+$$
+\text{rank}(A) \le \min(\text{rows}, \text{columns})
+$$
+
+![row space extraction](./assets/page-13.png)
+![column space and rank properties](./assets/page-14.png)
+
+### computational verification
+
+```python
+# 1. row space 4x5 matrix from page 13
+A_row = np.array([[1.0, -2.0, 0.0, 0.0, 3.0], 
+                  [2.0, -5.0, -3.0, -2.0, 6.0], 
+                  [0.0, 5.0, 15.0, 10.0, 0.0], 
+                  [2.0, 6.0, 18.0, 8.0, 6.0]])
+assert np.linalg.matrix_rank(A_row) == 3
+
+# 2. column space 3x5 matrix from page 14
+A_col = np.array([[2.0, 4.0, 6.0, -2.0, 0.0], 
+                  [3.0, 1.0, -2.0, 4.0, 5.0], 
+                  [6.0, 2.0, -4.0, 8.0, 10.0]])
+assert np.linalg.matrix_rank(A_col) == 2
+```
+
+```text
+row and column space tests:
+  row space matrix rank = 3 -> dimension of row space = 3
+  column space matrix rank = 2 -> dimension of column space = 2
+  pivot columns form a linearly independent basis for column space
+```
+
+---
+
+## null space and rank-nullity theorem
+
+homogeneous linear system $A x = 0$, free variables, null space basis construction, and the fundamental rank-nullity theorem
+
+$$
+A x = 0 \iff x \in \text{null}(A)
+$$
+
+$$
+\text{rank}(A) + \text{nullity}(A) = n \quad (n = \text{number of columns})
+$$
+
+![null space and rank nullity theorem](./assets/page-15.png)
+
+### computational verification
+
+```python
+# 4x6 matrix from page 15
+A = np.array([[-1.0, 2.0, 0.0, 4.0, 5.0, -3.0], 
+              [3.0, -7.0, 2.0, 0.0, 1.0, 4.0], 
+              [2.0, -5.0, 2.0, 4.0, 6.0, 1.0], 
+              [4.0, -9.0, 2.0, -4.0, -4.0, 7.0]])
+
+rank_A = np.linalg.matrix_rank(A)
+nullity_A = A.shape[1] - rank_A
+assert rank_A == 2
+assert nullity_A == 4
+assert rank_A + nullity_A == 6
+
+# verify null space vectors satisfy A @ v == 0
+null_basis = scipy.linalg.null_space(A)
+assert np.allclose(A @ null_basis, 0.0)
+```
+
+```text
+null space and rank-nullity theorem tests:
+  matrix shape: (4, 6) (rows x columns)
+  rank = 2 (number of pivot columns)
+  nullity = 4 (number of free variables)
+  rank + nullity = 2 + 4 = 6 (number of columns)
+  all null space basis vectors satisfy A @ v == 0
+```
+
+---
+
 ## real-world and robotics applications
 
-where vector spaces, bases and coordinate vectors run inside real robotics and state estimation code:
+where vector spaces, bases, change of basis and null space run inside real robotics and autonomous flight systems:
 
-- **reference frames in uav navigation**: a drone operates across multiple coordinate spaces (inertial world frame, body frame, gimbal frame, camera sensor frame). each frame is an ordered orthonormal basis. a target position vector is invariant in physical space, but its coordinate vector $[p]_\mathcal{B}$ changes numerically based on the chosen basis.
-- **state space representations in control (6-dof)**: the state of an autonomous drone is modeled as an element in a 12-dimensional vector space $\mathbb{R}^{12}$ containing position $(x, y, z)$, velocity $(\dot{x}, \dot{y}, \dot{z})$, attitude angles $(\phi, \theta, \psi)$, and angular rates $(p, q, r)$. the dimension of this vector space equals the state degrees of freedom.
-- **lidar feature extraction and linear independence**: in point cloud processing, fitting a 3d plane requires at least three non-collinear laser points. checking the linear independence / rank of the point difference vectors prevents degenerate planar fits when points lie along a single scan line.
-- **actuator redundancy and null space**: an aerial vehicle or robotic arm with more actuators than task degrees of freedom (e.g. an 8-rotor octocopter controlling 6-dof motion) operates in an over-determined vector space where motor mixing matrices exploit the subspace structure to maintain control authority even during motor failure.
+- **reference frames and coordinate transformations in uavs**: a drone constantly transforms vector quantities between reference bases (inertial world frame $\mathcal{W}$, body frame $\mathcal{B}$, camera frame $\mathcal{C}$). changing coordinates via $[v]_\mathcal{B} = P_{\mathcal{C} \to \mathcal{B}} [v]_\mathcal{C}$ is the exact mathematical definition of change of basis.
+- **state space representations in control (6-dof)**: the state of an autonomous drone is modeled as a vector in a 12-dimensional vector space $\mathbb{R}^{12}$ containing position $(x, y, z)$, velocity $(\dot{x}, \dot{y}, \dot{z})$, attitude angles $(\phi, \theta, \psi)$, and angular rates $(p, q, r)$. the dimension of this vector space equals the state degrees of freedom.
+- **actuator redundancy and null space control**: an aerial vehicle or robotic arm with redundant actuators (e.g. an 8-rotor octocopter controlling 6-dof flight motion) has an underdetermined control allocation matrix $A \in \mathbb{R}^{6 \times 8}$. the null space $\text{null}(A)$ has dimension $8 - 6 = 2$. internal motor mixing commands that lie within this null space ($A u_{\text{null}} = 0$) generate zero net vehicle force and torque, allowing the flight controller to redistribute rotor loads or handle single motor failures without perturbing flight trajectory.
+- **lidar plane fitting and rank checks**: in 3d point cloud perception, extracting planar patches requires computing the rank of neighbor covariance matrices. rank 3 corresponds to a volumetric obstacle, rank 2 corresponds to a flat driveable surface or wall, and rank 1 corresponds to a linear power line or thin cable.
+
+---
+
+## errata and study notes
+
+- **page 04 & 05 (definitions)**: in handwritten definitions, note that a homogeneous equation having only the trivial solution ($c_1 = \dots = c_n = 0$) defines **linear independence**, while existence of non-trivial solutions defines **linear dependence**.
+- **page 10 (question a arithmetic)**: the row reduction equations yield $c_3 = 2, c_2 = -1$. substituting into the top equation $c_1 + 2(-1) + 3(2) = 5$ gives $c_1 + 4 = 5 \implies c_1 = 1$ (written as $-3$ in rough notes), correctly confirmed by the numerical solver.

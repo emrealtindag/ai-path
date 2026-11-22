@@ -1,4 +1,5 @@
 import numpy as np
+import scipy.linalg
 
 
 def verify_subspaces():
@@ -11,10 +12,10 @@ def verify_subspaces():
     assert (w1_a + w1_b)[0] == 0.0
     assert (c * w1_a)[0] == 0.0
 
-    # counterexample w2: x1 + x2 == 2 (affine plane, not passing through origin)
-    w2_a = np.array([1.0, 1.0, 5.0])   # 1 + 1 == 2
-    w2_b = np.array([0.0, 2.0, -3.0])  # 0 + 2 == 2
-    w2_sum = w2_a + w2_b              # sum has x1 + x2 == 4 != 2
+    # counterexample w2: x1 + x2 == 2 (fails closure under addition)
+    w2_a = np.array([1.0, 1.0, 5.0])
+    w2_b = np.array([0.0, 2.0, -3.0])
+    w2_sum = w2_a + w2_b
     assert (w2_sum[0] + w2_sum[1]) != 2.0
 
     print("subspace closure tests:")
@@ -23,7 +24,7 @@ def verify_subspaces():
 
 
 def verify_linear_independence():
-    # independent set in r2: v1 = (1, 1), v2 = (2, -3)
+    # independent set in r2: rank == 2, det != 0
     A_indep = np.array([[1.0, 2.0], 
                         [1.0, -3.0]])
     rank_indep = np.linalg.matrix_rank(A_indep)
@@ -31,7 +32,7 @@ def verify_linear_independence():
     assert rank_indep == 2
     assert not np.isclose(det_indep, 0.0)
 
-    # dependent set in r2: v1 = (1, 3), v2 = (2, 6)
+    # dependent set in r2: rank == 1, det == 0
     A_dep = np.array([[1.0, 2.0], 
                       [3.0, 6.0]])
     rank_dep = np.linalg.matrix_rank(A_dep)
@@ -53,13 +54,13 @@ def verify_linear_independence():
 
 
 def verify_span():
-    # spanning set in r2: s1 = {(1, 2), (-1, 1)} -> rank 2 spans r2
+    # spanning set in r2: full rank spans r2
     S1 = np.array([[1.0, -1.0], 
                    [2.0, 1.0]])
     rank_S1 = np.linalg.matrix_rank(S1)
     assert rank_S1 == 2
 
-    # non-spanning set in r2: s2 = {(2, 4), (-1, -2)} -> rank 1 cannot span r2
+    # non-spanning set in r2: rank 1 cannot span r2
     S2 = np.array([[2.0, -1.0], 
                    [4.0, -2.0]])
     rank_S2 = np.linalg.matrix_rank(S2)
@@ -71,7 +72,7 @@ def verify_span():
 
 
 def verify_basis_and_dimension():
-    # basis in r2: s = {[1, 2], [3, 4]}
+    # basis in r2: s = {[1, 2], [3, 4]} -> det != 0, rank == 2
     B = np.array([[1.0, 3.0], 
                   [2.0, 4.0]])
     det_B = np.linalg.det(B)
@@ -102,7 +103,7 @@ def verify_coordinate_vectors():
     assert np.allclose(coords_v3, [1.0, -1.0, 2.0])
     assert np.allclose(P3 @ coords_v3, v3)
 
-    # forward reconstruction from coordinates [-1, 3, 2]
+    # forward synthesis from coordinates [-1, 3, 2]
     coords_forward = np.array([-1.0, 3.0, 2.0])
     v3_synthesized = P3 @ coords_forward
     assert np.allclose(v3_synthesized, [11.0, 31.0, 7.0])
@@ -111,7 +112,100 @@ def verify_coordinate_vectors():
     print(f"  r2 coordinates [v]_S: {coords_v2} -> reconstructed: {P2 @ coords_v2}")
     print(f"  r3 coordinates [v]_S: {coords_v3} -> reconstructed: {P3 @ coords_v3}")
     print(f"  forward synthesis from [-1, 3, 2]: {v3_synthesized}")
-    print("  all coordinate mappings hold")
+    print("  all coordinate mappings hold\n")
+
+
+def verify_change_of_basis():
+    # example from page 12: standard basis B and new basis B' = {[3, 1], [-2, 1]}
+    P = np.array([[3.0, -2.0], 
+                  [1.0, 1.0]])
+    P_inv = np.linalg.inv(P)
+
+    # check analytical inverse: 1/5 * [[1, 2], [-1, 3]]
+    P_inv_expected = 0.2 * np.array([[1.0, 2.0], 
+                                     [-1.0, 3.0]])
+    assert np.allclose(P_inv, P_inv_expected)
+
+    # part b: [u]_B = P @ [u]_B' for [u]_B' = [2, 1]
+    u_Bprime = np.array([2.0, 1.0])
+    u_B = P @ u_Bprime
+    assert np.allclose(u_B, [4.0, 3.0])
+
+    # part d: [v]_B' = P^-1 @ [v]_B for [v]_B = [1, 3]
+    v_B = np.array([1.0, 3.0])
+    v_Bprime = P_inv @ v_B
+    assert np.allclose(v_Bprime, [7.0 / 5.0, 8.0 / 5.0])
+
+    # example from page 13: transition matrix from basis A to basis B
+    M_A = np.array([[2.0, 1.0], 
+                    [1.0, 4.0]])
+    M_B = np.array([[3.0, -2.0], 
+                    [1.0, 1.0]])
+    P_A_to_B = np.linalg.inv(M_B) @ M_A
+    assert np.allclose(P_A_to_B, [[0.8, 1.8], [0.2, 2.2]])
+
+    print("change of basis tests:")
+    print(f"  transition matrix P (B' -> B):\n{P}")
+    print(f"  coordinate mapping [u]_B = P @ [u]_B': {u_B}")
+    print(f"  inverse mapping [v]_B' = P^-1 @ [v]_B: {v_Bprime}")
+    print(f"  transition matrix between two non-standard bases (A -> B):\n{P_A_to_B}")
+    print("  change of basis properties hold\n")
+
+
+def verify_row_and_column_spaces():
+    # 1. row space example from page 13 (4x5 matrix)
+    A_row = np.array([[1.0, -2.0, 0.0, 0.0, 3.0], 
+                      [2.0, -5.0, -3.0, -2.0, 6.0], 
+                      [0.0, 5.0, 15.0, 10.0, 0.0], 
+                      [2.0, 6.0, 18.0, 8.0, 6.0]])
+    rank_row = np.linalg.matrix_rank(A_row)
+    assert rank_row == 3
+
+    # 2. column space example from page 14 (3x5 matrix)
+    A_col = np.array([[2.0, 4.0, 6.0, -2.0, 0.0], 
+                      [3.0, 1.0, -2.0, 4.0, 5.0], 
+                      [6.0, 2.0, -4.0, 8.0, 10.0]])
+    rank_col = np.linalg.matrix_rank(A_col)
+    assert rank_col == 2
+
+    # check pivot columns in column space
+    col_basis = A_col[:, :2]
+    assert np.linalg.matrix_rank(col_basis) == 2
+
+    print("row and column space tests:")
+    print(f"  row space matrix rank = {rank_row} -> dimension of row space = {rank_row}")
+    print(f"  column space matrix rank = {rank_col} -> dimension of column space = {rank_col}")
+    print("  pivot columns form a linearly independent basis for column space\n")
+
+
+def verify_nullspace_and_rank_nullity():
+    # null space example from page 15 (4x6 matrix, Ax == 0)
+    A = np.array([[-1.0, 2.0, 0.0, 4.0, 5.0, -3.0], 
+                  [3.0, -7.0, 2.0, 0.0, 1.0, 4.0], 
+                  [2.0, -5.0, 2.0, 4.0, 6.0, 1.0], 
+                  [4.0, -9.0, 2.0, -4.0, -4.0, 7.0]])
+    
+    n_cols = A.shape[1]
+    rank_A = np.linalg.matrix_rank(A)
+    nullity_A = n_cols - rank_A
+
+    assert rank_A == 2
+    assert nullity_A == 4
+    # rank-nullity theorem verification
+    assert rank_A + nullity_A == n_cols
+
+    # compute numerical orthonormal basis for null space using svd/null_space
+    null_basis = scipy.linalg.null_space(A)
+    assert null_basis.shape == (6, 4)
+    # verify A @ v_null == 0 for all null space basis vectors
+    assert np.allclose(A @ null_basis, np.zeros((4, 4)))
+
+    print("null space and rank-nullity theorem tests:")
+    print(f"  matrix shape: {A.shape} (rows x columns)")
+    print(f"  rank = {rank_A} (number of pivot columns)")
+    print(f"  nullity = {nullity_A} (number of free variables)")
+    print(f"  rank + nullity = {rank_A} + {nullity_A} = {n_cols} (number of columns)")
+    print("  all null space basis vectors satisfy A @ v == 0")
 
 
 if __name__ == "__main__":
@@ -120,3 +214,6 @@ if __name__ == "__main__":
     verify_span()
     verify_basis_and_dimension()
     verify_coordinate_vectors()
+    verify_change_of_basis()
+    verify_row_and_column_spaces()
+    verify_nullspace_and_rank_nullity()
