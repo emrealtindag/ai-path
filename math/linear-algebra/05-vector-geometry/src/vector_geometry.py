@@ -1,57 +1,44 @@
 import numpy as np
 
-# 1. vector length (norm) and unit vector normalization
-v = np.array([1, 2, -1])
-norm_v = np.linalg.norm(v)
-v_hat = v / norm_v
 
-print("vector v:", v)
-print("norm of v:", round(norm_v, 4))
-print("unit vector v_hat:", np.round(v_hat, 4))
-print("norm of v_hat:", round(np.linalg.norm(v_hat), 4))
-print("unit vector is normalized\n")
+# 1. uav velocity vector and speed (norm / normalization)
+v_velocity = np.array([3.0, 4.0, 0.0])
+speed = np.linalg.norm(v_velocity)
+v_unit = v_velocity / speed
 
-# 2. scalar and vector projection of a onto b
-a = np.array([1, 2, -1])
-b = np.array([3, 1, 1])
+print("speed (m/s):", speed)
+print("unit direction:", v_unit)
+print("unit norm check:", np.linalg.norm(v_unit), "\n")
 
-scalar_proj = np.dot(a, b) / np.linalg.norm(b)
-vector_proj = (np.dot(a, b) / np.dot(b, b)) * b
 
-print("a dot b:", np.dot(a, b))
-print("scalar projection (length):", round(scalar_proj, 4))
-print("vector projection onto b:", np.round(vector_proj, 4))
-print("projection matches manual calculation\n")
+# 2. flight heading and wind force projection (scalar and vector projection)
+v_heading = np.array([1.0, 0.0, 0.0])
+w_wind = np.array([4.0, 3.0, 0.0])
 
-# 3. 2d triangle area using determinant
-# points: A(1, -3), B(2, 1), C(4, 3)
-AB = np.array([1, 4])
-AC = np.array([3, 6])
+scalar_proj = np.dot(w_wind, v_heading) / np.linalg.norm(v_heading)
+v_hat = v_heading / np.linalg.norm(v_heading)
+proj_vec = scalar_proj * v_hat
 
-area_2d = 0.5 * abs(np.linalg.det(np.column_stack([AB, AC])))
-print("2d triangle area:", round(area_2d, 4))
-print("2d area matches determinant calculation\n")
+print("wind pushing forward (N):", scalar_proj)
+print("projected wind vector:", proj_vec, "\n")
 
-# 4. 3d triangle area using cross product
-# vectors: CA = (1, 2, -1), CB = (3, 4, 1)
-CA = np.array([1, 2, -1])
-CB = np.array([3, 4, 1])
 
-cross_triangle = np.cross(CA, CB)
-area_3d_triangle = 0.5 * np.linalg.norm(cross_triangle)
+# 3. arm vector and motor thrust force (torque generation via cross product: tau = r x F)
+r_arm = np.array([0.2, 0.0, 0.0])
+F_thrust = np.array([0.0, 0.0, 10.0])
 
-print("CA x CB:", cross_triangle)
-print("3d triangle area:", round(area_3d_triangle, 4))
-print("3d triangle area matches cross product magnitude\n")
+torque = np.cross(r_arm, F_thrust)
+print("torque vector (N*m):", torque, "\n")
 
-# 5. 3d parallelogram area using cross product
-# vectors: AB = (2, 3, -1), AD = (3, 1, 0)
-AB_par = np.array([2, 3, -1])
-AD_par = np.array([3, 1, 0])
 
-cross_par = np.cross(AB_par, AD_par)
-area_par = np.linalg.norm(cross_par)
+# 4. 3d surface mesh polygon (lidar patch: surface normal and area via cross product)
+edge1 = np.array([1.0, 2.0, -1.0])
+edge2 = np.array([-1.0, 1.0, 2.0])
 
-print("AB x AD:", cross_par)
-print("3d parallelogram area:", round(area_par, 4))
-print("3d parallelogram area matches cross product magnitude")
+normal_vec = np.cross(edge1, edge2)
+triangle_area = 0.5 * np.linalg.norm(normal_vec)
+parallelogram_area = np.linalg.norm(normal_vec)
+
+print("surface normal vector:", normal_vec)
+print("triangle area (m^2):", triangle_area)
+print("parallelogram area (m^2):", parallelogram_area)
