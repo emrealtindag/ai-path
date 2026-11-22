@@ -21,9 +21,9 @@ using namespace std;
 
 int main() {
     cout << "Three\n" << "Two\n" << "One\n";
-    cout << "\"Aysun\"" << endl;
-    cout << "\'Guran\'" << endl;
-    cout << "Aysun\tGuran" << endl; // tab indentation
+    cout << "\"Emre\"" << endl;
+    cout << "\'Altindag\'" << endl;
+    cout << "Emre\tAltindag" << endl; // tab indentation
     return 0;
 }
 ```

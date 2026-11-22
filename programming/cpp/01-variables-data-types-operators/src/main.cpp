@@ -8,7 +8,7 @@ int main() {
     // 1. escape sequences
     cout << "--- 1. escape characters ---\n";
     cout << "Three\nTwo\nOne\n";
-    cout << "\"Aysun\"\t\'Guran\'\n\n";
+    cout << "\"Emre\"\t\'Altindag\'\n\n";
 
     // 2. arithmetic and division precision
     cout << "--- 2. division precision ---\n";
