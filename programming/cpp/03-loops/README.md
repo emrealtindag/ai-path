@@ -1,23 +1,47 @@
 # loops
 
-iteration constructs, condition-based loops, counter loops, state tracing, series summations, prime number algorithms, and flow control in c++ (all examples assume using namespace std;).
+while, do-while and for loops, counters, sums, series, prime numbers, break and continue. all code uses `using namespace std;`.
 
 ---
 
-## while loops and condition-based iteration
-
-a `while` loop checks its condition before executing the loop body. if the condition evaluates to false at the start, the body never runs.
+## while loop
 
 ```cpp
 while (condition) {
-    // executes repeatedly while condition evaluates to true
+    // runs again and again as long as the condition is true
 }
 ```
+
+the condition is checked before every pass. if it is false at the start, the body never runs.
+
+### how it runs
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int i = 1;
+    while (i <= 3) {
+        cout << "Hello " << i << endl;
+        i++;
+    }
+    return 0;
+}
+```
+
+output:
+
+```text
+Hello 1
+Hello 2
+Hello 3
+```
+
+after the third pass `i` becomes 4, `4 <= 3` is false and the loop ends. if you forget `i++`, the condition never becomes false and the loop runs forever.
 
 ### problem 1: even numbers up to 30
 
-prints even numbers starting from 0 up to 30:
-
 ```cpp
 #include <iostream>
 using namespace std;
@@ -25,39 +49,36 @@ using namespace std;
 int main() {
     int i = 0;
     while (i <= 30) {
-        cout << i << " ";
-        i += 2;
+        cout << i << endl;
+        i = i + 2;
     }
-    cout << "\n";
     return 0;
 }
 ```
 
-### problem 2: multiples of 3 with step counter
+### problem 2: multiples of 3 and counting them
 
-prints multiples of 3 up to 30 and counts total elements using an accumulator counter:
+prints 0, 3, 6, ..., 30 and counts how many numbers were printed.
 
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
+    int i = 0;
     int counter = 0;
-    int i = 0;
 
     while (i <= 30) {
-        cout << i << " ";
+        cout << i << endl;
         counter++;
-        i += 3;
+        i = i + 3;
     }
-    cout << "\ntotal elements: " << counter << "\n"; // outputs 11 numbers (0, 3, 6, ..., 30)
+    cout << counter << " numbers" << endl; // 11 numbers
     return 0;
 }
 ```
 
-### problem 3: counting steps and calculating the mean (average)
-
-sums integers from 1 to 10, counts the iterations, and calculates the floating-point mean:
+### problem 3: sum, count and mean of 1 to 10
 
 ```cpp
 #include <iostream>
@@ -69,21 +90,21 @@ int main() {
     int sum = 0;
 
     while (x <= 10) {
-        sum += x;
+        sum = sum + x;
         x++;
         counter++;
     }
 
-    double mean = static_cast<double>(sum) / counter;
-    cout << "sum: " << sum << ", count: " << counter << ", mean: " << mean << "\n";
-    // sum: 55, count: 10, mean: 5.5
+    cout << "there are " << counter << " numbers on your screen" << endl; // 10
+    cout << "the sum of listed numbers is " << sum << endl;              // 55
+    cout << "the mean of numbers " << (double)sum / counter << endl;     // 5.5
     return 0;
 }
 ```
 
-### problem 4: student grade accumulator with constant population
+check: 1 + 2 + ... + 10 = 10 * 11 / 2 = 55. without `(double)` the mean would be 5, because int / int cuts the decimals.
 
-prompts the user to enter grades for a fixed class population one by one and computes the class total:
+### problem 4: entering grades for a class
 
 ```cpp
 #include <iostream>
@@ -93,26 +114,25 @@ int main() {
     const int population = 10;
     int i = 1;
     double grade;
-    double sum = 0.0;
+    double sum = 0;
 
-    cout << "please start entering grades one by one:\n";
+    cout << "please start to enter grades one by one = " << endl;
 
     while (i <= population) {
-        cout << "enter grade " << i << " from keyboard: ";
+        cout << "enter the grade " << i << " from the keyboard" << endl;
         cin >> grade;
-        sum += grade;
+        sum = sum + grade;
         i++;
     }
 
-    cout << "total grade sum: " << sum << "\n";
-    cout << "class average: " << (sum / population) << "\n";
+    cout << "average: " << sum / population << endl;
     return 0;
 }
 ```
 
-### problem 5: factorial with positive input validation loop
+### problem 5: factorial with input check
 
-validates that user input is non-negative before computing factorial:
+the first `while` keeps asking until the user enters a number that is not negative.
 
 ```cpp
 #include <iostream>
@@ -120,56 +140,73 @@ using namespace std;
 
 int main() {
     int number;
-    cout << "enter a number: ";
+    int factorial = 1;
+
+    cout << "Enter a number from the keyboard = ";
     cin >> number;
 
-    // input validation loop: repeats until non-negative number is entered
     while (number < 0) {
-        cout << "enter a positive number: ";
+        cout << "enter positive ";
         cin >> number;
     }
 
-    int factorial = 1;
     int start = 1;
     while (start <= number) {
-        factorial *= start;
+        factorial = factorial * start;
         start++;
     }
-    cout << number << "! = " << factorial << "\n";
+
+    cout << number << "! = " << factorial << endl;
     return 0;
 }
 ```
 
-### problem 6: greatest common divisor (gcd / ebob)
+the same idea with a counter, 5! = 1 * 2 * 3 * 4 * 5:
 
-finds the largest positive integer dividing two inputs without remainder:
+```cpp
+int prod = 1;
+int i = 1;
+int counter = 0;
+
+while (i <= 5) {
+    counter++;
+    prod = prod * i;
+    i++;
+}
+cout << counter << "! = " << prod << endl; // 5! = 120
+```
+
+### problem 6: greatest common divisor
+
+try every number `f` from 2 up to the smaller input. if both numbers divide by `f`, save it. the last saved one is the biggest.
 
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-    int num1, num2;
-    cout << "enter two numbers: ";
-    cin >> num1 >> num2;
+    int number1, number2;
+    cout << "enter two numbers ";
+    cin >> number1 >> number2;
 
     int gcd = 1;
     int f = 2;
 
-    while (f <= num1 && f <= num2) {
-        if (num1 % f == 0 && num2 % f == 0) {
+    while (f <= number1 && f <= number2) {
+        if (number1 % f == 0 && number2 % f == 0) {
             gcd = f;
         }
         f++;
     }
-    cout << "greatest common divisor: " << gcd << "\n";
+
+    cout << "the greatest common divisor for " << number1 << " and " << number2 << " is " << gcd << endl;
     return 0;
 }
 ```
 
-### problem 7: arithmetic quiz loop with random numbers
+### problem 7: addition quiz
 
-generates two random numbers below 10 and prompts repeatedly until the user answers correctly:
+asks the same question until the answer is correct.
 
 ```cpp
 #include <iostream>
@@ -179,25 +216,27 @@ using namespace std;
 
 int main() {
     srand(time(0));
-    int n1 = rand() % 10;
-    int n2 = rand() % 10;
-
+    int number1 = rand() % 10;
+    int number2 = rand() % 10;
     int answer;
-    cout << "what is " << n1 << " + " << n2 << "? ";
+
+    cout << "what is " << number1 << " + " << number2 << " ? ";
     cin >> answer;
 
-    while (n1 + n2 != answer) {
-        cout << "wrong answer! try again: ";
+    while (number1 + number2 != answer) {
+        cout << "its wrong" << endl;
+        cout << "what is " << number1 << " + " << number2 << " ? ";
         cin >> answer;
     }
-    cout << "correct! you got this.\n";
+
+    cout << "you got this" << endl;
     return 0;
 }
 ```
 
-### problem 8: guess the magic number (0 to 100)
+### problem 8: guess the magic number
 
-generates a random target and provides high/low hints until guessed:
+`guess` starts at -1 so the loop runs at least once (the magic number is never -1).
 
 ```cpp
 #include <iostream>
@@ -207,61 +246,60 @@ using namespace std;
 
 int main() {
     srand(time(0));
-    int magic_number = rand() % 101; // 0 to 100
     int guess = -1;
+    int magicNumber = rand() % 101; // 0 to 100
 
-    while (guess != magic_number) {
-        cout << "enter a number between 0 and 100: ";
+    while (guess != magicNumber) {
+        cout << "Enter a number between [0-100] = ";
         cin >> guess;
 
-        if (guess == magic_number) {
-            cout << "yes you got it! magic number was " << magic_number << "\n";
-        } else if (guess < magic_number) {
-            cout << "your guess is too low\n";
-        } else {
-            cout << "your guess is too high\n";
-        }
+        if (guess == magicNumber)
+            cout << "Yes you got it..." << endl;
+        else if (guess < magicNumber)
+            cout << "Your guess is too low" << endl;
+        else
+            cout << "Your guess is too high" << endl;
     }
+
+    cout << "The magic number was " << magicNumber << endl;
     return 0;
 }
 ```
 
 ---
 
-## do-while loops (post-condition iteration)
-
-a `do-while` loop executes its body first, then evaluates the condition at the end. this guarantees that the loop runs at least once, making it ideal for menus and input validation.
+## do-while loop
 
 ```cpp
 do {
-    // executes at least once before condition is evaluated
-} while (condition);
+    // runs first
+} while (condition); // then checks the condition
 ```
 
-### problem 9: sum numbers until user enters zero
+the body runs once before the condition is checked, so it always runs at least one time. good for menus and for asking input until it is valid. don't forget the `;` after `while (...)`.
+
+### problem 9: add numbers until 0
 
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-    int number;
     int sum = 0;
+    int number;
 
     do {
-        cout << "enter a number (0 to stop): ";
+        cout << "enter a number ";
         cin >> number;
-        sum += number;
+        sum = sum + number;
     } while (number != 0);
 
-    cout << "total sum: " << sum << "\n";
+    cout << "sum: " << sum << endl;
     return 0;
 }
 ```
 
-### problem 10: interactive atm banking menu
-
-redisplays account actions until user selects 0 to exit:
+### problem 10: atm menu
 
 ```cpp
 #include <iostream>
@@ -269,98 +307,162 @@ using namespace std;
 
 int main() {
     int choice;
-    int balance = 500;
 
     do {
-        cout << "\n--- atm menu ---\n";
-        cout << "1. check balance\n";
-        cout << "2. deposit money\n";
-        cout << "0. exit\n";
-        cout << "your choice: ";
+        // the menu is printed at least once, before the condition is checked
+        cout << "\n--- MENU ---" << endl;
+        cout << "1. Check Balance" << endl;
+        cout << "2. Deposit Money" << endl;
+        cout << "0. Exit" << endl;
+        cout << "Your choice: ";
         cin >> choice;
 
         if (choice == 1) {
-            cout << "current balance: " << balance << " tl\n";
+            cout << "Your balance: 500 TL" << endl;
         } else if (choice == 2) {
-            int deposit;
-            cout << "enter deposit amount: ";
-            cin >> deposit;
-            balance += deposit;
-            cout << "updated balance: " << balance << " tl\n";
+            cout << "Deposit selected." << endl;
         } else if (choice != 0) {
-            cout << "invalid selection, please retry.\n";
+            cout << "Invalid choice! Please try again." << endl;
         }
+        // goes back to the top until the user enters 0
     } while (choice != 0);
 
-    cout << "session closed.\n";
+    cout << "Program closed." << endl;
     return 0;
 }
 ```
 
-### problem 11: even and odd numbers accumulator with continue prompt
-
-reads numbers, separates evens and odds, and prompts whether to continue:
+### problem 11: sum of even and odd numbers
 
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-    int num;
+    int number;
     char choice;
-    int sum_even = 0;
-    int sum_odd = 0;
+    int sumOfEvenNumbers = 0;
+    int sumOfOddNumbers = 0;
 
     do {
-        cout << "enter a number: ";
-        cin >> num;
+        cout << "enter a number" << endl;
+        cin >> number;
 
-        if (num % 2 == 0) {
-            sum_even += num;
-        } else {
-            sum_odd += num;
-        }
+        if (number % 2 == 0)
+            sumOfEvenNumbers = sumOfEvenNumbers + number;
+        else
+            sumOfOddNumbers = sumOfOddNumbers + number;
 
-        cout << "do you want to continue (y/n)? ";
+        cout << "do you want to continue " << endl;
         cin >> choice;
     } while (choice == 'y' || choice == 'Y');
 
-    cout << "sum of evens: " << sum_even << "\n";
-    cout << "sum of odds: " << sum_odd << "\n";
+    cout << "the sum of even numbers is " << sumOfEvenNumbers << endl;
+    cout << "the sum of odd numbers is " << sumOfOddNumbers << endl;
     return 0;
 }
 ```
 
 ---
 
-## for loops and iteration state tracing
-
-a `for` loop packages initialization, condition, and increment into a concise header:
+## for loop
 
 ```cpp
 for (initialization; condition; increment) {
-    // body
+    // code
 }
 ```
 
-### execution lifecycle
+order of steps:
 
-1. **initialization**: runs once before the first pass.
-2. **condition**: evaluated before every pass. if false, loop exits immediately.
-3. **body**: executes while condition is true.
-4. **increment / update**: executes after each body pass, updating loop control variables.
-5. steps 2-4 repeat until condition fails.
+1. initialization runs once at the start.
+2. the condition is checked. if it is false, the loop ends.
+3. the code inside runs.
+4. the increment runs, then back to step 2.
 
-for `for (int i = 1; i <= 3; i++) cout << "hello " << i;`:
-- pass 1: $i = 1$, condition $1 \le 3$ true -> prints `"hello 1"`, $i++ \to 2$
-- pass 2: $i = 2$, condition $2 \le 3$ true -> prints `"hello 2"`, $i++ \to 3$
-- pass 3: $i = 3$, condition $3 \le 3$ true -> prints `"hello 3"`, $i++ \to 4$
-- exit check: $i = 4$, condition $4 \le 3$ false -> loop terminates.
-- if $i$ is declared outside the loop, its post-loop value is **4**.
+### tracing a for loop
 
-### problem 12: repeating a task multiple times using nested outer loop
+```cpp
+#include <iostream>
+using namespace std;
 
-running an inner factorial computation 3 consecutive times via an outer counter loop:
+int main() {
+    int i;
+    for (i = 1; i <= 3; i++) {
+        cout << "Hello" << i << endl;
+    }
+    cout << i << endl;
+    return 0;
+}
+```
+
+- first: i = 1, 1 <= 3 is true, prints Hello1, then i++ makes i = 2
+- second: i = 2, 2 <= 3 is true, prints Hello2, then i = 3
+- third: i = 3, 3 <= 3 is true, prints Hello3, then i = 4
+- i = 4, 4 <= 3 is false, the loop ends and nothing is printed
+- the `cout << i` after the loop prints 4. this only works because `i` was declared outside the loop. with `for (int i = 1; ...)`, `i` doesn't exist after the loop.
+
+### while vs for
+
+the same loop both ways:
+
+```cpp
+int j = 0;
+while (j <= 10) {
+    cout << j << endl;
+    j++;
+}
+
+for (int i = 0; i <= 10; i++) {
+    cout << i << endl;
+}
+```
+
+### problem 12: sum and count with for
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int sum = 0;
+    int counter = 0;
+
+    for (int i = 0; i <= 10; i++) {
+        cout << i << endl;
+        sum = sum + i;
+        counter++;
+    }
+
+    cout << "sum: " << sum << " count: " << counter << endl; // sum: 55 count: 11
+    return 0;
+}
+```
+
+### problem 13: factorial with for
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int number;
+    cout << "enter a number" << endl;
+    cin >> number;
+
+    int factorial = 1;
+    for (int i = 1; i <= number; i++) {
+        factorial = factorial * i;
+    }
+
+    cout << number << "! = " << factorial << endl;
+    return 0;
+}
+```
+
+### problem 14: running the factorial 3 times
+
+the whole program is put inside a loop that runs 3 times. it can be a `while` or a `for (counter = 1; counter <= 3; counter++)`.
 
 ```cpp
 #include <iostream>
@@ -369,61 +471,66 @@ using namespace std;
 int main() {
     int counter = 1;
 
-    while (counter <= 3) {
-        cout << "\n[attempt " << counter << " of 3]\n";
-
+    while (counter <= 3) { // tries 3 times
         int number;
-        cout << "enter a positive number: ";
+        cout << "enter a number" << endl;
         cin >> number;
 
         int factorial = 1;
         for (int i = 1; i <= number; i++) {
-            factorial *= i;
+            factorial = factorial * i;
         }
-        cout << number << "! = " << factorial << "\n";
+
+        cout << number << "! = " << factorial << endl;
         counter++;
     }
     return 0;
 }
 ```
 
-### problem 13: multiplication tables
+### problem 15: multiplication table
 
-single number table:
+one number:
 
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-    int number = 5;
+    int number;
+    cout << "enter a number" << endl;
+    cin >> number;
+
     for (int i = 1; i <= 10; i++) {
-        cout << i << " * " << number << " = " << (i * number) << "\n";
+        cout << i << " * " << number << " = " << i * number << endl;
     }
     return 0;
 }
 ```
 
-full 1 to 10 nested multiplication grid:
+1 to 10, a loop inside a loop. for every value of `counter` the inner `for` runs 10 times:
 
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-    for (int i = 1; i <= 10; i++) {
-        for (int j = 1; j <= 10; j++) {
-            cout << (i * j) << "\t";
+    int counter = 1;
+
+    while (counter <= 10) {
+        for (int i = 1; i <= 10; i++) {
+            cout << i << " * " << counter << " = " << i * counter << endl;
         }
-        cout << "\n";
+        counter++;
+        cout << "*****" << endl;
     }
     return 0;
 }
 ```
 
-### problem 14: integer power computation without pow()
+### problem 16: power without pow()
 
-computes $base^{power}$ using loops and multiplications:
+2^3 = 2 * 2 * 2, so multiply `base` by itself `power` times. the `do-while`s keep asking until the values are not negative.
 
 ```cpp
 #include <iostream>
@@ -431,69 +538,113 @@ using namespace std;
 
 int main() {
     int base, power;
+
     do {
-        cout << "enter positive base: ";
+        cout << "enter a positive base value" << endl;
         cin >> base;
     } while (base < 0);
 
     do {
-        cout << "enter positive power: ";
+        cout << "enter a positive power value" << endl;
         cin >> power;
     } while (power < 0);
 
     int product = 1;
     for (int i = 1; i <= power; i++) {
-        product *= base;
+        product = product * base;
     }
-    cout << base << " raised to the power of " << power << " is " << product << "\n";
+
+    cout << base << " raised to the power of " << power << " is " << product << endl;
     return 0;
 }
 ```
 
-### problem 15: harmonic and alternating series summation
-
-harmonic series:
-$$\sum_{i=1}^n \frac{1}{i} = 1 + \frac{1}{2} + \frac{1}{3} + \dots + \frac{1}{n}$$
+### problem 17: 1 + 1/2 + 1/3 + ... + 1/n
 
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-    int n = 10;
-    double sum = 0.0;
+    int n;
+    do {
+        cout << "enter the positive n" << endl;
+        cin >> n;
+    } while (n < 0);
+
+    double sum = 0;
     for (int i = 1; i <= n; i++) {
-        sum += (1.0 / i);
+        sum = sum + (1.0 / i); // 1 / i would be 0 for every i > 1
     }
-    cout << "harmonic sum: " << sum << "\n";
+
+    cout << "Sum of the sequence is " << sum << endl;
     return 0;
 }
 ```
 
-alternating series:
-$$\sum_{i=1}^n \frac{(-1)^{i+1}}{i} = 1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \dots$$
+### problem 18: 1 - 1/2 + 1/3 - 1/4 + ...
+
+`p` flips between 1 and -1 every pass, so the signs alternate.
 
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-    int n = 6;
-    double sum = 0.0;
-    int p = 1; // sign toggler
+    int n;
+    int p = 1;
+    do {
+        cout << "enter the positive n" << endl;
+        cin >> n;
+    } while (n < 0);
 
+    double sum = 0;
     for (int i = 1; i <= n; i++) {
-        sum += (1.0 / i) * p;
-        p = -p; // flips between +1 and -1
+        sum = sum + (1.0 / i) * p;
+        p = -p;
     }
-    cout << "alternating sum: " << sum << "\n";
+
+    cout << "Sum of the sequence is " << sum << endl;
     return 0;
 }
 ```
 
-### problem 16: prime number checker (flag method)
+---
 
-checks whether a positive integer is prime using a boolean flag and early break:
+## break and continue
+
+- `break`: leaves the loop completely.
+- `continue`: skips the rest of this pass and goes to the next one.
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    for (int i = 1; i <= 5; i++) {
+        if (i == 3)
+            break;
+        cout << i << endl; // 1 2, the loop stops at 3
+    }
+
+    for (int i = 1; i <= 5; i++) {
+        if (i == 3)
+            continue;
+        cout << i << endl; // 1 2 4 5, only 3 is skipped
+    }
+    return 0;
+}
+```
+
+---
+
+## prime numbers
+
+a prime number divides only by 1 and itself. 1 is not prime.
+
+### problem 19: is it prime
+
+start with `flag = true`. try every number from 2 to `number - 1`. if one of them divides the number, set `flag = false` and `break`, there is no need to keep checking.
 
 ```cpp
 #include <iostream>
@@ -502,100 +653,72 @@ using namespace std;
 int main() {
     int number;
     do {
-        cout << "enter positive number: ";
+        cout << "Enter a positive number = ";
         cin >> number;
     } while (number < 0);
 
-    bool is_prime = true;
-
-    if (number <= 1) {
-        is_prime = false;
-    } else {
-        for (int i = 2; i < number; i++) {
-            if (number % i == 0) {
-                is_prime = false;
-                break; // divisor found, exit early
-            }
+    bool flag = true;
+    for (int i = 2; i <= number - 1; i++) {
+        if (number % i == 0) {
+            flag = false;
+            break;
         }
     }
 
-    if (is_prime) {
-        cout << number << " is a prime number\n";
-    } else {
-        cout << number << " is not a prime number\n";
-    }
+    if ((flag == true) && (number != 1))
+        cout << number << " is a prime number" << endl;
+    else
+        cout << number << " is not a prime number" << endl;
     return 0;
 }
 ```
 
-### problem 17: generating the first 50 prime numbers
+for 7 the loop checks 2, 3, 4, 5, 6. none of them divide 7, so it is prime. for 6 it stops at 2 because 6 % 2 == 0.
 
-prints the first 50 prime numbers, formatted 10 per row using nested loops:
+careful with 0: the loop doesn't run, `flag` stays true and 0 would be called prime. writing `number > 1` instead of `number != 1` fixes both 0 and 1.
 
-> **algorithmic optimization note:** the inner loop evaluates divisors up to `number / 2` (or $\sqrt{number}$). no composite integer can have a divisor larger than half its value, which cuts loop iterations in half compared to testing all numbers up to $n-1$.
+### problem 20: the first 50 prime numbers, 10 per line
 
 ```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
-    const int number_of_primes = 50;
-    const int primes_per_line = 10;
-
-    int count = 0;
+    const int NUMBER_OF_PRIMES = 50;
+    const int NUMBER_OF_PRIMES_PER_LINE = 10;
+    int counter = 0;
     int number = 2;
 
-    cout << "the first 50 prime numbers are:\n";
+    cout << "The first 50 prime numbers are = " << endl;
 
-    while (count < number_of_primes) {
-        bool is_prime = true;
+    while (counter < NUMBER_OF_PRIMES) {
+        bool isPrime = true;
 
         for (int i = 2; i <= number / 2; i++) {
             if (number % i == 0) {
-                is_prime = false;
+                isPrime = false;
                 break;
             }
         }
 
-        if (is_prime) {
-            count++;
-            cout << number << "\t";
-
-            if (count % primes_per_line == 0) {
-                cout << "\n";
-            }
+        if (isPrime) {
+            counter++;
+            if (counter % NUMBER_OF_PRIMES_PER_LINE == 0)
+                cout << number << endl;
+            else
+                cout << number << " ";
         }
+
         number++;
     }
     return 0;
 }
 ```
 
----
+how it works:
 
-## loop flow control: break vs continue
-
-- **`break`**: terminates the surrounding loop immediately and jumps out of the loop block.
-- **`continue`**: skips the remainder of the current iteration and jumps directly to the increment/update step.
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    // break example
-    for (int i = 1; i <= 5; i++) {
-        if (i == 3) break; // stops when i == 3 (prints 1, 2)
-        cout << i << " ";
-    }
-    cout << "\n";
-
-    // continue example
-    for (int i = 1; i <= 5; i++) {
-        if (i == 3) continue; // skips 3, continues with 4, 5 (prints 1, 2, 4, 5)
-        cout << i << " ";
-    }
-    cout << "\n";
-    return 0;
-}
-```
+- `number` starts at 2 and goes up by one every pass of the `while`.
+- the `for` checks if `number` is prime. the `while` keeps going until 50 primes have been found.
+- `counter % 10 == 0` is true at the 10th, 20th, 30th... prime, so a new line starts after every 10 numbers.
+- inside the loop it has to be `number % i`, not `number % 2`. with `% 2` it checks the same thing on every pass and only tests if the number is even.
+- why `number / 2` is enough: a number can't be divided by anything bigger than its half, except itself. for example 24 / 2 = 12, and 24 has no divisor between 12 and 24. so checking up to `number / 2` gives the same answer as checking up to `number - 1` with about half the work.

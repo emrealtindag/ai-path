@@ -1,21 +1,21 @@
 # modern c++
 
-foundations, memory architecture, data structures, and systems programming in modern c++.
+c++ notes, starting from the basics we cover in class and going towards memory, data structures and systems programming.
 
 ---
 
-## module index
+## modules
 
-the fundamentals track covers core language syntax, type systems, control flow, loops, and string processing derived from university course notes and production standards (all modules use using namespace std;):
+all code uses `using namespace std;`, the same way we write it in class.
 
-1. **[01-variables-data-types-operators](./01-variables-data-types-operators/)**: fundamental types (`int`, `double`, `float`, `char`, `bool`), byte sizes, type casting (`(double)` and `static_cast`), arithmetic operators, compound assignments, standard streams (`cin`, `cout`), and output formatting (`<iomanip>`, `<cmath>`).
-2. **[02-conditions](./02-conditions/)**: relational comparisons, boolean algebra (`&&`, `||`, `!`, `^`), truth tables, short-circuit evaluation, conditional branching (`if`, `else if`, `else`), and multi-way jump tables (`switch`, `case`, `break`, fall-through).
-3. **[03-loops](./03-loops/)**: pre-condition iteration (`while`), post-condition iteration (`do-while`), counter loops (`for`), state tracing tables, loop variables, accumulator patterns, prime algorithms, jump statements (`break`, `continue`), and nested loops.
-4. **[04-strings](./04-strings/)**: primitive `char` vs `string`, stack/heap contiguous storage, zero-based indexing (`str[i]`), traversal methods, and line extraction (`getline`).
+1. **[01-variables-data-types-operators](./01-variables-data-types-operators/)**: first program, comments, `endl` vs `\n`, escape characters, data types, integer division and casting, `%`, `<cmath>`, `const`, `setprecision` and `fixed`, compound operators, `++` / `--`.
+2. **[02-conditions](./02-conditions/)**: comparisons, `boolalpha`, `&&` `||` `^` `!` and truth tables, if / else if / else, `rand` and `srand`, `switch` and fall-through, ascii codes, `<cctype>`, the ternary operator.
+3. **[03-loops](./03-loops/)**: `while`, `do-while`, `for`, tracing loops, counters and sums, series, nested loops, `break` / `continue`, prime numbers.
+4. **[04-strings](./04-strings/)**: `char` vs `string`, indexes, `length()`, looping over a string, `getline` and `cin.ignore()`.
 
 ---
 
-## upcoming modules
+## next modules
 
 - `05-functions-and-scope`
 - `06-arrays-and-pointers`
