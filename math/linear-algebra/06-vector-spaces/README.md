@@ -357,9 +357,30 @@ null space and rank-nullity theorem tests:
 
 where vector spaces, bases, change of basis and null space run inside real robotics and autonomous flight systems:
 
-- **reference frames and coordinate transformations in uavs**: a drone constantly transforms vector quantities between reference bases (inertial world frame $\mathcal{W}$, body frame $\mathcal{B}$, camera frame $\mathcal{C}$). changing coordinates via $[v]_\mathcal{B} = P_{\mathcal{C} \to \mathcal{B}} [v]_\mathcal{C}$ is the exact mathematical definition of change of basis.
-- **state space representations in control (6-dof)**: the state of an autonomous drone is modeled as a vector in a 12-dimensional vector space $\mathbb{R}^{12}$ containing position $(x, y, z)$, velocity $(\dot{x}, \dot{y}, \dot{z})$, attitude angles $(\phi, \theta, \psi)$, and angular rates $(p, q, r)$. the dimension of this vector space equals the state degrees of freedom.
-- **actuator redundancy and null space control**: an aerial vehicle or robotic arm with redundant actuators (e.g. an 8-rotor octocopter controlling 6-dof flight motion) has an underdetermined control allocation matrix $A \in \mathbb{R}^{6 \times 8}$. the null space $\text{null}(A)$ has dimension $8 - 6 = 2$. internal motor mixing commands that lie within this null space ($A u_{\text{null}} = 0$) generate zero net vehicle force and torque, allowing the flight controller to redistribute rotor loads or handle single motor failures without perturbing flight trajectory.
+- **reference frames and coordinate transformations in uavs**: a drone constantly transforms vector quantities between reference bases (inertial world frame $\mathcal{W}$, body frame $\mathcal{B}$, camera frame $\mathcal{C}$). changing coordinates via:
+
+$$
+[v]_\mathcal{B} = P_{\mathcal{C} \to \mathcal{B}} [v]_\mathcal{C}
+$$
+
+  is the exact mathematical definition of change of basis. for example, transforming an obstacle vector detected in camera coordinates into body coordinates for collision avoidance.
+
+- **state space representations in control (6-dof)**: the state of an autonomous drone is modeled as a vector in a 12-dimensional vector space:
+
+$$
+x = \begin{bmatrix} x & y & z & \dot{x} & \dot{y} & \dot{z} & \phi & \theta & \psi & p & q & r \end{bmatrix}^T \in \mathbb{R}^{12}
+$$
+
+  containing position $(x, y, z)$, velocity $(\dot{x}, \dot{y}, \dot{z})$, attitude angles $(\phi, \theta, \psi)$, and angular rates $(p, q, r)$. the dimension of this vector space equals the state degrees of freedom.
+
+- **actuator redundancy and null space control**: an aerial vehicle or robotic arm with redundant actuators (e.g. an 8-rotor octocopter controlling 6-dof flight motion) has an underdetermined control allocation matrix $A \in \mathbb{R}^{6 \times 8}$. the null space $\text{null}(A)$ has dimension $8 - 6 = 2$:
+
+$$
+A u_{\text{null}} = 0
+$$
+
+  internal motor mixing commands that lie within this null space generate zero net vehicle force and torque, allowing the flight controller to redistribute rotor loads or handle single motor failures without perturbing flight trajectory.
+
 - **lidar plane fitting and rank checks**: in 3d point cloud perception, extracting planar patches requires computing the rank of neighbor covariance matrices. rank 3 corresponds to a volumetric obstacle, rank 2 corresponds to a flat driveable surface or wall, and rank 1 corresponds to a linear power line or thin cable.
 
 ---
