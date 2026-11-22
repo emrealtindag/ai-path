@@ -1,6 +1,6 @@
 # loops
 
-detailed study notes, algorithm patterns, and classroom problem solutions covering while, do-while, and for iteration constructs in c++.
+detailed study notes, algorithm patterns, and classroom problem solutions covering while, do-while, and for iteration constructs in c++ (all examples assume using namespace std;).
 
 ---
 
@@ -15,7 +15,7 @@ prints only even numbers starting from 0 up to 30:
 ```cpp
 int i = 0;
 while (i <= 30) {
-    std::cout << i << " ";
+    cout << i << " ";
     i += 2;
 }
 ```
@@ -36,7 +36,7 @@ while (x <= 10) {
 }
 
 double mean = static_cast<double>(sum) / counter;
-std::cout << "sum: " << sum << ", count: " << counter << ", mean: " << mean << "\n";
+cout << "sum: " << sum << ", count: " << counter << ", mean: " << mean << "\n";
 // sum: 55, count: 10, mean: 5.5
 ```
 
@@ -46,13 +46,13 @@ validates that user input is non-negative before computing factorial:
 
 ```cpp
 int number;
-std::cout << "enter a number: ";
-std::cin >> number;
+cout << "enter a number: ";
+cin >> number;
 
 // input validation
 while (number < 0) {
-    std::cout << "enter a positive number: ";
-    std::cin >> number;
+    cout << "enter a positive number: ";
+    cin >> number;
 }
 
 int factorial = 1;
@@ -61,7 +61,7 @@ while (start <= number) {
     factorial *= start;
     start++;
 }
-std::cout << number << "! = " << factorial << "\n";
+cout << number << "! = " << factorial << "\n";
 ```
 
 ### problem 4: greatest common divisor (gcd / ebob)
@@ -70,7 +70,7 @@ finds the largest positive integer that divides two input numbers without remain
 
 ```cpp
 int num1, num2;
-std::cin >> num1 >> num2;
+cin >> num1 >> num2;
 
 int gcd = 1;
 int f = 2;
@@ -81,7 +81,7 @@ while (f <= num1 && f <= num2) {
     }
     f++;
 }
-std::cout << "greatest common divisor: " << gcd << "\n";
+cout << "greatest common divisor: " << gcd << "\n";
 ```
 
 ### problem 5: subtraction quiz with random numbers
@@ -97,14 +97,14 @@ int n1 = rand() % 10;
 int n2 = rand() % 10;
 
 int answer;
-std::cout << "what is " << n1 << " + " << n2 << "? ";
-std::cin >> answer;
+cout << "what is " << n1 << " + " << n2 << "? ";
+cin >> answer;
 
 while (n1 + n2 != answer) {
-    std::cout << "wrong answer! try again: ";
-    std::cin >> answer;
+    cout << "wrong answer! try again: ";
+    cin >> answer;
 }
-std::cout << "correct!\n";
+cout << "correct!\n";
 ```
 
 ### problem 6: guess the magic number (0 to 100)
@@ -116,15 +116,15 @@ int magic_number = rand() % 101; // 0 to 100
 int guess = -1;
 
 while (guess != magic_number) {
-    std::cout << "enter a number between 0 and 100: ";
-    std::cin >> guess;
+    cout << "enter a number between 0 and 100: ";
+    cin >> guess;
 
     if (guess == magic_number) {
-        std::cout << "yes you got it! magic number was " << magic_number << "\n";
+        cout << "yes you got it! magic number was " << magic_number << "\n";
     } else if (guess < magic_number) {
-        std::cout << "your guess is too low\n";
+        cout << "your guess is too low\n";
     } else {
-        std::cout << "your guess is too high\n";
+        cout << "your guess is too high\n";
     }
 }
 ```
@@ -144,27 +144,27 @@ int choice;
 int balance = 500;
 
 do {
-    std::cout << "\n--- atm menu ---\n";
-    std::cout << "1. check balance\n";
-    std::cout << "2. deposit money\n";
-    std::cout << "0. exit\n";
-    std::cout << "your choice: ";
-    std::cin >> choice;
+    cout << "\n--- atm menu ---\n";
+    cout << "1. check balance\n";
+    cout << "2. deposit money\n";
+    cout << "0. exit\n";
+    cout << "your choice: ";
+    cin >> choice;
 
     if (choice == 1) {
-        std::cout << "current balance: " << balance << " tl\n";
+        cout << "current balance: " << balance << " tl\n";
     } else if (choice == 2) {
         int deposit;
-        std::cout << "enter deposit amount: ";
-        std::cin >> deposit;
+        cout << "enter deposit amount: ";
+        cin >> deposit;
         balance += deposit;
-        std::cout << "updated balance: " << balance << " tl\n";
+        cout << "updated balance: " << balance << " tl\n";
     } else if (choice != 0) {
-        std::cout << "invalid selection, please retry.\n";
+        cout << "invalid selection, please retry.\n";
     }
 } while (choice != 0);
 
-std::cout << "session closed.\n";
+cout << "session closed.\n";
 ```
 
 ### problem 8: even and odd numbers accumulator with continue prompt
@@ -178,8 +178,8 @@ int sum_even = 0;
 int sum_odd = 0;
 
 do {
-    std::cout << "enter a number: ";
-    std::cin >> num;
+    cout << "enter a number: ";
+    cin >> num;
 
     if (num % 2 == 0) {
         sum_even += num;
@@ -187,12 +187,12 @@ do {
         sum_odd += num;
     }
 
-    std::cout << "do you want to continue (y/n)? ";
-    std::cin >> choice;
+    cout << "do you want to continue (y/n)? ";
+    cin >> choice;
 } while (choice == 'y' || choice == 'Y');
 
-std::cout << "sum of evens: " << sum_even << "\n";
-std::cout << "sum of odds: " << sum_odd << "\n";
+cout << "sum of evens: " << sum_even << "\n";
+cout << "sum of odds: " << sum_odd << "\n";
 ```
 
 ---
@@ -229,7 +229,7 @@ single number table:
 ```cpp
 int number = 5;
 for (int i = 1; i <= 10; i++) {
-    std::cout << i << " * " << number << " = " << (i * number) << "\n";
+    cout << i << " * " << number << " = " << (i * number) << "\n";
 }
 ```
 
@@ -237,9 +237,9 @@ nested loop generating full 1 to 10 multiplication table:
 ```cpp
 for (int i = 1; i <= 10; i++) {
     for (int j = 1; j <= 10; j++) {
-        std::cout << (i * j) << "\t";
+        cout << (i * j) << "\t";
     }
-    std::cout << "\n";
+    cout << "\n";
 }
 ```
 
@@ -250,20 +250,20 @@ computes $base^{power}$ using only loops and multiplications:
 ```cpp
 int base, power;
 do {
-    std::cout << "enter positive base: ";
-    std::cin >> base;
+    cout << "enter positive base: ";
+    cin >> base;
 } while (base < 0);
 
 do {
-    std::cout << "enter positive power: ";
-    std::cin >> power;
+    cout << "enter positive power: ";
+    cin >> power;
 } while (power < 0);
 
 int product = 1;
 for (int i = 1; i <= power; i++) {
     product *= base;
 }
-std::cout << base << " raised to " << power << " is " << product << "\n";
+cout << base << " raised to " << power << " is " << product << "\n";
 ```
 
 ### problem 11: harmonic and alternating series summation
@@ -276,7 +276,7 @@ double sum = 0.0;
 for (int i = 1; i <= n; i++) {
     sum += (1.0 / i);
 }
-std::cout << "harmonic sum: " << sum << "\n";
+cout << "harmonic sum: " << sum << "\n";
 ```
 
 alternating series: $1 - 1/2 + 1/3 - 1/4 + \dots$ using a sign flipper `p`:
@@ -290,7 +290,7 @@ for (int i = 1; i <= n; i++) {
     sum += (1.0 / i) * p;
     p = -p; // flips between +1 and -1
 }
-std::cout << "alternating sum: " << sum << "\n";
+cout << "alternating sum: " << sum << "\n";
 ```
 
 ### problem 12: prime number checker
@@ -300,8 +300,8 @@ checks whether a positive integer is prime using a boolean flag and early break:
 ```cpp
 int number;
 do {
-    std::cout << "enter positive number: ";
-    std::cin >> number;
+    cout << "enter positive number: ";
+    cin >> number;
 } while (number < 0);
 
 bool is_prime = true;
@@ -318,9 +318,9 @@ if (number <= 1) {
 }
 
 if (is_prime) {
-    std::cout << number << " is a prime number\n";
+    cout << number << " is a prime number\n";
 } else {
-    std::cout << number << " is not a prime number\n";
+    cout << number << " is not a prime number\n";
 }
 ```
 
@@ -335,7 +335,7 @@ const int primes_per_line = 10;
 int count = 0;
 int number = 2;
 
-std::cout << "the first 50 prime numbers are:\n";
+cout << "the first 50 prime numbers are:\n";
 
 while (count < number_of_primes) {
     bool is_prime = true;
@@ -349,10 +349,10 @@ while (count < number_of_primes) {
 
     if (is_prime) {
         count++;
-        std::cout << number << "\t";
+        cout << number << "\t";
 
         if (count % primes_per_line == 0) {
-            std::cout << "\n";
+            cout << "\n";
         }
     }
     number++;
@@ -369,11 +369,11 @@ while (count < number_of_primes) {
 ```cpp
 for (int i = 1; i <= 5; i++) {
     if (i == 3) break; // stops when i == 3 (prints 1, 2)
-    std::cout << i << " ";
+    cout << i << " ";
 }
 
 for (int i = 1; i <= 5; i++) {
     if (i == 3) continue; // skips 3, continues with 4, 5 (prints 1, 2, 4, 5)
-    std::cout << i << " ";
+    cout << i << " ";
 }
 ```
