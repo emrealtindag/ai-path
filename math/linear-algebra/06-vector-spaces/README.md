@@ -92,20 +92,21 @@ $$
 ```python
 # independent set in r2: rank == 2, det != 0
 A_indep = np.array([[1.0, 2.0], [1.0, -3.0]])
-assert np.linalg.matrix_rank(A_indep) == 2
-assert not np.isclose(np.linalg.det(A_indep), 0.0)
+rank_indep = np.linalg.matrix_rank(A_indep)
+det_indep = np.linalg.det(A_indep)
 
 # dependent set in r2: rank == 1, det == 0
 A_dep = np.array([[1.0, 2.0], [3.0, 6.0]])
-assert np.linalg.matrix_rank(A_dep) == 1
-assert np.isclose(np.linalg.det(A_dep), 0.0)
+rank_dep = np.linalg.matrix_rank(A_dep)
+det_dep = np.linalg.det(A_dep)
+
+print("independent set rank:", rank_indep, "det:", round(det_indep, 2))
+print("dependent set rank:", rank_dep, "det:", round(det_dep, 2))
 ```
 
 ```text
-linear independence tests:
-  independent set rank = 2, det = -5.0000 -> linearly independent
-  dependent set rank = 1, det = 0.0000 -> linearly dependent
-  3d set det = 1.0000, rank = 3 -> linearly independent
+independent set rank: 2 det: -5.0
+dependent set rank: 1 det: 0.0
 ```
 
 ---
@@ -123,19 +124,21 @@ $$
 ### computational verification
 
 ```python
-# spanning set in r2: full rank spans r2
+# spanning set S1 in r2: full rank (rank == 2) spans r2
 S1 = np.array([[1.0, -1.0], [2.0, 1.0]])
-assert np.linalg.matrix_rank(S1) == 2
+rank_S1 = np.linalg.matrix_rank(S1)
 
-# non-spanning set in r2: rank 1 cannot span r2
+# non-spanning set S2 in r2: rank 1 cannot span r2
 S2 = np.array([[2.0, -1.0], [4.0, -2.0]])
-assert np.linalg.matrix_rank(S2) == 1
+rank_S2 = np.linalg.matrix_rank(S2)
+
+print("set S1 rank:", rank_S1, "spans r2:", rank_S1 == 2)
+print("set S2 rank:", rank_S2, "spans r2:", rank_S2 == 2)
 ```
 
 ```text
-spanning tests:
-  set s1 rank = 2 == 2 -> spans r2
-  set s2 rank = 1 < 2 -> fails to span r2
+set S1 rank: 2 spans r2: True
+set S2 rank: 1 spans r2: False
 ```
 
 ---
@@ -160,14 +163,18 @@ $$
 ```python
 # basis in r2: s = {[1, 2], [3, 4]} -> det != 0, rank == 2
 B = np.array([[1.0, 3.0], [2.0, 4.0]])
-assert not np.isclose(np.linalg.det(B), 0.0)
-assert np.linalg.matrix_rank(B) == 2
+det_B = np.linalg.det(B)
+dim_B = np.linalg.matrix_rank(B)
+
+print("basis matrix det:", round(det_B, 2))
+print("basis dimension (rank):", dim_B)
+print("forms valid basis:", dim_B == 2 and not np.isclose(det_B, 0.0))
 ```
 
 ```text
-basis and dimension tests:
-  basis matrix det = -2.0000 != 0, rank = 2
-  vectors form a valid basis with dimension = 2
+basis matrix det: -2.0
+basis dimension (rank): 2
+forms valid basis: True
 ```
 
 ---
