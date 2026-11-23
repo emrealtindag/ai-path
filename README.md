@@ -11,7 +11,7 @@ that is why every concept in this repository follows one rule: derive the mathem
 ## architecture pipeline
 
 ```mermaid
-flowchart lr
+flowchart TD
     m["mathematical foundations<br/>linear algebra, lie groups, calculus"] --> s["systems & modern c++<br/>memory, raii, cache locality"]
     s --> p["perception & 3d vision<br/>geometry, features, point clouds"]
     p --> f["state estimation & fusion<br/>ekf, ukf, imu pre-integration"]
