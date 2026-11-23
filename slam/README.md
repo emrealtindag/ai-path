@@ -101,7 +101,7 @@ slam fuses camera and sensor measurements to simultaneously map an unknown envir
   1. **cyrill stachniss – slam course (university of bonn):** [youtube playlist](https://www.youtube.com/playlist?list=PLgnQpQtFTOGQrZ4O5QzbIHgl3b1JHimN_) — core university course covering odometry, ekf-slam, particle filters, pose graph optimization, and loop closure
   2. **prof. daniel cremers – direct slam: lsd-slam & dso (tum):** [youtube lecture series](https://www.youtube.com/playlist?list=PLTBdjV_4f-EJn6udZ34tht9EVIW7lbeo4) — lectures on direct photometric visual odometry and slam
   3. **joan solà – slam & factor graphs:** [youtube search](https://www.youtube.com/results?search_query=joan+sola+slam) — factor graphs and optimization on manifolds
-  4. **prof. davide scaramuzza (uzh rpg) – vision algorithms for mobile robotics:** [youtube playlist](https://www.youtube.com/playlist?list=PLdMorpQLjeXmbFaVku4JdjmQByHHqTd1F) & [course page](https://rpg.ifi.uzh.ch/teaching.html) — classic university course on visual odometry, optical flow, calibration, epipolar geometry, and slam
+  4. **prof. davide scaramuzza (uzh rpg) – vision algorithms for mobile robotics:** [course page](https://rpg.ifi.uzh.ch/teaching.html) & [uzh rpg youtube](https://www.youtube.com/@ailabRPG/playlists) — classic university course on visual odometry, optical flow, calibration, epipolar geometry, and slam
 - **books, papers & repositories:**
   1. **visual odometry tutorials (part i & ii – scaramuzza & fraundorfer):** [part i pdf](https://rpg.ifi.uzh.ch/docs/VO_Part_I_Scaramuzza.pdf) & [part ii pdf](https://rpg.ifi.uzh.ch/docs/VO_Part_II_Scaramuzza.pdf) — concise 20-page overview summarizing visual odometry math
   2. **orb-slam3 (campos et al.):** [arxiv:2007.11898](https://arxiv.org/abs/2007.11898) — key paper for feature-based visual, visual-inertial, and multi-map slam
@@ -130,7 +130,7 @@ slam fuses camera and sensor measurements to simultaneously map an unknown envir
 
 - **video lectures:**
   1. **cyrill stachniss – markov, grid & monte carlo localization:** [youtube playlist](https://www.youtube.com/playlist?list=PLgnQpQtFTOGQrZ4O5QzbIHgl3b1JHimN_) — clear lectures on probabilistic localization inside known maps
-  2. **eth zürich – autonomous mobile robots (localization):** [youtube lecture series](https://www.youtube.com/playlist?list=PLpUPoM7Rgzi_7YWn14Va2FODh7LzADBSm) — odometry error models and map-based localization
+  2. **eth zürich – autonomous mobile robots (localization):** [course page](https://asl.ethz.ch/education/lectures/autonomous_mobile_robots.html) — odometry error models and map-based localization
 - **books, papers & repositories:**
   1. **probabilistic robotics – ch. 7 & 8:** [book page](https://mitpress.mit.edu/9780262201629/probabilistic-robotics/) — foundational theory of markov, grid, and particle filter localization
   2. **ros 2 nav2 amcl configuration guide:** [docs.nav2.org](https://docs.nav2.org/) — tuning particle filter localization on physical mobile robots

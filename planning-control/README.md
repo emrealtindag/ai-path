@@ -123,7 +123,7 @@ engineering curriculum, mathematical modeling, algorithmic optimization, classic
 
 - **video lectures:**
   1. **brian douglas – autonomous navigation & path tracking:** [youtube playlist](https://www.youtube.com/playlist?list=PLn8PRpmsu08rLRGrnF-S6TyGrmcA2X7kg) — fundamentals of pure pursuit, stanley controller, and path tracking
-  2. **eth zürich – motion control for mobile robots:** [youtube lecture series](https://www.youtube.com/playlist?list=PLpUPoM7Rgzi_7YWn14Va2FODh7LzADBSm) — kinematic constraints and trajectory tracking
+  2. **eth zürich – motion control for mobile robots:** [course page](https://asl.ethz.ch/education/lectures/autonomous_mobile_robots.html) — kinematic constraints and trajectory tracking
 - **books, papers & repositories:**
   1. **pythonrobotics (path tracking):** [github repo](https://github.com/AtsushiSakai/PythonRobotics#path-tracking) — clean animated python code for pure pursuit, stanley, lqr, and mpc path tracking
   2. **self-driving cars specialization (university of toronto):** [coursera](https://www.coursera.org/specializations/self-driving-cars) — lateral (stanley/pure pursuit) and longitudinal vehicle control equations

@@ -206,10 +206,10 @@ engineering curriculum, algorithmic foundations, geometric representations, and 
 - **turkish resources:**
   1. **metu ceng 783 – semantic, instance & panoptic segmentation slides:** [course page](https://user.ceng.metu.edu.tr/~skalkan/DL/)
 - **video lectures:**
-  1. **stanford cs231n / michigan eecs 498 – image segmentation:** [youtube lecture video](https://www.youtube.com/watch?v=6CCXyfvubvY) — theoretical foundations of fcn, transposed convolution, u-net, and mask r-cnn
+  1. **stanford cs231n – detection and image segmentation:** [youtube lecture video](https://www.youtube.com/watch?v=nDPWywWRIRo) — theoretical foundations of fcn, transposed convolution, u-net, and mask r-cnn
   2. **digitalsreeni – image segmentation in python:** [youtube channel](https://www.youtube.com/@DigitalSreeni) — practical step-by-step training of u-net, mask r-cnn, and sam
 - **books, papers & repositories:**
-  1. **segment anything model 2 – sam 2 (meta ai):** [project page](https://ai.meta.com/sam2/) & [github repo](https://github.com/facebookresearch/sam2) — real-time zero-shot segmentation across images and video
+  1. **segment anything model 2 – sam 2 (meta ai):** [github repo](https://github.com/facebookresearch/sam2) & [paper (arxiv)](https://arxiv.org/abs/2408.00714) — real-time zero-shot segmentation across images and video
   2. **u-net (ronneberger et al.):** [arxiv:1505.04597](https://arxiv.org/abs/1505.04597) — classic encoder-decoder skip-connection architecture for pixel segmentation
   3. **mask r-cnn (he et al.):** [arxiv:1703.06870](https://arxiv.org/abs/1703.06870) — core instance segmentation paper introducing roialign
   4. **qubvel/segmentation_models.pytorch:** [github repo](https://github.com/qubvel-org/segmentation_models.pytorch) — easy pytorch library for u-net, deeplabv3+, and fpn segmentation models

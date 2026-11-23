@@ -48,7 +48,7 @@ engineering curriculum, mathematical modeling, middleware, physical ai, robotics
 
 - **video lectures:**
   1. **kevin lynch – modern robotics (northwestern university):** [youtube playlist](https://www.youtube.com/playlist?list=PLggLP4f-rq02vX0OQQ5vrCxbJrzamYDfx) — screw theory, configuration spaces, and modern robotics math
-  2. **eth zürich – autonomous mobile robots (roland siegwart):** [youtube lecture series](https://www.youtube.com/playlist?list=PLpUPoM7Rgzi_7YWn14Va2FODh7LzADBSm) — mobile robotics lectures covering perception, kinematics, localization, and planning
+  2. **eth zürich – autonomous mobile robots (roland siegwart):** [course page](https://asl.ethz.ch/education/lectures/autonomous_mobile_robots.html) — mobile robotics lectures covering perception, kinematics, localization, and planning
 - **books, papers & repositories:**
   1. **modern robotics: mechanics, planning, and control (lynch & park):** [free pdf](http://hades.mech.northwestern.edu/images/7/7f/MR.pdf) — textbook paired with python/matlab/c++ robotics libraries
   2. **introduction to robotics (john j. craig):** [book page](https://www.pearson.com/en-us/subject-catalog/p/introduction-to-robotics-mechanics-and-control/P200000003304) — classic textbook on robot mechanics and control
@@ -183,8 +183,8 @@ engineering curriculum, mathematical modeling, middleware, physical ai, robotics
 **resources:**
 
 - **video lectures:**
-  1. **cyrill stachniss – mobile sensing and robotics:** [youtube playlist](https://www.youtube.com/playlist?list=PLgnQpQtFTOGQrZ4O5QzbIHgl3b1JHimN_) — lidar processing, octomap occupancy grid mapping, and sensor calibration
-  2. **eth zürich – autonomous mobile robots (perception & mapping):** [youtube lecture series](https://www.youtube.com/playlist?list=PLpUPoM7Rgzi_7YWn14Va2FODh7LzADBSm) — visual and laser perception pipelines for mobile robots
+  1. **cyrill stachniss – mobile sensing and robotics:** [youtube playlist](https://www.youtube.com/playlist?list=PLgnQpQtFTOGQEn33QDVGJpiZLi-SlL7vA) — lidar processing, octomap occupancy grid mapping, and sensor calibration
+  2. **eth zürich – autonomous mobile robots (perception & mapping):** [course page](https://asl.ethz.ch/education/lectures/autonomous_mobile_robots.html) — visual and laser perception pipelines for mobile robots
 - **books, papers & repositories:**
   1. **autoware universe perception stack:** [docs](https://autowarefoundation.github.io/autoware-documentation/main/) & [github repo](https://github.com/autowarefoundation/autoware.universe) — ros 2 c++ camera-lidar-radar fusion, 3d object detection, and occupancy mapping
   2. **nvidia isaac ros perception (nitros):** [nvidia-isaac-ros.github.io](https://nvidia-isaac-ros.github.io/) — gpu/tensorrt accelerated ros 2 packages for stereo depth and visual slam
@@ -474,7 +474,7 @@ engineering curriculum, mathematical modeling, middleware, physical ai, robotics
 * imitating shortest paths in simulation enables effective navigation and manipulation in the real world [[paper]](https://arxiv.org/abs/2312.02976) [[project]](https://spoc-robot.github.io/)
 * thinkbot: embodied instruction following with thought chain reasoning [[paper]](https://arxiv.org/abs/2312.07062) [[project]](https://guanxinglu.github.io/thinkbot/)
 * clip-fields: weakly supervised semantic fields for robotic memory [[paper]](https://arxiv.org/abs/2210.05663) [[project]](https://mahis.life/clip-fields) [[code]](https://github.com/notmahi/clip-fields)
-* usa-net: unified semantic and affordance representations for robot memory [[paper]](https://arxiv.org/abs/2304.12164) [[project]](https://usa.bolte.cc/) [[code]](https://github.com/codekansas/usa)
+* usa-net: unified semantic and affordance representations for robot memory [[paper]](https://arxiv.org/abs/2304.12164) [[code]](https://github.com/codekansas/usa)
 
 #### relevant to robotics (perception)
 
@@ -555,7 +555,7 @@ engineering curriculum, mathematical modeling, middleware, physical ai, robotics
 ##### simulators
 * gibson env: real-world perception for embodied agents [[paper]](https://arxiv.org/abs/1808.10654)
 * igibson 2.0: object-centric simulation for robot learning of everyday household tasks [[paper]](https://arxiv.org/abs/2108.03272)[[project]](https://svl.stanford.edu/igibson/)
-* behavior-1k: a benchmark for embodied ai with 1,000 everyday activities and realistic simulation [[paper]](https://openreview.net/forum?id=_8DoIe8G3t)[[project]](https://behavior.stanford.edu/behavior-1k)
+* behavior-1k: a benchmark for embodied ai with 1,000 everyday activities and realistic simulation [[paper]](https://openreview.net/forum?id=_8DoIe8G3t)[[project]](https://behavior.stanford.edu/)
 * habitat: a platform for embodied ai research [[paper]](https://arxiv.org/abs/1904.01201)[[project]](https://aihabitat.org/)
 * habitat 2.0: training home assistants to rearrange their habitat [[paper]](https://arxiv.org/abs/2106.14405)
 * robothor: an open simulation-to-real embodied ai platform [[paper]](https://arxiv.org/abs/2004.06799)[[project]](https://ai2thor.allenai.org/robothor/)

@@ -202,7 +202,7 @@ engineering curriculum, mathematical proofs, derivations, and curated resources 
 - **video lectures:**
   1. **3blue1brown – differential equations:** [youtube playlist](https://www.youtube.com/playlist?list=PLZHQObOWTQDNPOjrT6KVlfJuKtYTftqH6) — visual intuition for phase space, stability, and dynamical systems
   2. **steve brunton – differential equations & dynamical systems:** [youtube playlist](https://www.youtube.com/playlist?list=PLMrJAkhIeNNTYaOnVI3QpH7jgULnAmvPA) — practical engineering lectures for robot kinematics, control systems, and nonlinear dynamics
-  3. **mit 18.03 differential equations (prof. arthur mattuck):** [youtube lecture series](https://www.youtube.com/playlist?list=PL49CF3715CB9EF31D) — classic mit differential equations curriculum
+  3. **mit 18.03 differential equations (prof. arthur mattuck):** [youtube lecture series](https://www.youtube.com/playlist?list=PLEC88901EBADDD980) — classic mit differential equations curriculum
 - **books, papers & repositories:**
   1. **data-driven science and engineering (brunton & kutz):** [databookuw.com](https://databookuw.com/) — dynamical systems, control, and machine learning (free course materials)
   2. **paul’s online math notes – differential equations:** [tutorial.math.lamar.edu/classes/de/de.aspx](https://tutorial.math.lamar.edu/Classes/DE/DE.aspx) — practical solution methods and worked examples
@@ -265,7 +265,7 @@ engineering curriculum, mathematical proofs, derivations, and curated resources 
   1. **buders – numerical analysis:** [youtube channel](https://www.youtube.com/@Buders) — turkish lectures on euler, runge-kutta (rk4), root finding, and numerical integration
 - **video lectures:**
   1. **jeffrey chasnov – numerical methods for engineers (hkust):** [youtube playlist](https://www.youtube.com/playlist?list=PLkZjai-2Jcxn35XnijUtqqEg0Wi5Sn8ab) — rk4, ode solvers, and numerical stability for engineers
-  2. **mit 18.085 computational science and engineering (prof. gilbert strang):** [youtube lecture series](https://www.youtube.com/playlist?list=PL49CF3715CB9EF31D) — numerical linear algebra and differential equation solvers
+  2. **mit 18.085 computational science and engineering (prof. gilbert strang):** [youtube lecture series](https://www.youtube.com/playlist?list=PLF706B428FB7BD52C) — numerical linear algebra and differential equation solvers
 - **books, papers & repositories:**
   1. **numerical computing with matlab (cleve moler):** [mathworks.com/moler/chapters.html](https://www.mathworks.com/moler/chapters.html) — free chapters on floating-point math, ode solvers, and svd
   2. **what every computer scientist should know about floating-point arithmetic (david goldberg):** [free article (oracle docs)](https://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html) — essential read to understand fp32/fp16 precision loss and rounding errors in c++ and gpu code
@@ -299,7 +299,7 @@ engineering curriculum, mathematical proofs, derivations, and curated resources 
   1. **mit 6.042j mathematics for computer science (prof. tom leighton):** [youtube lecture series](https://www.youtube.com/playlist?list=PLB7540DEDD482705B) — proof techniques, graph theory, and discrete math for computer science
   2. **william fiset – graph theory playlist:** [youtube playlist](https://www.youtube.com/playlist?list=PLDV1Zeh2NRsDGO4--qE8yH72HFL1Km93P) — visual graph theory series before studying algorithms and path planning
   3. **brad osgood – the fourier transform and its applications (stanford ee261):** [youtube lecture series](https://www.youtube.com/playlist?list=PLB24BC7956EE040CD) — fourier transforms for image processing and signal analysis
-  4. **mit 6.003 signals and systems (prof. dennis freeman):** [youtube lecture series](https://www.youtube.com/playlist?list=PL41692B571DD0AF9B) — laplace and z-transforms, filtering, and frequency domain
+  4. **mit 6.003 signals and systems (prof. dennis freeman):** [youtube lecture series](https://www.youtube.com/playlist?list=PLUl4u3cNGP61kdPAOC7CzFjJZ8f1eMUxs) — laplace and z-transforms, filtering, and frequency domain
   5. **eigenchris – tensors for beginners & lie groups:** [youtube playlist](https://www.youtube.com/playlist?list=PLJHszsWbB6hrkmmq57lX8BV-o-YIOFsiG) — tensor algebra and differential geometry
   6. **welch labs – imaginary numbers are real:** [youtube playlist](https://www.youtube.com/playlist?list=PLiaHhY2iBX9g6KIvZ_703G3KJXapKkNaF) — visual intuition for complex numbers
 - **books, papers & repositories:**
@@ -354,9 +354,9 @@ engineering curriculum, mathematical proofs, derivations, and curated resources 
 
 - **video lectures:**
   1. **andrew ng (stanford cs230) – reading research papers:** [youtube video](https://www.youtube.com/watch?v=733m6qBH-jI) — how to read ai papers effectively and review literature
-  2. **overleaf official latex tutorials:** [youtube playlist](https://www.youtube.com/playlist?list=PLPN-43XehstNCE7EzhxX513R2qmjbwc8K) — writing technical reports and papers in latex
+  2. **overleaf & latex tutorials:** [overleaf learn docs](https://www.overleaf.com/learn) & [youtube playlist (dr. trefor bazett)](https://www.youtube.com/playlist?list=PLHXZ9OQGMqxcWWkx2DMnQmj5os2X5ZR73) — writing technical reports and papers in latex
 - **books, papers & repositories:**
-  1. **how to read a paper (prof. s. keshav – university of waterloo):** [ccr.sigcomm.org/online/files/p83-keshava.pdf (free 2-page pdf)](https://ccr.sigcomm.org/online/files/p83-keshavA.pdf) — three-pass technique to extract core ideas and math from papers quickly
+  1. **how to read a paper (prof. s. keshav – university of waterloo):** [free 2-page pdf (stanford mirror)](https://web.stanford.edu/class/ee384m/Handouts/HowtoReadPaper.pdf) — three-pass technique to extract core ideas and math from papers quickly
   2. **learn latex in 30 minutes (overleaf documentation):** [overleaf.com/learn/latex/learn_latex_in_30_minutes](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes) — writing equations, algorithm blocks, and bibliographies (bibtex)
 
 #### 17.3 advanced research areas

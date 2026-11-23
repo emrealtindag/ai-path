@@ -68,9 +68,9 @@ autonomous flight requires tightly coupling physics, low-level microcontroller f
 
 ### video lectures & course series
 - [phil's lab – hardware design, sensor interfacing & flight controller firmware in c/c++](https://www.youtube.com/@PhilsLab): end-to-end custom stm32 flight controller hardware design, imu/barometer sensor interfacing, and kalman filter firmware.
-- [eth zürich robotics and perception group (rpg)](https://www.youtube.com/@ailabRPG/playlists): cutting-edge lectures on agile uav flight, vision-based navigation, event cameras, and high-speed autonomy.
+- [university of zürich robotics and perception group (uzh rpg)](https://www.youtube.com/@ailabRPG/playlists): cutting-edge lectures on agile uav flight, vision-based navigation, event cameras, and high-speed autonomy.
 - [brian douglas – autonomous navigation & path tracking](https://www.youtube.com/playlist?list=PLn8PRpmsu08rLRGrnF-S6TyGrmcA2X7kg): comprehensive engineering tutorials on path tracking, pure pursuit, and control loop structures.
-- [feigao fast lab (hkust) – autonomous uav planning and exploration](https://www.youtube.com/results?search_query=fei+gao+fast+lab+motion+planning): trajectory optimization, kinodynamic planning, and autonomous exploration algorithms for micro aerial vehicles.
+- [fei gao fast lab (zhejiang university) – autonomous uav planning and exploration](https://www.youtube.com/results?search_query=fei+gao+fast+lab+motion+planning): trajectory optimization, kinodynamic planning, and autonomous exploration algorithms for micro aerial vehicles.
 
 ### seminal books & academic papers
 - [small unmanned aircraft: theory and practice (randy beard & tim mclain – byu magicc lab)](http://uavbook.byu.edu/): the primary engineering textbook for 6-dof quadrotor and fixed-wing flight dynamics, state-space linearization, and cascaded control loops.
@@ -171,7 +171,7 @@ autonomous flight requires tightly coupling physics, low-level microcontroller f
 
 - **video lectures:**
   1. **brian douglas – autonomous navigation & path tracking:** [youtube playlist](https://www.youtube.com/playlist?list=PLn8PRpmsu08rLRGrnF-S6TyGrmcA2X7kg) — fundamentals of pure pursuit, stanley controller, and path tracking
-  2. **eth zürich – motion control for mobile robots:** [youtube lecture series](https://www.youtube.com/playlist?list=PLpUPoM7Rgzi_7YWn14Va2FODh7LzADBSm) — kinematic constraints and trajectory tracking
+  2. **eth zürich – motion control for mobile robots:** [course page](https://asl.ethz.ch/education/lectures/autonomous_mobile_robots.html) — kinematic constraints and trajectory tracking
 - **books, papers & repositories:**
   1. **pythonrobotics (path tracking):** [github repo](https://github.com/AtsushiSakai/PythonRobotics#path-tracking) — clean animated python code for pure pursuit, stanley, lqr, and mpc path tracking
   2. **self-driving cars specialization (university of toronto):** [coursera](https://www.coursera.org/specializations/self-driving-cars) — lateral (stanley/pure pursuit) and longitudinal vehicle control equations

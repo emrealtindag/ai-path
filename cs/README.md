@@ -135,7 +135,7 @@ engineering curriculum, algorithmic complexity, hardware architecture, linux inf
 **resources:**
 
 - **turkish resources:**
-  1. **bilgisayar kavramları – computer architecture:** [youtube playlist](https://www.youtube.com/playlist?list=PLvNq8wrSYGAU6CF4UleG6HbXa9paQDsLK) — turkish lectures on cpus, caches, pipelines, and memory hierarchy
+  1. **prof. dr. oğuz ergin – computer architecture (bilgisayar mimarisi):** [youtube playlist](https://www.youtube.com/playlist?list=PLvNq8wrSYGAU6CF4UleG6HbXa9paQDsLK) — turkish lectures on cpus, caches, pipelines, and memory hierarchy
   2. **prof. dr. onur mutlu – turkish talks & seminars:** [youtube search](https://www.youtube.com/results?search_query=onur+mutlu+t%C3%BCrk%C3%A7e) — turkish seminars on memory systems and modern cpu/gpu architectures
 - **video lectures:**
   1. **prof. dr. onur mutlu – digital design and computer architecture (eth zürich):** [youtube lecture series](https://www.youtube.com/playlist?list=PL5Q2soXY2Zi_uej3aY39YB5pfW4SJ7LlN) — university lectures on cpu/gpu architecture, caches, simd, and memory systems
@@ -292,7 +292,7 @@ engineering curriculum, algorithmic complexity, hardware architecture, linux inf
 **resources:**
 
 - **turkish resources:**
-  1. **kablosuz kedi (gökhan kandemir) – docker from a to z:** [youtube playlist](https://www.youtube.com/playlist?list=PLIBhH-mHowD8zBI1WpSR2ZaXV8FSLjhvl) — turkish course on dockerfile, images, containers, and docker compose
+  1. **kablosuz kedi (gökhan kandemir) – docker from a to z:** [part 1 video](https://www.youtube.com/watch?v=4XVfmGE1F_w) & [devops playlist](https://www.youtube.com/playlist?list=PL_f2F0Oyaj48lF-6Wr2d95dAMaye8RX0d) — turkish course on dockerfile, images, containers, and docker compose
   2. **barış aslan (@barisaslan):** [youtube channel](https://www.youtube.com/@BarisAslan) — turkish tutorials on git/github and server deployment
 - **video lectures:**
   1. **techworld with nana – docker, github actions & kubernetes:** [youtube channel](https://www.youtube.com/@TechWorldwithNana) — packaging ai models and ros 2 nodes consistently with docker containers

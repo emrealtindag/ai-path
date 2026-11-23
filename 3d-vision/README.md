@@ -125,7 +125,7 @@ engineering curriculum, mathematical representations, geometric algorithms, simu
   2. **point cloud library (pcl):** [pointclouds.org](https://pointclouds.org/) & [tutorials](https://pcl.readthedocs.io/projects/tutorials/en/master/) — standard c++ library for lidar point cloud processing in ros 2
   3. **pointnet (qi et al., stanford):** [arxiv:1612.00593](https://arxiv.org/abs/1612.00593) — core paper introducing deep learning directly on unordered 3d point sets
   4. **open3d slam (eth zürich):** [github repo](https://github.com/leggedrobotics/open3d_slam) — open-source c++ 3d lidar/rgb-d slam using point-to-plane icp, gicp, submaps, and pose graph optimization
-  5. **kiss-icp (university of bonn):** [github repo](https://github.com/PRBonn/kiss-icp) & [documentation](https://cims.nyu.edu/~vittal/kiss-icp/) — simple, fast point-to-point icp lidar odometry running 100+ hz on a single cpu thread without imu
+  5. **kiss-icp (university of bonn):** [github repo](https://github.com/PRBonn/kiss-icp) & [paper pdf](https://www.ipb.uni-bonn.de/wp-content/papercite-data/pdf/vizzo2023ral.pdf) — simple, fast point-to-point icp lidar odometry running 100+ hz on a single cpu thread without imu
   6. **scan context (kaist url):** [github repo](https://github.com/gisbi-kim/ScanContext) & [sc-lego-loam](https://github.com/gisbi-kim/SC-LeGO-LOAM) — rotation-invariant 3d lidar descriptor for place recognition and loop closure
 
 #### 7.5 advanced spatial ai
@@ -227,7 +227,7 @@ engineering curriculum, mathematical representations, geometric algorithms, simu
 
 - **video lectures:**
   1. [cmu 15-462 — computer graphics (keenan crane)](https://www.youtube.com/playlist?list=PL9_jI1bdZmz2emSh0UQ5iOdT2xRHFHL7E) — mvp matrices, rasterization, mesh processing, signed distance fields, and ray tracing
-  2. [games101 — introduction to computer graphics (lingqi yan)](https://www.youtube.com/playlist?list=PL_w_qWAQZtAZhtzPI5pkAtcUVgmzdAP8g) — transformation matrices, shading, and physically based rendering (pbr)
+  2. [games101 — introduction to computer graphics (lingqi yan)](https://www.youtube.com/playlist?list=PLX_rk23kyFXVEodpOJYP30K4LZhioDU5t) — transformation matrices, shading, and physically based rendering (pbr)
   3. **ten minute physics (matthias müller / nvidia physx):** [site](https://matthias-research.github.io/pages/tenMinutePhysics/) & [youtube channel](https://www.youtube.com/@TenMinutePhysics) — coding particle, rigid-body, and collision physics engines from scratch
 - **books, papers & repositories:**
   1. [learnopengl (joey de vries)](https://learnopengl.com/) — practical c++ guide to coordinate spaces, camera matrices, z-buffering, and shaders

@@ -45,7 +45,7 @@ engineering curriculum, mathematical representations, stochastic filtering, and 
 **resources:**
 
 - **video lectures:**
-  1. **cyrill stachniss – sensors and sensing:** [youtube playlist](https://www.youtube.com/playlist?list=PLgnQpQtFTOGQrZ4O5QzbIHgl3b1JHimN_) — physics, noise models, and calibration for imu, lidar, camera, and gnss
+  1. **cyrill stachniss – sensors and sensing:** [youtube playlist](https://www.youtube.com/playlist?list=PLgnQpQtFTOGQEn33QDVGJpiZLi-SlL7vA) — physics, noise models, and calibration for imu, lidar, camera, and gnss
   2. **brian douglas – sensor fusion & imu fundamentals:** [youtube playlist](https://www.youtube.com/playlist?list=PLn8PRpmsu08ryYoBpEKzoMOveSTyS-h4a) — why accelerometers, gyroscopes, magnetometers, and gps need fusion (drift vs noise)
 - **books, papers & repositories:**
   1. **vectornav inertial navigation primer:** [free technical handbook](https://www.vectornav.com/resources/inertial-navigation-primer) — clear industrial guide to imu physics, white noise, allan variance, and reference frames
@@ -144,7 +144,7 @@ engineering curriculum, mathematical representations, stochastic filtering, and 
 
 - **video lectures:**
   1. **cyrill stachniss – markov, grid & monte carlo localization:** [youtube playlist](https://www.youtube.com/playlist?list=PLgnQpQtFTOGQrZ4O5QzbIHgl3b1JHimN_) — clear lectures on probabilistic localization inside known maps
-  2. **eth zürich – autonomous mobile robots (localization):** [youtube lecture series](https://www.youtube.com/playlist?list=PLpUPoM7Rgzi_7YWn14Va2FODh7LzADBSm) — odometry error models and map-based localization
+  2. **eth zürich – autonomous mobile robots (localization):** [course page](https://asl.ethz.ch/education/lectures/autonomous_mobile_robots.html) — odometry error models and map-based localization
 - **books, papers & repositories:**
   1. **probabilistic robotics – ch. 7 & 8:** [book page](https://mitpress.mit.edu/9780262201629/probabilistic-robotics/) — foundational theory of markov, grid, and particle filter localization
   2. **ros 2 nav2 amcl configuration guide:** [docs.nav2.org](https://docs.nav2.org/) — tuning particle filter localization on physical mobile robots

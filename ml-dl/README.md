@@ -345,7 +345,7 @@ engineering curriculum, mathematical representations, optimization engines, and 
 - **video lectures:**
   1. **outlier – diffusion models from scratch:** [youtube video](https://www.youtube.com/watch?v=HoKDTa5jHvg) — visual math behind forward and reverse diffusion processes (ddpm)
   2. **umar jamil – coding stable diffusion from scratch in pytorch:** [youtube video](https://www.youtube.com/watch?v=ZBKpAp_6TGI) — putting together vae, u-net, clip, and ddpm sampler in pure pytorch
-  3. **arash vahdat (nvidia research) – diffusion tutorials (cvpr):** [youtube talk](https://www.youtube.com/watch?v=c36lUUr864M) — comparing vae, gan, normalizing flows, and score-based diffusion theory
+  3. **arash vahdat (nvidia research) – diffusion tutorials (cvpr):** [youtube talk](https://www.youtube.com/watch?v=cS6JQpEY9cs) — comparing vae, gan, normalizing flows, and score-based diffusion theory
 - **books, papers & repositories:**
   1. **what are diffusion models? (lilian weng):** [blog post](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/) — clear mathematical derivation of diffusion models
   2. **understanding diffusion models: a unified perspective (calvin luo):** [arxiv:2208.11970 (free pdf)](https://arxiv.org/pdf/2208.11970.pdf) — clean 25-page tutorial connecting elbo, vae, and score matching
@@ -365,7 +365,7 @@ engineering curriculum, mathematical representations, optimization engines, and 
 **resources:**
 
 - **video lectures:**
-  1. **umar jamil – coding paligemma / llava from scratch:** [youtube video](https://www.youtube.com/watch?v=vVaRhZXovbw) — connecting siglip/clip vision encoders with gemma/llama language models in pytorch
+  1. **umar jamil – coding paligemma / llava from scratch:** [youtube video](https://www.youtube.com/watch?v=vAmKB7iPkWw) — connecting siglip/clip vision encoders with gemma/llama language models in pytorch
   2. **yannic kilcher – llava, flamingo & multimodal reviews:** [youtube channel](https://www.youtube.com/@YannicKilcher) — architecture breakdowns of vision-language models
 - **books, papers & repositories:**
   1. **vision-language models explained (hugging face):** [huggingface.co/blog/vlms](https://huggingface.co/blog/vlms) — practical overview of modern vlm architectures
@@ -395,7 +395,7 @@ engineering curriculum, mathematical representations, optimization engines, and 
   3. **rt-2: vision-language-action models (google deepmind):** [arxiv:2307.15818](https://arxiv.org/abs/2307.15818) — foundational paper introducing vision-language-action (vla) policies
   4. **voxposer: composable 3d value maps (stanford asl):** [voxposer.github.io](https://voxposer.github.io/) & [github repo](https://github.com/huangwl18/VoxPoser) — synthesizing 3d robot trajectory value maps using llms and vlms
   5. **foundationpose: unified 6d pose estimation & tracking (nvidia):** [project page](https://nvlabs.github.io/FoundationPose/) — unified model-free and model-based 6d object pose estimation and tracking
-  6. **gaia-1: generative world model for autonomous driving (wayve):** [wayve.ai/thinking/gaia-1](https://wayve.ai/thinking/gaia-1/) — generative world model using video, text, and actions for driving
+  6. **gaia-1: generative world model for autonomous driving (wayve):** [arxiv paper](https://arxiv.org/abs/2309.17080) — generative world model using video, text, and actions for driving
   7. **egoverse: egocentric data for robot learning (georgia tech):** [github repo](https://github.com/GaTech-RL2/EgoVerse) — converting first-person human hand tracking data into robot manipulation actions for $\pi_0$ and lerobot
 - **video lectures:**
   1. **stanford robotics & embodied ai seminars:** [youtube search](https://www.youtube.com/results?search_query=stanford+robotics+seminar+vla+embodied+ai) — seminar talks on vision-language-action (vla) policies
@@ -473,7 +473,7 @@ engineering curriculum, mathematical representations, optimization engines, and 
   1. **bora kaşmer – distributed systems, redis & kafka:** [youtube channel](https://www.youtube.com/@BoraKasmer) — turkish talks on real-time streaming and caching architectures
 - **video lectures:**
   1. **seattle data guy – data engineering fundamentals:** [youtube channel](https://www.youtube.com/@SeattleDataGuy) — practical intro to etl/elt, postgresql, spark, and kafka pipelines
-  2. **luke barousse – sql for data science & analytics:** [youtube channel](https://www.youtube.com/@LukeBarousse) — pratik sql sorgulama
+  2. **luke barousse – sql for data science & analytics:** [youtube channel](https://www.youtube.com/@LukeBarousse) — practical sql querying
 - **books, papers & repositories:**
   1. **sqlbolt – interactive sql exercises:** [sqlbolt.com](https://sqlbolt.com/) — quick interactive browser practice for sql basics
   2. **designing data-intensive applications (martin kleppmann):** [dataintensive.net](https://dataintensive.net/) — classic systems book on databases, indexing, replication, sharding, kafka, and distributed systems
@@ -1175,7 +1175,7 @@ engineering curriculum, mathematical representations, optimization engines, and 
 **resources:**
 
 - **video lectures:**
-  1. [stanford cs276 — information retrieval & web search](https://www.youtube.com/playlist?list=PL6397E4B26D00A269) — inverted indexes, bm25, ranking, and search fundamentals
+  1. **stanford cs276 — information retrieval & web search:** [course page](https://web.stanford.edu/class/cs276/) & [youtube lectures](https://www.youtube.com/playlist?list=PLaZQkZp6WhWwoDuD6pQCmgVyDbUWl_ZUi) — inverted indexes, bm25, ranking, and search fundamentals
 - **books, papers & repositories:**
   1. [manning, raghavan & schütze — introduction to information retrieval (free online book)](https://nlp.stanford.edu/IR-book/) — standard reference textbook on search engines and retrieval
   2. [faiss (github)](https://github.com/facebookresearch/faiss) & [recbole (github)](https://github.com/RUCAIBox/RecBole) — fast vector similarity search (hnsw/ivf) and recommender systems toolkit
