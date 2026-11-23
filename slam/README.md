@@ -97,12 +97,12 @@ slam fuses camera and sensor measurements to simultaneously map an unknown envir
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- **▶️ yt (yabancı video dersler — önem sırasıyla):**
+- **yt (yabancı video dersler — önem sırasıyla):**
   1. **cyrill stachniss – slam course (bonn üniversitesi):** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLgnQpQtFTOGQrZ4O5QzbIHgl3b1JHimN_) — **[temel akademik slam dersi – ilk izlenecek]** odometri, ekf-slam, particle filter slam, pose graph optimization ve loop closure'ı baştan sona öğreten ders serisi
   2. **prof. daniel cremers – multiple view geometry & direct slam: lsd-slam, dso (tum):** [youtube ders serisi](https://www.youtube.com/playlist?list=PLTBdjV_4f-EJn6udZ34tht9EVIW7lbeo4) — **[zirve akademik ders]** doğrudan piksel parlaklığı (photometric error) üzerinden çalışan direct slam ve görsel odometri
   3. **joan solà – course on slam & factor graphs:** [youtube oynatma listesi](https://www.youtube.com/results?search_query=joan+sola+slam) — faktör grafikleri (factor graphs) ve manifold üzerinde optimizasyon
   4. **prof. davide scaramuzza (uzh rpg) – vision algorithms for mobile robotics (vamr):** [youtube oynatma listesi / uzh vamr](https://www.youtube.com/playlist?list=PLdMorpQLjeXmbFaVku4JdjmQByHHqTd1F) & [ders sayfası (rpg.ifi.uzh.ch)](https://rpg.ifi.uzh.ch/teaching.html) — **[zirve görsel robotik dersi]** dünyanın en prestijli robotik algılama laboratuvarından (uzh rpg); görsel odometri, optik akış, kamera kalibrasyonu, epipolar geometri ve visual slam mimarilerini baştan sona anlatan altın standart amfi dersi
-- **📖 oku & 💻 repo (makale ve endüstriyel c++ kod tabanları — önem sırasıyla):**
+- **oku & repo (makale ve endüstriyel c++ kod tabanları — önem sırasıyla):**
   1. **visual odometry: part i (the first 30 years and fundamentals) & part ii (photogrammetry and filter-based methods) – davide scaramuzza & friedrich fraundorfer:** [part i pdf (uzh rpg)](https://rpg.ifi.uzh.ch/docs/VO_Part_I_Scaramuzza.pdf) & [part ii pdf (uzh rpg)](https://rpg.ifi.uzh.ch/docs/VO_Part_II_Scaramuzza.pdf) — **[ilk okunacak tutorial makalesi]** görsel odometrinin tüm matematiğini 20 sayfada özetleyen başucu rehberi
   2. **orb-slam3: an accurate open-source library for visual, visual-inertial, and multimap slam (campos et al., ieee t-ro 2021):** [arxiv:2007.11898](https://arxiv.org/abs/2007.11898) — modern özellik tabanlı ve görsel-ataletsel (kamera+imu) slam'in referans makalesi
   3. **repo – uz-slamlab/orb_slam3 & raulmur/orb_slam2:** [github.com/uz-slamlab/orb_slam3](https://github.com/UZ-SLAMLab/ORB_SLAM3) · [github.com/raulmur/orb_slam2](https://github.com/raulmur/ORB_SLAM2) — **[satır satır okunacak c++ kodu]** gerçek zamanlı tracking, local mapping ve loop closing thread'lerinin c++ ile nasıl yazıldığını görmek için temel açık kaynak proje
@@ -128,10 +128,10 @@ slam fuses camera and sensor measurements to simultaneously map an unknown envir
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- **▶️ yt (yabancı video dersler — önem sırasıyla):**
+- **yt (yabancı video dersler — önem sırasıyla):**
   1. **cyrill stachniss – markov localization, grid localization & monte carlo localization (mcl):** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLgnQpQtFTOGQrZ4O5QzbIHgl3b1JHimN_) — **[ilk izlenecek]** bir robotun bilinen harita içinde kendi konumunu olasılıksal olarak nasıl bulduğunun en net anlatımı
   2. **eth zürich – autonomous mobile robots (localization module – prof. roland siegwart):** [youtube ders serisi](https://www.youtube.com/playlist?list=PLpUPoM7Rgzi_7YWn14Va2FODh7LzADBSm) — tekerlek odometrisi hata modelleri ve harita tabanlı lokalizasyon
-- **📖 oku & 💻 doküman (önem sırasıyla):**
+- **oku & doküman (önem sırasıyla):**
   1. **probabilistic robotics – bölüm 7 & 8 (mobile robot localization: markov & grid/monte carlo):** [probabilistic-robotics.org](https://mitpress.mit.edu/9780262201629/probabilistic-robotics/) — lokalizasyon algoritmalarının teorik temeli
   2. **ros 2 nav2 amcl (adaptive monte carlo localization) configuration guide:** [docs.nav2.org/configuration/packages/configuring-amcl.html](https://docs.nav2.org/) — gerçek robotta parçacık filtresi lokalizasyonunu ayarlama rehberi
   3. **maplab: an open framework for visual-inertial mapping and localization (eth zürich asl – roland siegwart):** [github repo (ethz-asl/maplab)](https://github.com/ethz-asl/maplab) & [dokümantasyon](https://github.com/ethz-asl/maplab) — **[görsel-ataletsel haritalama ve lokalizasyon çerçevesi]** prof. roland siegwart ekibinin geliştirdiği; robotun daha önce çıkarılmış bir harita içinde kamera+imu ile 6-dof santimetrik konumunu bulmasını sağlayan (visual-inertial localization), çoklu oturum (multi-session) ve çoklu robot harita birleştirmesi (map merging) yapan 2.8k+ yıldızlı c++ otonomi motoru

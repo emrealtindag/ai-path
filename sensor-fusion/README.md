@@ -44,10 +44,10 @@ engineering curriculum, mathematical representations, stochastic filtering, and 
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- **▶️ yt (yabancı video dersler — önem sırasıyla):**
+- **yt (yabancı video dersler — önem sırasıyla):**
   1. **cyrill stachniss – sensors and sensing (imu, lidar, camera, gnss & noise models):** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLgnQpQtFTOGQrZ4O5QzbIHgl3b1JHimN_) — **[ilk izlenecek]** otonom sistemlerde kullanılan tüm sensörlerin fiziği, hata modelleri ve kalibrasyonu
   2. **brian douglas – sensor fusion & imu fundamentals:** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLn8PRpmsu08ryYoBpEKzoMOveSTyS-h4a) — ivmeölçer, jiroskop, manyetometre ve gps'in neden tek başına yetmediği (drift vs noise)
-- **📖 oku (teknik kılavuz ve kitaplar — önem sırasıyla):**
+- **oku (teknik kılavuz ve kitaplar — önem sırasıyla):**
   1. **vectornav inertial navigation primer (ücretsiz teknik el kitabı):** [vectornav.com/resources/inertial-navigation-primer](https://www.vectornav.com/resources/inertial-navigation-primer) — **[en iyi sensör rehberi]** imu çalışma prensipleri, white noise, bias instability, allan variance ve referans çerçeveleri için endüstriyel kılavuz
   2. **introduction to random signals and applied kalman filtering (brown & hwang):** [wiley kitap sayfası](https://www.wiley.com/en-us/Introduction+to+Random+Signals+and+Applied+Kalman+Filtering+with+Matlab+Exercises%2C+4th+Edition-p-9780470609699) — stokastik süreçler ve sensör gürültü modellemesi
 
@@ -63,9 +63,9 @@ engineering curriculum, mathematical representations, stochastic filtering, and 
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- **▶️ yt (yabancı video dersler — önem sırasıyla):**
+- **yt (yabancı video dersler — önem sırasıyla):**
   1. **cyrill stachniss – probabilistic state estimation & bayes filter:** [youtube ders videosu](https://www.youtube.com/watch?v=0lKHFJpaZvE) — **[ilk izlenecek]** bayes filtresinin (prediction + correction adımları) ve kovaryans yayılımının matematiksel temeli
-- **📖 oku (temel referans kitaplar — önem sırasıyla):**
+- **oku (temel referans kitaplar — önem sırasıyla):**
   1. **probabilistic robotics (sebastian thrun, wolfram burgard, dieter fox – mit press):** [probabilistic-robotics.org](https://mitpress.mit.edu/9780262201629/probabilistic-robotics/) — **[temel başvuru kitabı]** bölüm 2, 3 ve 4: durum kestirimi ve olasılıksal robotiğin kurucu eseri
   2. **state estimation for robotics (timothy d. barfoot – university of toronto):** [asrl.utias.utoronto.ca/~tdb/bib/barfoot_ser17.pdf (ücretsiz resmi tam kitap pdf)](http://asrl.utias.utoronto.ca/~tdb/bib/barfoot_ser17.pdf) — **[ileri seviye başucu kitabı]** doğrusal/doğrusal olmayan durum kestirimi ve 3b lie grupları ($se(3)$) üzerinde sensör füzyonu (ücretsiz pdf)
 
@@ -85,10 +85,10 @@ engineering curriculum, mathematical representations, stochastic filtering, and 
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- **▶️ yt (yabancı video dersler — önem sırasıyla):**
+- **yt (yabancı video dersler — önem sırasıyla):**
   1. **michel van biezen – the kalman filter series (1d & multi-dimensional):** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLX2gX-ftPVXU3oUFNATxGXY90AULiqnWT) — **[ilk izlenecek]** kalman kazancı (kalman gain) ve kovaryans matrislerinin kağıt-kalemle en sade sayısal türetimi
   2. **cyrill stachniss – kalman filter (kf), extended kalman filter (ekf), ukf & particle filter:** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLgnQpQtFTOGQrZ4O5QzbIHgl3b1JHimN_) — **[ana mühendislik dersi]** doğrusal olmayan sistemlerde jacobian ile ekf, sigma noktaları ile ukf ve parçacık filtreleri
-- **📖 oku & 💻 repo (interaktif kitap, makale ve gerçek kodlar — önem sırasıyla):**
+- **oku & repo (interaktif kitap, makale ve gerçek kodlar — önem sırasıyla):**
   1. **kalman and bayesian filters in python (roger r. labbe jr.):** [github.com/rlabbe/kalman-and-bayesian-filters-in-python (ücretsiz interaktif kitap)](https://github.com/rlabbe/Kalman-and-Bayesian-Filters-in-Python) — **[uygulamalı interaktif kaynak]** sıfırdan kf, ekf, ukf ve particle filter'ı jupyter notebook üzerinde adım adım kodlayarak öğreten açık kaynak kitap
   2. **quaternion kinematics for the error-state kalman filter – eskf (joan solà):** [arxiv:1711.02508 (ücretsiz pdf)](https://arxiv.org/pdf/1711.02508.pdf) — **[iha & 3b navigasyon için zorunlu]** modern uçuş kontrolcülerinde (px4, ardupilot) kullanılan error-state kalman filter (eskf) ve kuaterniyon entegrasyonunun başucu makalesi
   3. **repo – commaai/openpilot (`rednose`kalman filter):** [github.com/commaai/openpilot](https://github.com/commaai/openpilot) — gerçek otonom araçta çalışan sembolik/c++ kalman filtresi implementasyonu
@@ -110,12 +110,12 @@ engineering curriculum, mathematical representations, stochastic filtering, and 
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- **▶️ yt (yabancı video dersler & sunumlar — önem sırasıyla):**
+- **yt (yabancı video dersler & sunumlar — önem sırasıyla):**
   1. **hkust aerial robotics group (prof. shaojie shen) – vins-mono & vins-fusion presentations:** [youtube kanalı](https://www.youtube.com/@hkustaerialroboticsgroup6329) — **[ilk izlenecek sunum]** gps olmayan ortamlarda uçan iha'ların kamera + imu füzyonu (vio) ile nasıl konum bulduğu
   2. **hku mars lab (prof. fu zhang) – fast-lio, fast-lio2 & r3live presentations:** [youtube kanalı](https://www.youtube.com/@marslabhku1418) — lidar + imu ve kamera sıkı bağlı (tightly-coupled) odometri mimarisi
   3. **joan solà (iri csic-upc) – course on slam & micro lie theory:** [youtube video serisi (joan solà)](https://www.youtube.com/results?search_query=joan+sola+slam) — **[temel matematik dersi]** fast-lio, r3live ve vins'in kalbinde yatan 3b dönüşümler ($so(3)/se(3)$), lie cebiri, imu ön-entegrasyonu (pre-integration) ve manifold üzerinde durum kestirimi matematiğini tahtada adım adım türeten başvuru ders serisi
   4. **prof. frank dellaert (georgia tech csx803-amr) – factor graphs, invariant ekf & sensor fusion:** [youtube sunum & dersleri](https://www.youtube.com/results?search_query=frank+dellaert+factor+graphs) — **[ileri optimizasyon dersi]** gtsam kütüphanesinin yaratıcısından; isam2 faktör grafikleri, kayan pencere (sliding window) optimizasyonu ve çok sensörlü (kamera, lidar, imu) füzyonun teorik mimarisi
-- **📖 oku & 💻 repo (altın değerinde c++ kod tabanları — önem sırasıyla):**
+- **oku & repo (altın değerinde c++ kod tabanları — önem sırasıyla):**
   1. **vins-mono: a robust and versatile monocular visual-inertial state estimator (qin, li, shen – ieee t-ro):** [arxiv:1708.03852](https://arxiv.org/abs/1708.03852) & [c++ repo (hkust-aerial-robotics/vins-mono)](https://github.com/HKUST-Aerial-Robotics/VINS-Mono) — **[iha görsel-ataletsel odometri c++ reposu]** imu ön-entegrasyonu (pre-integration) ve kayan pencere (sliding window) optimizasyonunun c++ kodu
   2. **fast-lio2: fast direct lidar-inertial odometry (xu, zhang et al. – ieee t-ro):** [arxiv:2107.06829](https://arxiv.org/abs/2107.06829) & [c++ repo (hku-mars/fast_lio)](https://github.com/hku-mars/FAST_LIO) — **[en hızlı lidar-imu füzyonu]** ikd-tree veri yapısı ve iterated kalman filter kullanan endüstri standardı c++ paketi
   3. **repo – tixiaoshan/lio-sam:** [github.com/tixiaoshan/lio-sam](https://github.com/TixiaoShan/LIO-SAM) — gtsam faktör grafikleri üzerinde lidar + imu + gps füzyonu yapan çok temiz c++ reposu
@@ -142,10 +142,10 @@ engineering curriculum, mathematical representations, stochastic filtering, and 
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- **▶️ yt (yabancı video dersler — önem sırasıyla):**
+- **yt (yabancı video dersler — önem sırasıyla):**
   1. **cyrill stachniss – markov localization, grid localization & monte carlo localization (mcl):** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLgnQpQtFTOGQrZ4O5QzbIHgl3b1JHimN_) — **[ilk izlenecek]** bir robotun bilinen harita içinde kendi konumunu olasılıksal olarak nasıl bulduğunun en net anlatımı
   2. **eth zürich – autonomous mobile robots (localization module – prof. roland siegwart):** [youtube ders serisi](https://www.youtube.com/playlist?list=PLpUPoM7Rgzi_7YWn14Va2FODh7LzADBSm) — tekerlek odometrisi hata modelleri ve harita tabanlı lokalizasyon
-- **📖 oku & 💻 doküman (önem sırasıyla):**
+- **oku & doküman (önem sırasıyla):**
   1. **probabilistic robotics – bölüm 7 & 8 (mobile robot localization: markov & grid/monte carlo):** [probabilistic-robotics.org](https://mitpress.mit.edu/9780262201629/probabilistic-robotics/) — lokalizasyon algoritmalarının teorik temeli
   2. **ros 2 nav2 amcl (adaptive monte carlo localization) configuration guide:** [docs.nav2.org/configuration/packages/configuring-amcl.html](https://docs.nav2.org/) — gerçek robotta parçacık filtresi lokalizasyonunu ayarlama rehberi
   3. **maplab: an open framework for visual-inertial mapping and localization (eth zürich asl – roland siegwart):** [github repo (ethz-asl/maplab)](https://github.com/ethz-asl/maplab) & [dokümantasyon](https://github.com/ethz-asl/maplab) — **[görsel-ataletsel haritalama ve lokalizasyon çerçevesi]** prof. roland siegwart ekibinin geliştirdiği; robotun daha önce çıkarılmış bir harita içinde kamera+imu ile 6-dof santimetrik konumunu bulmasını sağlayan (visual-inertial localization), çoklu oturum (multi-session) ve çoklu robot harita birleştirmesi (map merging) yapan 2.8k+ yıldızlı c++ otonomi motoru

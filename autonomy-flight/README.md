@@ -111,10 +111,10 @@ autonomous flight requires tightly coupling physics, low-level microcontroller f
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- **▶️ yt (yabancı video dersler — önem sırasıyla):**
+- **yt (yabancı video dersler — önem sırasıyla):**
   1. **articulated robotics – simulating a robot with gazebo & ros 2:** [youtube videosu](https://www.youtube.com/watch?v=laWn7_cj434) — **[ilk izlenecek]** urdf/xacro modeline fizik, kamera ve lidar ekleyip gazebo'da sürme
   2. **nvidia developer – nvidia isaac sim & isaac ros tutorials:** [youtube oynatma listesi](https://www.youtube.com/results?search_query=nvidia+isaac+sim+tutorial+ros2) — **[fotogerçekçi gpu simülasyonu]** ray-tracing tabanlı sensör simülasyonu, sentetik veri üretimi ve donanım hızlandırmalı robotik
-- **📖 oku & 💻 simülatör dokümanları (önem sırasıyla):**
+- **oku & simülatör dokümanları (önem sırasıyla):**
   1. **gazebo sim (modern ignition gazebo) official docs:** [gazebosim.org/docs](https://gazebosim.org/docs) — ros 2 ile entegre açık kaynak fizik ve sensör simülatörü
   2. **nvidia isaac sim & isaaclab (nvidia & eth zürich):** [isaac-sim.github.io/isaaclab](https://isaac-sim.github.io/IsaacLab/) & [github (isaac-sim/isaaclab)](https://github.com/isaac-sim/IsaacLab) — **[gpu-paralel robot öğrenmesi standartı]** tek bir gpu üzerinde binlerce robotu eşzamanlı simüle ederek insansı ve bacaklı robotlara dakikalar içinde yürüme ve manipülasyon politikaları eğiten 8.6k+ yıldızlı resmi simülasyon ve rl çerçevesi
   3. **mujoco (multi-joint dynamics with contact – deepmind):** [mujoco.readthedocs.io](https://mujoco.readthedocs.io/en/stable/overview.html) & [github.com/google-deepmind/mujoco](https://github.com/google-deepmind/mujoco) — robot öğrenmesi (rl) ve temas dinamiği için dünyanın en hızlı c/c++ fizik motoru
@@ -142,11 +142,11 @@ autonomous flight requires tightly coupling physics, low-level microcontroller f
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- **▶️ yt (yabancı video dersler — önem sırasıyla):**
+- **yt (yabancı video dersler — önem sırasıyla):**
   1. **steve brunton & matlab tech talks – model predictive control (mpc) explained:** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLn8PRpmsu08ozoeoXgxPSBKLyd4YEHww8) — **[ilk izlenecek]** kısıtlar altında gelecekteki yörüngeyi tahmin edip optimize eden mpc kontrolcüsünün çalışma prensibi
   2. **mit 6.832 – underactuated robotics (prof. russ tedrake):** [youtube tam dönem ders serisi](https://www.youtube.com/playlist?list=PLkx8KyIQkMfU5szP43GlE_S1QGSPQfL9s) — **[ileri akademik kontrol dersi]** doğrusal olmayan dinamik kontrol, lqr, mpc, lyapunov kararlılığı ve yörünge optimizasyonu (trajectory optimization)
   3. **eth zürich – flying machine arena lectures (prof. raffaello d'andrea):** [youtube sunumları](https://www.youtube.com/results?search_query=raffaello+d%27andrea+quadrocopter+control) — agresif manevra yapan otonom iha'ların doğrusal olmayan kontrolü
-- **📖 oku & 💻 repo (ücretsiz kitap ve endüstriyel kodlar — önem sırasıyla):**
+- **oku & repo (ücretsiz kitap ve endüstriyel kodlar — önem sırasıyla):**
   1. **underactuated robotics: algorithms for walking, running, swimming, flying, and manipulation (russ tedrake – mit):** [underactuated.csail.mit.edu (ücretsiz interaktif kitap & jupyter kodları)](https://underactuated.csail.mit.edu/) — **[başucu kitabı]** iha ve robot kontrolü için dünyadaki en modern ücretsiz kitap
   2. **predictive control for linear and hybrid systems (borrelli, bemporad, morari):** [mpc.berkeley.edu (ücretsiz kitap pdf)](https://www.mpc.berkeley.edu/mpc-course-material) — mpc matematiğinin standart ders kitabı
   3. **repo – commaai/openpilot:** [github.com/commaai/openpilot](https://github.com/commaai/openpilot) — **[gerçek araç kodu]** 250+ gerçek otomobil modelinde otonom şerit takibi ve hız kontrolü yapan açık kaynak sistemin `selfdrive/controls` altındaki mpc ve kalman filtresi c++/python kodlarını incele
@@ -169,10 +169,10 @@ autonomous flight requires tightly coupling physics, low-level microcontroller f
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- **▶️ yt (yabancı video dersler — önem sırasıyla):**
+- **yt (yabancı video dersler — önem sırasıyla):**
   1. **brian douglas – autonomous navigation & path tracking tech talks:** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLn8PRpmsu08rLRGrnF-S6TyGrmcA2X7kg) — **[ilk izlenecek]** pure pursuit, stanley controller ve yörünge takibi temelleri
   2. **eth zürich – autonomous mobile robots (motion control module – prof. roland siegwart):** [youtube ders serisi](https://www.youtube.com/playlist?list=PLpUPoM7Rgzi_7YWn14Va2FODh7LzADBSm) — mobil robotlarda kinematik kısıtlar ve yörünge takibi
-- **📖 oku, 💻 repo & 🎓 kurs (kod, kitap ve uzmanlık serisi — önem sırasıyla):**
+- **oku, repo & kurs (kod, kitap ve uzmanlık serisi — önem sırasıyla):**
   1. **repo – atsushisakai/pythonrobotics (path tracking bölümü):** [github.com/atsushisakai/pythonrobotics#path-tracking](https://github.com/AtsushiSakai/PythonRobotics#path-tracking) — **[hemen çalıştırılacak kodlar]** pure pursuit, stanley, rear-wheel feedback, lqr ve mpc yörünge takip algoritmalarının animasyonlu ve temiz python implementasyonları
   2. **university of toronto – self-driving cars specialization (coursera – prof. steven waslander):** [coursera.org/specializations/self-driving-cars](https://www.coursera.org/specializations/self-driving-cars) — otonom araçlarda yanal (lateral - stanley/pure pursuit) ve boylamsal (longitudinal) kontrol denklemleri (not: youtube serisi değil, coursera uzmanlık programıdır)
   3. **trajectory planning for automatic machines and robots (luigi biagiotti & claudio melchiorri):** [springer kitap sayfası](https://link.springer.com/book/10.1007/978-3-540-85629-0) — hız, ivme ve sarsıntı (jerk / minimum snap) kısıtlı yörünge üretimi
@@ -194,11 +194,11 @@ autonomous flight requires tightly coupling physics, low-level microcontroller f
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- **▶️ yt (yabancı video dersler — önem sırasıyla):**
+- **yt (yabancı video dersler — önem sırasıyla):**
   1. **prof. dmitry berenson – motion planning lectures (university of michigan):** [youtube kanalı & ders videoları](https://www.youtube.com/results?search_query=dmitry+berenson+motion+planning) — **[ilk izlenecek – temel planlama]** çok serbestlik dereceli robotlarda çarpışma kontrolü, örnekleme ve optimizasyon tabanlı (chomp, trajopt) hareket planlama
   2. **prof. fei gao (zju fast lab) & hkust aerial robotics (boyu zhou) – autonomous uav planning, exploration & swarm lectures:** [youtube seminer & ders serisi](https://www.youtube.com/results?search_query=fei+gao+fast+lab+motion+planning) — **[iha yörünge optimizasyonu & otonom keşif dersi]** ego-planner, fuel ve gcopter mimarilerinin arkasındaki b-spline yörünge optimizasyonu, esdf'siz gradyan arama ve hiyerarşik sınır tabanlı otonom keşif teorisinin amfi dersleri
   3. **prof. russ tedrake (mit 6.832 / 6.821 – underactuated robotics: trajectory optimization):** [youtube ders oynatma listesi (mit)](https://www.youtube.com/playlist?list=PLkx8KyIQkMfU5szP43GlE_S1QGSPQfL9s) — **[zirve matematiksel planlama dersi]** doğrudan kolokasyon (direct collocation), non-lineer dinamik kısıtlar altında kinodinamik yörünge optimizasyonu ve engellerden kaçma teorisi
-- **📖 oku & 💻 kütüphane (kitap ve c++ planlama motoru — önem sırasıyla):**
+- **oku & kütüphane (kitap ve c++ planlama motoru — önem sırasıyla):**
   1. **the open motion planning library (ompl – c++ kütüphanesi):** [ompl.kavrakilab.org](https://ompl.kavrakilab.org/) & [github repo (ompl/ompl)](https://github.com/ompl/ompl) — **[endüstri standardı c++ kütüphanesi]** ros 2 moveit 2'nin altında çalışan rrt*, prm ve kinodinamik planlayıcıların saf c++ kodu
   2. **principles of robot motion: theory, algorithms, and implementations (howie choset, kevin lynch, seth hutchinson et al.):** [mit press kitap sayfası](https://mitpress.mit.edu/9780262033275/principles-of-robot-motion/) — robot hareket teorisinin kapsamlı referans kitabı
   3. **kr_autonomous_flight: autonomous flight system for gps-denied quadrotors (upenn grasp lab):** [github repo (kumarrobotics/kr_autonomous_flight)](https://github.com/KumarRobotics/kr_autonomous_flight) — **[tam yığın otonom uçuş & kinodinamik hareket planlama]** vijay kumar laboratuvarının açık kaynak tam otonom mimarisi; gps'siz ve bilinmeyen karmaşık ortamlarda 3b haritalama, gerçek zamanlı kinodinamik yörünge üretimi (online replanning), engellerden kaçma ve se(3) kontrolünü birleştiren entegre c++ otonomi yığını
@@ -225,9 +225,9 @@ autonomous flight requires tightly coupling physics, low-level microcontroller f
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- **▶️ yt (yabancı video dersler — önem sırasıyla):**
+- **yt (yabancı video dersler — önem sırasıyla):**
   1. **phil's lab – hardware design, sensor interfacing & flight controller firmware in c/c++:** [youtube kanalı](https://www.youtube.com/@PhilsLab) — **[ilk izlenecek – muazzam kanal]** sıfırdan iha uçuş kontrol kartı (stm32 + imu + barometre) tasarlayıp üzerinde c ile sensör sürücüsü ve kalman filtresi koşturan uçtan uca mühendislik kanalı
-- **📖 oku & 💻 repo (endüstriyel otopilot mimarisi — önem sırasıyla):**
+- **oku & repo (endüstriyel otopilot mimarisi — önem sırasıyla):**
   1. **px4 autopilot architectural overview & companion computer integration:** [docs.px4.io/main/en/concept/architecture.html](https://docs.px4.io/main/en/concept/architecture.html) & [github repo (px4/px4-autopilot)](https://github.com/PX4/PX4-Autopilot) — **[gerçek iha mimarisini incele]** sensör sürücülerinin `uorb` mesajlaşma hattıyla durum kestirimine (ekf2) ve kontrolcüye nasıl bağlandığını, ayrıca ros 2 (`uxrce_dds`) ile jetson görev bilgisayarına nasıl konuştuğunu incele
   2. **ardupilot architecture & ap_hal (andrew tridgell / ardupilot team):** [ardupilot.org](https://ardupilot.org/) · [github repo (ardupilot/ardupilot)](https://github.com/ArduPilot/ardupilot) & [mavproxy (github)](https://github.com/ArduPilot/MAVProxy) — **[dünyanın en çok kullanılan otopilot yığını & ap_hal]** andrew tridgell (rsync ve samba mucidi) öncülüğünde geliştirilen; chibios rtos üzerinde çalışan donanım soyutlama katmanı (ap_hal), 24-state ekf3 durum kestirimi, mavlink telemetri protokolü ve döner kanat/sabit kanat/vtol otonom uçuş kontrol mimarisini sunan 11.5k+ yıldızlı küresel otopilot standartı
   3. **qgroundcontrol (qgc – mavlink ground control station):** [qgroundcontrol.com](http://qgroundcontrol.com/) & [github repo (mavlink/qgroundcontrol)](https://github.com/mavlink/qgroundcontrol) — **[açık kaynak iha yer kontrol istasyonu (gcs) standardı]** px4 ve ardupilot otopilotları için dünya standardı çapraz platform (c++ / qt / qml) yer kontrol istasyonu; mavlink üzerinden otonom rota ve görev planlama (waypoint navigation), sensör ve pusula kalibrasyonu, parametre ayarlama, canlı telemetri ve video akışı (rtsp) sunan 3.7k+ yıldızlı temel havacılık arayüzü
@@ -247,11 +247,11 @@ autonomous flight requires tightly coupling physics, low-level microcontroller f
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- **▶️ yt (yabancı video dersler — önem sırasıyla):**
+- **yt (yabancı video dersler — önem sırasıyla):**
   1. **jetsonhacks – nvidia jetson (orin / nano) edge ai, camera & tensorrt guides:** [youtube kanalı](https://www.youtube.com/@JetsonHacks) & [github (jetsonhacksnano)](https://github.com/JetsonHacksNano) — **[ilk izlenecek]** gerçek bir iha/robot görev bilgisayarı olan nvidia jetson üzerinde kamera sürücüleri, cuda ve c++ tensorrt kurulumu
   2. **mit 6.5940 – tinyml and efficient deep learning computing (prof. song han):** [youtube ders serisi](https://www.youtube.com/playlist?list=PL80kAHvQbh-pT4lCkDT53zT8DKmhE0idB) & [ders sitesi (hanlab.mit.edu/courses/2024-fall-65940)](https://hanlab.mit.edu/courses/2024-fall-65940) — **[dünya zirvesi ders]** model quantization (int8/fp8/int4), pruning, knowledge distillation ve donanım hızlandırmanın tüm matematiği
   3. **shawn hymel – introduction to embedded machine learning (tinyml):** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PL7VEa1KauMQqZFj_nWRfsCZNXaBbkuurG) — mikrodenetleyiciler üzerinde çıkarım (inference)
-- **📖 oku & 💻 repo (altın değerinde c++ & tensorrt kod tabanları — önem sırasıyla):**
+- **oku & repo (altın değerinde c++ & tensorrt kod tabanları — önem sırasıyla):**
   1. **repo – dusty-nv/jetson-inference (hello ai world):** [github.com/dusty-nv/jetson-inference](https://github.com/dusty-nv/jetson-inference) & [nvidia jetson ai lab](https://www.jetson-ai-lab.com/) — **[temel başlangıç reposu]** nvidia'nın resmi c++ ve python tensorrt tabanlı gerçek zamanlı nesne tespiti, segmentasyon ve poz kestirimi eğitim deposu
   2. **repo – wang-xinyu/tensorrtx:** [github.com/wang-xinyu/tensorrtx](https://github.com/wang-xinyu/tensorrtx) — **[portföy için kritik repo]** yolov8/v11, resnet, detr gibi modellerin pytorch'tan alınıp saf c++ tensorrt api'si ile sıfırdan nasıl yazıldığını gösteren en önemli açık kaynak proje
   3. **tinyml: machine learning with tensorflow lite on arduino and ultra-low-power microcontrollers (pete warden & daniel situnayake):** [o'reilly kitap sayfası](https://www.oreilly.com/library/view/tinyml/9781492052036/) — düşük güçlü gömülü ai referansı

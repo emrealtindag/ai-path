@@ -46,15 +46,15 @@ engineering curriculum, mathematical representations, optimization engines, and 
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- **🇹🇷 tr (türkçe kaynaklar):**
+- **tr (türkçe kaynaklar):**
   1. **murat karakaya akademi (tedü) – makine öğrenmesi ve derin öğrenme uygulamaları:** [youtube kanalı](https://www.youtube.com/@MuratKarakayaAkademi) — uygulamalı türkçe makine öğrenmesi ve keras/python dersleri (doğrulanmış akademik kanal)
   2. **bilgisayar kavramları (şadi evren şeker) – makine öğrenmesi serisi:** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLh9ECzBB8tJOtaD6DFxqRdP7QHIaBFcbW) — overfitting, cross-validation, precision/recall/f1 kavramlarının temel mantığı
   3. **kitap:** cemalettin kubat – yapay zeka temelleri ve algoritmaları
-- **▶️ yt (yabancı video dersler — önem sırasıyla):**
+- **yt (yabancı video dersler — önem sırasıyla):**
   1. **statquest with josh starmer – machine learning playlist:** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF) — **[ilk izlenecek]** bias-variance, roc-auc, cross-validation ve tüm temel ml kavramlarının görsel anlatımı
   2. **andrew ng – machine learning specialization (**[**deeplearning.ai**](http://DeepLearning.AI)**/ stanford):** [youtube ders serisi](https://www.youtube.com/playlist?list=PLkDaE6sCZn6FNC6YRfRQc_FbeQrF8BwGI) — **[ana başlangıç dersi]** makine öğrenmesi mühendisliğine standart giriş kursu
   3. **caltech cs156 – learning from data (prof. yaser abu-mostafa):** [youtube ders serisi](https://www.youtube.com/playlist?list=PLD63A284B7615313A) — **[teorik derinlik]** öğrenme teorisi (vc dimension, genelleme sınırları) için kapsamlı üniversite dersi
-- **📖 oku & 💻 kütüphane (kitap ve dokümantasyon — önem sırasıyla):**
+- **oku & kütüphane (kitap ve dokümantasyon — önem sırasıyla):**
   1. **hands-on machine learning with scikit-learn, keras, and tensorflow (aurélien géron):** [github kod deposu](https://github.com/ageron/handson-ml3) & [o'reilly kitap sayfası](https://www.oreilly.com/library/view/hands-on-machine-learning/9781098125967/) — **[temel uygulama kitabı]** uçtan uca ml boru hattı (pipeline) kurmayı öğreten başvuru kitabı
   2. **scikit-learn official user guide:** [scikit-learn.org/stable/user_guide.html](https://scikit-learn.org/stable/user_guide.html) — veri ön işleme, metrikler ve doğrulama için resmi mühendislik rehberi
   3. **the elements of statistical learning (hastie, tibshirani, friedman – stanford):** [hastie.su.domains/elemstatlearn (ücretsiz pdf)](https://hastie.su.domains/ElemStatLearn/printings/ESLII_print12_toc.pdf) — istatistiksel öğrenmenin matematiksel referans kitabı
@@ -75,13 +75,13 @@ engineering curriculum, mathematical representations, optimization engines, and 
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- **🇹🇷 tr (türkçe kaynaklar):**
+- **tr (türkçe kaynaklar):**
   1. **bilgisayar kavramları – sınıflandırma ve regresyon algoritmaları:** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLh9ECzBB8tJOtaD6DFxqRdP7QHIaBFcbW) — svm, karar ağaçları, random forest, k-nn ve naive bayes'in türkçe özeti
   2. **veri bilimi okulu & mustafa vahit keskin (miuul):** [veri-bilimi-okulu](https://www.veribilimiokulu.com/) & [youtube kanalı](https://www.youtube.com/@Miuul) — denetimli öğrenme ve tablosal veri modelleme pratikleri
-- **▶️ yt (yabancı video dersler — önem sırasıyla):**
+- **yt (yabancı video dersler — önem sırasıyla):**
   1. **statquest with josh starmer – decision trees, random forest, xgboost & svm:** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF) — **[ilk izlenecek]** özellikle gradient boosting ve xgboost'un çalışma mekanizmasını dünyada en iyi anlatan seri
   2. **cornell cs4780 – machine learning for intelligent systems (prof. kilian weinberger):** [youtube ders serisi](https://www.youtube.com/playlist?list=PLl8OlHZGYOQ7bkVbuRthEsaLr7bONzbXS) — **[en iyi üniversite dersi]** k-nn, svm, kernel trick, karar ağaçları ve boosting'in tahtada matematiksel türetimi
-- **📖 oku & 💻 doküman (önem sırasıyla):**
+- **oku & doküman (önem sırasıyla):**
   1. **xgboost official documentation & tutorials:** [xgboost.readthedocs.io](https://xgboost.readthedocs.io/en/stable/) — tablosal verilerde endüstri standardı olan kütüphanenin resmi dokümanı
   2. **pattern recognition and machine learning – prml (christopher bishop):** [ücretsiz resmi pdf (microsoft research)](https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf) — **[referans kitap]** bayesci regresyon, svm ve olasılıksal sınıflandırmanın en derin matematiksel kitabı
 
@@ -99,14 +99,14 @@ engineering curriculum, mathematical representations, optimization engines, and 
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- **🇹🇷 tr (türkçe kaynaklar):**
+- **tr (türkçe kaynaklar):**
   1. **bilgisayar kavramları – kümeleme (k-means, hiyerarşik) ve boyut indirgeme (pca):** [youtube arama bağlantısı](https://www.youtube.com/results?search_query=bilgisayar+kavramlar%C4%B1+k-means+pca) — denetimsiz öğrenme algoritmalarının türkçe mantığı
   2. **mustafa vahit keskin (miuul / veri bilimi okulu):** [youtube kanalı](https://www.youtube.com/@Miuul) — veri bilimi ve kümeleme süreçleri
-- **▶️ yt (yabancı video dersler — önem sırasıyla):**
+- **yt (yabancı video dersler — önem sırasıyla):**
   1. **statquest – pca, k-means, dbscan, t-sne & umap:** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF) — **[ilk izlenecek]** boyut indirgeme ve kümeleme algoritmalarının adım adım görsel analizi
   2. **stanford cs229 – machine learning (unsupervised learning, k-means, em & pca):** [youtube ders serisi](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU) — **[ana akademik ders]** gaussian mixture models (gmm) ve expectation-maximization (em) türetimleri
   3. **victor lavrenko – clustering & em algorithm lectures:** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLBv09BD7ez_4e9LtmK626Evn1ion6ynrt) — gmm ve kümeleme matematiği
-- **📖 oku (kitap ve dokümanlar — önem sırasıyla):**
+- **oku (kitap ve dokümanlar — önem sırasıyla):**
   1. **scikit-learn unsupervised learning user guide:** [scikit-learn.org/stable/unsupervised_learning.html](https://scikit-learn.org/stable/unsupervised_learning.html) — dbscan, gmm, pca ve anomaly detection kod örnekleri ve karşılaştırma tabloları
   2. **probabilistic machine learning: an introduction (kevin murphy – bölüm 20 & 21):** [probml.github.io/pml-book/book1.html](https://probml.github.io/pml-book/book1.html) — boyut indirgeme ve kümelemenin olasılıksal temelleri (ücretsiz pdf)
 
@@ -129,14 +129,14 @@ engineering curriculum, mathematical representations, optimization engines, and 
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- **🇹🇷 tr (türkçe kaynaklar):**
+- **tr (türkçe kaynaklar):**
   1. **odtü ceng 501 – deep learning (prof. dr. sinan kalkan):** [resmi ders sayfası](https://kovan.ceng.metu.edu.tr/~sinan/) & [github ders deposu (sinankalkan/ceng501-spring2021)](https://github.com/sinankalkan/CENG501-Spring2021) — sinir ağları, backpropagation, optimizasyon ve düzenlileştirme (regularization) açık ders materyalleri
   2. **murat karakaya akademi – deep learning türkçe uygulamalar:** [youtube kanalı](https://www.youtube.com/@MuratKarakayaAkademi) — uygulamalı derin öğrenme temelleri
-- **▶️ yt (yabancı video dersler — önem sırasıyla):**
+- **yt (yabancı video dersler — önem sırasıyla):**
   1. **3blue1brown – neural networks & backpropagation:** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) — **[ilk izlenecek]** yapay sinir ağlarının ve geri yayılımın (backpropagation) görsel matematiği
   2. **andrej karpathy – neural networks: zero to hero (micrograd & makemore):** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ) — **[zorunlu kodlama serisi]** hazır kütüphane kullanmadan sıfırdan kendi autograd motorunu, backpropagation'ı ve batchnorm'u kodlama
   3. **nyu deep learning ds-ga 1008 (yann lecun & alfredo canziani):** [youtube ders serisi](https://www.youtube.com/playlist?list=PLLHTzKZzVU9eaEyErdV26ikyolxOsz6mq) — pytorch üzerinden derin öğrenmenin geometrik ve enerji tabanlı yorumu
-- **📖 oku & 💻 interaktif kitaplar (önem sırasıyla):**
+- **oku & interaktif kitaplar (önem sırasıyla):**
   1. **dive into deep learning (**[**d2l.ai**](http://d2l.ai)**– aston zhang, zachary lipton, mu li, alex smola):** [d2l.ai](https://d2l.ai/) — **[uygulamalı interaktif kitap]** her matematiksel formülün hemen altında çalışan pytorch kodu bulunan ücretsiz interaktif kitap
   2. **deep learning (ian goodfellow, yoshua bengio, aaron courville):** [deeplearningbook.org](https://www.deeplearningbook.org/) — alanın teorik referans kitabı (ücretsiz)
 
@@ -157,13 +157,13 @@ engineering curriculum, mathematical representations, optimization engines, and 
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- **🇹🇷 tr (türkçe akademik kaynaklar):**
+- **tr (türkçe akademik kaynaklar):**
   1. **odtü ceng 501 (prof. dr. sinan kalkan) & ceng 783 (derin öğrenme özel konular):** [ceng 501 ders sayfası](https://user.ceng.metu.edu.tr/~emre/Fall2026-DeepLearning.html) & [github repo](https://github.com/sinankalkan/CENG501-Spring2021) — cnn, rnn, autoencoder, gan ve vision transformer (vit) mimarileri (not: ceng 783 odtü'de dönemlik açılan lisansüstü derin öğrenme ders kodudur; prof. dr. ilkay ulusoy odtü ee bünyesinde görüntü analizi/vision çalışmaları yürütmektedir)
-- **▶️ yt (yabancı video dersler — önem sırasıyla):**
+- **yt (yabancı video dersler — önem sırasıyla):**
   1. **stanford cs230 – deep learning (andrew ng):** [youtube ders serisi](https://www.youtube.com/playlist?list=PLoROMvodv4rOABXSygHTsbvUz4G_YQhOb) — **[ilk izlenecek]** cnn, rnn/lstm, autoencoder ve gan mimarilerinin mühendislik perspektifi
   2. **umar jamil – transformers, vision transformers (vit) &vae from scratch in pytorch:** [youtube kanalı](https://www.youtube.com/@umarjamilai) — **[sıfırdan mimari kodlama]** makalelerdeki diyagramları açıp satır satır pytorch ile sıfırdan kodlayan en iyi kanal
   3. **yannic kilcher – deep learning architecture paper reviews:** [youtube kanalı](https://www.youtube.com/@YannicKilcher) — temel mimari makalelerin satır satır teknik analizi
-- **📖 oku (temel makaleler ve görsel incelemeler — önem sırasıyla):**
+- **oku (temel makaleler ve görsel incelemeler — önem sırasıyla):**
   1. [**distill.pub**](http://Distill.pub)**(visualizing deep learning):** [distill.pub](https://distill.pub/) — attention, cnn öznitelikleri ve graph neural networks (gnn) üzerine etkileşimli görsel makaleler
   2. **attention is all you need (vaswani et al., 2017):** [arxiv:1706.03762](https://arxiv.org/abs/1706.03762) — modern ai dünyasını başlatan orijinal transformer makalesi
   3. **an image is worth 16x16 words: transformers for image recognition at scale (dosovitskiy et al.):** [arxiv:2010.11929](https://arxiv.org/abs/2010.11929) — orijinal vision transformer (vit) makalesi
@@ -189,12 +189,12 @@ engineering curriculum, mathematical representations, optimization engines, and 
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- **🇹🇷 tr (türkçe kaynaklar):**
+- **tr (türkçe kaynaklar):**
   1. **inzva ai – deep learning & applied ai study guides:** [inzva.com](https://inzva.com/) — türkiye'deki yapay zekâ araştırma topluluğunun çalışma notları
-- **▶️ yt (yabancı video dersler — önem sırasıyla):**
+- **yt (yabancı video dersler — önem sırasıyla):**
   1. **umar jamil – pytorch deep dives, mixed precision & distributed training:** [youtube kanalı](https://www.youtube.com/@umarjamilai) — eğitim döngüsü (training loop) optimizasyonu ve pytorch derinlikleri
   2. **pytorch official youtube channel – distributed training & profiling series:** [youtube kanalı](https://www.youtube.com/@PyTorch) — resmi pytorch mühendislerinden ddp, torchscript ve amp anlatımları
-- **📖 oku (zorunlu mühendislik rehberleri — önem sırasıyla):**
+- **oku (zorunlu mühendislik rehberleri — önem sırasıyla):**
   1. **a recipe for training neural networks (andrej karpathy blog):** [karpathy.github.io/2019/04/25/recipe](https://karpathy.github.io/2019/04/25/recipe/) — **[her model eğitiminden önce okunacak]** sinir ağı eğitirken yapılan sessiz hataları (silent bugs) yakalama ve adım adım model büyütme rehberi
   2. **pytorch automatic mixed precision (amp) recipe:** [pytorch.org/tutorials/recipes/recipes/amp_recipe.html](https://pytorch.org/tutorials/recipes/recipes/amp_recipe.html) — fp16/bf16 ile gpu bellek kullanımını yarıya indirip eğitimi 2–3 kat hızlandırma
   3. **weights & biases (w&b) documentation & mlops tutorials:** [docs.wandb.ai](https://docs.wandb.ai/) — deney takibi, hiperparametre araması (sweeps) ve ablation çalışmaları
@@ -218,12 +218,12 @@ engineering curriculum, mathematical representations, optimization engines, and 
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- **🇹🇷 tr (türkçe kaynaklar):**
+- **tr (türkçe kaynaklar):**
   1. **odtü ceng 501 – self-supervised & meta learning bölümleri (prof. dr. sinan kalkan):** [ders sayfası](https://kovan.ceng.metu.edu.tr/~sinan/) — etiketsiz veriden temsil öğrenimi sunumları
-- **▶️ yt (yabancı video dersler — önem sırasıyla):**
+- **yt (yabancı video dersler — önem sırasıyla):**
   1. **yann lecun – self-supervised learning & energy-based models (nyu):** [youtube ders videoları](https://www.youtube.com/results?search_query=yann+lecun+self+supervised+learning) — **[ilk izlenecek]** etiketsiz görsel ve sensör verisinden dünya temsili öğrenmenin felsefesi ve matematiği
   2. **stanford cs330 – deep multi-task and meta learning (prof. chelsea finn):** [youtube ders serisi](https://www.youtube.com/playlist?list=PLoROMvodv4rMC6zfYmnD7UG3LVvwaITY5) — **[robotik & az veri için kritik]** few-shot learning, domain adaptation ve continual learning için zirve ders
-- **📖 oku (makale ve teknik bloglar — önem sırasıyla):**
+- **oku (makale ve teknik bloglar — önem sırasıyla):**
   1. **lilian weng’s technical ml blog (openai):** [lilianweng.github.io](https://lilianweng.github.io/) — **[referans teknik blog]** contrastive learning, self-supervised learning, meta-learning ve active learning üzerine kapsamlı matematiksel özetler
   2. **a cookbook of self-supervised learning (balestriero, lecun et al. – meta ai):** [arxiv:2304.12210](https://arxiv.org/abs/2304.12210) — öz-denetimli öğrenme yöntemlerinin el kitabı
   3. **simclr: a simple framework for contrastive learning of visual representations (chen et al.):** [arxiv:2002.05709](https://arxiv.org/abs/2002.05709) — kontrastif görsel öğrenmenin temel makalesi
@@ -247,10 +247,10 @@ engineering curriculum, mathematical representations, optimization engines, and 
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- **▶️ yt (yabancı video dersler — önem sırasıyla):**
+- **yt (yabancı video dersler — önem sırasıyla):**
   1. **andrej karpathy – let's build the gpt tokenizer & let's build gpt from scratch:** [youtube videosu (gpt)](https://www.youtube.com/watch?v=kCc8FmEb1nY) & [youtube videosu (tokenizer)](https://www.youtube.com/watch?v=zduSFxRajkE) — **[ilk izlenecek]** bpe tokenization, self-attention ve gpt mimarisini sıfırdan pytorch ile kodlayarak öğrenme
   2. **stanford cs224n – natural language processing with deep learning (prof. christopher manning):** [youtube ders serisi](https://www.youtube.com/playlist?list=PLoROMvodv4rMFqRtEuo6SGjY4XbRIVRd4) — **[ana akademik ders]** word2vec, sekans modelleri, bert ve transformer'ların dilsel temeli
-- **📖 oku & 💻 canlı görselleştirme (etkileşimli araçlar ve kitaplar — önem sırasıyla):**
+- **oku & canlı görselleştirme (etkileşimli araçlar ve kitaplar — önem sırasıyla):**
   1. **the illustrated transformer & the illustrated word2vec (jay alammar):** [jalammar.github.io/illustrated-transformer](https://jalammar.github.io/illustrated-transformer/) — attention mekanizmasının dünyadaki en ünlü görsel anlatımı
   2. **transformer explainer (georgia tech polo club – chi 2026):** [poloclub.github.io/transformer-explainer](https://poloclub.github.io/transformer-explainer/) & [github repo (poloclub/transformer-explainer)](https://github.com/poloclub/transformer-explainer) — **[tarayıcıda canlı çalışan etkileşimli transformer görselleştirici]** tarayıcı içinde canlı bir gpt modelini çalıştırarak embedding, multi-head self-attention (q, k, v), layernorm ve softmax olasılıklarını etkileşimli olarak görselleştiren 9k+ yıldızlı interaktif eğitim aracı
   3. **speech and language processing, 3rd ed. (dan jurafsky & james h. martin – stanford):** [web.stanford.edu/~jurafsky/slp3 (ücretsiz pdf)](https://web.stanford.edu/~jurafsky/slp3/) — nlp alanının standart referans ders kitabı
@@ -274,11 +274,11 @@ engineering curriculum, mathematical representations, optimization engines, and 
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- **▶️ yt (yabancı video dersler — önem sırasıyla):**
+- **yt (yabancı video dersler — önem sırasıyla):**
   1. **andrej karpathy – state of gpt & let's reproduce gpt-2 (124m):** [youtube videosu (state of gpt)](https://www.youtube.com/watch?v=bZQun8Y4L2A) & [youtube videosu (gpt-2)](https://www.youtube.com/watch?v=l8pRSuU81PU) — **[ilk izlenecek]** pretraining, sft, rlhf aşamaları ve sıfırdan yüksek hızlı eğitim
   2. **umar jamil – coding llama 2 / llama 3, kv cache & lora from scratch in pytorch:** [youtube kanalı](https://www.youtube.com/@umarjamilai) — **[mimari kodlama]** rope, grouped-query attention (gqa), kv cache ve lora'nın satır satır pytorch implementasyonu
   3. **maxime labonne & sam witteveen – llm fine-tuning, quantization & engineering:** [sam witteveen youtube](https://www.youtube.com/@samwitteveenai) & [maxime labonne llm course (github)](https://github.com/mlabonne/llm-course) — qlora, dpo, gguf/awq nicemleme (quantization) ve model birleştirme
-- **📖 oku & 💻 repo (makale ve endüstriyel kod tabanları — önem sırasıyla):**
+- **oku & repo (makale ve endüstriyel kod tabanları — önem sırasıyla):**
   1. **repo – ggerganov/llama.cpp:** [github.com/ggerganov/llama.cpp](https://github.com/ggerganov/llama.cpp) — **[c++ mühendisliği için temel repo]** büyük dil modellerinin hiçbir python bağımlılığı olmadan saf c/c++, simd (avx/neon) ve cuda çekirdekleriyle uç cihazlarda nasıl çalıştırıldığını gösteren açık kaynak proje
   2. **repo – vllm-project/vllm:** [docs.vllm.ai](https://docs.vllm.ai/) & [github.com/vllm-project/vllm](https://github.com/vllm-project/vllm) — pagedattention mimarisi ile yüksek verimli (high-throughput) llm sunumu
   3. **hugging face peft documentation & lora / dpo papers:** [huggingface.co/docs/peft](https://huggingface.co/docs/peft/index) · [lora (arxiv:2106.09685)](https://arxiv.org/abs/2106.09685) · [dpo (arxiv:2305.18290)](https://arxiv.org/abs/2305.18290)
@@ -299,10 +299,10 @@ engineering curriculum, mathematical representations, optimization engines, and 
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- **▶️ yt (yabancı video dersler — önem sırasıyla):**
+- **yt (yabancı video dersler — önem sırasıyla):**
   1. **langchain – rag from scratch series (18 kısa video):** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLfaIDFEXuae2LXbO1_PKyVJiQ23ZztA0x) — **[ilk izlenecek]** chunking, indexing, query translation, routing, hybrid search ve reranking adımlarının mühendislik özeti
   2. **sam witteveen – advanced rag, vector databases & reranking:** [youtube kanalı](https://www.youtube.com/@samwitteveenai) — üretim seviyesi rag boru hatları
-- **📖 oku & 💻 repo (kütüphane ve makaleler — önem sırasıyla):**
+- **oku & repo (kütüphane ve makaleler — önem sırasıyla):**
   1. **faiss (facebook ai similarity search – c++ & python):** [faiss.ai](https://faiss.ai/) & [github.com/facebookresearch/faiss](https://github.com/facebookresearch/faiss) — **[hem rag hem görsel arama için kritik]** milyonlarca gömme vektörü (image/text embeddings) arasında milisaniyede en yakın komşu araması yapan c++/gpu kütüphanesi
   2. **llamaindex & qdrant documentation:** [docs.llamaindex.ai](https://docs.llamaindex.ai/) · [qdrant.tech/documentation](https://qdrant.tech/documentation/) — veri indeksleme ve rust tabanlı vektör veritabanı mimarisi
   3. **retrieval-augmented generation for knowledge-intensive nlp tasks (lewis et al.):** [arxiv:2005.11401](https://arxiv.org/abs/2005.11401) — orijinal rag makalesi
@@ -321,10 +321,10 @@ engineering curriculum, mathematical representations, optimization engines, and 
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- **▶️ yt (yabancı video dersler — önem sırasıyla):**
+- **yt (yabancı video dersler — önem sırasıyla):**
   1. [**deeplearning.ai**](http://DeepLearning.AI)**& harrison chase – ai agents in langgraph:** [kurs sayfası](https://www.deeplearning.ai/short-courses/ai-agents-in-langgraph/) & [langchain youtube](https://www.youtube.com/@LangChain) — **[ilk izlenecek]** döngüsel durum grafikleri (state graphs), hafıza (memory) ve araç çağırma (tool calling) ile güvenilir ajan mimarisi
   2. **sam witteveen – agentic workflows & multi-agent systems:** [youtube kanalı](https://www.youtube.com/@samwitteveenai)
-- **📖 oku & 💻 repo (makale ve çerçeveler — önem sırasıyla):**
+- **oku & repo (makale ve çerçeveler — önem sırasıyla):**
   1. **llm powered autonomous agents (lilian weng blog):** [lilianweng.github.io/posts/2023-06-23-agent](https://lilianweng.github.io/posts/2023-06-23-agent/) — planning, memory ve tool use bileşenlerinin en net mimari özeti
   2. **react: synergizing reasoning and acting in language models (yao et al.):** [arxiv:2210.03629](https://arxiv.org/abs/2210.03629) — akıl yürütme ve eylem döngüsünün temel makalesi
   3. **microsoft autogen & langgraph documentation:** [microsoft.github.io/autogen](https://microsoft.github.io/autogen/) · [langchain-ai.github.io/langgraph](https://langchain-ai.github.io/langgraph/)
@@ -342,11 +342,11 @@ engineering curriculum, mathematical representations, optimization engines, and 
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- **▶️ yt (yabancı video dersler — önem sırasıyla):**
+- **yt (yabancı video dersler — önem sırasıyla):**
   1. **outlier – diffusion models from scratch (math & intuition):** [youtube videosu](https://www.youtube.com/watch?v=HoKDTa5jHvg) — **[ilk izlenecek]** ileri ve geri difüzyon süreçlerinin (ddpm) görsel matematiği
   2. **umar jamil – coding stable diffusion from scratch in pytorch:** [youtube videosu](https://www.youtube.com/watch?v=ZBKpAp_6TGI) — **[sıfırdan kodlama]** vae, u-net, clip ve ddpm örnekleyicisini (sampler) satır satır pytorch ile birleştirme
   3. **arash vahdat (nvidia research) – generative ai & diffusion tutorials (cvpr):** [youtube sunumu](https://www.youtube.com/watch?v=c36lUUr864M) — vae, gan, normalizing flows ve score-based diffusion modellerinin karşılaştırmalı teorisi
-- **📖 oku (referans makaleler — önem sırasıyla):**
+- **oku (referans makaleler — önem sırasıyla):**
   1. **what are diffusion models? (lilian weng):** [lilianweng.github.io/posts/2021-07-11-diffusion-models](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/) — difüzyon denklemlerinin türetimi
   2. **understanding diffusion models: a unified perspective (calvin luo):** [arxiv:2208.11970 (ücretsiz pdf)](https://arxiv.org/pdf/2208.11970.pdf) — elbo, vae ve skor eşleştirme arasındaki matematiksel bağı en temiz kuran 25 sayfalık rehber makale
 
@@ -364,10 +364,10 @@ engineering curriculum, mathematical representations, optimization engines, and 
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- **▶️ yt (yabancı video dersler — önem sırasıyla):**
+- **yt (yabancı video dersler — önem sırasıyla):**
   1. **umar jamil – coding paligemma / llava (vision-language models) from scratch in pytorch:** [youtube videosu](https://www.youtube.com/watch?v=vVaRhZXovbw) — **[ilk izlenecek – kodlama]** bir vision transformer (siglip/clip) ile bir dil modelini (gemma/llama) birleştirip görüntüyü anlayan vlm kodlama
   2. **yannic kilcher – llava, flamingo & multimodal paper reviews:** [youtube kanalı](https://www.youtube.com/@YannicKilcher) — görsel-dilsel hizalama mimarilerinin analizi
-- **📖 oku & 💻 repo (makale ve kütüphaneler — önem sırasıyla):**
+- **oku & repo (makale ve kütüphaneler — önem sırasıyla):**
   1. **vision-language models explained (hugging face technical blog):** [huggingface.co/blog/vlms](https://huggingface.co/blog/vlms) — modern vlm mimarilerinin kapsamlı mühendislik rehberi
   2. **visual instruction tuning – llava (liu et al., neurips 2023):** [arxiv:2304.08485](https://arxiv.org/abs/2304.08485) & [github repo (haotian-liu/llava)](https://github.com/haotian-liu/LLaVA) — açık kaynak çok modlu modellerin temel makalesi ve kodu
   3. **nanovlm: minimal & fast vision-language model training (hugging face):** [github repo (huggingface/nanovlm)](https://github.com/huggingface/nanoVLM) — **[sıfırdan vlm eğitimi için en temiz pytorch kod tabanı]** andrej karpathy'nin nanogpt felsefesiyle hugging face tarafından geliştirilen; karmaşık kütüphane soyutlamaları olmadan, bir görsel kodlayıcı (siglip/vit) ile küçük bir dil modelini (smollm/qwen2) birleştirerek tüketici gpu'larında sıfırdan çok modlu vlm eğitmeyi ve ince ayar (fine-tuning) yapmayı adım adım öğreten 5k+ yıldızlı saf pytorch reposu
@@ -389,7 +389,7 @@ engineering curriculum, mathematical representations, optimization engines, and 
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- **📖 oku, 💻 repo & literatür haritası (önem sırasıyla):**
+- **oku, repo & literatür haritası (önem sırasıyla):**
   1. **awesome robotics foundation models (ijrr 2024 / stanford, uc berkeley, princeton, google deepmind):** [awesome-robotics-foundation-models (github)](https://github.com/robotics-survey/Awesome-Robotics-Foundation-Models) & [arxiv:2312.07843](https://arxiv.org/abs/2312.07843) — **[en kapsamlı literatür ve kod arşivi]** robotik vakıf modelleri, vla, taklit öğrenmesi, 3b açık sözlüklü algılama, 6d pose kestirimi ve dünya modellerini bir araya getiren başvuru kütüphanesi
   2. **openvla & openvla-oft (stanford / uc berkeley):** [openvla.github.io](https://openvla.github.io/) · [openvla/openvla](https://github.com/openvla/openvla) & [moojink/openvla-oft](https://github.com/moojink/openvla-oft) — **[açık kaynak vla ve hızlı ince ayar hattı]** kamera görüntüsü + doğal dil komutunu doğrudan 7-dof robot eylemine dönüştüren açık kaynak 7b model ve stanford'un action chunking + orthogonal fine-tuning (oft) ile tek gpu'da hızlı çıkarım ve eğitim sağlayan resmi optimizasyon deposu
   3. **rt-2: vision-language-action models transfer web knowledge to robotic control (google deepmind):** [arxiv:2307.15818](https://arxiv.org/abs/2307.15818) — vla kavramını tanımlayan kurucu makale
@@ -397,7 +397,7 @@ engineering curriculum, mathematical representations, optimization engines, and 
   5. **foundationpose: unified 6d pose estimation and tracking (nvidia research):** [foundationpose.github.io](https://nvlabs.github.io/FoundationPose/) — model-free ve model-based yeni nesil 6d nesne duruş kestirimi ve takibi
   6. **gaia-1: a generative world model for autonomous driving (wayve):** [wayve.ai/thinking/gaia-1](https://wayve.ai/thinking/gaia-1/) — otonom sürüş için video, metin ve eylem tabanlı üretken dünya modeli
   7. **egoverse: egocentric data for robot learning (georgia tech rl2 lab):** [gatech-rl2/egoverse (github)](https://github.com/GaTech-RL2/EgoVerse) — **[insandan robota birinci şahıs öğrenme]** insanların taktığı meta aria akıllı gözlüklerden toplanan birinci şahıs (egocentric) el hareketlerini robot manipülasyon eylemlerine dönüştürüp physical intelligence $\pi_0$ (openpi) ve lerobot ile politika eğiten açık kaynak veri ve eğitim altyapısı
-- **▶️ yt (yabancı video dersler & seminerler — önem sırasıyla):**
+- **yt (yabancı video dersler & seminerler — önem sırasıyla):**
   1. **stanford robotics & embodied ai seminars:** [youtube kanalı (stanford asl / robotics)](https://www.youtube.com/results?search_query=stanford+robotics+seminar+vla+embodied+ai) — görsel algıyı doğrudan robot eklem/hareket komutlarına (action tokens) dönüştüren vla modellerinin seminerleri
   2. **google deepmind robotics & physical intelligence presentations:** [deepmind youtube](https://www.youtube.com/@GoogleDeepMind) — rt-1, rt-2 ve genel amaçlı robot vakıf modelleri teknik sunumları
 
@@ -419,11 +419,11 @@ engineering curriculum, mathematical representations, optimization engines, and 
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- **🇹🇷 tr (türkçe kaynaklar):**
+- **tr (türkçe kaynaklar):**
   1. **mustafa vahit keskin (miuul / veri bilimi okulu) – python ile veri analizi ve manipülasyonu:** [youtube kanalı](https://www.youtube.com/@Miuul) & [veri bilimi okulu](https://www.veribilimiokulu.com/) — pandas, numpy, keşifsel veri analizi (eda) ve eksik/aykırı veri temizliği
-- **▶️ yt (yabancı video dersler — önem sırasıyla):**
+- **yt (yabancı video dersler — önem sırasıyla):**
   1. **keith galli – complete python pandas data science tutorial:** [youtube videosu](https://www.youtube.com/watch?v=vmEHCJofslg) — **[ilk izlenecek]** 1 saatte gerçek bir veri seti üzerinde pandas ile tüm temel veri manipülasyonu işlemleri
-- **📖 oku (yazarından ücretsiz başucu kitabı — önem sırasıyla):**
+- **oku (yazarından ücretsiz başucu kitabı — önem sırasıyla):**
   1. **python for data analysis, 3rd ed. (wes mckinney – pandas kütüphanesinin kurucusu):** [wesmckinney.com/book (ücretsiz tam kitap)](https://wesmckinney.com/book/) — **[temel başvuru kaynağı]** numpy, pandas, veri temizleme ve zaman serileri için resmi açık erişim kitap
   2. **pandas official user guide:** [pandas.pydata.org/docs/user_guide/index.html](https://pandas.pydata.org/docs/user_guide/index.html)
 
@@ -441,11 +441,11 @@ engineering curriculum, mathematical representations, optimization engines, and 
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- **🇹🇷 tr (türkçe kaynaklar):**
+- **tr (türkçe kaynaklar):**
   1. **mustafa vahit keskin (miuul / veri bilimi okulu) – özellik mühendisliği ve ölçümleme problemleri:** [youtube kanalı](https://www.youtube.com/@Miuul) — a/b testleri, hipotez testleri ve özellik çıkarımı
-- **▶️ yt (yabancı video dersler — önem sırasıyla):**
+- **yt (yabancı video dersler — önem sırasıyla):**
   1. **statquest with josh starmer – hypothesis testing, p-values & statistical modeling:** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLblh5JKOoLUK0FLuzwntyYI10UQFUhsY9) — deney tasarımı ve istatistiksel anlamlılık
-- **📖 oku (başucu kitabı):**
+- **oku (başucu kitabı):**
   1. **practical statistics for data scientists, 2nd ed. (peter bruce, andrew bruce, peter gedeck):** [o'reilly kitap sayfası](https://www.oreilly.com/library/view/practical-statistics-for/9781492072935/) & [github python kodları](https://github.com/gedeck/practical-statistics-for-data-scientists) — mühendisler için gereksiz teoriden arındırılmış, doğrudan python kodlu istatistik ve veri bilimi el kitabı
 
 #### 15.3 data engineering
@@ -469,12 +469,12 @@ engineering curriculum, mathematical representations, optimization engines, and 
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- **🇹🇷 tr (türkçe kaynaklar):**
+- **tr (türkçe kaynaklar):**
   1. **bora kaşmer – dağıtık sistemler, redis, kafka, rabbitmq ve veri mimarisi:** [youtube kanalı](https://www.youtube.com/@BoraKasmer) — gerçek zamanlı veri akışı (streaming) ve önbellekleme mimarileri
-- **▶️ yt (yabancı video dersler — önem sırasıyla):**
+- **yt (yabancı video dersler — önem sırasıyla):**
   1. **seattle data guy – data engineering fundamentals & pipelines:** [youtube kanalı](https://www.youtube.com/@SeattleDataGuy) — etl/elt, postgresql, spark ve kafka boru hatlarına giriş
   2. **luke barousse – sql for data science & analytics:** [youtube kanalı](https://www.youtube.com/@LukeBarousse) — pratik sql sorgulama
-- **📖 oku & 💻 pratik (önem sırasıyla):**
+- **oku & pratik (önem sırasıyla):**
   1. **sqlbolt – learn sql with simple, interactive exercises:** [sqlbolt.com](https://sqlbolt.com/) — **[ilk yapılacak pratik]** tarayıcıda hızlıca sql temellerini bitir
   2. **designing data-intensive applications – ddia (martin kleppmann):** [dataintensive.net](https://dataintensive.net/) — **[temel sistem ve veri mimarisi kitabı]** veritabanları, indeksleme, replikasyon, bölümleme (sharding), kafka ve dağıtık sistemlerin çalışma prensiplerini anlatan referans kitap
 
@@ -494,10 +494,10 @@ engineering curriculum, mathematical representations, optimization engines, and 
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- **▶️ yt (yabancı video dersler — önem sırasıyla):**
+- **yt (yabancı video dersler — önem sırasıyla):**
   1. **roboflow – computer vision dataset curation, annotation & augmentation tutorials:** [youtube kanalı](https://www.youtube.com/@Roboflow) — **[ilk izlenecek]** kamera/iha görüntülerinden veri seti toplama, otomatik etiketleme (auto-labeling) ve kalite kontrolü
   2. **mit 6.s191 / lab – data-centric ai (cleanlab):** [youtube ders serisi](https://www.youtube.com/playlist?list=PL_1TbuIu65A8NTNuLutFoD87vbMl8GL8K) & [ders sitesi (dcai.csail.mit.edu)](https://dcai.csail.mit.edu/) — hatalı etiketleri (label noise) ve veri seti yanlılığını (bias) algoritmik olarak temizleme
-- **📖 oku & 💻 kütüphane (önem sırasıyla):**
+- **oku & kütüphane (önem sırasıyla):**
   1. **albumentations official documentation (fast image augmentation library):** [albumentations.ai/docs](https://albumentations.ai/docs/) & [github repo](https://github.com/albumentations-team/albumentations) — **[her cv projesinde kullanılacak]** bounding box, mask ve keypoint'leri bozmadan görüntü çoğaltma (augmentation) yapan endüstri standardı kütüphane
   2. **dvc (data version control) documentation:** [dvc.org/doc](https://dvc.org/doc) — büyük görüntü ve sensör veri setlerini git gibi versiyonlama aracı
 
@@ -665,12 +665,12 @@ engineering curriculum, mathematical representations, optimization engines, and 
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- 🇹🇷 **tr:** — (doğrulanmış kapsamlı türkçe akademik rl serisi yok; doğrudan yt 1. sıradan başla).
-- ▶️ **yt:**
+- **tr:** — (doğrulanmış kapsamlı türkçe akademik rl serisi yok; doğrudan yt 1. sıradan başla).
+- **yt:**
   1. **[ilk izlenecek — klasik rl temeli]** [david silver — reinforcement learning course (ucl / deepmind youtube)](https://www.youtube.com/playlist?list=PLqYmG7hTraZDM-OYHWgPebj2MfCFzFObQ) — mdp, bellman denklemleri, td öğrenme ve politika gradyanlarının temel mimarisi.
   2. **[ana akademik ders — deep rl & robotik]** [uc berkeley cs285 — deep reinforcement learning (sergey levine)](https://www.youtube.com/playlist?list=PL_iWQOsE6TfVYGEGiAOMaOzzv41Jfm_Ps) — ppo, sac, model-based rl, offline rl ve robotik kontrol için ana lisansüstü ders.
   3. **[ücretsiz uygulamalı kurs]** [hugging face deep rl course (huggingface.co)](https://huggingface.co/learn/deep-rl-course/unit0/introduction) — q-learning'den ppo ve sac'a adım adım kodlamalı modern eğitim.
-- 📖 **oku & 💻 repo:**
+- **oku & repo:**
   1. [richard s. sutton & andrew g. barto — reinforcement learning: an introduction, 2nd ed. (ücretsiz pdf)](http://incompleteideas.net/book/the-book-2nd.html) — tabular rl, bellman denklemleri ve fonksiyon yaklaşımının temel ders kitabı.
   2. [openai spinning up in deep rl (spinningup.openai.com)](https://spinningup.openai.com/en/latest/) — reinforce, trpo, ppo, ddpg, td3 ve sac algoritmalarının açık matematiksel ve kod rehberi.
   3. [cleanrl — single-file deep rl implementations (github)](https://github.com/vwxyzjn/cleanrl) — her rl algoritmasının tek bir okunabilir python dosyasında sıfırdan pytorch implementasyonu.
@@ -782,11 +782,11 @@ engineering curriculum, mathematical representations, optimization engines, and 
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- 🇹🇷 **tr:** [atölye / akademik seminerler & cemgil lab (boğaziçi) — olasılıksal modelleme arşivleri](https://www.youtube.com/@taylancemgil) — bayesçi çıkarım, faktör grafları ve olasılıksal modelleme üzerine türkçe ders kayıtları.
-- ▶️ **yt:**
+- **tr:** [atölye / akademik seminerler & cemgil lab (boğaziçi) — olasılıksal modelleme arşivleri](https://www.youtube.com/@taylancemgil) — bayesçi çıkarım, faktör grafları ve olasılıksal modelleme üzerine türkçe ders kayıtları.
+- **yt:**
   1. **[ilk izlenecek — pgm & bayesçi çıkarım]** [tübingen probabilistic machine learning course — philipp hennig (youtube)](https://www.youtube.com/playlist?list=PL05umP7R6ij1tHaOFY96m5uX3J21a6yNd) — gaussian processes, variational inference, mcmc ve olasılıksal grafik modeller.
   2. **[ana akademik ders — pgm]** [daphne koller — probabilistic graphical models specialization (coursera)](https://www.coursera.org/specializations/probabilistic-graphical-models) — bayes ağları, markov ağları, faktör grafları ve belief propagation.
-- 📖 **oku & 💻 repo:**
+- **oku & repo:**
   1. [kevin p. murphy — probabilistic machine learning: advanced topics (mit press, ücretsiz pdf)](https://probml.github.io/pml-book/book2.html) — bölüm 26'daki tüm konuların (pgm, gp, vi, mcmc, belirsizlik, nedensellik) ana referans kitabı.
   2. [frank dellaert & michael kaess — factor graphs for robot perception (foundations and trends in robotics pdf)](https://www.cs.cmu.edu/~kaess/pub/Dellaert17fnt.pdf) — bölüm 26.1 ile bölüm 10 (slam / gtsam) arasındaki doğrudan mühendislik köprüsü.
   3. [carl edward rasmussen & christopher k. i. williams — gaussian processes for machine learning (ücretsiz pdf)](https://gaussianprocess.org/gpml/) — gp regresyonu ve çekirdek fonksiyonları için temel kaynak.
@@ -889,11 +889,11 @@ engineering curriculum, mathematical representations, optimization engines, and 
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- 🇹🇷 **tr:** [zemberek-nlp — türkçe doğal dil işleme kütüphanesi (github)](https://github.com/ahmetaa/zemberek-nlp) & [boun-tabi / turkish nlp resources (github)](https://github.com/boun-tabi) — türkçe sondan eklemeli morfolojik analiz ve veri setleri.
-- ▶️ **yt:**
+- **tr:** [zemberek-nlp — türkçe doğal dil işleme kütüphanesi (github)](https://github.com/ahmetaa/zemberek-nlp) & [boun-tabi / turkish nlp resources (github)](https://github.com/boun-tabi) — türkçe sondan eklemeli morfolojik analiz ve veri setleri.
+- **yt:**
   1. **[ana akademik ders]** [stanford cs224n — natural language processing with deep learning (christopher manning)](https://www.youtube.com/playlist?list=PLoROMvodv4rMFqRtEuo6SGjY4XbRIVRd4) — klasik ve derin öğrenme tabanlı nlp mimarileri.
   2. **[pratik araçlar]** [hugging face llm & nlp course (huggingface.co)](https://huggingface.co/learn/nlp-course/chapter1/1) — transformers, tokenizers ve datasets kütüphanelerinin uygulamalı kullanımı.
-- 📖 **oku & 💻 repo:**
+- **oku & repo:**
   1. [dan jurafsky & james h. martin — speech and language processing, 3rd ed. (ücretsiz taslak pdf)](https://web.stanford.edu/~jurafsky/slp3/) — dilbilim, klasik nlp, dizi etiketleme, ayrıştırma ve anlambilimin temel referans kitabı.
 
 ---
@@ -997,10 +997,10 @@ engineering curriculum, mathematical representations, optimization engines, and 
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- 🇹🇷 **tr:** — (doğrudan yt 1. sıradaki ses sinyal işleme serisinden başla).
-- ▶️ **yt:**
+- **tr:** — (doğrudan yt 1. sıradaki ses sinyal işleme serisinden başla).
+- **yt:**
   1. **[ilk izlenecek — ses sinyal işleme & derin öğrenme]** [valerio velardo — the sound of ai: audio signal processing for ml (youtube)](https://www.youtube.com/playlist?list=PL-wATfeyAMNqIee7cH3q1bh4QJFAaeNv0) — stft, spectrogram, mel-spectrogram, mfcc ve librosa uygulamaları.
-- 📖 **oku & 💻 repo:**
+- **oku & repo:**
   1. [hugging face audio course (huggingface.co)](https://huggingface.co/learn/audio-course/chapter0/introduction) — ses sınıflandırma, asr (whisper) ve tts modellerine uygulamalı giriş.
   2. [whisper.cpp (github)](https://github.com/ggerganov/whisper.cpp) & [speechbrain (github)](https://github.com/speechbrain/speechbrain) — c/c++ üzerinde uç cihazda çalışan konuşma tanıma ve pytorch tabanlı ses araç seti.
   3. **moonshine: speech-to-text for live voice agents (useful sensors / moonshine ai):** [github repo (moonshine-ai/moonshine)](https://github.com/moonshine-ai/moonshine) & [arxiv:2410.15608](https://arxiv.org/abs/2410.15608) — **[canlı ses ajanları ve edge robotik için düşük gecikmeli asr]** pete warden (tensorflow mobile / tinyml kurucusu) ekibinin geliştirdiği; openai whisper'ın 30 saniyelik sabit pencere kısıtını ortadan kaldıran, ses süresiyle orantılı işlem yaparak whisper'dan 5 kat daha hızlı çalışan, raspberry pi ve jetson gibi gömülü uç cihazlarda gerçek zamanlı sesli asistan ve robot sesli komut arayüzü sunan 11.4k+ yıldızlı c++/python konuşma tanıma modeli
@@ -1086,10 +1086,10 @@ engineering curriculum, mathematical representations, optimization engines, and 
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- 🇹🇷 **tr:** [veri bilimi okulu / miuul — zaman serileri analizi giriş notları](https://www.veribilimiokulu.com/) — durağanlık, trend, mevsimsellik ve arima/sarima temelleri.
-- ▶️ **yt:**
+- **tr:** [veri bilimi okulu / miuul — zaman serileri analizi giriş notları](https://www.veribilimiokulu.com/) — durağanlık, trend, mevsimsellik ve arima/sarima temelleri.
+- **yt:**
   1. **[ilk izlenecek]** [ritvikmath — time series talk playlist (youtube)](https://www.youtube.com/playlist?list=PLvcbYUQ5t0UHOLnBzl46_Q6QKtFgfMGc3) — acf, pacf, arma, arima, durum-uzay modelleri ve zaman serisi istatistiğinin sezgisel anlatımı.
-- 📖 **oku & 💻 repo:**
+- **oku & repo:**
   1. [rob j hyndman & george athanasopoulos — forecasting: principles and practice, 3rd ed. (otexts — ücretsiz online kitap)](https://otexts.com/fpp3/) — zaman serisi analizi, istatistiksel tahminleme, çapraz doğrulama ve metrikler için standart ders kitabı.
   2. [sktime (github)](https://github.com/sktime/sktime) & [darts — unit8 (github)](https://github.com/unit8co/darts) & [nixtla (github)](https://github.com/Nixtla) — zaman serisi sınıflandırma, anomali tespiti ve tahminleme için modern python kütüphaneleri.
 
@@ -1176,10 +1176,10 @@ engineering curriculum, mathematical representations, optimization engines, and 
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- 🇹🇷 **tr:** — (doğrudan yt 1. sıradan ve ir kitabından ilerle).
-- ▶️ **yt:**
+- **tr:** — (doğrudan yt 1. sıradan ve ir kitabından ilerle).
+- **yt:**
   1. **[ilk izlenecek — arama & bilgi erişimi]** [stanford cs276 — information retrieval and web search (christopher manning & pandu nayak)](https://www.youtube.com/playlist?list=PL6397E4B26D00A269) — ters indeks (inverted index), bm25, sıralama ve bilgi erişimi temelleri.
-- 📖 **oku & 💻 repo:**
+- **oku & repo:**
   1. [christopher d. manning, prabhakar raghavan & hinrich schütze — introduction to information retrieval (ücretsiz online kitap)](https://nlp.stanford.edu/IR-book/) — arama sistemleri ve bilgi erişiminin standart ders kitabı.
   2. [faiss — facebook ai similarity search (github)](https://github.com/facebookresearch/faiss) & [recbole (github)](https://github.com/RUCAIBox/RecBole) — vektör benzerlik araması (hnsw, ivf — görsel yer tanıma ve rag için de kullanılır) ve öneri sistemleri kütüphanesi.
 
@@ -1275,11 +1275,11 @@ engineering curriculum, mathematical representations, optimization engines, and 
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- 🇹🇷 **tr:** — (ileri derin öğrenme teorisi ve ölçekleme yasaları için doğrudan ingilizce orijinal ders ve kitapları takip et).
-- ▶️ **yt:**
+- **tr:** — (ileri derin öğrenme teorisi ve ölçekleme yasaları için doğrudan ingilizce orijinal ders ve kitapları takip et).
+- **yt:**
   1. **[ilk izlenecek — üretken modeller & temsil öğrenme]** [stanford cs236 — deep generative models (stefano ermon)](https://www.youtube.com/playlist?list=PLoROMvodv4rPOWA-omMM6STXaWW4FvJT8) — normalizing flows, vae, gan, energy-based models ve score-based diffusion matematiği.
   2. **[derin öğrenme teorisi & temsiller]** [nyu deep learning sp21 — yann lecun & alfredo canziani (youtube)](https://www.youtube.com/playlist?list=PLLHTzKZzVU9eaEyErdV26ikyolxOsz6mq) — enerji tabanlı modeller, kontrastif öğrenme ve jepa felsefesi.
-- 📖 **oku & 💻 repo:**
+- **oku & repo:**
   1. [simon j.d. prince — understanding deep learning (mit press, 2023 — ücretsiz pdf)](https://udlbook.github.io/udlbook/) — modern derin öğrenme mimarileri, difüzyon, temsil öğrenme ve eğitim dinamikleri için güncel ders kitabı.
   2. [lilian weng’s blog — contrastive representation learning, diffusion models & transformer family](https://lilianweng.github.io/) — infonce, byol, mae, score/sde difüzyon ve rope/gqa/moe mimarilerinin matematiksel özetleri.
   3. [annotated s4 & mamba — sasha rush / albert gu](https://srush.github.io/annotated-s4/) — durum uzayı modellerinin (ssm) adım adım kod ve matematik açıklaması.
@@ -1362,10 +1362,10 @@ engineering curriculum, mathematical representations, optimization engines, and 
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- 🇹🇷 **tr:** [prof. dr. ethem alpaydın — yapay öğrenme (kitap) & boğaziçi ders notları](https://www.boun.edu.tr/) — klasik makine öğrenmesi, vc boyutu, çekirdek yöntemleri ve topluluk (ensemble) algoritmalarının türkçe temel kaynağı.
-- ▶️ **yt:**
+- **tr:** [prof. dr. ethem alpaydın — yapay öğrenme (kitap) & boğaziçi ders notları](https://www.boun.edu.tr/) — klasik makine öğrenmesi, vc boyutu, çekirdek yöntemleri ve topluluk (ensemble) algoritmalarının türkçe temel kaynağı.
+- **yt:**
   1. **[ilk izlenecek — öğrenme teorisi & vc boyutu]** [caltech cs156 — learning from data (yaser abu-mostafa youtube)](https://www.youtube.com/playlist?list=PLD63A284B7615313A) — pac öğrenme, hoeffding eşitsizliği, vc boyutu, genelleme sınırları ve düzenlileştirme teorisi.
-- 📖 **oku & 💻 repo:**
+- **oku & repo:**
   1. [trevor hastie, robert tibshirani & jerome friedman — the elements of statistical learning (esl, ücretsiz pdf)](https://hastie.su.domains/ElemStatLearn/) — lasso/ridge, gam, çekirdek yöntemleri, boosting ve spektral yöntemlerin temel referans kitabı.
   2. [shai shalev-shwartz & shai ben-david — understanding machine learning: from theory to algorithms (ücretsiz pdf)](https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/) — pac, vc boyutu, rademacher karmaşıklığı ve istatistiksel öğrenme teorisi.
   3. [stephen boyd & lieven vandenberghe — convex optimization (stanford ücretsiz pdf)](https://web.stanford.edu/~boyd/cvxbook/) — ileri optimizasyon, l-bfgs, admm ve yakınsama analizleri.
@@ -1456,11 +1456,11 @@ engineering curriculum, mathematical representations, optimization engines, and 
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- 🇹🇷 **tr:** [kvkk — yapay zeka alanında kişisel verilerin korunmasına dair rehber (kvkk.gov.tr)](https://www.kvkk.gov.tr/) — türkiye'de veri gizliliği ve mevzuat çerçevesi.
-- ▶️ **yt:**
+- **tr:** [kvkk — yapay zeka alanında kişisel verilerin korunmasına dair rehber (kvkk.gov.tr)](https://www.kvkk.gov.tr/) — türkiye'de veri gizliliği ve mevzuat çerçevesi.
+- **yt:**
   1. **[ilk izlenecek — güvenli kontrol & cbf]** [aaron ames (caltech) — control barrier functions for safety-critical autonomous systems (youtube)](https://www.youtube.com/watch?v=ZC3T_P_8xpE) — robotik ve otonom araçlarda matematiksel güvenlik garantileri (cbf).
   2. **[ai safety & dayanıklılık]** [dan hendrycks — introduction to ai safety, ethics, and society (youtube & course)](https://www.aisafetybook.com/) — ood dayanıklılığı, hizalanma, emniyet mühendisliği ve yönetişim.
-- 📖 **oku & 💻 repo:**
+- **oku & repo:**
   1. [christoph molnar — interpretable machine learning (ücretsiz online kitap)](https://christophm.github.io/interpretable-ml-book/) — shap, lime, permutation importance, saliency ve grad-cam için standart uygulama rehberi.
   2. [captum — model interpretability for pytorch (github)](https://github.com/pytorch/captum) & [pytorch-grad-cam (github)](https://github.com/jacobgil/pytorch-grad-cam) — görsel ve derin modellerde açıklanabilirlik analiz araçları.
   3. [ul 4600 & iso 21448 (sotif) overview — edge case research](https://users.ece.cmu.edu/~koopman/ul4600/) — otonom araçlar ve iha'larda fonksiyonel güvenlik (iso 26262), algı belirsizliği güvenliği (sotif) ve do-178c standartlarına mühendislik bakışı.
@@ -1541,10 +1541,10 @@ engineering curriculum, mathematical representations, optimization engines, and 
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- 🇹🇷 **tr:** — (doğrudan aşağıdaki pratik eğitim ve standart kütüphanelerden ilerle).
-- ▶️ **yt:**
+- **tr:** — (doğrudan aşağıdaki pratik eğitim ve standart kütüphanelerden ilerle).
+- **yt:**
   1. **[ilk izlenecek — adversarial robustness]** [zico kolter & aleksander madry — adversarial robustness: theory and practice (neurips tutorial)](https://adversarial-ml-tutorial.org/) — fgsm, pgd, adversarial training ve sertifikalı dayanıklılık matematiği ve pytorch kodu.
-- 📖 **oku & 💻 repo:**
+- **oku & repo:**
   1. [robustbench (github & leaderboard)](https://github.com/RobustBench/robustbench) & [autoattack (github)](https://github.com/fra31/auto-attack) — görüntü modellerinin çekişmeli (adversarial) ve bozulma dayanıklılığını ölçen standart kıyaslama araçları.
   2. [adversarial robustness toolbox (art) — linux foundation ai (github)](https://github.com/Trusted-AI/adversarial-robustness-toolbox) — sınıflandırma ve nesne tespiti modellerine yönelik saldırı (yama, spoofing) ve savunma kütüphanesi.
   3. [mitre atlas (atlas.mitre.org)](https://atlas.mitre.org/) & [owasp top 10 for llm applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/) — yapay zeka sistemleri için tehdit modelleme matrisi.
@@ -1616,10 +1616,10 @@ engineering curriculum, mathematical representations, optimization engines, and 
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- 🇹🇷 **tr:** — (uygulamada doğrudan optuna ve google or-tools dokümantasyonunu kullan).
-- ▶️ **yt:**
+- **tr:** — (uygulamada doğrudan optuna ve google or-tools dokümantasyonunu kullan).
+- **yt:**
   1. **[automl & hpo]** [automl seminar series & freiburg/hannover automl lectures (frank hutter — youtube)](https://www.youtube.com/@automl-freiburg-edu) — bayesçi optimizasyon, hyperband, bohb ve nas temelleri.
-- 📖 **oku & 💻 repo:**
+- **oku & repo:**
   1. [optuna — hyperparameter optimization framework (optuna.org & github)](https://github.com/optuna/optuna) — derin öğrenme deneylerinde tpe ve budama (pruning) tabanlı hiperparametre optimizasyonu standardı.
   2. [google or-tools — combinatorial optimization (developers.google.com)](https://developers.google.com/optimization) — rotalama (vrp/tsp), çizelgeleme ve tamsayılı programlama (milp) için c++/python çözücüsü.
   3. [pycma — cma-es implementation (github)](https://github.com/CMA-ES/pycma) — türevsiz sürekli optimizasyon ve robotik yörünge/kontrol parametre araması için evrim stratejisi kütüphanesi.
@@ -1675,10 +1675,10 @@ engineering curriculum, mathematical representations, optimization engines, and 
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- 🇹🇷 **tr:** — (nöromorfik hesaplama ve snn — özellikle bölüm 19.4 event camera ile birleştiğinde — aşağıdaki dokümantasyon üzerinden takip edilir).
-- ▶️ **yt:**
+- **tr:** — (nöromorfik hesaplama ve snn — özellikle bölüm 19.4 event camera ile birleştiğinde — aşağıdaki dokümantasyon üzerinden takip edilir).
+- **yt:**
   1. **[hesaplamalı sinirbilim]** [neuromatch academy — computational neuroscience course (youtube & neuromatch.io)](https://compneuro.neuromatch.io/) — nöron modelleri, kodlama ve beyin esinli hesaplama.
-- 📖 **oku & 💻 repo:**
+- **oku & repo:**
   1. [jason k. eshraghian — snntorch tutorials: deep learning with spiking neural networks (snntorch.readthedocs.io)](https://snntorch.readthedocs.io/en/latest/tutorials/index.html) — pytorch üzerinde spiking neural networks (snn) ve vekil gradyan (surrogate gradient) eğitimi.
   2. [wulfram gerstner et al. — neuronal dynamics: from single neurons to networks and models of cognition (epfl ücretsiz online kitap)](https://neuronaldynamics.epfl.ch/) — lif, hodgkin-huxley ve stdp modelleri için temel referans.
   3. **artem kirsanov & active inference:** [artem kirsanov (youtube)](https://www.youtube.com/@ArtemKirsanov) · [active inference (mit press)](https://mitpress.mit.edu/9780262045353/) — hesaplamalı sinirbilim, nöron modelleri (hodgkin-huxley, lif) ve biyolojik sistemler ile otonom robotların serbest enerji prensibiyle (active inference) karar verme mekanizmasının görsel ve matematiksel temeli.
@@ -1755,10 +1755,10 @@ engineering curriculum, mathematical representations, optimization engines, and 
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- 🇹🇷 **tr:** — (medikal görüntüleme ve bilimsel ml — olası bir b planı sektör geçişinde — aşağıdaki endüstri standartları üzerinden öğrenilir).
-- ▶️ **yt:**
+- **tr:** — (medikal görüntüleme ve bilimsel ml — olası bir b planı sektör geçişinde — aşağıdaki endüstri standartları üzerinden öğrenilir).
+- **yt:**
   1. **[bilimsel ml & pinns]** [steve brunton — physics-informed machine learning & sindy (youtube)](https://www.youtube.com/playlist?list=PLMrJAkhIeNNQ0BaKuBKY43k4xMo6NSbBa) — fizik bilgili sinir ağları, dinamik sistem keşfi ve dijital ikizler.
-- 📖 **oku & 💻 repo:**
+- **oku & repo:**
   1. [monai — medical open network for ai (monai.io & github)](https://github.com/Project-MONAI/MONAI) & [nnu-net (github)](https://github.com/MIC-DKFZ/nnUNet) — 3b medikal görüntü (dicom/nifti) segmentasyonu ve tespiti için küresel açık kaynak standartları.
   2. [geometric deep learning blueprint — bronstein et al. (geometricdeeplearning.com)](https://geometricdeeplearning.com/) — se(3)/e(3) eşdeğerli (equivariant) ağların hem 3b nokta bulutları hem de moleküler yapılarla ortak matematiksel temeli.
 
@@ -1806,7 +1806,7 @@ engineering curriculum, mathematical representations, optimization engines, and 
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- **📖 oku & 💻 repo (adım adım kodlama & açık kaynak araştırma):**
+- **oku & repo (adım adım kodlama & açık kaynak araştırma):**
   1. **reasoning from scratch: implement a reasoning llm in pytorch (sebastian raschka):** [github repo (rasbt/reasoning-from-scratch)](https://github.com/rasbt/reasoning-from-scratch) — **[sıfırdan akıl yürüten model kodlama standardı]** openai o1/o3 ve deepseek-r1 ekolünü satır satır öğreten; düşünce zinciri (chain-of-thought / cot), rejection sampling ile akıl yürütme verisi toplama, akıl yürütme sft'si, kural tabanlı rl / grpo (group relative policy optimization) ve çıkarım zamanı arama (test-time search / mcts) mekanizmalarını saf pytorch ile sıfırdan inşa eden 5.8k+ yıldızlı modern açık kaynak rehberi
 
 #### 42.4 context & memory – uzun bağlam ve bellek mimarisi
@@ -1864,10 +1864,10 @@ engineering curriculum, mathematical representations, optimization engines, and 
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- 🇹🇷 **tr:** — (genel kültür ve takip bütçesi dahilinde aşağıdaki açık kitapçık ve konuşmaları inceleyebilirsin).
-- ▶️ **yt:**
+- **tr:** — (genel kültür ve takip bütçesi dahilinde aşağıdaki açık kitapçık ve konuşmaları inceleyebilirsin).
+- **yt:**
   1. **[ilk izlenecek]** [andrej karpathy — deep dive into llms (youtube)](https://www.youtube.com/watch?v=7xTGNNLPyMI) — pretraining, sft, rlhf ve akıl yürütme (reasoning rl) aşamalarının uçtan uca özeti.
-- 📖 **oku & 💻 repo:**
+- **oku & repo:**
   1. [hugging face — the ultra-scale playbook: training llms on gpu clusters (huggingface.co)](https://huggingface.co/spaces/nanotron/ultrascale-playbook) — zero, fsdp, veri hatları ve büyük ölçekli eğitim mimarisi.
   2. [eleutherai — lm-evaluation-harness (github)](https://github.com/EleutherAI/lm-evaluation-harness) & [model context protocol (modelcontextprotocol.io)](https://modelcontextprotocol.io/) — standart model değerlendirme çatısı ve ajan-araç protokolü.
   3. [code as policies: language model programs for embodied control (code-as-policies.github.io)](https://code-as-policies.github.io/) — dil modellerinin robotik kontrol politikası üretmek için kullanılması.

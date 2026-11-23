@@ -44,10 +44,10 @@ engineering curriculum, mathematical representations, geometric algorithms, simu
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- **▶️ yt (yabancı video dersler — önem sırasıyla):**
+- **yt (yabancı video dersler — önem sırasıyla):**
   1. **3blue1brown – visualizing quaternions (4d numbers) & 3d rotation:** [youtube videosu](https://www.youtube.com/watch?v=d4EgbgTm0Bg) & [etkileşimli site (eater.net/quaternions)](https://eater.net/quaternions) — **[ilk izlenecek]** gimbal lock problemini ve kuaterniyonların (quaternions) 3b uzaydaki dönüş mantığını anlamak için en iyi kaynak
   2. **cyrill stachniss – 3d coordinate transformations, homogeneous coordinates & lie algebra:** [youtube ders videosu](https://www.youtube.com/watch?v=PvEl63t-opM) — **[ana mühendislik dersi]** robotik ve 3d vision'da koordinat eksenleri arası dönüşüm matrisleri ($se(3), so(3)$)
-- **📖 oku (zorunlu referans makaleler — önem sırasıyla):**
+- **oku (zorunlu referans makaleler — önem sırasıyla):**
   1. **a micro lie theory for state estimation in robotics (joan solà et al.):** [arxiv:1812.01537 (ücretsiz pdf)](https://arxiv.org/pdf/1812.01537.pdf) — **[başucu makalesi]** 3b dönüşümlerin türevlerini (jacobian) almak ve slam/kalman filtresi yazmak için zorunlu rehber
   2. **lie groups for 2d and 3d transformations (ethan eade):** [ethaneade.com/lie.pdf](https://ethaneade.com/lie.pdf) — c++ ile 3b geometri kodlarken elinin altında duracak formül referansı
 
@@ -65,10 +65,10 @@ engineering curriculum, mathematical representations, geometric algorithms, simu
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- **▶️ yt (yabancı video dersler — önem sırasıyla):**
+- **yt (yabancı video dersler — önem sırasıyla):**
   1. **shree nayar – stereo vision & depth estimation (first principles of cv):** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PL2zRqk16wsdoCCLpou-dGo7QQNks1Ppzo) — **[ilk izlenecek]** disparite (disparity), üçgenleme (triangulation) ve stereo derinlik hesabının temel fiziği
   2. **cyrill stachniss – stereo vision and multi-view stereo (mvs):** [youtube ders videoları](https://www.youtube.com/results?search_query=cyrill+stachniss+stereo+vision) — yoğun derinlik haritası (dense depth map) üretimi
-- **📖 oku & 💻 repo (doküman ve sota modeller — önem sırasıyla):**
+- **oku & repo (doküman ve sota modeller — önem sırasıyla):**
   1. **opencv depth map from stereo images tutorial:** [docs.opencv.org/4.x/dd/d53/tutorial_py_depthmap.html](https://docs.opencv.org/4.x/dd/d53/tutorial_py_depthmap.html) — stereobm ve stereosgbm ile klasik derinlik haritası çıkarma kodu
   2. **depth anything & depth anything v2 (yang et al.):** [arxiv:2401.10891](https://arxiv.org/abs/2401.10891) & [github repo (depthanything/depth-anything-v2)](https://github.com/DepthAnything/Depth-Anything-V2) — **[tek kameradan derinlikte dünya zirvesi]** tek bir rgb kameradan (monocular) yüksek hassasiyetli bağıl ve metrik derinlik kestirimi
   3. **foundationstereo: zero-shot stereo matching (nvidia research – cvpr 2025 best paper nomination):** [nvlabs.github.io/foundationstereo](https://nvlabs.github.io/FoundationStereo/) & [github repo (nvlabs/foundationstereo)](https://github.com/NVlabs/FoundationStereo) — **[stereo derinlikte dünya zirvesi]** çift kamera (stereo) görüntülerinden sıfır-atış (zero-shot) genelleme ile yoğun disparite, metrik ölçekli derinlik haritası ve 3b nokta bulutu üreten, jetson/tensorrt optimize nvidia temel modeli
@@ -89,12 +89,12 @@ engineering curriculum, mathematical representations, geometric algorithms, simu
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- **🇹🇷 tr (türkçe akademik kaynaklar):**
+- **tr (türkçe akademik kaynaklar):**
   1. **odtü ceng 483 & itü blg 453e – 3b görü ve çoklu görünüm geometrisi modülleri:** [odtü ceng](https://user.ceng.metu.edu.tr/~skalkan/)
-- **▶️ yt (yabancı video dersler — önem sırasıyla):**
+- **yt (yabancı video dersler — önem sırasıyla):**
   1. **cyrill stachniss – photogrammetry ii (structure from motion, pnp & bundle adjustment):** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLgnQpQtFTOGRYjqjdZxTEQPZuFHQa7O7Y) — **[ilk izlenecek]** 2b görüntülerden 3b kamera pozunu (pnp) ve 3b nokta bulutunu (sfm & bundle adjustment) adım adım çıkarma
   2. **prof. daniel cremers – multiple view geometry in computer vision (tum):** [youtube ders serisi](https://www.youtube.com/playlist?list=PLTBdjV_4f-EJn6udZ34tht9EVIW7lbeo4) — **[ileri akademik ders]** çoklu görünümde 3b yeniden yapılandırma matematiği
-- **📖 oku & 💻 repo (endüstriyel c++ kodları ve kitaplar — önem sırasıyla):**
+- **oku & repo (endüstriyel c++ kodları ve kitaplar — önem sırasıyla):**
   1. **repo & doküman – colmap (structure-from-motion and multi-view stereo):** [colmap.github.io](https://colmap.github.io/) & [github.com/colmap/colmap](https://github.com/colmap/colmap) — **[endüstri standardı c++ kodu]** hem nerf/3dgs öncesi kamera pozu çıkarmak için kullanılan hem de c++ ile sfm/bundle adjustment mimarisini öğrenmek için incelenecek açık kaynak proje
   2. **multiple view geometry in computer vision (hartley & zisserman – bölüm 17 & 18):** [robots.ox.ac.uk/~vgg/hzbook](https://www.robots.ox.ac.uk/~vgg/hzbook/) — sfm ve bundle adjustment'ın teorik referansı
   3. **glomap: global structure-from-motion revisited (colmap team – cvpr / eccv):** [github repo (colmap/glomap)](https://github.com/colmap/glomap) — **[modern küresel sfm standardı]** efsanevi colmap ekibinin geliştirdiği; geleneksel artımsal (incremental) sfm yerine küresel poz grafiği optimizasyonu yaparak 10 kat daha hızlı ve geniş ölçekli 3b nokta bulutu ve kamera pozu çıkaran modern c++ sfm standardı
@@ -117,10 +117,10 @@ engineering curriculum, mathematical representations, geometric algorithms, simu
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- **▶️ yt (yabancı video dersler — önem sırasıyla):**
+- **yt (yabancı video dersler — önem sırasıyla):**
   1. **cyrill stachniss – point cloud registration & iterative closest point (icp):** [youtube ders videoları](https://www.youtube.com/results?search_query=cyrill+stachniss+icp+point+cloud) — **[ilk izlenecek]** lidar ve rgb-d sensörlerden gelen iki 3b nokta bulutunu hizalayan icp ve svd algoritmalarının türetimi
   2. **open3d official youtube webinar & tutorial series:** [youtube kanalı](https://www.youtube.com/results?search_query=open3d+tutorial) — modern 3b veri işleme pratikleri
-- **📖 oku & 💻 repo (kütüphane ve makaleler — önem sırasıyla):**
+- **oku & repo (kütüphane ve makaleler — önem sırasıyla):**
   1. **open3d official documentation (c++ & python):** [open3d.org/docs/release](https://www.open3d.org/docs/release/) & [github repo (isl-org/open3d)](https://github.com/isl-org/Open3D) — **[ilk kullanılacak kütüphane]** voxelization, octree, icp, yüzey oluşturma ve 3b görselleştirme için en modern c++/python kütüphanesi
   2. **point cloud library (pcl – c++ endüstri standardı):** [pointclouds.org](https://pointclouds.org/) & [pcl tutorials](https://pcl.readthedocs.io/projects/tutorials/en/master/) — **[ros 2 & c++ standardı]** otonom araçlarda ve ros 2'de lidar verisi işlemek için kullanılan klasik c++ kütüphanesi
   3. **pointnet: deep learning on point sets for 3d classification and segmentation (qi et al., stanford):** [arxiv:1612.00593](https://arxiv.org/abs/1612.00593) — 3b nokta bulutları üzerinde derin öğrenmeyi başlatan temel makale
@@ -144,10 +144,10 @@ engineering curriculum, mathematical representations, geometric algorithms, simu
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- **▶️ yt (yabancı video dersler — önem sırasıyla):**
+- **yt (yabancı video dersler — önem sırasıyla):**
   1. **yannic kilcher & two minute papers – nerf & 3d gaussian splatting explanations:** [youtube videosu (3dgs)](https://www.youtube.com/watch?v=HVv_IQKlafQ) — **[ilk izlenecek]** nerf ve 3d gaussian splatting'in neden devrim yarattığının görsel ve matematiksel özeti
   2. **prof. frank dellaert (georgia tech) – 3d gaussian splatting & spatial ai lectures:** [youtube kanalı & sunumlar](https://www.youtube.com/results?search_query=frank+dellaert+spatial+ai) — robotik haritalama ve mekânsal yapay zekâ (spatial ai) perspektifi
-- **📖 oku & 💻 repo (makale ve resmi kodlar — önem sırasıyla):**
+- **oku & repo (makale ve resmi kodlar — önem sırasıyla):**
   1. **3d gaussian splatting for real-time radiance field rendering (kerbl et al., siggraph 2023):** [arxiv:2308.04079](https://arxiv.org/abs/2308.04079) & [resmi repo (graphdeco-inria/gaussian-splatting)](https://github.com/graphdeco-inria/gaussian-splatting) — **[gerçek zamanlı 3b sahne temsili]** 100+ fps hızında fotogerçekçi 3b sahne oluşturma ve cuda rasterizer kodu
   2. **nerf: representing scenes as neural radiance fields for view synthesis (mildenhall et al., eccv 2020):** [arxiv:2003.08934](https://arxiv.org/abs/2003.08934) & [proje sayfası](https://www.matthewtancik.com/nerf) — hacimsel ışın izleme (volumetric rendering) ve sinirsel sahne temsillerinin kurucu makalesi
   3. **repo – nerfstudio-project/nerfstudio:** [docs.nerf.studio](https://docs.nerf.studio/) & [github repo](https://github.com/nerfstudio-project/nerfstudio) — nerf ve gaussian splatting modellerini kendi videolarınla kolayca eğitmek için modüler çerçeve
@@ -225,12 +225,12 @@ engineering curriculum, mathematical representations, geometric algorithms, simu
 
 **kaynaklar (önem ve çalışma sırasına göre):**
 
-- 🇹🇷 **tr:** — (doğrudan yt 1. sıradaki ders ve learnopengl üzerinden ilerle).
-- ▶️ **yt:**
+- **tr:** — (doğrudan yt 1. sıradaki ders ve learnopengl üzerinden ilerle).
+- **yt:**
   1. **[ilk izlenecek — bilgisayar grafikleri & geometri]** [cmu 15-462 / 15-662 — computer graphics (keenan crane — youtube)](https://www.youtube.com/playlist?list=PL9_jI1bdZmz2emSh0UQ5iOdT2xRHFHL7E) — model-view-projection matrisleri (kamera projeksiyonunun ikizi), rasterizasyon, mesh işleme, sdf ve ışın izleme.
   2. **[hızlı giriş]** [games101 — introduction to computer graphics (lingqi yan — youtube)](https://www.youtube.com/playlist?list=PL_w_qWAQZtAZhtzPI5pkAtcUVgmzdAP8g) — dönüşüm matrisleri, gölgeleme ve fiziksel tabanlı görüntü oluşturma (pbr).
   3. **ten minute physics (dr. matthias müller / nvidia physx):** [matthias-research.github.io/pages/tenminutephysics](https://matthias-research.github.io/pages/tenMinutePhysics/) & [youtube kanalı](https://www.youtube.com/@TenMinutePhysics) — nvidia'nın baş fizik araştırmacısından; parçacık simülasyonu, kumaş fiziği, rijit cisim dinamikleri ve robotik çarpışma motorlarını sıfırdan c++/javascript ile kodlama dersleri.
-- 📖 **oku & 💻 repo:**
+- **oku & repo:**
   1. [learnopengl — joey de vries (learnopengl.com)](https://learnopengl.com/) — c++ ile koordinat sistemleri, kamera matrisleri, z-buffer ve shader programlamanın uygulamalı rehberi.
   2. [matt pharr, wenzel jakob & greg humphreys — physically based rendering: from theory to implementation (pbr-book.org — ücretsiz online)](https://pbr-book.org/) & [mitsuba 3 differentiable renderer (github)](https://github.com/mitsuba-renderer/mitsuba3) — ışın izleme ve türevlenebilir görüntü oluşturma (differentiable rendering).
   3. [blenderproc — procedural blender pipeline for photorealistic synthetic data (dlr-rm github)](https://github.com/DLR-RM/BlenderProc) & [nvidia warp (github)](https://github.com/NVIDIA/warp) — derin öğrenme modelleri için fotogerçekçi sentetik veri üretimi ve gpu fizik simülasyonu.
