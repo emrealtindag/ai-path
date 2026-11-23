@@ -94,7 +94,7 @@ autonomous flight requires tightly coupling physics, low-level microcontroller f
 ### 8.5 robot simulation
 
 - [ ] gazebo / gazebo sim (ignition)
-- [ ] nvidia isaac sim & isaaclab (gpu-paralel robotik simülasyonu)
+- [ ] nvidia isaac sim & isaaclab (gpu-parallel robot simulation)
 - [ ] mujoco
 - [ ] webots
 - [ ] pybullet
@@ -104,26 +104,26 @@ autonomous flight requires tightly coupling physics, low-level microcontroller f
 - [ ] sensor simulation
 - [ ] hardware-in-the-loop (hil)
 - [ ] software-in-the-loop (sitl)
-- [ ] flightmare & iha/dron simülasyonu
-- [ ] rotors & gazebo mav simülasyonu
-- [ ] aerial gym simulator & gpu-paralel hava robotiği
-- [ ] drake (mit csail) & matematiksel simülasyon
+- [ ] flightmare & uav simulation
+- [ ] rotors & gazebo mav simulation
+- [ ] aerial gym simulator & gpu-parallel aerial robotics
+- [ ] drake (mit csail) & mathematical simulation
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **articulated robotics – simulating a robot with gazebo & ros 2:** [youtube videosu](https://www.youtube.com/watch?v=laWn7_cj434) — **[ilk izlenecek]** urdf/xacro modeline fizik, kamera ve lidar ekleyip gazebo'da sürme
-  2. **nvidia developer – nvidia isaac sim & isaac ros tutorials:** [youtube oynatma listesi](https://www.youtube.com/results?search_query=nvidia+isaac+sim+tutorial+ros2) — **[fotogerçekçi gpu simülasyonu]** ray-tracing tabanlı sensör simülasyonu, sentetik veri üretimi ve donanım hızlandırmalı robotik
-- **oku & simülatör dokümanları (önem sırasıyla):**
-  1. **gazebo sim (modern ignition gazebo) official docs:** [gazebosim.org/docs](https://gazebosim.org/docs) — ros 2 ile entegre açık kaynak fizik ve sensör simülatörü
-  2. **nvidia isaac sim & isaaclab (nvidia & eth zürich):** [isaac-sim.github.io/isaaclab](https://isaac-sim.github.io/IsaacLab/) & [github (isaac-sim/isaaclab)](https://github.com/isaac-sim/IsaacLab) — **[gpu-paralel robot öğrenmesi standartı]** tek bir gpu üzerinde binlerce robotu eşzamanlı simüle ederek insansı ve bacaklı robotlara dakikalar içinde yürüme ve manipülasyon politikaları eğiten 8.6k+ yıldızlı resmi simülasyon ve rl çerçevesi
-  3. **mujoco (multi-joint dynamics with contact – deepmind):** [mujoco.readthedocs.io](https://mujoco.readthedocs.io/en/stable/overview.html) & [github.com/google-deepmind/mujoco](https://github.com/google-deepmind/mujoco) — robot öğrenmesi (rl) ve temas dinamiği için dünyanın en hızlı c/c++ fizik motoru
-  4. **px4 & ardupilot sitl (software-in-the-loop) simulation guides:** [docs.px4.io/main/en/simulation](https://docs.px4.io/main/en/simulation/) · [ardupilot sitl (ardupilot.org)](https://ardupilot.org/dev/docs/sitl-simulator-software-in-the-loop.html) — iha ve otonom araç algoritmalarını (copter, plane, vtol, rover) gerçek uçuş öncesi gazebo, jsbsim ve ros üzerinde donanımsız simüle edip test etme
-  5. **luckyengine & luckyrobots (mujoco robotik simülatörü):** [luckyrobots (github)](https://github.com/luckyrobots/luckyrobots) & [luckyrobots.readthedocs.io](https://luckyrobots.readthedocs.io) — mujoco fizik motorunu grpc ile python'a bağlayan; robot manipülatörleri, dört bacaklı (unitree go2) ve insansı (g1) robotlar için gymnasium (`luckyenv`) rl arayüzü sunan yeni nesil simülasyon ortamı
-  6. **flightmare: flexible quadrotor simulator (uzh rpg – corl):** [flightmare.bitbucket.io](https://github.com/uzh-rpg/flightmare) & [github repo (uzh-rpg/flightmare)](https://github.com/uzh-rpg/flightmare) — **[otonom iha & dron yarışı simülatörü]** davide scaramuzza ekibinin geliştirdiği; saniyede yüzbinlerce adım simüle eden ultra hızlı c++ çok rotorlu aerodinamik motoru ile unity fotogerçekçi render motorunu ayıran, otonom iha'lara takviyeli öğrenme (rl) ile çevik uçuş ve engelden kaçma öğreten açık kaynak simülatör
-  7. **rotors: modular gazebo mav simulator (eth zürich asl – springer):** [github repo (ethz-asl/rotors_simulator)](https://github.com/ethz-asl/rotors_simulator) & [wiki](https://github.com/ethz-asl/rotors_simulator/wiki) — **[ros & gazebo çok rotorlu iha simülasyonu standartı]** prof. roland siegwart ekibinin geliştirdiği; asctec firefly ve hummingbird gibi çok rotorlu iha modelleri, gerçekçi imu gürültü modelleri, stereo/kamera/lidar sensör simülasyonları ve se(3) geometrik uçuş kontrolcüleri (lee controller) sunan 1.5k+ yıldızlı gazebo/ros simülatör çerçevesi
-  8. **aerial gym simulator (ntnu arl & nvidia isaac gym):** [github repo (ntnu-arl/aerial_gym_simulator)](https://github.com/ntnu-arl/aerial_gym_simulator) & [aerialgym.com](https://aerialgym.com/) — **[gpu-paralel uçan robotik & rl simülasyonu]** prof. kostas alexis ekibinin geliştirdiği; nvidia isaac gym üzerinde tek bir gpu'da on binlerce iha'yı eşzamanlı simüle eden, derin pekiştirmeli öğrenme (rl) ile aerodinamik etkiler altında çevik uçuş, engelden kaçma ve görsel navigasyon politikaları eğiten 780+ yıldızlı yüksek başarımlı simülasyon çerçevesi
-  9. **drake: model-based design and verification for robotics (mit csail – robotlocomotion):** [drake.mit.edu](https://drake.mit.edu/) & [github repo (robotlocomotion/drake)](https://github.com/RobotLocomotion/drake) — **[matematiksel robotik simülasyonu & yörünge optimizasyonu]** prof. russ tedrake ekibinin geliştirdiği; c++ ile yazılmış, kinematik, temas dinamiği, doğrusal olmayan optimizasyon (snopt, ipopt), lqr ve lyapunov kararlılık analizi sunan, humanoid ve manipülatör sistemleri için 4.3k+ yıldızlı mit csail simülasyon ve kontrol motoru
+- **video lectures:**
+  1. **articulated robotics – simulating a robot with gazebo & ros 2:** [youtube video](https://www.youtube.com/watch?v=laWn7_cj434) — adding physics, cameras, and lidar to urdf/xacro models in gazebo
+  2. **nvidia developer – isaac sim & isaac ros:** [youtube search](https://www.youtube.com/results?search_query=nvidia+isaac+sim+tutorial+ros2) — ray-traced sensor simulation, synthetic data, and gpu-accelerated robotics
+- **books, papers & repositories:**
+  1. **gazebo sim official docs:** [gazebosim.org/docs](https://gazebosim.org/docs) — open-source physics and sensor simulator integrated with ros 2
+  2. **nvidia isaac sim & isaaclab:** [docs](https://isaac-sim.github.io/IsaacLab/) & [github repo](https://github.com/isaac-sim/IsaacLab) — gpu-parallel simulation framework training thousands of robots simultaneously with rl
+  3. **mujoco (deepmind):** [docs](https://mujoco.readthedocs.io/en/stable/overview.html) & [github repo](https://github.com/google-deepmind/mujoco) — fast c/c++ physics engine for contact dynamics and robot learning
+  4. **px4 & ardupilot sitl simulation guides:** [px4 simulation](https://docs.px4.io/main/en/simulation/) · [ardupilot sitl](https://ardupilot.org/dev/docs/sitl-simulator-software-in-the-loop.html) — testing flight stacks in gazebo/jsbsim without physical hardware
+  5. **luckyengine & luckyrobots:** [github repo](https://github.com/luckyrobots/luckyrobots) & [docs](https://luckyrobots.readthedocs.io) — mujoco simulator with grpc python sdk and gymnasium interface for legged/humanoid robots
+  6. **flightmare (uzh rpg):** [github repo](https://github.com/uzh-rpg/flightmare) — high-speed c++ quadrotor aerodynamics combined with photorealistic unity rendering for agile rl drone flight
+  7. **rotors gazebo mav simulator (eth zürich):** [github repo](https://github.com/ethz-asl/rotors_simulator) & [wiki](https://github.com/ethz-asl/rotors_simulator/wiki) — modular gazebo multirotor models with realistic imu noise, sensors, and lee se(3) controller
+  8. **aerial gym simulator (ntnu arl):** [github repo](https://github.com/ntnu-arl/aerial_gym_simulator) & [aerialgym.com](https://aerialgym.com/) — simulates thousands of multirotors in parallel on one gpu for aerial rl navigation
+  9. **drake (mit csail):** [drake.mit.edu](https://drake.mit.edu/) & [github repo](https://github.com/RobotLocomotion/drake) — c++ modeling, contact dynamics, trajectory optimization, lqr, and lyapunov control toolbox
 
 ### 9.3 advanced control
 
@@ -137,24 +137,24 @@ autonomous flight requires tightly coupling physics, low-level microcontroller f
 - [ ] optimal trajectory generation
 - [ ] stochastic control
 - [ ] distributed control
-- [ ] model predictive path integral (mppi) & gpu-optimal kontrol
-- [ ] dynamical systems (ds) & kararlı reaktif kontrol (epfl lasa)
+- [ ] model predictive path integral (mppi) & gpu optimal control
+- [ ] dynamical systems (ds) & stable reactive control (epfl lasa)
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **steve brunton & matlab tech talks – model predictive control (mpc) explained:** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLn8PRpmsu08ozoeoXgxPSBKLyd4YEHww8) — **[ilk izlenecek]** kısıtlar altında gelecekteki yörüngeyi tahmin edip optimize eden mpc kontrolcüsünün çalışma prensibi
-  2. **mit 6.832 – underactuated robotics (prof. russ tedrake):** [youtube tam dönem ders serisi](https://www.youtube.com/playlist?list=PLkx8KyIQkMfU5szP43GlE_S1QGSPQfL9s) — **[ileri akademik kontrol dersi]** doğrusal olmayan dinamik kontrol, lqr, mpc, lyapunov kararlılığı ve yörünge optimizasyonu (trajectory optimization)
-  3. **eth zürich – flying machine arena lectures (prof. raffaello d'andrea):** [youtube sunumları](https://www.youtube.com/results?search_query=raffaello+d%27andrea+quadrocopter+control) — agresif manevra yapan otonom iha'ların doğrusal olmayan kontrolü
-- **oku & repo (ücretsiz kitap ve endüstriyel kodlar — önem sırasıyla):**
-  1. **underactuated robotics: algorithms for walking, running, swimming, flying, and manipulation (russ tedrake – mit):** [underactuated.csail.mit.edu (ücretsiz interaktif kitap & jupyter kodları)](https://underactuated.csail.mit.edu/) — **[başucu kitabı]** iha ve robot kontrolü için dünyadaki en modern ücretsiz kitap
-  2. **predictive control for linear and hybrid systems (borrelli, bemporad, morari):** [mpc.berkeley.edu (ücretsiz kitap pdf)](https://www.mpc.berkeley.edu/mpc-course-material) — mpc matematiğinin standart ders kitabı
-  3. **repo – commaai/openpilot:** [github.com/commaai/openpilot](https://github.com/commaai/openpilot) — **[gerçek araç kodu]** 250+ gerçek otomobil modelinde otonom şerit takibi ve hız kontrolü yapan açık kaynak sistemin `selfdrive/controls` altındaki mpc ve kalman filtresi c++/python kodlarını incele
-  4. **kütüphane – casadi/casadi & acados/acados:** [web.casadi.org](https://web.casadi.org/) · [docs.acados.org](https://docs.acados.org/) — c++ ve python ile gömülü sistemlerde gerçek zamanlı doğrusal olmayan mpc (nmpc) çözmek için kullanılan endüstri standardı kütüphaneler
-  5. **kr_mav_control: se(3) geometric quadrotor tracking control (upenn grasp lab – icra / cdc):** [github repo (kumarrobotics/kr_mav_control)](https://github.com/KumarRobotics/kr_mav_control) — **[iha geometrik kontrol c++ yığını]** vijay kumar ve daniel mellinger ekibinin geliştirdiği; euler açılarındaki kilitlenme (gimbal lock) problemini ortadan kaldırmak için doğrudan $so(3)$ ve $se(3)$ lie grupları üzerinde çalışan, agresif akrobatik manevralarda ve yüksek hızlı otonom uçuşlarda milimetrik yörünge takibi yapan açık kaynak c++ kontrol paketi
-  6. **rosplane & vtolsim: fixed-wing & vtol autopilot (byu magicc lab – beard & mclain):** [rosplane (github)](https://github.com/byu-magicc/rosplane) · [vtolsim (github)](https://github.com/byu-magicc/vtolsim) — **[sabit kanat ve vtol iha otopilot yığını]** beard & mclain teorisini ros/c++ ile hayata geçiren; ardışık döngü kapatmalı (successive loop closure) irtifa/hız/yatış pid otopilot kontrolü, vektör alanı (vector field) tabanlı yol takibi ve dikey kalkış-sabit kanat geçiş (vtol) dinamiği sunan açık kaynak c++/python otopilot mimarisi
-  7. **mppi control (model predictive path integral – mit acl):** [github repo (mit-acl/mppi_numba)](https://github.com/mit-acl/mppi_numba) — **[gpu hızlandırmalı olasılıksal optimal kontrol]** numba ve cuda kullanarak yüzlerce hz frekansta binlerce olasılıksal yörünge örneği türeten, karmaşık ve doğrusal olmayan robot dinamiklerinde risk duyarlı engelden kaçma ve kontrol sağlayan gpu-mppi kontrol mimarisi
-  8. **dynamical systems (ds) for robot control & learning (epfl lasa – prof. aude billard / mit press):** [epfl-lasa.github.io](https://epfl-lasa.github.io/) · [github (epfl-lasa/fast_dynamical_systems)](https://github.com/epfl-lasa) & [seds (github)](https://github.com/epfl-lasa/icra-lfd-tutorial) — **[dinamik sistemlerle kararlı reaktif kontrol & manipülasyon]** prof. aude billard'ın mit press tarafından yayımlanan başucu teorisi; diferansiyel denklemler ve lyapunov kararlılığı (seds) kullanarak robot manipülatörlerinin beklenmedik insan müdahalelerinde veya hareketli engellerde bile hedefe güvenle ve sarsıntısız ulaşmasını garanti eden reaktif kontrol ve taklit öğrenmesi (lfd) kütüphanesi
+- **video lectures:**
+  1. **steve brunton & matlab tech talks – mpc explained:** [youtube playlist](https://www.youtube.com/playlist?list=PLn8PRpmsu08ozoeoXgxPSBKLyd4YEHww8) — how model predictive control optimizes trajectories under constraints
+  2. **mit 6.832 – underactuated robotics (russ tedrake):** [youtube lecture series](https://www.youtube.com/playlist?list=PLkx8KyIQkMfU5szP43GlE_S1QGSPQfL9s) — nonlinear control, lqr, mpc, lyapunov stability, and trajectory optimization
+  3. **eth zürich – flying machine arena (raffaello d'andrea):** [youtube talks](https://www.youtube.com/results?search_query=raffaello+d%27andrea+quadrocopter+control) — nonlinear control for high-agility autonomous quadrotors
+- **books, papers & repositories:**
+  1. **underactuated robotics (russ tedrake – mit):** [free interactive book & notebooks](https://underactuated.csail.mit.edu/) — open interactive textbook for uav and robot control
+  2. **predictive control for linear & hybrid systems (borrelli, bemporad, morari):** [free pdf](https://www.mpc.berkeley.edu/mpc-course-material) — standard mathematical textbook for mpc
+  3. **commaai/openpilot:** [github repo](https://github.com/commaai/openpilot) — production c++/python mpc and kalman filter controllers under `selfdrive/controls`
+  4. **casadi & acados:** [web.casadi.org](https://web.casadi.org/) · [docs.acados.org](https://docs.acados.org/) — standard c++/python solvers for real-time embedded nonlinear mpc (nmpc)
+  5. **kr_mav_control (upenn grasp lab):** [github repo](https://github.com/KumarRobotics/kr_mav_control) — c++ $so(3)/se(3)$ geometric quadrotor tracking control avoiding gimbal lock during aggressive flight
+  6. **rosplane & vtolsim (byu magicc lab):** [rosplane](https://github.com/byu-magicc/rosplane) · [vtolsim](https://github.com/byu-magicc/vtolsim) — c++/ros autopilot implementing beard & mclain fixed-wing and vtol flight control
+  7. **mppi control (mit acl):** [github repo](https://github.com/mit-acl/mppi_numba) — gpu-accelerated stochastic mppi trajectory optimization with cuda/numba
+  8. **dynamical systems for robot control (epfl lasa):** [epfl-lasa.github.io](https://epfl-lasa.github.io/) · [github](https://github.com/epfl-lasa) · [seds](https://github.com/epfl-lasa/icra-lfd-tutorial) — reactive lyapunov-stable control and learning from demonstration libraries
 
 ### 9.4 autonomous motion
 
@@ -167,15 +167,15 @@ autonomous flight requires tightly coupling physics, low-level microcontroller f
 - [ ] collision avoidance
 - [ ] model-based planning
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **brian douglas – autonomous navigation & path tracking tech talks:** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLn8PRpmsu08rLRGrnF-S6TyGrmcA2X7kg) — **[ilk izlenecek]** pure pursuit, stanley controller ve yörünge takibi temelleri
-  2. **eth zürich – autonomous mobile robots (motion control module – prof. roland siegwart):** [youtube ders serisi](https://www.youtube.com/playlist?list=PLpUPoM7Rgzi_7YWn14Va2FODh7LzADBSm) — mobil robotlarda kinematik kısıtlar ve yörünge takibi
-- **oku, repo & kurs (kod, kitap ve uzmanlık serisi — önem sırasıyla):**
-  1. **repo – atsushisakai/pythonrobotics (path tracking bölümü):** [github.com/atsushisakai/pythonrobotics#path-tracking](https://github.com/AtsushiSakai/PythonRobotics#path-tracking) — **[hemen çalıştırılacak kodlar]** pure pursuit, stanley, rear-wheel feedback, lqr ve mpc yörünge takip algoritmalarının animasyonlu ve temiz python implementasyonları
-  2. **university of toronto – self-driving cars specialization (coursera – prof. steven waslander):** [coursera.org/specializations/self-driving-cars](https://www.coursera.org/specializations/self-driving-cars) — otonom araçlarda yanal (lateral - stanley/pure pursuit) ve boylamsal (longitudinal) kontrol denklemleri (not: youtube serisi değil, coursera uzmanlık programıdır)
-  3. **trajectory planning for automatic machines and robots (luigi biagiotti & claudio melchiorri):** [springer kitap sayfası](https://link.springer.com/book/10.1007/978-3-540-85629-0) — hız, ivme ve sarsıntı (jerk / minimum snap) kısıtlı yörünge üretimi
+- **video lectures:**
+  1. **brian douglas – autonomous navigation & path tracking:** [youtube playlist](https://www.youtube.com/playlist?list=PLn8PRpmsu08rLRGrnF-S6TyGrmcA2X7kg) — fundamentals of pure pursuit, stanley controller, and path tracking
+  2. **eth zürich – motion control for mobile robots:** [youtube lecture series](https://www.youtube.com/playlist?list=PLpUPoM7Rgzi_7YWn14Va2FODh7LzADBSm) — kinematic constraints and trajectory tracking
+- **books, papers & repositories:**
+  1. **pythonrobotics (path tracking):** [github repo](https://github.com/AtsushiSakai/PythonRobotics#path-tracking) — clean animated python code for pure pursuit, stanley, lqr, and mpc path tracking
+  2. **self-driving cars specialization (university of toronto):** [coursera](https://www.coursera.org/specializations/self-driving-cars) — lateral (stanley/pure pursuit) and longitudinal vehicle control equations
+  3. **trajectory planning for automatic machines & robots:** [book page](https://link.springer.com/book/10.1007/978-3-540-85629-0) — smooth polynomial trajectories bounded by velocity, acceleration, and jerk/snap
 
 ### 11.2 motion planning
 
@@ -187,25 +187,25 @@ autonomous flight requires tightly coupling physics, low-level microcontroller f
 - [ ] kinodynamic planning & online replanning
 - [ ] time-optimal planning
 - [ ] safe motion planning
-- [ ] graph-based exploration (gbplanner) & darpa subt otonomi
+- [ ] graph-based exploration (gbplanner) & darpa subt autonomy
 - [ ] fast & safe trajectory planning beyond sensor horizon (faster)
-- [ ] ego-planner & gcopter (zju fast lab) yörünge optimizasyonu
-- [ ] otonom hacimsel keşif ve sürü uçuş planlaması (fuel & racer)
+- [ ] ego-planner & gcopter (zju fast lab) trajectory optimization
+- [ ] autonomous volumetric exploration & swarm planning (fuel & racer)
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **prof. dmitry berenson – motion planning lectures (university of michigan):** [youtube kanalı & ders videoları](https://www.youtube.com/results?search_query=dmitry+berenson+motion+planning) — **[ilk izlenecek – temel planlama]** çok serbestlik dereceli robotlarda çarpışma kontrolü, örnekleme ve optimizasyon tabanlı (chomp, trajopt) hareket planlama
-  2. **prof. fei gao (zju fast lab) & hkust aerial robotics (boyu zhou) – autonomous uav planning, exploration & swarm lectures:** [youtube seminer & ders serisi](https://www.youtube.com/results?search_query=fei+gao+fast+lab+motion+planning) — **[iha yörünge optimizasyonu & otonom keşif dersi]** ego-planner, fuel ve gcopter mimarilerinin arkasındaki b-spline yörünge optimizasyonu, esdf'siz gradyan arama ve hiyerarşik sınır tabanlı otonom keşif teorisinin amfi dersleri
-  3. **prof. russ tedrake (mit 6.832 / 6.821 – underactuated robotics: trajectory optimization):** [youtube ders oynatma listesi (mit)](https://www.youtube.com/playlist?list=PLkx8KyIQkMfU5szP43GlE_S1QGSPQfL9s) — **[zirve matematiksel planlama dersi]** doğrudan kolokasyon (direct collocation), non-lineer dinamik kısıtlar altında kinodinamik yörünge optimizasyonu ve engellerden kaçma teorisi
-- **oku & kütüphane (kitap ve c++ planlama motoru — önem sırasıyla):**
-  1. **the open motion planning library (ompl – c++ kütüphanesi):** [ompl.kavrakilab.org](https://ompl.kavrakilab.org/) & [github repo (ompl/ompl)](https://github.com/ompl/ompl) — **[endüstri standardı c++ kütüphanesi]** ros 2 moveit 2'nin altında çalışan rrt*, prm ve kinodinamik planlayıcıların saf c++ kodu
-  2. **principles of robot motion: theory, algorithms, and implementations (howie choset, kevin lynch, seth hutchinson et al.):** [mit press kitap sayfası](https://mitpress.mit.edu/9780262033275/principles-of-robot-motion/) — robot hareket teorisinin kapsamlı referans kitabı
-  3. **kr_autonomous_flight: autonomous flight system for gps-denied quadrotors (upenn grasp lab):** [github repo (kumarrobotics/kr_autonomous_flight)](https://github.com/KumarRobotics/kr_autonomous_flight) — **[tam yığın otonom uçuş & kinodinamik hareket planlama]** vijay kumar laboratuvarının açık kaynak tam otonom mimarisi; gps'siz ve bilinmeyen karmaşık ortamlarda 3b haritalama, gerçek zamanlı kinodinamik yörünge üretimi (online replanning), engellerden kaçma ve se(3) kontrolünü birleştiren entegre c++ otonomi yığını
-  4. **gbplanner_ros & mbplanner_ros: graph-based & motion-primitives exploration planner (ntnu arl / team cerberus – darpa subt champion):** [github repo (ntnu-arl/gbplanner_ros)](https://github.com/ntnu-arl/gbplanner_ros) & [mbplanner_ros](https://github.com/ntnu-arl/mbplanner_ros) — **[darpa subterranean challenge şampiyonu otonom keşif ve yol planlama]** prof. kostas alexis liderliğindeki darpa subt şampiyonu ekibin geliştirdiği; gps'ten yoksun yer altı tünelleri ve karmaşık 3b ortamlarda iki katmanlı (yerel ve küresel) graf tabanlı hacimsel keşif planlaması (bifurcated graph search) ve iha/dört bacaklı robotlar için dinamik hareket primitifleri sunan dünya standardı c++/ros keşif yığını
-  5. **faster: fast and safe trajectory planner in unknown environments (mit acl – ieee/rsj iros):** [github repo (mit-acl/faster)](https://github.com/mit-acl/faster) — **[sensör menzilinin ötesinde yüksek hızlı uçuş]** prof. jonathan p. how ekibinin geliştirdiği; iha'ların sensör görüş ufkunun ötesinde güvenle uçmasını sağlayan; taahhüt edilen güvenli yörünge ile yedek yörüngeyi (backup trajectory) eşzamanlı planlayarak bilinmeyen ortamlarda takılmadan ve duraksamadan yüksek hızlı agresif uçuş sağlayan mixed-integer quadratic programming (miqp) tabanlı c++ yörünge planlayıcısı
-  6. **ego-planner & gcopter: gradient-based trajectory optimization (zju fast lab & hkust – ieee t-ro):** [ego-planner (github)](https://github.com/ZJU-FAST-Lab/ego-planner) · [gcopter (github)](https://github.com/ZJU-FAST-Lab/GCOPTER) — **[esdf'siz ultra hızlı iha yörünge optimizasyonu standardı]** prof. fei gao ve prof. shaojie shen laboratuvarının geliştirdiği; hesaplama yükü yüksek olan mesafe alanlarına (esdf) ihtiyaç duymadan doğrudan nokta bulutları üzerinden çarpışmasız b-spline yörünge üreten (ego-planner) ve minco (minimum kontrol eforu) polinom formülasyonuyla sık ormanlarda ve bilinmeyen engeller arasında agresif otonom sürü uçuşu sağlayan 3.6k+ yıldızlı c++ otonomi yığını
-  7. **fuel & racer: fast autonomous exploration & multi-uav planning (cuhk unmanned systems lab / hkust – boyu zhou / ieee ra-l & ieee t-ro):** [fuel github (hkust-aerial-robotics/fuel)](https://github.com/HKUST-Aerial-Robotics/FUEL) & [racer github (robotics-star-lab/racer)](https://github.com/Robotics-STAR-Lab/RACER) — **[hızlı otonom iha keşfi & merkeziyetsiz sürü koordinasyonu]** prof. boyu zhou ve shaojie shen ekibinin geliştirdiği; bilinmeyen karmaşık ortamlarda sınır alanlarını (frontier) artımsal hiyerarşik yapıyla tarayarak keşif süresini dramatik biçimde kısaltan (fuel) ve dengesiz iletişim koşullarında birden fazla iha'nın harita keşfini eşgüdümlü yürüten (racer) 1.8k+ yıldızlı açık kaynak otonomi ve hareket planlama çerçevesi
+- **video lectures:**
+  1. **prof. dmitry berenson – motion planning lectures:** [youtube search](https://www.youtube.com/results?search_query=dmitry+berenson+motion+planning) — collision checking, sampling-based planning, chomp, and trajopt
+  2. **prof. fei gao (zju fast lab) & boyu zhou – autonomous uav planning:** [youtube search](https://www.youtube.com/results?search_query=fei+gao+fast+lab+motion+planning) — b-spline trajectory optimization, esdf-free planning, and frontier exploration
+  3. **prof. russ tedrake (mit 6.832) – trajectory optimization:** [youtube playlist](https://www.youtube.com/playlist?list=PLkx8KyIQkMfU5szP43GlE_S1QGSPQfL9s) — direct collocation and kinodynamic trajectory optimization under nonlinear constraints
+- **books, papers & repositories:**
+  1. **ompl (open motion planning library):** [ompl.kavrakilab.org](https://ompl.kavrakilab.org/) & [github repo](https://github.com/ompl/ompl) — pure c++ sampling-based and kinodynamic motion planners powering ros 2 moveit 2
+  2. **principles of robot motion (choset, lynch, hutchinson):** [book page](https://mitpress.mit.edu/9780262033275/principles-of-robot-motion/) — comprehensive textbook on robot motion theory
+  3. **kr_autonomous_flight (upenn grasp lab):** [github repo](https://github.com/KumarRobotics/kr_autonomous_flight) — complete c++ gps-denied quadrotor autonomy stack combining mapping, online replanning, and $se(3)$ control
+  4. **gbplanner_ros & mbplanner_ros (ntnu arl):** [gbplanner_ros](https://github.com/ntnu-arl/gbplanner_ros) & [mbplanner_ros](https://github.com/ntnu-arl/mbplanner_ros) — darpa subterranean challenge winning volumetric exploration planners for uavs and quadrupeds
+  5. **faster (mit acl):** [github repo](https://github.com/mit-acl/faster) — miqp-based c++ trajectory planner guaranteeing safe high-speed drone flight in unknown cluttered spaces
+  6. **ego-planner & gcopter (zju fast lab):** [ego-planner](https://github.com/ZJU-FAST-Lab/ego-planner) · [gcopter](https://github.com/ZJU-FAST-Lab/GCOPTER) — fast c++ drone trajectory planners avoiding esdf computation for dense forest flight and swarms
+  7. **fuel & racer (hkust / cuhk):** [fuel](https://github.com/HKUST-Aerial-Robotics/FUEL) & [racer](https://github.com/Robotics-STAR-Lab/RACER) — hierarchical frontier-based fast drone exploration and decentralized multi-uav planning
 
 ### 12.4 hardware-software integration
 
@@ -217,22 +217,22 @@ autonomous flight requires tightly coupling physics, low-level microcontroller f
 - [ ] system diagnostics
 - [ ] fault detection
 - [ ] reliability engineering
-- [ ] px4 autopilot mimarisi (uorb & ros 2 micro-xrce-dds)
-- [ ] ardupilot ap_hal & mavlink telemetri protokolü
-- [ ] qgroundcontrol (qgc) & gcs görev planlama
-- [ ] iha 6-dof uçuş dinamiği ve kaskad otopilot kontrolü (beard & mclain)
-- [ ] se(3) üzerinde geometrik iha takip kontrolü (taeyoung lee)
+- [ ] px4 autopilot architecture (uorb & ros 2 micro-xrce-dds)
+- [ ] ardupilot ap_hal & mavlink telemetry protocol
+- [ ] qgroundcontrol (qgc) & gcs mission planning
+- [ ] uav 6-dof flight dynamics & cascaded autopilot control (beard & mclain)
+- [ ] geometric uav tracking control on se(3) (taeyoung lee)
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **phil's lab – hardware design, sensor interfacing & flight controller firmware in c/c++:** [youtube kanalı](https://www.youtube.com/@PhilsLab) — **[ilk izlenecek – muazzam kanal]** sıfırdan iha uçuş kontrol kartı (stm32 + imu + barometre) tasarlayıp üzerinde c ile sensör sürücüsü ve kalman filtresi koşturan uçtan uca mühendislik kanalı
-- **oku & repo (endüstriyel otopilot mimarisi — önem sırasıyla):**
-  1. **px4 autopilot architectural overview & companion computer integration:** [docs.px4.io/main/en/concept/architecture.html](https://docs.px4.io/main/en/concept/architecture.html) & [github repo (px4/px4-autopilot)](https://github.com/PX4/PX4-Autopilot) — **[gerçek iha mimarisini incele]** sensör sürücülerinin `uorb` mesajlaşma hattıyla durum kestirimine (ekf2) ve kontrolcüye nasıl bağlandığını, ayrıca ros 2 (`uxrce_dds`) ile jetson görev bilgisayarına nasıl konuştuğunu incele
-  2. **ardupilot architecture & ap_hal (andrew tridgell / ardupilot team):** [ardupilot.org](https://ardupilot.org/) · [github repo (ardupilot/ardupilot)](https://github.com/ArduPilot/ardupilot) & [mavproxy (github)](https://github.com/ArduPilot/MAVProxy) — **[dünyanın en çok kullanılan otopilot yığını & ap_hal]** andrew tridgell (rsync ve samba mucidi) öncülüğünde geliştirilen; chibios rtos üzerinde çalışan donanım soyutlama katmanı (ap_hal), 24-state ekf3 durum kestirimi, mavlink telemetri protokolü ve döner kanat/sabit kanat/vtol otonom uçuş kontrol mimarisini sunan 11.5k+ yıldızlı küresel otopilot standartı
-  3. **qgroundcontrol (qgc – mavlink ground control station):** [qgroundcontrol.com](http://qgroundcontrol.com/) & [github repo (mavlink/qgroundcontrol)](https://github.com/mavlink/qgroundcontrol) — **[açık kaynak iha yer kontrol istasyonu (gcs) standardı]** px4 ve ardupilot otopilotları için dünya standardı çapraz platform (c++ / qt / qml) yer kontrol istasyonu; mavlink üzerinden otonom rota ve görev planlama (waypoint navigation), sensör ve pusula kalibrasyonu, parametre ayarlama, canlı telemetri ve video akışı (rtsp) sunan 3.7k+ yıldızlı temel havacılık arayüzü
-  4. **small unmanned aircraft: theory and practice (randy beard & tim mclain – byu magicc lab):** [uavbook.byu.edu](http://uavbook.byu.edu/) & [byu magicc lab](https://magicc.byu.edu/) — **[iha otopilot dinamiği ve uçuş kontrolünün kutsal kitabı]** ardupilot ve px4 otopilotlarının arkasındaki 6-dof rijit cisim hareket denklemleri, aerodinamik kuvvet/moment türetimleri, durum uzayı doğrusallaştırması ve kaskad pid döngülerini (roll/pitch/yaw/irtifa) sıfırdan anlatan dünya çapındaki 1 numaralı referans iha kitabı
-  5. **geometric tracking control of a quadrotor uav on se(3) (taeyoung lee, melvin leok, n. harris mcclamroch – ieee cdc):** [arxiv:1003.2005](https://arxiv.org/abs/1003.2005) — **[döner kanatlı iha geometrik kontrol referansı]** dört motorlu iha'larda euler açılarının getirdiği tekillikleri (gimbal lock) ortadan kaldıran; $so(3)$ ve $se(3)$ lie grupları üzerinde lyapunov kararlı agresif yörünge takibi ve akrobasi sağlayan literatürün en çok atıf alan temel iha makalesi
+- **video lectures:**
+  1. **phil's lab – hardware design & flight controller firmware in c/c++:** [youtube channel](https://www.youtube.com/@PhilsLab) — designing custom stm32 + imu flight controller pcbs and writing sensor drivers and kalman filters in c
+- **books, papers & repositories:**
+  1. **px4 autopilot architecture & companion integration:** [docs.px4.io](https://docs.px4.io/main/en/concept/architecture.html) & [github repo](https://github.com/PX4/PX4-Autopilot) — how sensor drivers connect via `uorb` to ekf2, flight controllers, and ros 2 (`uxrce_dds`) on a companion computer
+  2. **ardupilot architecture & ap_hal:** [ardupilot.org](https://ardupilot.org/) · [github repo](https://github.com/ArduPilot/ardupilot) & [mavproxy](https://github.com/ArduPilot/MAVProxy) — hardware abstraction layer (ap_hal) on chibios rtos with 24-state ekf3 and mavlink support for copter, plane, and vtol
+  3. **qgroundcontrol (mavlink ground control station):** [qgroundcontrol.com](http://qgroundcontrol.com/) & [github repo](https://github.com/mavlink/qgroundcontrol) — c++/qt ground control software for waypoint mission planning, calibration, parameter tuning, and live telemetry
+  4. **small unmanned aircraft: theory and practice (beard & mclain):** [uavbook.byu.edu](http://uavbook.byu.edu/) & [magicc lab](https://magicc.byu.edu/) — core textbook explaining the 6-dof flight dynamics, aerodynamics, and cascaded pid loops behind ardupilot and px4
+  5. **geometric tracking control of a quadrotor uav on se(3) (taeyoung lee et al.):** [arxiv:1003.2005](https://arxiv.org/abs/1003.2005) — seminal paper eliminating euler gimbal lock by tracking quadrotor trajectories directly on $so(3)$ and $se(3)$
 
 ### 12.5 embedded ai
 
@@ -243,20 +243,20 @@ autonomous flight requires tightly coupling physics, low-level microcontroller f
 - [ ] knowledge distillation
 - [ ] hardware acceleration
 - [ ] neural processing units (npu)
-- [ ] embedded gpu computing (nvidia jetson mimarisi)
+- [ ] embedded gpu computing (nvidia jetson architecture)
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **jetsonhacks – nvidia jetson (orin / nano) edge ai, camera & tensorrt guides:** [youtube kanalı](https://www.youtube.com/@JetsonHacks) & [github (jetsonhacksnano)](https://github.com/JetsonHacksNano) — **[ilk izlenecek]** gerçek bir iha/robot görev bilgisayarı olan nvidia jetson üzerinde kamera sürücüleri, cuda ve c++ tensorrt kurulumu
-  2. **mit 6.5940 – tinyml and efficient deep learning computing (prof. song han):** [youtube ders serisi](https://www.youtube.com/playlist?list=PL80kAHvQbh-pT4lCkDT53zT8DKmhE0idB) & [ders sitesi (hanlab.mit.edu/courses/2024-fall-65940)](https://hanlab.mit.edu/courses/2024-fall-65940) — **[dünya zirvesi ders]** model quantization (int8/fp8/int4), pruning, knowledge distillation ve donanım hızlandırmanın tüm matematiği
-  3. **shawn hymel – introduction to embedded machine learning (tinyml):** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PL7VEa1KauMQqZFj_nWRfsCZNXaBbkuurG) — mikrodenetleyiciler üzerinde çıkarım (inference)
-- **oku & repo (altın değerinde c++ & tensorrt kod tabanları — önem sırasıyla):**
-  1. **repo – dusty-nv/jetson-inference (hello ai world):** [github.com/dusty-nv/jetson-inference](https://github.com/dusty-nv/jetson-inference) & [nvidia jetson ai lab](https://www.jetson-ai-lab.com/) — **[temel başlangıç reposu]** nvidia'nın resmi c++ ve python tensorrt tabanlı gerçek zamanlı nesne tespiti, segmentasyon ve poz kestirimi eğitim deposu
-  2. **repo – wang-xinyu/tensorrtx:** [github.com/wang-xinyu/tensorrtx](https://github.com/wang-xinyu/tensorrtx) — **[portföy için kritik repo]** yolov8/v11, resnet, detr gibi modellerin pytorch'tan alınıp saf c++ tensorrt api'si ile sıfırdan nasıl yazıldığını gösteren en önemli açık kaynak proje
-  3. **tinyml: machine learning with tensorflow lite on arduino and ultra-low-power microcontrollers (pete warden & daniel situnayake):** [o'reilly kitap sayfası](https://www.oreilly.com/library/view/tinyml/9781492052036/) — düşük güçlü gömülü ai referansı
+- **video lectures:**
+  1. **jetsonhacks – nvidia jetson edge ai & tensorrt:** [youtube channel](https://www.youtube.com/@JetsonHacks) & [github](https://github.com/JetsonHacksNano) — guides for camera drivers, cuda, and c++ tensorrt setups on nvidia jetson
+  2. **mit 6.5940 – tinyml & efficient deep learning computing (song han):** [youtube lecture series](https://www.youtube.com/playlist?list=PL80kAHvQbh-pT4lCkDT53zT8DKmhE0idB) & [course site](https://hanlab.mit.edu/courses/2024-fall-65940) — quantization (int8/fp8/int4), pruning, distillation, and hardware-aware efficiency
+  3. **shawn hymel – introduction to embedded machine learning:** [youtube playlist](https://www.youtube.com/playlist?list=PL7VEa1KauMQqZFj_nWRfsCZNXaBbkuurG) — running neural network inference on microcontrollers
+- **books, papers & repositories:**
+  1. **dusty-nv/jetson-inference:** [github repo](https://github.com/dusty-nv/jetson-inference) & [nvidia jetson ai lab](https://www.jetson-ai-lab.com/) — official c++/python tensorrt tutorials for real-time detection, segmentation, and pose estimation
+  2. **wang-xinyu/tensorrtx:** [github repo](https://github.com/wang-xinyu/tensorrtx) — shows how to convert models like yolov8/v11, resnet, and detr from pytorch and write them from scratch using the pure c++ tensorrt api
+  3. **tinyml (pete warden & daniel situnayake):** [o'reilly book page](https://www.oreilly.com/library/view/tinyml/9781492052036/) — practical reference for machine learning on arduino and ultra-low-power microcontrollers
 
-### 38.5 remote sensing & aerial imagery – uzaktan algılama ve hava/uydu görüntüsü analizi
+### 38.5 remote sensing & aerial imagery
 
 - [ ] satellite and aerial image basics
 - [ ] multispectral and hyperspectral imaging

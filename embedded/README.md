@@ -42,16 +42,16 @@ engineering curriculum, hardware interfacing, firmware architecture, and curated
 - [ ] can bus
 - [ ] serial communication
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **tr (türkçe gömülü sistem kaynakları):**
-  1. **coşkun taşdemir:** [github profili (ctasdemir)](https://github.com/ctasdemir) — gömülü sistemler ve mikrodenetleyici notları
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **ben eater – serial communication protocols (uart, spi, i2c) & hardware interrupts:** [youtube kanalı](https://www.youtube.com/@BenEater) — **[ilk izlenecek]** osiloskop ve breadboard üzerinde saat sinyali (clock), bit kaydırma ve protokollerin fiziksel seviyesini gözle görme
-  2. **stmicroelectronics & microchip official getting started series:** [stmicroelectronics youtube](https://www.youtube.com/@stmicroelectronics) — endüstriyel mikrodenetleyici çevre birimleri (peripherals)
-- **oku (pratik kılavuzlar ve kitaplar — önem sırasıyla):**
-  1. **sparkfun communication protocol tutorials (uart, spi, i2c, can bus, pwm):** [learn.sparkfun.com/tutorials](https://learn.sparkfun.com/tutorials) — **[görsel kılavuz]** sensör ve motor sürücü haberleşme protokollerinin diyagramlarla özeti
-  2. **the art of electronics (paul horowitz & winfield hill):** [artofelectronics.net](https://artofelectronics.net/) — donanım ve elektronik dünyasının temel başvuru kitabı
+- **turkish resources:**
+  1. **coşkun taşdemir:** [github profile (ctasdemir)](https://github.com/ctasdemir) — turkish embedded systems and microcontroller study notes
+- **video lectures:**
+  1. **ben eater – serial protocols & hardware interrupts:** [youtube channel](https://www.youtube.com/@BenEater) — oscilloscope and breadboard walkthroughs of clock signals, uart, spi, and i2c
+  2. **stmicroelectronics official tutorials:** [youtube channel](https://www.youtube.com/@stmicroelectronics) — hardware peripherals and microcontroller configuration guides
+- **books, papers & repositories:**
+  1. **sparkfun communication protocol tutorials:** [learn.sparkfun.com/tutorials](https://learn.sparkfun.com/tutorials) — clean diagrams explaining uart, spi, i2c, can bus, and pwm
+  2. **the art of electronics (horowitz & hill):** [artofelectronics.net](https://artofelectronics.net/) — classic reference book on electronics and hardware design
 
 ### 12.2 embedded programming
 
@@ -66,16 +66,16 @@ engineering curriculum, hardware interfacing, firmware architecture, and curated
 - [ ] jtag
 - [ ] swd
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **tr (türkçe kaynaklar):**
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **miro samek (quantum leaps) – modern embedded systems programming course in c/c++:** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLPW8O6W-1chwyTzI3BHwBLbGQoPFxPAPM) — **[temel gömülü yazılım dersi – zorunlu]** register seviyesinden başlayıp pointerlar, `volatile`, startup kodu, kesmeler, oop ve durum makinelerini (state machines) mikrodenetleyici üzerinde gösteren kapsamlı seri
-  2. **low level learning – c, memory safety, embedded linux & kernel programming:** [youtube kanalı](https://www.youtube.com/@lowleveldevel1712) — düşük seviyeli sistem programlama ve bellek güvenliği pratikleri
-  3. **andreas fertig & jason turner (cppcon) – zero-cost abstractions & modern c++ in embedded systems:** [youtube sunumu](https://www.youtube.com/results?search_query=cppcon+modern+c%2B%2B+embedded+systems) — bellek kısıtlı (no-heap) donanımlarda `constexpr` ve şablonlarla (templates) yüksek hızlı c++ yazımı
-- **oku (kitap ve standartlar — önem sırasıyla):**
-  1. **making embedded systems: design patterns for great software (elecia white – o'reilly):** [o'reilly kitap sayfası](https://www.oreilly.com/library/view/making-embedded-systems/9781098151539/) — hal (hardware abstraction layer), sürücü mimarisi ve gömülü tasarım desenleri
-  2. **barr-c:2018 embedded c coding standard (michael barr):** [barrgroup.com (ücretsiz pdf)](https://barrgroup.com/embedded-systems/books/embedded-c-coding-standard) — hataya dayanıklı gömülü kodlama standartları
+- **turkish resources:**
+- **video lectures:**
+  1. **miro samek – modern embedded systems programming:** [youtube playlist](https://www.youtube.com/playlist?list=PLPW8O6W-1chwyTzI3BHwBLbGQoPFxPAPM) — hands-on course from hardware registers and interrupts to state machines in c/c++
+  2. **low level – systems & kernel programming:** [youtube channel](https://www.youtube.com/@lowleveldevel1712) — practical videos on low-level c, memory safety, and embedded linux
+  3. **cppcon – modern c++ in embedded systems:** [youtube search](https://www.youtube.com/results?search_query=cppcon+modern+c%2B%2B+embedded+systems) — writing zero-cost abstractions and no-heap `constexpr` code for microcontrollers
+- **books, papers & repositories:**
+  1. **making embedded systems (elecia white):** [book page](https://www.oreilly.com/library/view/making-embedded-systems/9781098151539/) — hal design, driver architectures, and embedded software patterns
+  2. **barr-c embedded c coding standard (michael barr):** [free pdf](https://barrgroup.com/embedded-systems/books/embedded-c-coding-standard) — coding rules for writing reliable, bug-resistant embedded c firmware
 
 ### 12.3 real-time systems
 
@@ -91,15 +91,15 @@ engineering curriculum, hardware interfacing, firmware architecture, and curated
 - [ ] concurrency
 - [ ] synchronization
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **tr (türkçe kaynaklar):**
+- **turkish resources:**
   1. **tr: —**
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **shawn hymel (digikey) – introduction to rtos (real-time operating system) with freertos:** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLEBQazB0HUyQ4hAPU1cJED6t3DU0h34bz) — **[ilk izlenecek – referans seri]** preemptive & priority scheduling, queue, mutex, semaphore, priority inversion ve deadlock kavramlarını 12 bölümde uygulamalı öğreten seri
-- **oku & doküman (önem sırasıyla):**
-  1. **mastering the freertos real time kernel (official hands-on tutorial guide):** [freertos.org/documentation/02-kernel/07-books-and-manual/01-rtos_book](https://www.freertos.org/Documentation/02-Kernel/07-Books-and-manual/01-RTOS_book) — ücretsiz resmi freertos mühendislik kitabı
-  2. **zephyr project (modern linux foundation rtos) documentation:** [docs.zephyrproject.org](https://docs.zephyrproject.org/latest/index.html) — modern robotik ve endüstriyel iot kartlarında hızla yaygınlaşan yeni nesil rtos
+- **video lectures:**
+  1. **shawn hymel – introduction to rtos with freertos:** [youtube playlist](https://www.youtube.com/playlist?list=PLEBQazB0HUyQ4hAPU1cJED6t3DU0h34bz) — 12-part practical series on scheduling, queues, mutexes, semaphores, and deadlocks
+- **books, papers & repositories:**
+  1. **mastering the freertos real time kernel:** [official book](https://www.freertos.org/Documentation/02-Kernel/07-Books-and-manual/01-RTOS_book) — free official freertos engineering guide
+  2. **zephyr rtos documentation:** [docs.zephyrproject.org](https://docs.zephyrproject.org/latest/index.html) — modern open-source rtos widely adopted in robotics and embedded iot hardware
 
 ### 12.4 hardware-software integration
 
@@ -111,22 +111,22 @@ engineering curriculum, hardware interfacing, firmware architecture, and curated
 - [ ] system diagnostics
 - [ ] fault detection
 - [ ] reliability engineering
-- [ ] px4 autopilot mimarisi (uorb & ros 2 micro-xrce-dds)
-- [ ] ardupilot ap_hal & mavlink telemetri protokolü
-- [ ] qgroundcontrol (qgc) & gcs görev planlama
-- [ ] iha 6-dof uçuş dinamiği ve kaskad otopilot kontrolü (beard & mclain)
-- [ ] se(3) üzerinde geometrik iha takip kontrolü (taeyoung lee)
+- [ ] px4 autopilot architecture (uorb & ros 2 micro-xrce-dds)
+- [ ] ardupilot ap_hal & mavlink telemetry protocol
+- [ ] qgroundcontrol (qgc) & gcs mission planning
+- [ ] uav 6-dof flight dynamics & cascaded autopilot control (beard & mclain)
+- [ ] geometric uav tracking control on se(3) (taeyoung lee)
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **phil's lab – hardware design, sensor interfacing & flight controller firmware in c/c++:** [youtube kanalı](https://www.youtube.com/@PhilsLab) — **[ilk izlenecek – muazzam kanal]** sıfırdan iha uçuş kontrol kartı (stm32 + imu + barometre) tasarlayıp üzerinde c ile sensör sürücüsü ve kalman filtresi koşturan uçtan uca mühendislik kanalı
-- **oku & repo (endüstriyel otopilot mimarisi — önem sırasıyla):**
-  1. **px4 autopilot architectural overview & companion computer integration:** [docs.px4.io/main/en/concept/architecture.html](https://docs.px4.io/main/en/concept/architecture.html) & [github repo (px4/px4-autopilot)](https://github.com/PX4/PX4-Autopilot) — **[gerçek iha mimarisini incele]** sensör sürücülerinin `uorb` mesajlaşma hattıyla durum kestirimine (ekf2) ve kontrolcüye nasıl bağlandığını, ayrıca ros 2 (`uxrce_dds`) ile jetson görev bilgisayarına nasıl konuştuğunu incele
-  2. **ardupilot architecture & ap_hal (andrew tridgell / ardupilot team):** [ardupilot.org](https://ardupilot.org/) · [github repo (ardupilot/ardupilot)](https://github.com/ArduPilot/ardupilot) & [mavproxy (github)](https://github.com/ArduPilot/MAVProxy) — **[dünyanın en çok kullanılan otopilot yığını & ap_hal]** andrew tridgell (rsync ve samba mucidi) öncülüğünde geliştirilen; chibios rtos üzerinde çalışan donanım soyutlama katmanı (ap_hal), 24-state ekf3 durum kestirimi, mavlink telemetri protokolü ve döner kanat/sabit kanat/vtol otonom uçuş kontrol mimarisini sunan 11.5k+ yıldızlı küresel otopilot standartı
-  3. **qgroundcontrol (qgc – mavlink ground control station):** [qgroundcontrol.com](http://qgroundcontrol.com/) & [github repo (mavlink/qgroundcontrol)](https://github.com/mavlink/qgroundcontrol) — **[açık kaynak iha yer kontrol istasyonu (gcs) standardı]** px4 ve ardupilot otopilotları için dünya standardı çapraz platform (c++ / qt / qml) yer kontrol istasyonu; mavlink üzerinden otonom rota ve görev planlama (waypoint navigation), sensör ve pusula kalibrasyonu, parametre ayarlama, canlı telemetri ve video akışı (rtsp) sunan 3.7k+ yıldızlı temel havacılık arayüzü
-  4. **small unmanned aircraft: theory and practice (randy beard & tim mclain – byu magicc lab):** [uavbook.byu.edu](http://uavbook.byu.edu/) & [byu magicc lab](https://magicc.byu.edu/) — **[iha otopilot dinamiği ve uçuş kontrolünün kutsal kitabı]** ardupilot ve px4 otopilotlarının arkasındaki 6-dof rijit cisim hareket denklemleri, aerodinamik kuvvet/moment türetimleri, durum uzayı doğrusallaştırması ve kaskad pid döngülerini (roll/pitch/yaw/irtifa) sıfırdan anlatan dünya çapındaki 1 numaralı referans iha kitabı
-  5. **geometric tracking control of a quadrotor uav on se(3) (taeyoung lee, melvin leok, n. harris mcclamroch – ieee cdc):** [arxiv:1003.2005](https://arxiv.org/abs/1003.2005) — **[döner kanatlı iha geometrik kontrol referansı]** dört motorlu iha'larda euler açılarının getirdiği tekillikleri (gimbal lock) ortadan kaldıran; $so(3)$ ve $se(3)$ lie grupları üzerinde lyapunov kararlı agresif yörünge takibi ve akrobasi sağlayan literatürün en çok atıf alan temel iha makalesi
+- **video lectures:**
+  1. **phil's lab – hardware design & flight controller firmware in c/c++:** [youtube channel](https://www.youtube.com/@PhilsLab) — designing custom stm32 + imu flight controller pcbs and writing sensor drivers and kalman filters in c
+- **books, papers & repositories:**
+  1. **px4 autopilot architecture & companion integration:** [docs.px4.io](https://docs.px4.io/main/en/concept/architecture.html) & [github repo](https://github.com/PX4/PX4-Autopilot) — how sensor drivers connect via `uorb` to ekf2, flight controllers, and ros 2 (`uxrce_dds`) on a companion computer
+  2. **ardupilot architecture & ap_hal:** [ardupilot.org](https://ardupilot.org/) · [github repo](https://github.com/ArduPilot/ardupilot) & [mavproxy](https://github.com/ArduPilot/MAVProxy) — hardware abstraction layer (ap_hal) on chibios rtos with 24-state ekf3 and mavlink support for copter, plane, and vtol
+  3. **qgroundcontrol (mavlink ground control station):** [qgroundcontrol.com](http://qgroundcontrol.com/) & [github repo](https://github.com/mavlink/qgroundcontrol) — c++/qt ground control software for waypoint mission planning, calibration, parameter tuning, and live telemetry
+  4. **small unmanned aircraft: theory and practice (beard & mclain):** [uavbook.byu.edu](http://uavbook.byu.edu/) & [magicc lab](https://magicc.byu.edu/) — core textbook explaining the 6-dof flight dynamics, aerodynamics, and cascaded pid loops behind ardupilot and px4
+  5. **geometric tracking control of a quadrotor uav on se(3) (taeyoung lee et al.):** [arxiv:1003.2005](https://arxiv.org/abs/1003.2005) — seminal paper eliminating euler gimbal lock by tracking quadrotor trajectories directly on $so(3)$ and $se(3)$
 
 ### 12.5 embedded ai
 
@@ -137,15 +137,15 @@ engineering curriculum, hardware interfacing, firmware architecture, and curated
 - [ ] knowledge distillation
 - [ ] hardware acceleration
 - [ ] neural processing units (npu)
-- [ ] embedded gpu computing (nvidia jetson mimarisi)
+- [ ] embedded gpu computing (nvidia jetson architecture)
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **jetsonhacks – nvidia jetson (orin / nano) edge ai, camera & tensorrt guides:** [youtube kanalı](https://www.youtube.com/@JetsonHacks) & [github (jetsonhacksnano)](https://github.com/JetsonHacksNano) — **[ilk izlenecek]** gerçek bir iha/robot görev bilgisayarı olan nvidia jetson üzerinde kamera sürücüleri, cuda ve c++ tensorrt kurulumu
-  2. **mit 6.5940 – tinyml and efficient deep learning computing (prof. song han):** [youtube ders serisi](https://www.youtube.com/playlist?list=PL80kAHvQbh-pT4lCkDT53zT8DKmhE0idB) & [ders sitesi (hanlab.mit.edu/courses/2024-fall-65940)](https://hanlab.mit.edu/courses/2024-fall-65940) — **[dünya zirvesi ders]** model quantization (int8/fp8/int4), pruning, knowledge distillation ve donanım hızlandırmanın tüm matematiği
-  3. **shawn hymel – introduction to embedded machine learning (tinyml):** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PL7VEa1KauMQqZFj_nWRfsCZNXaBbkuurG) — mikrodenetleyiciler üzerinde çıkarım (inference)
-- **oku & repo (altın değerinde c++ & tensorrt kod tabanları — önem sırasıyla):**
-  1. **repo – dusty-nv/jetson-inference (hello ai world):** [github.com/dusty-nv/jetson-inference](https://github.com/dusty-nv/jetson-inference) & [nvidia jetson ai lab](https://www.jetson-ai-lab.com/) — **[temel başlangıç reposu]** nvidia'nın resmi c++ ve python tensorrt tabanlı gerçek zamanlı nesne tespiti, segmentasyon ve poz kestirimi eğitim deposu
-  2. **repo – wang-xinyu/tensorrtx:** [github.com/wang-xinyu/tensorrtx](https://github.com/wang-xinyu/tensorrtx) — **[portföy için kritik repo]** yolov8/v11, resnet, detr gibi modellerin pytorch'tan alınıp saf c++ tensorrt api'si ile sıfırdan nasıl yazıldığını gösteren en önemli açık kaynak proje
-  3. **tinyml: machine learning with tensorflow lite on arduino and ultra-low-power microcontrollers (pete warden & daniel situnayake):** [o'reilly kitap sayfası](https://www.oreilly.com/library/view/tinyml/9781492052036/) — düşük güçlü gömülü ai referansı
+- **video lectures:**
+  1. **jetsonhacks – nvidia jetson edge ai & tensorrt:** [youtube channel](https://www.youtube.com/@JetsonHacks) & [github](https://github.com/JetsonHacksNano) — guides for camera drivers, cuda, and c++ tensorrt setups on nvidia jetson
+  2. **mit 6.5940 – tinyml & efficient deep learning computing (song han):** [youtube lecture series](https://www.youtube.com/playlist?list=PL80kAHvQbh-pT4lCkDT53zT8DKmhE0idB) & [course site](https://hanlab.mit.edu/courses/2024-fall-65940) — quantization (int8/fp8/int4), pruning, distillation, and hardware-aware efficiency
+  3. **shawn hymel – introduction to embedded machine learning:** [youtube playlist](https://www.youtube.com/playlist?list=PL7VEa1KauMQqZFj_nWRfsCZNXaBbkuurG) — running neural network inference on microcontrollers
+- **books, papers & repositories:**
+  1. **dusty-nv/jetson-inference:** [github repo](https://github.com/dusty-nv/jetson-inference) & [nvidia jetson ai lab](https://www.jetson-ai-lab.com/) — official c++/python tensorrt tutorials for real-time detection, segmentation, and pose estimation
+  2. **wang-xinyu/tensorrtx:** [github repo](https://github.com/wang-xinyu/tensorrtx) — shows how to convert models like yolov8/v11, resnet, and detr from pytorch and write them from scratch using the pure c++ tensorrt api
+  3. **tinyml (pete warden & daniel situnayake):** [o'reilly book page](https://www.oreilly.com/library/view/tinyml/9781492052036/) — practical reference for machine learning on arduino and ultra-low-power microcontrollers

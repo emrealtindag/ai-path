@@ -26,7 +26,7 @@ engineering curriculum, mathematical modeling, algorithmic optimization, classic
 
 ## complete checklist and resources
 
-### 01. control theory – kontrol sistemleri
+### 01. control theory
 
 #### 9.1 classical control
 
@@ -44,15 +44,15 @@ engineering curriculum, mathematical modeling, algorithmic optimization, classic
 - [ ] nyquist stability criterion
 - [ ] frequency response
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **tr (türkçe akademik ve mühendislik kaynakları):**
-  1. **odtü ee302 – feedback systems (prof. dr. m. mert ankaralı ders sayfası):** [blog.metu.edu.tr/mertan](https://blog.metu.edu.tr/mertan/) — klasik kontrol sistemleri ders sayfası
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **brian douglas – control systems lectures & matlab tech talks:** [youtube kanalı (control system lectures)](https://www.youtube.com/@BrianBDouglas) & [resmi arşiv (engineeringmedia.com)](https://engineeringmedia.com/) — **[ilk izlenecek – temel seri]** pid, bode, nyquist, root locus ve geri besleme (feedback) mantığını sıfır ezberle görselleştiren referans seri
-- **oku (klasik ders kitapları — önem sırasıyla):**
-  1. **feedback control of dynamic systems (gene franklin, j. dapowell, abbas emami-naeini):** [pearson kitap sayfası](https://www.pearson.com/en-us/subject-catalog/p/feedback-control-of-dynamic-systems/P200000003242) — abd üniversitelerindeki en iyi kontrol tasarımı kitabı
-  2. **modern control engineering (katsuhiko ogata):** klasik kontrol mühendisliği referans kitabı
+- **turkish resources:**
+  1. **metu ee302 – feedback systems (prof. m. mert ankaralı):** [course page](https://blog.metu.edu.tr/mertan/) — classical feedback control course notes
+- **video lectures:**
+  1. **brian douglas – control systems lectures:** [youtube channel](https://www.youtube.com/@BrianBDouglas) & [official archive](https://engineeringmedia.com/) — visual explanations of pid, bode plots, nyquist criterion, and root locus
+- **books, papers & repositories:**
+  1. **feedback control of dynamic systems (franklin, powell, emami-naeini):** [book page](https://www.pearson.com/en-us/subject-catalog/p/feedback-control-of-dynamic-systems/P200000003242) — standard textbook on control system design
+  2. **modern control engineering (katsuhiko ogata):** classic textbook for control engineering
 
 #### 9.2 modern control
 
@@ -66,16 +66,16 @@ engineering curriculum, mathematical modeling, algorithmic optimization, classic
 - [ ] state feedback
 - [ ] optimal control
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **tr (türkçe akademik kaynaklar):**
-  1. **prof. dr. m. mert ankaralı (odtü ee402 – discrete-time control systems):** [resmi ders sayfası (blog.metu.edu.tr/mertan)](https://blog.metu.edu.tr/mertan/) & [youtube ders kanalı (@technicaltutorials8909)](https://www.youtube.com/@technicaltutorials8909) — ayrık zamanlı sistemler, durum uzayı (state-space), durum geri beslemesi (state feedback) ve gözlemleyici (observer) tasarımı (düzeltme: odtü ee402 video dersleri m. mert ankaralı'ya aittir; prof. klaus werner schmidt'in alanı ayrık olay sistemlerinin kontrolüdür)
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **steve brunton – control bootcamp (state-space, controllability, observability, lqr, lqg & kalman filter):** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLMrJAkhIeNNR20Mz-VpzgfQs5zrYi085m) — **[ilk izlenecek – zorunlu seri]** modern kontrol teorisini (lqr ve lqg) 20 kısa videoda matrislerle ve matlab/python kodlarıyla öğreten referans seri
-  2. **brian douglas – state-space equations & modern control:** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLUMWjy5jgHK3j74Z5Tq6Tso1fSfVWZC8L) — durum uzayı denklemlerinin fiziksel sezgisi
-- **oku (ücretsiz kitaplar — önem sırasıyla):**
-  1. **data-driven science and engineering: machine learning, dynamical systems, and control (brunton & kutz – bölüm 8):** [databookuw.com (ücretsiz pdf)](https://databookuw.com/databook.pdf) — lqr, lqg ve modern durum uzayı kontrolü
-  2. **feedback systems: an introduction for scientists and engineers (karl j. åström & richard m. murray – caltech):** [fbswiki.org (ücretsiz tam kitap pdf)](https://fbswiki.org/wiki/index.php/Feedback_Systems:_An_Introduction_for_Scientists_and_Engineers) — modern durum uzayı kontrolünün en iyi ücretsiz ders kitabı
+- **turkish resources:**
+  1. **metu ee402 – discrete-time control systems (prof. m. mert ankaralı):** [course page](https://blog.metu.edu.tr/mertan/) & [youtube channel](https://www.youtube.com/@technicaltutorials8909) — discrete-time state-space control, state feedback, and observer design
+- **video lectures:**
+  1. **steve brunton – control bootcamp:** [youtube playlist](https://www.youtube.com/playlist?list=PLMrJAkhIeNNR20Mz-VpzgfQs5zrYi085m) — 20 short lectures on state-space control, controllability, lqr, lqg, and kalman filtering
+  2. **brian douglas – state-space & modern control:** [youtube playlist](https://www.youtube.com/playlist?list=PLUMWjy5jgHK3j74Z5Tq6Tso1fSfVWZC8L) — intuitive guide to state-space equations
+- **books, papers & repositories:**
+  1. **data-driven science and engineering – ch. 8 (brunton & kutz):** [free pdf](https://databookuw.com/databook.pdf) — modern state-space control, lqr, and lqg
+  2. **feedback systems (åström & murray):** [free pdf](https://fbswiki.org/wiki/index.php/Feedback_Systems:_An_Introduction_for_Scientists_and_Engineers) — free standard textbook on state-space feedback control
 
 #### 9.3 advanced control
 
@@ -89,24 +89,24 @@ engineering curriculum, mathematical modeling, algorithmic optimization, classic
 - [ ] optimal trajectory generation
 - [ ] stochastic control
 - [ ] distributed control
-- [ ] model predictive path integral (mppi) & gpu-optimal kontrol
-- [ ] dynamical systems (ds) & kararlı reaktif kontrol (epfl lasa)
+- [ ] model predictive path integral (mppi) & gpu optimal control
+- [ ] dynamical systems (ds) & stable reactive control (epfl lasa)
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **steve brunton & matlab tech talks – model predictive control (mpc) explained:** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLn8PRpmsu08ozoeoXgxPSBKLyd4YEHww8) — **[ilk izlenecek]** kısıtlar altında gelecekteki yörüngeyi tahmin edip optimize eden mpc kontrolcüsünün çalışma prensibi
-  2. **mit 6.832 – underactuated robotics (prof. russ tedrake):** [youtube tam dönem ders serisi](https://www.youtube.com/playlist?list=PLkx8KyIQkMfU5szP43GlE_S1QGSPQfL9s) — **[ileri akademik kontrol dersi]** doğrusal olmayan dinamik kontrol, lqr, mpc, lyapunov kararlılığı ve yörünge optimizasyonu (trajectory optimization)
-  3. **eth zürich – flying machine arena lectures (prof. raffaello d'andrea):** [youtube sunumları](https://www.youtube.com/results?search_query=raffaello+d%27andrea+quadrocopter+control) — agresif manevra yapan otonom iha'ların doğrusal olmayan kontrolü
-- **oku & repo (ücretsiz kitap ve endüstriyel kodlar — önem sırasıyla):**
-  1. **underactuated robotics: algorithms for walking, running, swimming, flying, and manipulation (russ tedrake – mit):** [underactuated.csail.mit.edu (ücretsiz interaktif kitap & jupyter kodları)](https://underactuated.csail.mit.edu/) — **[başucu kitabı]** iha ve robot kontrolü için dünyadaki en modern ücretsiz kitap
-  2. **predictive control for linear and hybrid systems (borrelli, bemporad, morari):** [mpc.berkeley.edu (ücretsiz kitap pdf)](https://www.mpc.berkeley.edu/mpc-course-material) — mpc matematiğinin standart ders kitabı
-  3. **repo – commaai/openpilot:** [github.com/commaai/openpilot](https://github.com/commaai/openpilot) — **[gerçek araç kodu]** 250+ gerçek otomobil modelinde otonom şerit takibi ve hız kontrolü yapan açık kaynak sistemin `selfdrive/controls` altındaki mpc ve kalman filtresi c++/python kodlarını incele
-  4. **kütüphane – casadi/casadi & acados/acados:** [web.casadi.org](https://web.casadi.org/) · [docs.acados.org](https://docs.acados.org/) — c++ ve python ile gömülü sistemlerde gerçek zamanlı doğrusal olmayan mpc (nmpc) çözmek için kullanılan endüstri standardı kütüphaneler
-  5. **kr_mav_control: se(3) geometric quadrotor tracking control (upenn grasp lab – icra / cdc):** [github repo (kumarrobotics/kr_mav_control)](https://github.com/KumarRobotics/kr_mav_control) — **[iha geometrik kontrol c++ yığını]** vijay kumar ve daniel mellinger ekibinin geliştirdiği; euler açılarındaki kilitlenme (gimbal lock) problemini ortadan kaldırmak için doğrudan $so(3)$ ve $se(3)$ lie grupları üzerinde çalışan, agresif akrobatik manevralarda ve yüksek hızlı otonom uçuşlarda milimetrik yörünge takibi yapan açık kaynak c++ kontrol paketi
-  6. **rosplane & vtolsim: fixed-wing & vtol autopilot (byu magicc lab – beard & mclain):** [rosplane (github)](https://github.com/byu-magicc/rosplane) · [vtolsim (github)](https://github.com/byu-magicc/vtolsim) — **[sabit kanat ve vtol iha otopilot yığını]** beard & mclain teorisini ros/c++ ile hayata geçiren; ardışık döngü kapatmalı (successive loop closure) irtifa/hız/yatış pid otopilot kontrolü, vektör alanı (vector field) tabanlı yol takibi ve dikey kalkış-sabit kanat geçiş (vtol) dinamiği sunan açık kaynak c++/python otopilot mimarisi
-  7. **mppi control (model predictive path integral – mit acl):** [github repo (mit-acl/mppi_numba)](https://github.com/mit-acl/mppi_numba) — **[gpu hızlandırmalı olasılıksal optimal kontrol]** numba ve cuda kullanarak yüzlerce hz frekansta binlerce olasılıksal yörünge örneği türeten, karmaşık ve doğrusal olmayan robot dinamiklerinde risk duyarlı engelden kaçma ve kontrol sağlayan gpu-mppi kontrol mimarisi
-  8. **dynamical systems (ds) for robot control & learning (epfl lasa – prof. aude billard / mit press):** [epfl-lasa.github.io](https://epfl-lasa.github.io/) · [github (epfl-lasa/fast_dynamical_systems)](https://github.com/epfl-lasa) & [seds (github)](https://github.com/epfl-lasa/icra-lfd-tutorial) — **[dinamik sistemlerle kararlı reaktif kontrol & manipülasyon]** prof. aude billard'ın mit press tarafından yayımlanan başucu teorisi; diferansiyel denklemler ve lyapunov kararlılığı (seds) kullanarak robot manipülatörlerinin beklenmedik insan müdahalelerinde veya hareketli engellerde bile hedefe güvenle ve sarsıntısız ulaşmasını garanti eden reaktif kontrol ve taklit öğrenmesi (lfd) kütüphanesi
+- **video lectures:**
+  1. **steve brunton & matlab tech talks – mpc explained:** [youtube playlist](https://www.youtube.com/playlist?list=PLn8PRpmsu08ozoeoXgxPSBKLyd4YEHww8) — how model predictive control optimizes trajectories under constraints
+  2. **mit 6.832 – underactuated robotics (russ tedrake):** [youtube lecture series](https://www.youtube.com/playlist?list=PLkx8KyIQkMfU5szP43GlE_S1QGSPQfL9s) — nonlinear control, lqr, mpc, lyapunov stability, and trajectory optimization
+  3. **eth zürich – flying machine arena (raffaello d'andrea):** [youtube talks](https://www.youtube.com/results?search_query=raffaello+d%27andrea+quadrocopter+control) — nonlinear control for high-agility autonomous quadrotors
+- **books, papers & repositories:**
+  1. **underactuated robotics (russ tedrake – mit):** [free interactive book & notebooks](https://underactuated.csail.mit.edu/) — open interactive textbook for uav and robot control
+  2. **predictive control for linear & hybrid systems (borrelli, bemporad, morari):** [free pdf](https://www.mpc.berkeley.edu/mpc-course-material) — standard mathematical textbook for mpc
+  3. **commaai/openpilot:** [github repo](https://github.com/commaai/openpilot) — production c++/python mpc and kalman filter controllers under `selfdrive/controls`
+  4. **casadi & acados:** [web.casadi.org](https://web.casadi.org/) · [docs.acados.org](https://docs.acados.org/) — standard c++/python solvers for real-time embedded nonlinear mpc (nmpc)
+  5. **kr_mav_control (upenn grasp lab):** [github repo](https://github.com/KumarRobotics/kr_mav_control) — c++ $so(3)/se(3)$ geometric quadrotor tracking control avoiding gimbal lock during aggressive flight
+  6. **rosplane & vtolsim (byu magicc lab):** [rosplane](https://github.com/byu-magicc/rosplane) · [vtolsim](https://github.com/byu-magicc/vtolsim) — c++/ros autopilot implementing beard & mclain fixed-wing and vtol flight control
+  7. **mppi control (mit acl):** [github repo](https://github.com/mit-acl/mppi_numba) — gpu-accelerated stochastic mppi trajectory optimization with cuda/numba
+  8. **dynamical systems for robot control (epfl lasa):** [epfl-lasa.github.io](https://epfl-lasa.github.io/) · [github](https://github.com/epfl-lasa) · [seds](https://github.com/epfl-lasa/icra-lfd-tutorial) — reactive lyapunov-stable control and learning from demonstration libraries
 
 #### 9.4 autonomous motion
 
@@ -119,15 +119,15 @@ engineering curriculum, mathematical modeling, algorithmic optimization, classic
 - [ ] collision avoidance
 - [ ] model-based planning
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **brian douglas – autonomous navigation & path tracking tech talks:** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLn8PRpmsu08rLRGrnF-S6TyGrmcA2X7kg) — **[ilk izlenecek]** pure pursuit, stanley controller ve yörünge takibi temelleri
-  2. **eth zürich – autonomous mobile robots (motion control module – prof. roland siegwart):** [youtube ders serisi](https://www.youtube.com/playlist?list=PLpUPoM7Rgzi_7YWn14Va2FODh7LzADBSm) — mobil robotlarda kinematik kısıtlar ve yörünge takibi
-- **oku, repo & kurs (kod, kitap ve uzmanlık serisi — önem sırasıyla):**
-  1. **repo – atsushisakai/pythonrobotics (path tracking bölümü):** [github.com/atsushisakai/pythonrobotics#path-tracking](https://github.com/AtsushiSakai/PythonRobotics#path-tracking) — **[hemen çalıştırılacak kodlar]** pure pursuit, stanley, rear-wheel feedback, lqr ve mpc yörünge takip algoritmalarının animasyonlu ve temiz python implementasyonları
-  2. **university of toronto – self-driving cars specialization (coursera – prof. steven waslander):** [coursera.org/specializations/self-driving-cars](https://www.coursera.org/specializations/self-driving-cars) — otonom araçlarda yanal (lateral - stanley/pure pursuit) ve boylamsal (longitudinal) kontrol denklemleri (not: youtube serisi değil, coursera uzmanlık programıdır)
-  3. **trajectory planning for automatic machines and robots (luigi biagiotti & claudio melchiorri):** [springer kitap sayfası](https://link.springer.com/book/10.1007/978-3-540-85629-0) — hız, ivme ve sarsıntı (jerk / minimum snap) kısıtlı yörünge üretimi
+- **video lectures:**
+  1. **brian douglas – autonomous navigation & path tracking:** [youtube playlist](https://www.youtube.com/playlist?list=PLn8PRpmsu08rLRGrnF-S6TyGrmcA2X7kg) — fundamentals of pure pursuit, stanley controller, and path tracking
+  2. **eth zürich – motion control for mobile robots:** [youtube lecture series](https://www.youtube.com/playlist?list=PLpUPoM7Rgzi_7YWn14Va2FODh7LzADBSm) — kinematic constraints and trajectory tracking
+- **books, papers & repositories:**
+  1. **pythonrobotics (path tracking):** [github repo](https://github.com/AtsushiSakai/PythonRobotics#path-tracking) — clean animated python code for pure pursuit, stanley, lqr, and mpc path tracking
+  2. **self-driving cars specialization (university of toronto):** [coursera](https://www.coursera.org/specializations/self-driving-cars) — lateral (stanley/pure pursuit) and longitudinal vehicle control equations
+  3. **trajectory planning for automatic machines & robots:** [book page](https://link.springer.com/book/10.1007/978-3-540-85629-0) — smooth polynomial trajectories bounded by velocity, acceleration, and jerk/snap
 
 ---
 
@@ -147,15 +147,15 @@ engineering curriculum, mathematical modeling, algorithmic optimization, classic
 - [ ] potential fields
 - [ ] visibility graphs
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **brian douglas – autonomous navigation: path planning (a*, rrt, potential fields):** [youtube videosu](https://www.youtube.com/watch?v=Fw8JQ5Q-ZwU) — **[ilk izlenecek]** ızgara tabanlı (grid-based) ve örnekleme tabanlı (sampling-based) yol planlama algoritmalarının 15 dakikada genel resmini çizme
-  2. **cmu 16-782 – planning and decision making in robotics (prof. maxim likhachev):** [ders sayfası & materyaller](https://www.cs.cmu.edu/~maxim/classes/robotplanning/) & [youtube ders videoları](https://www.youtube.com/results?search_query=maxim+likhachev+search+based+planning) — **[dünya zirvesi akademik ders]** a*, weighted a*, ara* ve d* lite algoritmalarını bizzat icat eden profesörün dersleri
-  3. **mit 16.410 / 16.413 – principles of autonomy and decision making:** [mit ocw ders sayfası](https://ocw.mit.edu/courses/16-410-principles-of-autonomy-and-decision-making-fall-2010/) — havacılık ve uzay otonomi planlaması
-- **oku & repo (ücretsiz kitap ve kodlar — önem sırasıyla):**
-  1. **repo – atsushisakai/pythonrobotics (path planning bölümü):** [github.com/atsushisakai/pythonrobotics#path-planning](https://github.com/AtsushiSakai/PythonRobotics#path-planning) — **[uygulamalı kodlar]** dijkstra, a*, d* lite, potential field, prm, rrt ve rrt* algoritmalarının çalışan python simülasyonları
-  2. **planning algorithms (steven m. lavalle – uiuc):** [lavalle.pl/planning (ücretsiz tam kitap pdf)](https://lavalle.pl/planning/) — **[temel akademik kitap]** rrt'nin mucidi olan profesörün yazdığı, konfigürasyon uzayı (c-space) ve hareket planlamanın ücretsiz referans kitabı
+- **video lectures:**
+  1. **brian douglas – autonomous navigation path planning:** [youtube video](https://www.youtube.com/watch?v=Fw8JQ5Q-ZwU) — fast clear overview of a*, rrt, and potential fields
+  2. **cmu 16-782 – planning and decision making in robotics (maxim likhachev):** [course page](https://www.cs.cmu.edu/~maxim/classes/robotplanning/) & [youtube search](https://www.youtube.com/results?search_query=maxim+likhachev+search+based+planning) — lectures on a*, weighted a*, ara*, and d* lite by the algorithm's creator
+  3. **mit 16.410 – principles of autonomy & decision making:** [mit ocw course page](https://ocw.mit.edu/courses/16-410-principles-of-autonomy-and-decision-making-fall-2010/) — autonomy planning for aerospace systems
+- **books, papers & repositories:**
+  1. **pythonrobotics (path planning):** [github repo](https://github.com/AtsushiSakai/PythonRobotics#path-planning) — runnable python simulations of dijkstra, a*, d* lite, prm, rrt, and rrt*
+  2. **planning algorithms (steven m. lavalle):** [free pdf](https://lavalle.pl/planning/) — classic free textbook on c-space and motion planning by the inventor of rrt
 
 #### 11.2 motion planning
 
@@ -167,25 +167,25 @@ engineering curriculum, mathematical modeling, algorithmic optimization, classic
 - [ ] kinodynamic planning & online replanning
 - [ ] time-optimal planning
 - [ ] safe motion planning
-- [ ] graph-based exploration (gbplanner) & darpa subt otonomi
+- [ ] graph-based exploration (gbplanner) & darpa subt autonomy
 - [ ] fast & safe trajectory planning beyond sensor horizon (faster)
-- [ ] ego-planner & gcopter (zju fast lab) yörünge optimizasyonu
-- [ ] otonom hacimsel keşif ve sürü uçuş planlaması (fuel & racer)
+- [ ] ego-planner & gcopter (zju fast lab) trajectory optimization
+- [ ] autonomous volumetric exploration & swarm planning (fuel & racer)
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **prof. dmitry berenson – motion planning lectures (university of michigan):** [youtube kanalı & ders videoları](https://www.youtube.com/results?search_query=dmitry+berenson+motion+planning) — **[ilk izlenecek – temel planlama]** çok serbestlik dereceli robotlarda çarpışma kontrolü, örnekleme ve optimizasyon tabanlı (chomp, trajopt) hareket planlama
-  2. **prof. fei gao (zju fast lab) & hkust aerial robotics (boyu zhou) – autonomous uav planning, exploration & swarm lectures:** [youtube seminer & ders serisi](https://www.youtube.com/results?search_query=fei+gao+fast+lab+motion+planning) — **[iha yörünge optimizasyonu & otonom keşif dersi]** ego-planner, fuel ve gcopter mimarilerinin arkasındaki b-spline yörünge optimizasyonu, esdf'siz gradyan arama ve hiyerarşik sınır tabanlı otonom keşif teorisinin amfi dersleri
-  3. **prof. russ tedrake (mit 6.832 / 6.821 – underactuated robotics: trajectory optimization):** [youtube ders oynatma listesi (mit)](https://www.youtube.com/playlist?list=PLkx8KyIQkMfU5szP43GlE_S1QGSPQfL9s) — **[zirve matematiksel planlama dersi]** doğrudan kolokasyon (direct collocation), non-lineer dinamik kısıtlar altında kinodinamik yörünge optimizasyonu ve engellerden kaçma teorisi
-- **oku & kütüphane (kitap ve c++ planlama motoru — önem sırasıyla):**
-  1. **the open motion planning library (ompl – c++ kütüphanesi):** [ompl.kavrakilab.org](https://ompl.kavrakilab.org/) & [github repo (ompl/ompl)](https://github.com/ompl/ompl) — **[endüstri standardı c++ kütüphanesi]** ros 2 moveit 2'nin altında çalışan rrt*, prm ve kinodinamik planlayıcıların saf c++ kodu
-  2. **principles of robot motion: theory, algorithms, and implementations (howie choset, kevin lynch, seth hutchinson et al.):** [mit press kitap sayfası](https://mitpress.mit.edu/9780262033275/principles-of-robot-motion/) — robot hareket teorisinin kapsamlı referans kitabı
-  3. **kr_autonomous_flight: autonomous flight system for gps-denied quadrotors (upenn grasp lab):** [github repo (kumarrobotics/kr_autonomous_flight)](https://github.com/KumarRobotics/kr_autonomous_flight) — **[tam yığın otonom uçuş & kinodinamik hareket planlama]** vijay kumar laboratuvarının açık kaynak tam otonom mimarisi; gps'siz ve bilinmeyen karmaşık ortamlarda 3b haritalama, gerçek zamanlı kinodinamik yörünge üretimi (online replanning), engellerden kaçma ve se(3) kontrolünü birleştiren entegre c++ otonomi yığını
-  4. **gbplanner_ros & mbplanner_ros: graph-based & motion-primitives exploration planner (ntnu arl / team cerberus – darpa subt champion):** [github repo (ntnu-arl/gbplanner_ros)](https://github.com/ntnu-arl/gbplanner_ros) & [mbplanner_ros](https://github.com/ntnu-arl/mbplanner_ros) — **[darpa subterranean challenge şampiyonu otonom keşif ve yol planlama]** prof. kostas alexis liderliğindeki darpa subt şampiyonu ekibin geliştirdiği; gps'ten yoksun yer altı tünelleri ve karmaşık 3b ortamlarda iki katmanlı (yerel ve küresel) graf tabanlı hacimsel keşif planlaması (bifurcated graph search) ve iha/dört bacaklı robotlar için dinamik hareket primitifleri sunan dünya standardı c++/ros keşif yığını
-  5. **faster: fast and safe trajectory planner in unknown environments (mit acl – ieee/rsj iros):** [github repo (mit-acl/faster)](https://github.com/mit-acl/faster) — **[sensör menzilinin ötesinde yüksek hızlı uçuş]** prof. jonathan p. how ekibinin geliştirdiği; iha'ların sensör görüş ufkunun ötesinde güvenle uçmasını sağlayan; taahhüt edilen güvenli yörünge ile yedek yörüngeyi (backup trajectory) eşzamanlı planlayarak bilinmeyen ortamlarda takılmadan ve duraksamadan yüksek hızlı agresif uçuş sağlayan mixed-integer quadratic programming (miqp) tabanlı c++ yörünge planlayıcısı
-  6. **ego-planner & gcopter: gradient-based trajectory optimization (zju fast lab & hkust – ieee t-ro):** [ego-planner (github)](https://github.com/ZJU-FAST-Lab/ego-planner) · [gcopter (github)](https://github.com/ZJU-FAST-Lab/GCOPTER) — **[esdf'siz ultra hızlı iha yörünge optimizasyonu standardı]** prof. fei gao ve prof. shaojie shen laboratuvarının geliştirdiği; hesaplama yükü yüksek olan mesafe alanlarına (esdf) ihtiyaç duymadan doğrudan nokta bulutları üzerinden çarpışmasız b-spline yörünge üreten (ego-planner) ve minco (minimum kontrol eforu) polinom formülasyonuyla sık ormanlarda ve bilinmeyen engeller arasında agresif otonom sürü uçuşu sağlayan 3.6k+ yıldızlı c++ otonomi yığını
-  7. **fuel & racer: fast autonomous exploration & multi-uav planning (cuhk unmanned systems lab / hkust – boyu zhou / ieee ra-l & ieee t-ro):** [fuel github (hkust-aerial-robotics/fuel)](https://github.com/HKUST-Aerial-Robotics/FUEL) & [racer github (robotics-star-lab/racer)](https://github.com/Robotics-STAR-Lab/RACER) — **[hızlı otonom iha keşfi & merkeziyetsiz sürü koordinasyonu]** prof. boyu zhou ve shaojie shen ekibinin geliştirdiği; bilinmeyen karmaşık ortamlarda sınır alanlarını (frontier) artımsal hiyerarşik yapıyla tarayarak keşif süresini dramatik biçimde kısaltan (fuel) ve dengesiz iletişim koşullarında birden fazla iha'nın harita keşfini eşgüdümlü yürüten (racer) 1.8k+ yıldızlı açık kaynak otonomi ve hareket planlama çerçevesi
+- **video lectures:**
+  1. **prof. dmitry berenson – motion planning lectures:** [youtube search](https://www.youtube.com/results?search_query=dmitry+berenson+motion+planning) — collision checking, sampling-based planning, chomp, and trajopt
+  2. **prof. fei gao (zju fast lab) & boyu zhou – autonomous uav planning:** [youtube search](https://www.youtube.com/results?search_query=fei+gao+fast+lab+motion+planning) — b-spline trajectory optimization, esdf-free planning, and frontier exploration
+  3. **prof. russ tedrake (mit 6.832) – trajectory optimization:** [youtube playlist](https://www.youtube.com/playlist?list=PLkx8KyIQkMfU5szP43GlE_S1QGSPQfL9s) — direct collocation and kinodynamic trajectory optimization under nonlinear constraints
+- **books, papers & repositories:**
+  1. **ompl (open motion planning library):** [ompl.kavrakilab.org](https://ompl.kavrakilab.org/) & [github repo](https://github.com/ompl/ompl) — pure c++ sampling-based and kinodynamic motion planners powering ros 2 moveit 2
+  2. **principles of robot motion (choset, lynch, hutchinson):** [book page](https://mitpress.mit.edu/9780262033275/principles-of-robot-motion/) — comprehensive textbook on robot motion theory
+  3. **kr_autonomous_flight (upenn grasp lab):** [github repo](https://github.com/KumarRobotics/kr_autonomous_flight) — complete c++ gps-denied quadrotor autonomy stack combining mapping, online replanning, and $se(3)$ control
+  4. **gbplanner_ros & mbplanner_ros (ntnu arl):** [gbplanner_ros](https://github.com/ntnu-arl/gbplanner_ros) & [mbplanner_ros](https://github.com/ntnu-arl/mbplanner_ros) — darpa subterranean challenge winning volumetric exploration planners for uavs and quadrupeds
+  5. **faster (mit acl):** [github repo](https://github.com/mit-acl/faster) — miqp-based c++ trajectory planner guaranteeing safe high-speed drone flight in unknown cluttered spaces
+  6. **ego-planner & gcopter (zju fast lab):** [ego-planner](https://github.com/ZJU-FAST-Lab/ego-planner) · [gcopter](https://github.com/ZJU-FAST-Lab/GCOPTER) — fast c++ drone trajectory planners avoiding esdf computation for dense forest flight and swarms
+  7. **fuel & racer (hkust / cuhk):** [fuel](https://github.com/HKUST-Aerial-Robotics/FUEL) & [racer](https://github.com/Robotics-STAR-Lab/RACER) — hierarchical frontier-based fast drone exploration and decentralized multi-uav planning
 
 #### 11.3 decision making
 
@@ -198,15 +198,15 @@ engineering curriculum, mathematical modeling, algorithmic optimization, classic
 - [ ] hierarchical planning
 - [ ] task and motion planning (tamp)
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **petter ögren – behavior trees in robotics and ai lectures (kth royal institute of technology):** [youtube kanalı & ders serisi](https://www.youtube.com/@PetterOgren/videos) — **[ilk izlenecek]** klasik sonlu durum makinelerinin (fsm) neden karmaşık robotlarda çöktüğünü ve davranış ağaçlarının (behavior trees) nasıl modüler karar verdiğini anlatan en iyi seri
-  2. **davide faconti – behaviortree.cpp & groot2 tutorials:** [behaviortree.dev/docs/intro](https://www.behaviortree.dev/docs/intro) — c++ ve ros 2 ile davranış ağacı kodlama
-- **oku & repo (ücretsiz kitaplar ve c++ kodları — önem sırasıyla):**
-  1. **behavior trees in robotics and ai: an introduction (michele colledanchise & petter ögren):** [arxiv:1709.00084 (ücretsiz tam kitap pdf)](https://arxiv.org/pdf/1709.00084.pdf) — **[zorunlu kitap]** iha görev yönetimi ve otonom robot karar mekanizması için başucu kitabı
-  2. **algorithms for decision making (mykel j. kochenderfer, tim a. wheeler, kyle h. wray – stanford):** [algorithmsbook.com (ücretsiz tam kitap pdf)](https://algorithmsbook.com/files/dm.pdf) — **[belirsizlik altında karar verme]** mdp, pomdp ve olasılıksal karar teorisi için mit press tarafından basılan ücretsiz başyapıt
-  3. **repo – behaviortree/behaviortree.cpp & ros-planning/navigation2:** [github.com/behaviortree/behaviortree.cpp](https://github.com/BehaviorTree/BehaviorTree.CPP) · [github.com/ros-planning/navigation2](https://github.com/ros-planning/navigation2) — ros 2 nav2'nin görev koordinasyonunda kullandığı endüstriyel c++17 behavior tree kütüphanesi
+- **video lectures:**
+  1. **petter ögren – behavior trees in robotics & ai:** [youtube channel](https://www.youtube.com/@PetterOgren/videos) — why finite state machines fail at scale and how behavior trees modularize robot decisions
+  2. **behaviortree.cpp & groot2 tutorials:** [behaviortree.dev/docs/intro](https://www.behaviortree.dev/docs/intro) — coding behavior trees in c++ and ros 2
+- **books, papers & repositories:**
+  1. **behavior trees in robotics and ai (colledanchise & ögren):** [arxiv:1709.00084 (free pdf)](https://arxiv.org/pdf/1709.00084.pdf) — clear reference book on autonomous task management with behavior trees
+  2. **algorithms for decision making (kochenderfer et al.):** [free pdf](https://algorithmsbook.com/files/dm.pdf) — free mit press book on mdps, pomdps, and decision making under uncertainty
+  3. **behaviortree.cpp & nav2:** [behaviortree.cpp](https://github.com/BehaviorTree/BehaviorTree.CPP) · [navigation2](https://github.com/ros-planning/navigation2) — c++17 behavior tree library used inside ros 2 nav2
 
 #### 11.4 multi-agent systems
 
@@ -218,22 +218,22 @@ engineering curriculum, mathematical modeling, algorithmic optimization, classic
 - [ ] multi-agent reinforcement learning (marl)
 - [ ] decentralized swarm trajectory planning (mader / rmader)
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **prof. vijay kumar (upenn grasp lab) – aerial swarm robotics & cooperative autonomy:** [youtube sunumları](https://www.youtube.com/results?search_query=vijay+kumar+swarm+robotics+grasp+lab) — **[ilk izlenecek – sürü iha temeli]** sürü iha'ların (swarm uavs) merkeziyetsiz koordinasyonu, formasyon kontrolü ve ortak haritalaması
-  2. **prof. jonathan p. how (mit acl) – decentralized multi-agent coordination & robust trajectory planning:** [youtube sunum & seminer serisi](https://www.youtube.com/results?search_query=jonathan+how+mit+multi+agent+trajectory+planning) — **[çoklu ajan planlama dersi]** mader ve robust-mader'in arkasındaki iletişim gecikmeleri, asenkron koordinasyon ve dinamik engeller altında merkeziyetsiz çarpışmasız yörünge planlaması (deconfliction) ve konsensüs teorisi
-- **oku (ücretsiz referans kitap):**
-  1. **multiagent systems: algorithmic, game-theoretic, and logical foundations (yoav shoham & kevin leyton-brown – stanford):** [masfoundations.org (ücretsiz tam kitap pdf)](http://www.masfoundations.org/mas.pdf) — çoklu ajan karar verme ve oyun teorisi temelleri
-- **simülatör & açık kaynak repo (önem sırasıyla):**
-  1. **scrimmage multi-agent simulator (georgia tech research institute - gtri):** [gtri/scrimmage (github)](https://github.com/gtri/scrimmage) & [dokümantasyon](https://gtri.github.io/scrimmage/sphinx/html/index.html) — **[kitlesel sürü & çoklu ajan simülatörü]** onlarca/yüzlerce iha, kara aracı ve robotik ajanın sürü koordinasyonu (swarm robotics), diferansiyel oyun teorisi, dağıtık görev paylaşımı ve çoklu ajan pekiştirmeli öğrenmesi (marl) için geliştirilmiş yüksek başarımlı c++/python simülasyon altyapısı
-  2. **mader & robust-mader: decentralized multi-agent trajectory planner (mit acl – ieee t-ro):** [mader github (mit-acl/mader)](https://github.com/mit-acl/mader) & [rmader github (mit-acl/rmader)](https://github.com/mit-acl/rmader) — **[çoklu iha & dinamik sürü yörünge planlayıcısı]** prof. jonathan p. how ekibinin geliştirdiği; dinamik ve bilinmeyen ortamlarda uçan çoklu iha sürülerinin merkeziyetsiz (decentralized), asenkron ve iletişim gecikmelerine dayanıklı çarpışmasız yörünge üretimi (deconfliction) yapan çığır açıcı c++/ros mimarisi
+- **video lectures:**
+  1. **prof. vijay kumar (grasp lab) – aerial swarm robotics:** [youtube talks](https://www.youtube.com/results?search_query=vijay+kumar+swarm+robotics+grasp+lab) — decentralized drone swarm coordination, formation control, and cooperative mapping
+  2. **prof. jonathan p. how (mit acl) – decentralized multi-agent planning:** [youtube search](https://www.youtube.com/results?search_query=jonathan+how+mit+multi+agent+trajectory+planning) — asynchronous coordination, communication delays, and decentralized collision avoidance
+- **books, papers & repositories:**
+  1. **multiagent systems (shoham & leyton-brown):** [free pdf](http://www.masfoundations.org/mas.pdf) — algorithmic and game-theoretic foundations of multi-agent systems
+- **books, papers & repositories:**
+  1. **scrimmage multi-agent simulator (gtri):** [github repo](https://github.com/gtri/scrimmage) & [docs](https://gtri.github.io/scrimmage/sphinx/html/index.html) — c++/python simulator for large drone swarms and multi-agent reinforcement learning
+  2. **mader & robust-mader (mit acl):** [mader](https://github.com/mit-acl/mader) & [rmader](https://github.com/mit-acl/rmader) — decentralized asynchronous multi-uav trajectory planner handling communication delays
 
 ---
 
-### 03. classical ai – sembolik yapay zekâ, akıl yürütme ve planlama
+### 03. classical ai
 
-#### 27.1 search & problem solving – arama ve problem çözme
+#### 27.1 search & problem solving
 
 - [ ] uninformed search (bfs, dfs, iterative deepening)
 - [ ] informed search (greedy, a*, ida*)
@@ -247,7 +247,7 @@ engineering curriculum, mathematical modeling, algorithmic optimization, classic
 - [ ] arc consistency (ac-3)
 - [ ] backtracking with forward checking
 
-#### 27.2 logic & automated reasoning – mantık ve otomatik akıl yürütme
+#### 27.2 logic & automated reasoning
 
 - [ ] propositional logic
 - [ ] first-order logic
@@ -262,7 +262,7 @@ engineering curriculum, mathematical modeling, algorithmic optimization, classic
 - [ ] automated theorem proving
 - [ ] formal verification basics
 
-#### 27.3 knowledge representation – bilgi temsili
+#### 27.3 knowledge representation
 
 - [ ] semantic networks and frames
 - [ ] ontologies (owl)
@@ -274,7 +274,7 @@ engineering curriculum, mathematical modeling, algorithmic optimization, classic
 - [ ] commonsense knowledge bases (conceptnet)
 - [ ] neuro-symbolic integration
 
-#### 27.4 automated planning – otomatik görev planlama
+#### 27.4 automated planning
 
 - [ ] strips
 - [ ] pddl
@@ -286,7 +286,7 @@ engineering curriculum, mathematical modeling, algorithmic optimization, classic
 - [ ] plan execution and monitoring
 - [ ] llm + pddl planning
 
-#### 27.5 game ai – oyun yapay zekâsı
+#### 27.5 game ai
 
 - [ ] expectiminimax
 - [ ] counterfactual regret minimization
@@ -296,7 +296,7 @@ engineering curriculum, mathematical modeling, algorithmic optimization, classic
 - [ ] goal-oriented action planning (goap)
 - [ ] procedural content generation
 
-#### 27.6 intelligent agents & multi-agent theory – akıllı etmenler ve çok etmenli sistem teorisi
+#### 27.6 intelligent agents & multi-agent theory
 
 - [ ] agent types (reflex, goal-based, utility-based)
 - [ ] bdi architecture
@@ -306,13 +306,13 @@ engineering curriculum, mathematical modeling, algorithmic optimization, classic
 - [ ] coalition formation
 - [ ] agent communication protocols
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **tr:** [şadi evren şeker — yapay zeka (arama algoritmaları, a*, minimax, uzman sistemler) (youtube)](https://www.youtube.com/playlist?list=PLh9ECzBB8tJOtaD6DFxqRdP7QHIaBFcbW) — klasik arama ve sembolik yapay zeka kavramlarına türkçe giriş.
-- **yt:**
-  1. **[ilk izlenecek — arama, csp, planlama]** [uc berkeley cs188 — introduction to artificial intelligence (dan klein & pieter abbeel)](https://www.youtube.com/playlist?list=PLp8QV47qJEg67UTShQ4er4RYQ3rOeDKxv) — a*, heuristics, csp, minimax, mcts ve klasik planlamanın standart üniversite dersi.
-  2. **[görsel & uygulamalı giriş]** [harvard cs50’s introduction to artificial intelligence with python (youtube)](https://www.youtube.com/watch?v=5NgNicANyqM) — arama, mantık, belirsizlik ve optimizasyon algoritmalarının python ile uygulanışı.
-- **oku & repo:**
-  1. [stuart russell & peter norvig — artificial intelligence: a modern approach (aima), 4th ed. & aima-python (github)](https://github.com/aimacode/aima-python) — klasik ai, arama, mantık, pddl planlama ve çok etmenli sistemlerin ana başvuru kitabı ve kod deposu.
-  2. [plansys2 — ros 2 planning system (ros2_planning_system github)](https://github.com/PlanSys2/ros2_planning_system) — pddl tabanlı sembolik görev planlamayı doğrudan ros 2 robotlarına bağlayan kütüphane.
-  3. [z3 theorem prover — microsoft research (github)](https://github.com/Z3Prover/z3) — smt çözümü, kısıt doğrulama ve biçimsel doğrulama (formal verification) için standart araç.
+- **turkish resource:** [bilgisayar kavramları (şadi evren şeker) — ai search & symbolic logic (youtube)](https://www.youtube.com/playlist?list=PLh9ECzBB8tJOtaD6DFxqRdP7QHIaBFcbW) — turkish intro to search algorithms, a*, minimax, and expert systems
+- **video lectures:**
+  1. [uc berkeley cs188 — introduction to artificial intelligence](https://www.youtube.com/playlist?list=PLp8QV47qJEg67UTShQ4er4RYQ3rOeDKxv) — classic course on a*, heuristics, csp, minimax, mcts, and mdps
+  2. [harvard cs50’s introduction to ai with python (youtube)](https://www.youtube.com/watch?v=5NgNicANyqM) — practical python walkthrough of search, logic, probability, and optimization
+- **books, papers & repositories:**
+  1. [russell & norvig — aima & aima-python (github)](https://github.com/aimacode/aima-python) — standard textbook and python code repository for search, logic, and planning
+  2. [plansys2 (ros 2 planning system, github)](https://github.com/PlanSys2/ros2_planning_system) — connects pddl symbolic task planning directly to ros 2 robots
+  3. [z3 theorem prover (microsoft research, github)](https://github.com/Z3Prover/z3) — standard smt solver for constraint solving and formal verification

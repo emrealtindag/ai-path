@@ -19,11 +19,11 @@ foundations, memory architecture, object-oriented design, and systems engineerin
 
 ## complete checklist and resources
 
-### 01. programming languages – programlama dilleri
+### 01. programming languages
 
 #### 4.1 python
 
-**temel python:**
+**core python:**
 
 - [ ] variables and data types
 - [ ] strings
@@ -40,7 +40,7 @@ foundations, memory architecture, object-oriented design, and systems engineerin
 - [ ] exception handling
 - [ ] comprehensions
 
-**ileri python:**
+**advanced python:**
 
 - [ ] object-oriented programming (oop)
 - [ ] inheritance
@@ -58,36 +58,36 @@ foundations, memory architecture, object-oriented design, and systems engineerin
 - [ ] profiling
 - [ ] packaging
 
-**python ekosistemi:**
+**python ecosystem:**
 
-- [ ] **numpy** — sayısal hesaplama
+- [ ] **numpy** — numerical computing
 - [ ] **scipy** — bilimsel hesaplama
-- [ ] **pandas** — veri işleme
-- [ ] **matplotlib** — görselleştirme
-- [ ] **opencv** — görüntü işleme
+- [ ] **pandas** — data manipulation
+- [ ] **matplotlib** — data visualization
+- [ ] **opencv** — image processing
 - [ ] **sympy** — sembolik matematik
 - [ ] **scikit-learn** — klasik ml
 - [ ] **pytorch** — deep learning
-- [ ] **jax** — yüksek performanslı sayısal hesaplama ve ml
-- [ ] **tensorboard** — eğitim takibi
-- [ ] **fastapi** — ai servisleri geliştirme
+- [ ] **jax** — high-performance numerical computing and ml
+- [ ] **tensorboard** — training tracking and visualization
+- [ ] **fastapi** — building fast ai web apis
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **tr (türkçe kaynaklar):**
-  1. **yazılım bilimi (mustafa murat coşkun) – sıfırdan ileri seviye python:** [youtube kanalı](https://www.youtube.com/@YazilimBilimi) — temel python sözdizimi ve oop tekrarı için
-  2. **murat karakaya akademi – python ve makine öğrenmesi:** [youtube kanalı](https://www.youtube.com/@MuratKarakayaAkademi) — veri yapıları ve bilimsel python uygulamaları
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **harvard cs50p – introduction to programming with python (david j. malan):** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLhQjrBD2T3817j24-GogXmWqO5Q5vYy0V) — **[ilk izlenecek]** temel bilgileri eksiksiz ve temiz kod disipliniyle oturtmak için
-  2. **corey schafer – python oop & advanced tutorials:** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc) — **[ana pratik kaynak]** oop, decorators, generators, threading/multiprocessing
-  3. **mcoding (james murphy) – advanced python & internals:** [youtube kanalı](https://www.youtube.com/@mCoding) — **[ileri seviye]** python'un c altında nasıl çalıştığı, gil, asyncio, bellek optimizasyonu ve hızlandırma teknikleri
-  4. **arjancodes – python software engineering & type hints:** [youtube kanalı](https://www.youtube.com/@ArjanCodes) — üretim seviyesi (production-ready) python mimarisi
-- **oku (resmi doküman ve kitaplar — önem sırasıyla):**
-  1. **numpy: the absolute basics for beginners:** [numpy.org/doc/stable/user/absolute_beginners.html](https://numpy.org/doc/stable/user/absolute_beginners.html) — vektörizasyon ve `ndarray` mantığı (for döngüsü yerine matris işlemleri yazmak için şart)
-  2. **python scientific lecture notes (scipy lectures):** [scipy-lectures.org](https://scipy-lectures.org/) — numpy, scipy ve matplotlib'in mühendisler için ücretsiz tam rehberi
-  3. **official python 3 tutorial:** [docs.python.org/3/tutorial](https://docs.python.org/3/tutorial/) — dil referansı
-  4. **fluent python (luciano ramalho, 2nd ed.):** [fluentpython.com](https://www.fluentpython.com/) — python'da ileri seviye dil mekaniklerini öğrenmek için temel referans kitap
-  5. **real python tutorials:** [realpython.com](https://realpython.com/) — uygulamalı derinlemesine makaleler
+- **turkish resources:**
+  1. **yazılım bilimi (mustafa murat coşkun) – python programming:** [youtube channel](https://www.youtube.com/@YazilimBilimi) — turkish course covering python basics and oop
+  2. **murat karakaya academy – python & ml:** [youtube channel](https://www.youtube.com/@MuratKarakayaAkademi) — turkish lectures on data structures and scientific python
+- **video lectures:**
+  1. **harvard cs50p – introduction to programming with python (david j. malan):** [youtube playlist](https://www.youtube.com/playlist?list=PLhQjrBD2T3817j24-GogXmWqO5Q5vYy0V) — clean coding foundations in python
+  2. **corey schafer – python oop & advanced tutorials:** [youtube playlist](https://www.youtube.com/playlist?list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc) — oop, decorators, generators, threading/multiprocessing
+  3. **mcoding (james murphy) – advanced python & internals:** [youtube channel](https://www.youtube.com/@mCoding) — how python works under the hood: cpython, gil, asyncio, and speedup tips
+  4. **arjancodes – python software engineering & type hints:** [youtube channel](https://www.youtube.com/@ArjanCodes) — production-ready python architecture and design
+- **books, papers & repositories:**
+  1. **numpy: the absolute basics for beginners:** [numpy.org/doc/stable/user/absolute_beginners.html](https://numpy.org/doc/stable/user/absolute_beginners.html) — vectorization and `ndarray` indexing instead of slow python loops
+  2. **python scientific lecture notes (scipy lectures):** [scipy-lectures.org](https://scipy-lectures.org/) — free complete guide to numpy, scipy, and matplotlib
+  3. **official python 3 tutorial:** [docs.python.org/3/tutorial](https://docs.python.org/3/tutorial/) — official language reference
+  4. **fluent python (luciano ramalho, 2nd ed.):** [fluentpython.com](https://www.fluentpython.com/) — deep guide to idiomatic and advanced python internals
+  5. **real python tutorials:** [realpython.com](https://realpython.com/) — practical python guides and tutorials
 
 #### 4.2 c++
 
@@ -194,51 +194,51 @@ foundations, memory architecture, object-oriented design, and systems engineerin
 - [ ] parallel algorithms
 - [ ] compiler optimization (compiler optimization flags)
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **tr (türkçe kaynaklar):**
-  1. **necati ergin – c++ programlama dili kitabı ve topluluk ders notları:** [leanpub türkçe kitap (leanpub.com/cppofplepa)](https://leanpub.com/cppofplepa) · [necati ergin github](https://github.com/necatiergin) · [topluluk c++ ders notları (mguludag/csd_cpp_notlari)](https://github.com/mguludag/csd_cpp_notlari) — standartlara (iso c++) uyumlu, kapsamlı türkçe c++ kaynağı
-  2. **kitap:** şadi evren şeker – başlangıç düzeyinde c++ öğrenimine giriş
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **the cherno – c++ complete series:** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb) — **[ilk izlenecek – zorunlu]** pointers, references, stack vs heap, smart pointers, move semantics ve bellek düzenini bir oyun motoru mühendisinin gözünden anlatan kapsamlı seri
-  2. **cyrill stachniss & ignacio vizzo – modern c++ course for computer vision & robotics (bonn üni):** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLgnQpQtFTOGRM59sr3nSL8BmeMZR9GCIA) — **[robotik & cv odaklı c++]** doğrudan cmake, opencv, eigen, stl ve modern c++17'yi robotik mühendisliği için anlatan üniversite dersi
-  3. **c++ weekly with jason turner:** [youtube kanalı](https://www.youtube.com/@cppweekly) — modern c++20/23, `constexpr` ve sıfır maliyetli soyutlamalar
-  4. **cppcon (the c++ conference):** [youtube kanalı](https://www.youtube.com/@CppCon) — c++ uzmanlarının performans, eşzamanlılık (concurrency) ve mimari sunumları
-- **oku & araçlar (rehber, kitap ve derleyici araçları — önem sırasıyla):**
-  1. [**learncpp.com**](https://www.learncpp.com/)**(baştan sona ücretsiz modern c++ müfredatı):** [learncpp.com](https://www.learncpp.com/) — **[temel yazılı eğitim sitesi]** okuldaki müfredatı beklemeden adım adım okuyup kodlayacağın, c++20/23 güncel interaktif rehber
-  2. **an introduction to modern cmake:** [cliutils.gitlab.io/modern-cmake](https://cliutils.gitlab.io/modern-cmake/) — büyük c++, opencv ve ros 2 projelerini derlemek için zorunlu cmake rehberi
-  3. **compiler explorer (godbolt):** [godbolt.org](https://godbolt.org/) — yazdığın c++ kodunun hangi assembly/simd komutlarına dönüştüğünü canlı inceleme aracı
-  4. **c++ reference (resmi dokümantasyon):** [en.cppreference.com](https://en.cppreference.com/w/) — stl kapsayıcıları ve algoritmaları için teknik sözlük
-  5. **c++ core guidelines:** [isocpp.github.io/cppcoreguidelines/cppcoreguidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines) — güvenli ve modern c++ yazım kuralları
-  6. **effective modern c++ (scott meyers) & c++ concurrency in action (anthony williams):** smart pointers, rvalue/move semantics ve multithreading için endüstri başucu kitapları
+- **turkish resources:**
+  1. **necati ergin – c++ programming book & lecture notes:** [turkish book](https://leanpub.com/cppofplepa) · [github](https://github.com/necatiergin) · [community c++ notes](https://github.com/mguludag/csd_cpp_notlari) — thorough iso-compliant turkish c++ resources
+  2. **book (turkish):** şadi evren şeker – introduction to c++ programming
+- **video lectures:**
+  1. **the cherno – c++ complete series:** [youtube playlist](https://www.youtube.com/playlist?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb) — pointers, stack vs heap, smart pointers, move semantics, and memory layout explained clearly
+  2. **cyrill stachniss & ignacio vizzo – modern c++ for computer vision & robotics:** [youtube playlist](https://www.youtube.com/playlist?list=PLgnQpQtFTOGRM59sr3nSL8BmeMZR9GCIA) — modern c++17, cmake, eigen, opencv, and stl taught specifically for robotics engineers
+  3. **c++ weekly with jason turner:** [youtube channel](https://www.youtube.com/@cppweekly) — short episodes on modern c++20/23, `constexpr`, and zero-cost abstractions
+  4. **cppcon (the c++ conference):** [youtube channel](https://www.youtube.com/@CppCon) — talks on c++ performance, concurrency, and software architecture
+- **books, papers & repositories:**
+  1. [**learncpp.com**](https://www.learncpp.com/) **(free modern c++ curriculum):** [learncpp.com](https://www.learncpp.com/) — complete step-by-step interactive guide covering modern c++20/23
+  2. **an introduction to modern cmake:** [cliutils.gitlab.io/modern-cmake](https://cliutils.gitlab.io/modern-cmake/) — practical cmake guide for building large c++, opencv, and ros 2 projects
+  3. **compiler explorer (godbolt):** [godbolt.org](https://godbolt.org/) — live tool to inspect assembly and simd instructions generated by c++ code
+  4. **c++ reference:** [en.cppreference.com](https://en.cppreference.com/w/) — official standard library, stl containers, and language reference
+  5. **c++ core guidelines:** [isocpp.github.io/cppcoreguidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines) — rules and best practices for writing safe modern c++
+  6. **effective modern c++ (scott meyers) & c++ concurrency in action (anthony williams):** essential reference books for smart pointers, move semantics, and multithreading
 
-#### 4.3 diğer diller
+#### 4.3 other languages
 
-- [ ] **c:** embedded systems ve düşük seviyeli yazılım (düşük seviyeli donanım sürücüleri)
-- [ ] **rust:** memory safety ve sistem programlama
-- [ ] **cuda c++:** gpu programlama (gpu çekirdek programlama ve tensör hesaplama hızlandırma)
-- [ ] **matlab:** matematiksel modelleme ve kontrol (kontrol modelleme)
+- [ ] **c:** embedded systems and low-level hardware drivers
+- [ ] **rust:** memory-safe systems programming
+- [ ] **cuda c++:** gpu kernel programming and tensor acceleration
+- [ ] **matlab:** mathematical modeling and control simulation
 - [ ] **julia:** bilimsel hesaplama
-- [ ] **sql:** veri tabanları (ilişkisel veri tabanı sorgulama)
-- [ ] **bash:** linux otomasyonu (kabuk otomasyonu ve betikleme)
+- [ ] **sql:** relational database querying
+- [ ] **bash:** linux shell scripting and automation
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **tr (türkçe kaynaklar):**
-  1. **coşkun taşdemir – gömülü sistemler ve c programlama:** [github profili (ctasdemir)](https://github.com/ctasdemir) — mikrodenetleyici seviyesinde c dili ve gömülü yazılım örnekleri
-  2. **fehmi uyar (@fehmiuyarnet):** [youtube kanalı](https://www.youtube.com/@fehmiuyarnet) — genel programlama eğitimleri
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **mit – the missing semester (shell tools and scripting):** [youtube ders videosu](https://www.youtube.com/watch?v=Z56Jmr9Z34Q) — **[ilk izlenecek]** bash otomasyonu ve komut satırı araçları
-  2. **coffeebeforearch – cuda crash course (c++ gpu programming):** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLxNPSjHT5qvtYRVdNN1yDcdSl39uHV_sU) — **[gpu hızlandırma]** c++ ile cuda çekirdekleri (kernels) yazmaya giriş
-  3. **gpu mode – cuda & parallel programming lectures:** [youtube kanalı](https://www.youtube.com/@GPUMODE) — derin öğrenme ve tensör hızlandırma için modern gpu programlama topluluğu
-  4. **matlab tech talks (control & simulation):** [youtube kanalı](https://www.youtube.com/@MATLAB) — kontrol teorisi, kalman filtresi ve sensör füzyonu modelleme
-  5. **jon gjengset – crust of rust (intermediate/advanced rust):** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLqbS7AVVErFiWDOAVrPt7aYmnuuOLYvOa) — bellek güvenli sistem programlama
-- **oku & interaktif eğitim (önem sırasıyla):**
-  1. **linux journey & wooledge bash guide:** [linuxjourney.com](https://linuxjourney.com/) · [mywiki.wooledge.org/bashguide](https://mywiki.wooledge.org/BashGuide) — linux ve bash betikleme el kitabı
-  2. **sqlbolt (interactive sql lessons):** [sqlbolt.com](https://sqlbolt.com/) — tarayıcı üzerinde 2 saatte pratik sql öğrenimi
-  3. **matlab onramp (ücretsiz resmi eğitim):** [matlabacademy.mathworks.com](https://matlabacademy.mathworks.com/) — 2 saatlik etkileşimli matlab simülasyon girişi
-  4. **programming massively parallel processors (hwu, kirk, el hajj):** [kitap sayfası](https://www.elsevier.com/books/programming-massively-parallel-processors/hwu/978-0-323-91231-0) — cuda c++ için temel akademik ders kitabı
-  5. **the rust programming language (official book):** [doc.rust-lang.org/book](https://doc.rust-lang.org/book/) — resmi ücretsiz rust kitabı
+- **turkish resources:**
+  1. **coşkun taşdemir – embedded systems & c programming:** [github profile (ctasdemir)](https://github.com/ctasdemir) — turkish microcontroller c programming notes and firmware examples
+  2. **fehmi uyar (@fehmiuyarnet):** [youtube channel](https://www.youtube.com/@fehmiuyarnet) — general programming tutorials in turkish
+- **video lectures:**
+  1. **mit – the missing semester (shell tools & scripting):** [youtube lecture video](https://www.youtube.com/watch?v=Z56Jmr9Z34Q) — bash scripting and command-line tools
+  2. **coffeebeforearch – cuda crash course (c++ gpu programming):** [youtube playlist](https://www.youtube.com/playlist?list=PLxNPSjHT5qvtYRVdNN1yDcdSl39uHV_sU) — introduction to writing cuda kernels in c++
+  3. **gpu mode – cuda & parallel programming lectures:** [youtube channel](https://www.youtube.com/@GPUMODE) — practical community talks on gpu programming, triton, and tensor optimization
+  4. **matlab tech talks (control & simulation):** [youtube channel](https://www.youtube.com/@MATLAB) — short clear talks on control theory, kalman filtering, and sensor fusion
+  5. **jon gjengset – crust of rust:** [youtube playlist](https://www.youtube.com/playlist?list=PLqbS7AVVErFiWDOAVrPt7aYmnuuOLYvOa) — intermediate and advanced memory-safe systems programming in rust
+- **books, papers & repositories:**
+  1. **linux journey & wooledge bash guide:** [linuxjourney.com](https://linuxjourney.com/) · [mywiki.wooledge.org/bashguide](https://mywiki.wooledge.org/BashGuide) — practical guides for linux and bash scripting
+  2. **sqlbolt (interactive sql lessons):** [sqlbolt.com](https://sqlbolt.com/) — quick interactive browser lessons to learn sql fundamentals
+  3. **matlab onramp (free official course):** [matlabacademy.mathworks.com](https://matlabacademy.mathworks.com/) — 2-hour interactive intro to matlab simulation
+  4. **programming massively parallel processors (hwu, kirk, el hajj):** [book page](https://www.elsevier.com/books/programming-massively-parallel-processors/hwu/978-0-323-91231-0) — core textbook for learning cuda c++ and gpu architecture
+  5. **the rust programming language (official book):** [doc.rust-lang.org/book](https://doc.rust-lang.org/book/) — free official rust programming book
 
 ---
 
@@ -260,14 +260,14 @@ foundations, memory architecture, object-oriented design, and systems engineerin
 - [ ] streams
 - [ ] kernel optimization
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **coffeebeforearch – cuda crash course (c++ gpu programming):** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLxNPSjHT5qvtYRVdNN1yDcdSl39uHV_sU) — **[ilk izlenecek]** vektör toplamadan shared memory tiling ve matris çarpımına kadar c++ ile cuda çekirdekleri (kernels) yazma
-  2. **gpu mode – lectures on cuda, triton & parallel computing:** [youtube kanalı](https://www.youtube.com/@GPUMODE) & [github (gpu-mode/lectures)](https://github.com/gpu-mode/lectures) — **[dünyanın en iyi gpu mühendisliği topluluğu]** pytorch ve nvidia mühendislerinin verdiği ileri seviye gpu optimizasyon dersleri
-- **oku (kutsal kitap ve resmi kılavuz — önem sırasıyla):**
-  1. **programming massively parallel processors – pmpp, 4th ed. (wen-mei hwu, david kirk, izzat el hajj):** [kitap sayfası](https://www.elsevier.com/books/programming-massively-parallel-processors/hwu/978-0-323-91231-0) — **[her gpu mühendisinin başucu kitabı]** thread blocks, warps, shared memory, coalesced memory access ve paralel indirgeme (reduction) algoritmaları
-  2. **nvidia cuda c++ programming guide:** [docs.nvidia.com/cuda/cuda-c-programming-guide](https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html) — resmi başvuru dokümanı
+- **video lectures:**
+  1. **coffeebeforearch – cuda crash course (c++ gpu programming):** [youtube playlist](https://www.youtube.com/playlist?list=PLxNPSjHT5qvtYRVdNN1yDcdSl39uHV_sU) — writing cuda kernels in c++ from vector addition to shared memory tiling and matrix multiplication
+  2. **gpu mode – lectures on cuda, triton & parallel computing:** [youtube channel](https://www.youtube.com/@GPUMODE) & [github (gpu-mode/lectures)](https://github.com/gpu-mode/lectures) — practical gpu optimization talks by pytorch and nvidia engineers
+- **books, papers & repositories:**
+  1. **programming massively parallel processors – pmpp, 4th ed. (hwu, kirk, el hajj):** [book page](https://www.elsevier.com/books/programming-massively-parallel-processors/hwu/978-0-323-91231-0) — covers thread blocks, warps, shared memory, coalesced access, and parallel reduction
+  2. **nvidia cuda c++ programming guide:** [docs.nvidia.com/cuda/cuda-c-programming-guide](https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html) — official cuda c++ programming reference
 
 #### 14.2 ai performance optimization
 
@@ -282,15 +282,15 @@ foundations, memory architecture, object-oriented design, and systems engineerin
 - [ ] batch optimization
 - [ ] kernel fusion (flashattention)
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **mit 6.5940 – tinyml and efficient deep learning computing (prof. song han):** [youtube ders serisi](https://www.youtube.com/playlist?list=PL80kAHvQbh-pT4lCkDT53zT8DKmhE0idB) — **[ilk izlenecek]** ptq/qat quantization, pruning, distillation ve donanım-farkındalıklı (hardware-aware) optimizasyon
-  2. **tri dao – flashattention & io-aware gpu kernels (gpu mode lecture):** [youtube sunumu](https://www.youtube.com/watch?v=VPslgC9piIw) — gpu hbm ve sram bellek bant genişliği darboğazını kernel fusion ile aşma
-- **oku & repo (zorunlu mühendislik yazıları ve kodlar — önem sırasıyla):**
-  1. **making deep learning go brrrr from first principles (horace he – pytorch ekibi):** [horace.io/brrr_intro.html](https://horace.io/brrr_intro.html) — **[temel mühendislik yazısı]** compute-bound, memory-bandwidth bound ve overhead-bound darboğazlarını ve operator fusion mantığını anlatan makale
-  2. **flashattention: fast and memory-efficient exact attention with io-awareness (tri dao et al.):** [arxiv:2205.14135](https://arxiv.org/abs/2205.14135) — modern gpu çekirdek optimizasyonunun referans makalesi
-  3. **repo – ggerganov/llama.cpp (`ggml`tensor library):** [github.com/ggerganov/llama.cpp](https://github.com/ggerganov/llama.cpp) — saf c/c++ ile int4/int8 nicemleme (quantization) ve simd/cuda matris çarpımı kodları
+- **video lectures:**
+  1. **mit 6.5940 – tinyml and efficient deep learning computing (prof. song han):** [youtube lecture series](https://www.youtube.com/playlist?list=PL80kAHvQbh-pT4lCkDT53zT8DKmhE0idB) — ptq/qat quantization, pruning, distillation, and hardware-aware model optimization
+  2. **tri dao – flashattention & io-aware gpu kernels (gpu mode):** [youtube talk](https://www.youtube.com/watch?v=VPslgC9piIw) — overcoming gpu memory bandwidth bottlenecks using kernel fusion
+- **books, papers & repositories:**
+  1. **making deep learning go brrrr from first principles (horace he):** [horace.io/brrr_intro.html](https://horace.io/brrr_intro.html) — clear explanation of compute-bound vs memory-bound bottlenecks and operator fusion
+  2. **flashattention: fast and memory-efficient exact attention with io-awareness (tri dao et al.):** [arxiv:2205.14135](https://arxiv.org/abs/2205.14135) — core paper on io-aware gpu kernel optimization
+  3. **ggerganov/llama.cpp (`ggml` tensor library):** [github.com/ggerganov/llama.cpp](https://github.com/ggerganov/llama.cpp) — int4/int8 quantization and simd/cuda matrix multiplication in pure c/c++
 
 #### 14.3 ai deployment
 
@@ -305,16 +305,16 @@ foundations, memory architecture, object-oriented design, and systems engineerin
 - [ ] edge deployment
 - [ ] model monitoring
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **nvidia developer – tensorrt & triton inference server walkthroughs:** [youtube arama bağlantısı](https://www.youtube.com/results?search_query=nvidia+developer+tensorrt+c%2B%2B+tutorial) — pytorch modelini onnx üzerinden tensorrt motoruna (`.engine`) dönüştürme
-  2. **jetsonhacks – edge ai deployment on nvidia jetson:** [youtube kanalı](https://www.youtube.com/@JetsonHacks) — gömülü gpu üzerinde gerçek zamanlı kamera ve çıkarım boru hattı kurma
-- **oku & repo (resmi doküman ve c++ dağıtım repoları — önem sırasıyla):**
-  1. **onnx runtime official documentation (c++ & python api):** [onnxruntime.ai/docs](https://onnxruntime.ai/docs/) — modelleri python'dan bağımsız olarak c++ içinde çalıştırmanın en kolay yolu
-  2. **nvidia tensorrt developer guide (c++ & python):** [docs.nvidia.com/deeplearning/tensorrt/developer-guide](https://docs.nvidia.com/deeplearning/tensorrt/developer-guide/index.html) — nvidia gpu'larda en düşük gecikme (latency) ve en yüksek fps için resmi kılavuz
-  3. **repo – wang-xinyu/tensorrtx:** [github.com/wang-xinyu/tensorrtx](https://github.com/wang-xinyu/tensorrtx) — **[c++ tensorrt uygulama reposu]** yolov8/v11, resnet, detr vb. modellerin saf c++ tensorrt api'si ile nasıl yazıldığını gösteren açık kaynak repo
-  4. **repo – dusty-nv/jetson-inference:** [github.com/dusty-nv/jetson-inference](https://github.com/dusty-nv/jetson-inference) — c++ ve tensorrt ile gerçek zamanlı görüntü işleme ve algılama şablonları
+- **video lectures:**
+  1. **nvidia developer – tensorrt & triton inference server walkthroughs:** [youtube search](https://www.youtube.com/results?search_query=nvidia+developer+tensorrt+c%2B%2B+tutorial) — converting pytorch models via onnx to tensorrt `.engine` files
+  2. **jetsonhacks – edge ai deployment on nvidia jetson:** [youtube channel](https://www.youtube.com/@JetsonHacks) — setting up real-time camera and inference pipelines on embedded nvidia jetson
+- **books, papers & repositories:**
+  1. **onnx runtime official documentation (c++ & python api):** [onnxruntime.ai/docs](https://onnxruntime.ai/docs/) — straightforward guide to running models in c++ without python
+  2. **nvidia tensorrt developer guide (c++ & python):** [docs.nvidia.com/deeplearning/tensorrt/developer-guide](https://docs.nvidia.com/deeplearning/tensorrt/developer-guide/index.html) — official guide for low-latency high-fps inference on nvidia gpus
+  3. **wang-xinyu/tensorrtx:** [github.com/wang-xinyu/tensorrtx](https://github.com/wang-xinyu/tensorrtx) — open-source repo showing how to take models like yolov8/v11, resnet, and detr from pytorch and write them from scratch using the pure c++ tensorrt api
+  4. **dusty-nv/jetson-inference:** [github.com/dusty-nv/jetson-inference](https://github.com/dusty-nv/jetson-inference) — real-time computer vision and inference templates using c++ and tensorrt
 
 #### 14.4 distributed ai
 
@@ -328,22 +328,22 @@ foundations, memory architecture, object-oriented design, and systems engineerin
 - [ ] distributed inference (vllm, deepinfer, tensorrt-llm)
 - [ ] expert parallelism (deepep, moe all-to-all)
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **pytorch official – distributed data parallel (ddp) tutorial series:** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PL_lsbAsL_o2CSuhUhJIiW0IkdT5C2wGWj) — **[ilk izlenecek]** tek gpu'dan çoklu gpu eğitimine (multi-gpu ddp) geçişin resmi adım adım rehberi
-  2. **tim dettmers – distributed training & 8-bit/4-bit parallelism lectures:** [youtube kanalı & konuşmaları](https://www.youtube.com/results?search_query=tim+dettmers+distributed+training) — büyük modellerde bellek ve iletişim darboğazları (allreduce)
-- **oku & repo (doküman ve kodlar — önem sırasıyla):**
-  1. **pytorch distributed overview & ddp tutorial:** [pytorch.org/tutorials/beginner/dist_overview.html](https://pytorch.org/tutorials/beginner/dist_overview.html) — data parallelism, fsdp ve tensor parallelism resmi dokümanı
-  2. **the ultra-scale playbook: training llms on gpu clusters (hugging face):** [huggingface.co/spaces/nanotron/ultrascale-playbook](https://huggingface.co/spaces/nanotron/ultrascale-playbook) — data, tensor, pipeline ve context parallelism kavramlarının etkileşimli görsel kitabı
-  3. **dağıtık çıkarım motorları (distributed inference) – vllm & deepinfer:** [vllm (github)](https://github.com/vllm-project/vllm) & [deepseek-ai/deepinfer](https://github.com/deepseek-ai/DeepInfer) — vllm (endüstri standardı pagedattention çıkarım motoru) ve deepinfer (deepseek'in flashmla, deepgemm ve deepep entegre 26k yıldızlı büyük ölçekli üretim çıkarım altyapısı)
-  4. **repo – deepseek-ai/deepep (yüksek başarımlı moe iletişim kütüphanesi):** [github.com/deepseek-ai/deepep](https://github.com/deepseek-ai/DeepEP) — **[moe & uzman paralelliği gpu çekirdekleri]** deepseek-v3 ve r1 mimarilerinde kullanılan; fp8 veri aktarımı, nvlink doğrudan ağırlık değişimi ve moe all-to-all gpu çekirdekleriyle dağıtık eğitim/çıkarım iletişim darboğazını kıran yüksek performanslı kütüphane
+- **video lectures:**
+  1. **pytorch official – distributed data parallel (ddp) series:** [youtube playlist](https://www.youtube.com/playlist?list=PL_lsbAsL_o2CSuhUhJIiW0IkdT5C2wGWj) — step-by-step official guide for scaling from single-gpu to multi-gpu training
+  2. **tim dettmers – distributed training & 8-bit/4-bit parallelism:** [youtube search](https://www.youtube.com/results?search_query=tim+dettmers+distributed+training) — memory and communication bottlenecks (allreduce) in large-scale training
+- **books, papers & repositories:**
+  1. **pytorch distributed overview & ddp tutorial:** [pytorch.org/tutorials/beginner/dist_overview.html](https://pytorch.org/tutorials/beginner/dist_overview.html) — official docs for data parallelism, fsdp, and tensor parallelism
+  2. **the ultra-scale playbook: training llms on gpu clusters (hugging face):** [huggingface.co/spaces/nanotron/ultrascale-playbook](https://huggingface.co/spaces/nanotron/ultrascale-playbook) — visual handbook covering data, tensor, pipeline, and context parallelism
+  3. **distributed inference engines – vllm & deepinfer:** [vllm (github)](https://github.com/vllm-project/vllm) & [deepseek-ai/deepinfer](https://github.com/deepseek-ai/DeepInfer) — high-throughput llm serving engines using pagedattention, flashmla, and deepgemm
+  4. **deepseek-ai/deepep (moe communication library):** [github.com/deepseek-ai/deepep](https://github.com/deepseek-ai/DeepEP) — gpu kernels for fp8 transfer, nvlink routing, and moe all-to-all communication
 
 ---
 
-### 03. ml compilers & ai hardware – ml derleyicileri ve yapay zekâ donanımları
+### 03. ml compilers & ai hardware
 
-#### 41.1 ml compilers – makine öğrenmesi derleyicileri
+#### 41.1 ml compilers
 
 - [ ] computation graphs
 - [ ] graph-level optimizations
@@ -358,7 +358,7 @@ foundations, memory architecture, object-oriented design, and systems engineerin
 - [ ] auto-tuning
 - [ ] iree
 
-#### 41.2 ai accelerators – yapay zekâ hızlandırıcıları
+#### 41.2 ai accelerators
 
 - [ ] tpu and systolic arrays
 - [ ] npus
@@ -370,7 +370,7 @@ foundations, memory architecture, object-oriented design, and systems engineerin
 - [ ] analog and in-memory computing
 - [ ] power and thermal efficiency
 
-#### 41.3 inference engines & runtimes – çıkarım motorları ve çalışma zamanları
+#### 41.3 inference engines & runtimes
 
 - [ ] openvino
 - [ ] tensorflow lite
@@ -382,7 +382,7 @@ foundations, memory architecture, object-oriented design, and systems engineerin
 - [ ] tensorrt-llm
 - [ ] deepspeed inference
 
-#### 41.4 low-level performance engineering – düşük seviyeli performans mühendisliği
+#### 41.4 low-level performance engineering
 
 - [ ] roofline model
 - [ ] arithmetic intensity
@@ -395,7 +395,7 @@ foundations, memory architecture, object-oriented design, and systems engineerin
 - [ ] nccl and collective communication
 - [ ] nsight profiling
 
-#### 41.5 fpga & digital design – fpga ve sayısal tasarım temelleri
+#### 41.5 fpga & digital design
 
 - [ ] verilog / vhdl
 - [ ] high-level synthesis (hls)
@@ -404,12 +404,12 @@ foundations, memory architecture, object-oriented design, and systems engineerin
 - [ ] real-time vision pipelines on fpga
 - [ ] hardware/software co-design
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **tr:** [mehmet burak aykenar — vhdl / fpga ve sayısal tasarım dersleri (youtube)](https://www.youtube.com/@MehmetBurakAykenar) — savunma ve gömülü görüntü işleme donanımlarında karşılaşılan fpga/zynq mimarisine türkçe giriş.
-- **yt:**
-  1. **[ilk izlenecek — ml derleyicileri]** [tianqi chen — machine learning compilation (mlc.ai course)](https://mlc.ai/) — hesaplama grafları, operatör birleştirme (fusion), tvm ve donanım hızlandırma.
-  2. **[verimli ai & donanım]** [mit 6.5940 — tinyml and efficient deep learning computing (song han — youtube)](https://www.youtube.com/playlist?list=PL80kAHvQbh-pT4lCkDT53zT8DKmhE0idB) — roofline modeli, aritmetik yoğunluk, nicemleme ve uç hızlandırıcılar.
-- **oku & repo:**
-  1. [horace he — making deep learning go brrrr from first principles (horace.io)](https://horace.io/brrr_intro.html) — bellek bant genişliği (memory-bound), hesaplama sınırı (compute-bound) ve operatör birleştirme mantığını en net anlatan mühendislik makalesi.
-  2. [openai triton tutorials (triton-lang.org)](https://triton-lang.org/main/getting-started/tutorials/index.html) & [gpu mode lectures (github)](https://github.com/gpu-mode/lectures) — özel gpu çekirdekleri (kernels), `torch.compile`, cutlass ve nsight profilleme.
+- **turkish resource:** [mehmet burak aykenar — vhdl / fpga & digital design lectures (youtube)](https://www.youtube.com/@MehmetBurakAykenar) — turkish introduction to fpga and zynq hardware design for embedded vision
+- **video lectures:**
+  1. **ml compilers:** [tianqi chen — machine learning compilation (mlc.ai course)](https://mlc.ai/) — computation graphs, operator fusion, tvm, and hardware acceleration
+  2. [mit 6.5940 — tinyml and efficient deep learning computing (song han — youtube)](https://www.youtube.com/playlist?list=PL80kAHvQbh-pT4lCkDT53zT8DKmhE0idB) — roofline model, arithmetic intensity, quantization, and edge accelerators
+- **books, papers & repositories:**
+  1. [horace he — making deep learning go brrrr from first principles (horace.io)](https://horace.io/brrr_intro.html) — straightforward engineering article on memory-bound vs compute-bound kernels and operator fusion
+  2. [openai triton tutorials (triton-lang.org)](https://triton-lang.org/main/getting-started/tutorials/index.html) & [gpu mode lectures (github)](https://github.com/gpu-mode/lectures) — custom gpu kernels, `torch.compile`, cutlass, and nsight profiling

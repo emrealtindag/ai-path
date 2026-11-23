@@ -92,25 +92,25 @@ slam fuses camera and sensor measurements to simultaneously map an unknown envir
 - [ ] pose graph optimization
 - [ ] bundle adjustment
 - [ ] dense foundation slam (mast3r-slam, dust3r)
-- [ ] tartanair & tartanvo slam kıyaslaması
+- [ ] tartanair & tartanvo slam benchmark
 - [ ] droid-slam (deep recurrent visual slam) & basalt vio
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **cyrill stachniss – slam course (bonn üniversitesi):** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLgnQpQtFTOGQrZ4O5QzbIHgl3b1JHimN_) — **[temel akademik slam dersi – ilk izlenecek]** odometri, ekf-slam, particle filter slam, pose graph optimization ve loop closure'ı baştan sona öğreten ders serisi
-  2. **prof. daniel cremers – multiple view geometry & direct slam: lsd-slam, dso (tum):** [youtube ders serisi](https://www.youtube.com/playlist?list=PLTBdjV_4f-EJn6udZ34tht9EVIW7lbeo4) — **[zirve akademik ders]** doğrudan piksel parlaklığı (photometric error) üzerinden çalışan direct slam ve görsel odometri
-  3. **joan solà – course on slam & factor graphs:** [youtube oynatma listesi](https://www.youtube.com/results?search_query=joan+sola+slam) — faktör grafikleri (factor graphs) ve manifold üzerinde optimizasyon
-  4. **prof. davide scaramuzza (uzh rpg) – vision algorithms for mobile robotics (vamr):** [youtube oynatma listesi / uzh vamr](https://www.youtube.com/playlist?list=PLdMorpQLjeXmbFaVku4JdjmQByHHqTd1F) & [ders sayfası (rpg.ifi.uzh.ch)](https://rpg.ifi.uzh.ch/teaching.html) — **[zirve görsel robotik dersi]** dünyanın en prestijli robotik algılama laboratuvarından (uzh rpg); görsel odometri, optik akış, kamera kalibrasyonu, epipolar geometri ve visual slam mimarilerini baştan sona anlatan altın standart amfi dersi
-- **oku & repo (makale ve endüstriyel c++ kod tabanları — önem sırasıyla):**
-  1. **visual odometry: part i (the first 30 years and fundamentals) & part ii (photogrammetry and filter-based methods) – davide scaramuzza & friedrich fraundorfer:** [part i pdf (uzh rpg)](https://rpg.ifi.uzh.ch/docs/VO_Part_I_Scaramuzza.pdf) & [part ii pdf (uzh rpg)](https://rpg.ifi.uzh.ch/docs/VO_Part_II_Scaramuzza.pdf) — **[ilk okunacak tutorial makalesi]** görsel odometrinin tüm matematiğini 20 sayfada özetleyen başucu rehberi
-  2. **orb-slam3: an accurate open-source library for visual, visual-inertial, and multimap slam (campos et al., ieee t-ro 2021):** [arxiv:2007.11898](https://arxiv.org/abs/2007.11898) — modern özellik tabanlı ve görsel-ataletsel (kamera+imu) slam'in referans makalesi
-  3. **repo – uz-slamlab/orb_slam3 & raulmur/orb_slam2:** [github.com/uz-slamlab/orb_slam3](https://github.com/UZ-SLAMLab/ORB_SLAM3) · [github.com/raulmur/orb_slam2](https://github.com/raulmur/ORB_SLAM2) — **[satır satır okunacak c++ kodu]** gerçek zamanlı tracking, local mapping ve loop closing thread'lerinin c++ ile nasıl yazıldığını görmek için temel açık kaynak proje
-  4. **kütüphane – gtsam (georgia tech smoothing and mapping library):** [gtsam.org](https://gtsam.org/) & [github repo (borglab/gtsam)](https://github.com/borglab/gtsam) — pose graph ve factor graph optimizasyonu için c++ kütüphanesi
-  5. **mast3r-slam: real-time dense slam with 3d reconstruction priors (imperial college london / dyson robotics lab – cvpr 2025):** [edexheim.github.io/mast3r-slam](https://edexheim.github.io/mast3r-slam/) & [github repo (rmurai0610/mast3r-slam)](https://github.com/rmurai0610/MASt3R-SLAM) — **[yapay zekâ vakıf modeli tabanlı yoğun slam]** slam öncüsü andrew davison ve dyson robotik laboratuvarı'ndan çıkan; mast3r 3b temsilini kullanarak tek kameradan seyrek noktalar yerine fotogerçekçi yoğunlukta 3b harita ve gerçek zamanlı yörünge kestirimi yapan modern dense slam mimarisi
-  6. **svo: semi-direct visual odometry (uzh rpg – icra / ieee t-ro):** [github (uzh-rpg/rpg_svo_pro_open)](https://github.com/uzh-rpg/rpg_svo_pro_open) & [github legacy (uzh-rpg/rpg_svo)](https://github.com/uzh-rpg/rpg_svo) — **[yarı-doğrudan görsel odometri]** davide scaramuzza ekibinin geliştirdiği; özellik çıkarımı maliyetini ortadan kaldırmak için doğrudan piksel parlaklık farkı (fotometrik hata) ile köşe takibini birleştiren, gömülü sistemlerde ve otonom iha'larda 55+ fps çalışan öncü semi-direct vo mimarisi
-  7. **tartanair & tartanvo: visual slam & deep vo benchmark (cmu airlab – ieee/rsj iros & cvpr):** [theairlab.org/tartanair-dataset](https://theairlab.org/tartanair-dataset/) · [github repo (castacks/tartanair_tools)](https://github.com/castacks/tartanair_tools) & [github repo (castacks/tartanairpy)](https://github.com/castacks/tartanairpy) — **[görsel slam & optik akış kıyaslama standardı]** prof. sebastian scherer ekibinin geliştirdiği; fotogerçekçi unreal engine simülasyonunda zorlu hava koşulları, dinamik aydınlatma, optik akış ve ground-truth pozlarla visual slam ve derin görsel odometri (deep vo) modellerini eğitmek ve test etmek için kullanılan 1.000+ atıflı küresel kıyaslama standardı
-  8. **droid-slam & basalt: deep visual slam & fast optimization-based vio (princeton vl & tu munich):** [droid-slam (github)](https://github.com/princeton-vl/DROID-SLAM) & [basalt (gitlab)](https://gitlab.com/VladyslavUsenko/basalt) — **[modern derin slam & yüksek hızlı vio standardı]** derin öğrenmeli optik akış ile klasik bundle adjustment'ı birleştiren droid-slam ve ceres optimizasyonunu lineer olmayan faktör geri kazanımıyla (factor recovery) harmanlayıp cpu üzerinde yüzlerce fps hızında çalışan basalt c++ vio mimarisi
+- **video lectures:**
+  1. **cyrill stachniss – slam course (university of bonn):** [youtube playlist](https://www.youtube.com/playlist?list=PLgnQpQtFTOGQrZ4O5QzbIHgl3b1JHimN_) — core university course covering odometry, ekf-slam, particle filters, pose graph optimization, and loop closure
+  2. **prof. daniel cremers – direct slam: lsd-slam & dso (tum):** [youtube lecture series](https://www.youtube.com/playlist?list=PLTBdjV_4f-EJn6udZ34tht9EVIW7lbeo4) — lectures on direct photometric visual odometry and slam
+  3. **joan solà – slam & factor graphs:** [youtube search](https://www.youtube.com/results?search_query=joan+sola+slam) — factor graphs and optimization on manifolds
+  4. **prof. davide scaramuzza (uzh rpg) – vision algorithms for mobile robotics:** [youtube playlist](https://www.youtube.com/playlist?list=PLdMorpQLjeXmbFaVku4JdjmQByHHqTd1F) & [course page](https://rpg.ifi.uzh.ch/teaching.html) — classic university course on visual odometry, optical flow, calibration, epipolar geometry, and slam
+- **books, papers & repositories:**
+  1. **visual odometry tutorials (part i & ii – scaramuzza & fraundorfer):** [part i pdf](https://rpg.ifi.uzh.ch/docs/VO_Part_I_Scaramuzza.pdf) & [part ii pdf](https://rpg.ifi.uzh.ch/docs/VO_Part_II_Scaramuzza.pdf) — concise 20-page overview summarizing visual odometry math
+  2. **orb-slam3 (campos et al.):** [arxiv:2007.11898](https://arxiv.org/abs/2007.11898) — key paper for feature-based visual, visual-inertial, and multi-map slam
+  3. **orb_slam3 & orb_slam2 (c++):** [orb_slam3](https://github.com/UZ-SLAMLab/ORB_SLAM3) · [orb_slam2](https://github.com/raulmur/ORB_SLAM2) — reference c++ codebases showing multi-threaded tracking, local mapping, and loop closing
+  4. **gtsam (georgia tech):** [gtsam.org](https://gtsam.org/) & [github repo](https://github.com/borglab/gtsam) — standard c++ library for factor graph and pose graph optimization
+  5. **mast3r-slam (imperial college / dyson lab):** [project page](https://edexheim.github.io/mast3r-slam/) & [github repo](https://github.com/rmurai0610/MASt3R-SLAM) — real-time monocular dense slam built on 3d foundation model priors
+  6. **svo: semi-direct visual odometry (uzh rpg):** [github](https://github.com/uzh-rpg/rpg_svo_pro_open) & [legacy](https://github.com/uzh-rpg/rpg_svo) — fast 55+ fps semi-direct visual odometry designed for embedded uavs
+  7. **tartanair & tartanvo benchmark (cmu airlab):** [dataset site](https://theairlab.org/tartanair-dataset/) · [tartanair_tools](https://github.com/castacks/tartanair_tools) & [tartanairpy](https://github.com/castacks/tartanairpy) — challenging unreal engine slam and optical flow benchmark with ground-truth trajectories
+  8. **droid-slam & basalt (princeton / tu munich):** [droid-slam](https://github.com/princeton-vl/DROID-SLAM) & [basalt](https://gitlab.com/VladyslavUsenko/basalt) — deep optical-flow bundle adjustment slam and fast cpu c++ visual-inertial odometry
 
 ### 10.5 localization
 
@@ -126,13 +126,13 @@ slam fuses camera and sensor measurements to simultaneously map an unknown envir
 - [ ] lidar localization (ndt, icp-based)
 - [ ] distributed pose graph optimization (dpgo) & multi-robot slam
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **cyrill stachniss – markov localization, grid localization & monte carlo localization (mcl):** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLgnQpQtFTOGQrZ4O5QzbIHgl3b1JHimN_) — **[ilk izlenecek]** bir robotun bilinen harita içinde kendi konumunu olasılıksal olarak nasıl bulduğunun en net anlatımı
-  2. **eth zürich – autonomous mobile robots (localization module – prof. roland siegwart):** [youtube ders serisi](https://www.youtube.com/playlist?list=PLpUPoM7Rgzi_7YWn14Va2FODh7LzADBSm) — tekerlek odometrisi hata modelleri ve harita tabanlı lokalizasyon
-- **oku & doküman (önem sırasıyla):**
-  1. **probabilistic robotics – bölüm 7 & 8 (mobile robot localization: markov & grid/monte carlo):** [probabilistic-robotics.org](https://mitpress.mit.edu/9780262201629/probabilistic-robotics/) — lokalizasyon algoritmalarının teorik temeli
-  2. **ros 2 nav2 amcl (adaptive monte carlo localization) configuration guide:** [docs.nav2.org/configuration/packages/configuring-amcl.html](https://docs.nav2.org/) — gerçek robotta parçacık filtresi lokalizasyonunu ayarlama rehberi
-  3. **maplab: an open framework for visual-inertial mapping and localization (eth zürich asl – roland siegwart):** [github repo (ethz-asl/maplab)](https://github.com/ethz-asl/maplab) & [dokümantasyon](https://github.com/ethz-asl/maplab) — **[görsel-ataletsel haritalama ve lokalizasyon çerçevesi]** prof. roland siegwart ekibinin geliştirdiği; robotun daha önce çıkarılmış bir harita içinde kamera+imu ile 6-dof santimetrik konumunu bulmasını sağlayan (visual-inertial localization), çoklu oturum (multi-session) ve çoklu robot harita birleştirmesi (map merging) yapan 2.8k+ yıldızlı c++ otonomi motoru
-  4. **dpgo & clipper: distributed pose graph optimization & robust data association (mit acl – ieee t-ro):** [dpgo (github)](https://github.com/mit-acl/dpgo) · [clipper (github)](https://github.com/mit-acl/clipper) — **[çoklu robot slam & graf tabanlı veri eşleme]** merkezi bir sunucuya ihtiyaç duymadan çoklu robotların pose graph'larını dağıtık riemann optimizasyonu ile çözen (dpgo) ve aşırı gürültülü/aykırı değer içeren ortamlarda graf-teorisi (clique) ile geometrik veri eşlemesi yapan c++ kütüphaneleri
+- **video lectures:**
+  1. **cyrill stachniss – markov, grid & monte carlo localization:** [youtube playlist](https://www.youtube.com/playlist?list=PLgnQpQtFTOGQrZ4O5QzbIHgl3b1JHimN_) — clear lectures on probabilistic localization inside known maps
+  2. **eth zürich – autonomous mobile robots (localization):** [youtube lecture series](https://www.youtube.com/playlist?list=PLpUPoM7Rgzi_7YWn14Va2FODh7LzADBSm) — odometry error models and map-based localization
+- **books, papers & repositories:**
+  1. **probabilistic robotics – ch. 7 & 8:** [book page](https://mitpress.mit.edu/9780262201629/probabilistic-robotics/) — foundational theory of markov, grid, and particle filter localization
+  2. **ros 2 nav2 amcl configuration guide:** [docs.nav2.org](https://docs.nav2.org/) — tuning particle filter localization on physical mobile robots
+  3. **maplab (eth zürich asl):** [github repo](https://github.com/ethz-asl/maplab) — c++ visual-inertial mapping, multi-session localization, and map merging framework
+  4. **dpgo & clipper (mit acl):** [dpgo](https://github.com/mit-acl/dpgo) · [clipper](https://github.com/mit-acl/clipper) — c++ libraries for distributed multi-robot pose graph optimization and graph-based outlier rejection

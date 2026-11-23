@@ -33,11 +33,11 @@ engineering curriculum, mathematical proofs, derivations, and curated resources 
 
 ## complete checklist and resources
 
-### 01. mathematics – matematiksel temel
+### 01. mathematics
 
-#### 2.1 linear algebra – lineer cebir
+#### 2.1 linear algebra
 
-**temel konular:**
+**core topics:**
 
 - [x] scalars, vectors, matrices
 - [ ] vector spaces
@@ -58,7 +58,7 @@ engineering curriculum, mathematical proofs, derivations, and curated resources 
 - [ ] least squares
 - [ ] matrix calculus
 
-**ileri bağlantılar:**
+**advanced connections:**
 
 - [ ] principal component analysis (pca)
 - [ ] optimization
@@ -67,25 +67,25 @@ engineering curriculum, mathematical proofs, derivations, and curated resources 
 - [ ] state estimation
 - [ ] 3d transformations ($se(3)$, $so(3)$)
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **tr (türkçe kaynaklar):**
-  1. **buders boğaziçiliden özel ders – lineer cebir:** [youtube kanalı oynatma listeleri (@buders5730)](https://www.youtube.com/@Buders) — matris işlemleri, determinant, rank, özdeğer ve özvektörlerin türkçe pratik anlatımı (doğrulanmış oynatma listesi)
-  2. **nesin matematik köyü – ali nesin lineer cebir dersleri:** [nesin matematik köyü youtube kanalı](https://www.youtube.com/playlist?list=PL-VAZnoQqQ4UF8Y7Q4rf8ruNSVhnfEmWn) — vektör uzayları ve lineer dönüşümlerin teorik temeli
-  3. **kitaplar:** h. hilmi hacısalihoğlu – lineer cebir · bernard kolman – uygulamalı lineer cebir (çeviri)
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **3blue1brown – essence of linear algebra:** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) — **[ilk izlenecek]** matrislerin, determinantın ve özdeğerlerin 3b uzaydaki geometrik anlamı
-  2. **mit 18.06 linear algebra (prof. gilbert strang):** [youtube ders serisi](https://www.youtube.com/playlist?list=PLE7DDD91010BC51F8) — **[ana akademik ders]** svd, least squares, qr/lu ayrıştırma ve dik izdüşüm için temel üniversite dersi
-  3. **mit 18.065 matrix methods in data analysis, signal processing, and ml (gilbert strang):** [youtube ders serisi](https://www.youtube.com/playlist?list=PLUl4u3cNGP63oMNUHXqIUcrkS2PivhN3k) — doğrudan yapay zekâ ve optimizasyon odaklı ileri matris yöntemleri
-- **oku & repo (kitap, makale ve kütüphaneler — önem sırasıyla):**
-  1. **immersive linear algebra:** [immersivemath.com/ila](http://immersivemath.com/ila/index.html) — etkileşimli grafiklerle lineer cebir ve 3b dönüşüm sezgisi
-  2. **mathematics for machine learning (deisenroth, faisal, ong):** [mml-book.github.io (ücretsiz pdf)](https://mml-book.github.io/book/mml-book.pdf) — bölüm 2–4 ve bölüm 10 (pca & svd)
-  3. **the matrix calculus you need for deep learning (parr & howard):** [explained.ai/matrix-calculus](https://explained.ai/matrix-calculus/) — sinir ağlarında gradyan ve matris türevleri
-  4. **kütüphane – eigen c++:** [eigen.tuxfamily.org](https://eigen.tuxfamily.org/dox/GettingStarted.html) — c++ ile robotik, slam ve durum kestiriminde kullanacağın endüstri standardı lineer cebir kütüphanesi
+- **turkish resources:**
+  1. **buders – linear algebra:** [youtube playlists (@buders)](https://www.youtube.com/@Buders) — practical turkish lectures on matrix operations, determinants, rank, eigenvalues, and eigenvectors
+  2. **nesin math village – ali nesin linear algebra:** [youtube playlist](https://www.youtube.com/playlist?list=PL-VAZnoQqQ4UF8Y7Q4rf8ruNSVhnfEmWn) — theoretical foundations of vector spaces and linear transformations (turkish)
+  3. **books (turkish):** h. hilmi hacısalihoğlu – linear algebra · bernard kolman – applied linear algebra
+- **video lectures:**
+  1. **3blue1brown – essence of linear algebra:** [youtube playlist](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) — visual 3d meaning of matrices, determinants, and eigenvalues
+  2. **mit 18.06 linear algebra (prof. gilbert strang):** [youtube lecture series](https://www.youtube.com/playlist?list=PLE7DDD91010BC51F8) — core university course covering svd, least squares, qr/lu decomposition, and orthogonal projections
+  3. **mit 18.065 matrix methods in data analysis, signal processing, and ml (gilbert strang):** [youtube lecture series](https://www.youtube.com/playlist?list=PLUl4u3cNGP63oMNUHXqIUcrkS2PivhN3k) — matrix methods focused directly on machine learning and optimization
+- **books, papers & repositories:**
+  1. **immersive linear algebra:** [immersivemath.com/ila](http://immersivemath.com/ila/index.html) — interactive graphics to build intuition for linear algebra and 3d transforms
+  2. **mathematics for machine learning (deisenroth, faisal, ong):** [mml-book.github.io (free pdf)](https://mml-book.github.io/book/mml-book.pdf) — chapters 2–4 and chapter 10 (pca & svd)
+  3. **the matrix calculus you need for deep learning (parr & howard):** [explained.ai/matrix-calculus](https://explained.ai/matrix-calculus/) — gradients and matrix derivatives used in neural networks
+  4. **library – eigen c++:** [eigen.tuxfamily.org](https://eigen.tuxfamily.org/dox/GettingStarted.html) — standard c++ linear algebra library for robotics, slam, and state estimation
 
-#### 2.2 calculus – analiz
+#### 2.2 calculus
 
-**temel konular:**
+**core topics:**
 
 - [x] limits and continuity
 - [x] differentiation
@@ -103,7 +103,7 @@ engineering curriculum, mathematical proofs, derivations, and curated resources 
 - [ ] differential calculus
 - [ ] integral calculus
 
-**ileri bağlantılar:**
+**advanced connections:**
 
 - [ ] backpropagation
 - [ ] gradient descent
@@ -112,22 +112,22 @@ engineering curriculum, mathematical proofs, derivations, and curated resources 
 - [ ] motion planning
 - [ ] continuous optimization
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **tr (türkçe kaynaklar):**
-  1. **buders boğaziçiliden özel ders – calculus 1 & calculus 2:** [youtube kanalı & listeler](https://www.youtube.com/@Buders) — limit, türev, integral, çok değişkenli fonksiyonlar, kısmi türev, gradyan ve jakobiyen matrisi
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **3blue1brown – essence of calculus:** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr) — **[ilk izlenecek]** türev, zincir kuralı (chain rule) ve taylor serilerinin görsel sezgisi
-  2. **mit 18.02 multivariable calculus (prof. denis auroux):** [youtube ders serisi](https://www.youtube.com/playlist?list=PL4C4C8A7D06566F38) — **[ana akademik ders]** 3b uzayda vektör kalkülüsü, gradyan, yönlü türev ve lagrange çarpanları
-  3. **mit 18.01 single variable calculus (prof. david jerison):** [youtube ders serisi](https://www.youtube.com/playlist?list=PL590CCC2BC5AF3BC1) — tek değişkenli analiz temelleri
-  4. **professor leonard – calculus 1, 2 & 3:** [youtube oynatma listeleri](https://www.youtube.com/@ProfessorLeonard/playlists) — konuyu sıfırdan bol soru çözümüyle pekiştirmek için en detaylı anlatım
-- **oku (kitap ve ders notları — önem sırasıyla):**
-  1. **mathematics for machine learning – bölüm 5 (vector calculus):** [mml-book.github.io (ücretsiz pdf)](https://mml-book.github.io/book/mml-book.pdf) — jacobian, hessian ve backpropagation matematiği
-  2. **paul’s online math notes (calculus i, ii, iii):** [tutorial.math.lamar.edu](https://tutorial.math.lamar.edu/) — adım adım çözümlü örneklerle yazılı başvuru kaynağı
+- **turkish resources:**
+  1. **buders – calculus 1 & calculus 2:** [youtube channel](https://www.youtube.com/@Buders) — turkish lectures on limits, derivatives, integrals, partial derivatives, gradients, and jacobians
+- **video lectures:**
+  1. **3blue1brown – essence of calculus:** [youtube playlist](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr) — visual intuition behind derivatives, chain rule, and taylor series
+  2. **mit 18.02 multivariable calculus (prof. denis auroux):** [youtube lecture series](https://www.youtube.com/playlist?list=PL4C4C8A7D06566F38) — 3d vector calculus, gradients, directional derivatives, and lagrange multipliers
+  3. **mit 18.01 single variable calculus (prof. david jerison):** [youtube lecture series](https://www.youtube.com/playlist?list=PL590CCC2BC5AF3BC1) — core single-variable calculus lectures
+  4. **professor leonard – calculus 1, 2 & 3:** [youtube playlists](https://www.youtube.com/@ProfessorLeonard/playlists) — step-by-step walkthroughs with lots of solved practice problems
+- **books, papers & repositories:**
+  1. **mathematics for machine learning – chapter 5 (vector calculus):** [mml-book.github.io (free pdf)](https://mml-book.github.io/book/mml-book.pdf) — jacobians, hessians, and backpropagation math
+  2. **paul’s online math notes (calculus i, ii, iii):** [tutorial.math.lamar.edu](https://tutorial.math.lamar.edu/) — written reference notes with worked step-by-step examples
 
-#### 2.3 probability & statistics – olasılık ve istatistik
+#### 2.3 probability & statistics
 
-**temel konular:**
+**core topics:**
 
 - [ ] probability theory
 - [ ] conditional probability
@@ -150,7 +150,7 @@ engineering curriculum, mathematical proofs, derivations, and curated resources 
 - [ ] bayesian statistics
 - [ ] monte carlo methods
 
-**ileri bağlantılar:**
+**advanced connections:**
 
 - [ ] kalman filter
 - [ ] bayesian filtering
@@ -160,22 +160,22 @@ engineering curriculum, mathematical proofs, derivations, and curated resources 
 - [ ] uncertainty estimation
 - [ ] sensor fusion
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **tr (türkçe kaynaklar):**
-  1. **buders boğaziçiliden özel ders:** [youtube kanalı oynatma listeleri (@buders5730)](https://www.youtube.com/@Buders) — koşullu olasılık, bayes teoremi ve dağılımlar (not: kanalda calculus ve lineer cebir ana listeleri doğrulanmıştır; olasılık ve istatistik başlıklarını kanal içinde aratarak kontrol et)
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **statquest with josh starmer – statistics & probability fundamentals:** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLblh5JKOoLUK0FLuzwntyYI10UQFUhsY9) — **[ilk izlenecek]** mle, map, kovaryans ve dağılımların en anlaşılır görsel anlatımı
-  2. **mit 6.041 probabilistic systems analysis and applied probability (prof. john tsitsiklis):** [youtube ders serisi](https://www.youtube.com/playlist?list=PLUl4u3cNGP60A3XMwZ5sep719_nh95qOe) — **[ana mühendislik dersi]** robotik, sensör gürültüsü ve durum kestirimi için olasılık temeli
-  3. **harvard stat 110 – probability (prof. joe blitzstein):** [youtube ders serisi](https://www.youtube.com/playlist?list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo) — derin olasılık teorisi, şartlı beklenti ve monte carlo yöntemleri
-- **oku (kitap ve interaktif kaynaklar — önem sırasıyla):**
-  1. **seeing theory (brown university):** [seeing-theory.brown.edu](https://seeing-theory.brown.edu/) — olasılık dağılımlarını ve bayes çıkarımını tarayıcıda interaktif deneyimleme
-  2. **probabilistic machine learning: an introduction (kevin murphy):** [probml.github.io/pml-book](https://probml.github.io/pml-book/book1.html) — **[başucu kitabı]** çok değişkenli gaussian, bayesci öğrenme ve belirsizlik kestirimi (ücretsiz pdf)
-  3. **think stats & think bayes (allen downey):** [greenteapress.com](https://greenteapress.com/wp/) — python kodu yazarak olasılık ve bayes filtreleme öğrenimi (ücretsiz)
+- **turkish resources:**
+  1. **buders – probability & statistics:** [youtube channel](https://www.youtube.com/@Buders) — turkish lectures on conditional probability, bayes theorem, and distributions
+- **video lectures:**
+  1. **statquest with josh starmer – statistics & probability fundamentals:** [youtube playlist](https://www.youtube.com/playlist?list=PLblh5JKOoLUK0FLuzwntyYI10UQFUhsY9) — clear visual guide to mle, map, covariance, and probability distributions
+  2. **mit 6.041 probabilistic systems analysis and applied probability (prof. john tsitsiklis):** [youtube lecture series](https://www.youtube.com/playlist?list=PLUl4u3cNGP60A3XMwZ5sep719_nh95qOe) — probability theory for robotics, sensor noise, and state estimation
+  3. **harvard stat 110 – probability (prof. joe blitzstein):** [youtube lecture series](https://www.youtube.com/playlist?list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo) — deep probability theory, conditional expectation, and monte carlo methods
+- **books, papers & repositories:**
+  1. **seeing theory (brown university):** [seeing-theory.brown.edu](https://seeing-theory.brown.edu/) — interactive browser visualizations for probability distributions and bayesian inference
+  2. **probabilistic machine learning: an introduction (kevin murphy):** [probml.github.io/pml-book](https://probml.github.io/pml-book/book1.html) — multivariate gaussians, bayesian learning, and uncertainty estimation (free pdf)
+  3. **think stats & think bayes (allen downey):** [greenteapress.com](https://greenteapress.com/wp/) — learn probability and bayesian filtering by writing python code (free)
 
-#### 2.4 differential equations – diferansiyel denklemler
+#### 2.4 differential equations
 
-**temel konular:**
+**core topics:**
 
 - [ ] ordinary differential equations (ode)
 - [ ] partial differential equations (pde)
@@ -187,30 +187,30 @@ engineering curriculum, mathematical proofs, derivations, and curated resources 
 - [ ] stability analysis
 - [ ] dynamical systems
 
-**nerede kullanılır?**
+**where it is used:**
 
-- [ ] robot hareket modelleri
-- [ ] fiziksel sistem simülasyonları
-- [ ] kontrol sistemleri
-- [ ] dinamik modelleme
-- [ ] hareket kestirimi
+- [ ] robot motion models
+- [ ] physical system simulations
+- [ ] control systems
+- [ ] dynamic modeling
+- [ ] motion estimation
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **tr (türkçe kaynaklar):**
-  1. **buders boğaziçiliden özel ders:** [youtube kanalı oynatma listeleri (@buders5730)](https://www.youtube.com/@Buders) — ode, başlangıç değer problemleri ve laplace dönüşümü (kanal içinde "diferansiyel denklemler" olarak arat)
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **3blue1brown – differential equations:** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLZHQObOWTQDNPOjrT6KVlfJuKtYTftqH6) — **[ilk izlenecek]** faz uzayı (phase space), kararlılık ve dinamik sistemlerin görsel sezgisi
-  2. **steve brunton – differential equations & dynamical systems:** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLMrJAkhIeNNTYaOnVI3QpH7jgULnAmvPA) — **[ana mühendislik dersi]** robot kinematiği, kontrol sistemleri ve doğrusal olmayan dinamikler için en iyi mühendislik serisi
-  3. **mit 18.03 differential equations (prof. arthur mattuck):** [youtube ders serisi](https://www.youtube.com/playlist?list=PL49CF3715CB9EF31D) — klasik mit diferansiyel denklemler müfredatı
-- **oku (kitap ve dokümanlar — önem sırasıyla):**
-  1. **data-driven science and engineering (brunton & kutz):** [databookuw.com](https://databookuw.com/) — dinamik sistemler, kontrol ve makine öğrenmesi kesişimi (ücretsiz ders materyalleri)
-  2. **paul’s online math notes – differential equations:** [tutorial.math.lamar.edu/classes/de/de.aspx](https://tutorial.math.lamar.edu/Classes/DE/DE.aspx) — pratik çözüm yöntemleri ve örnekler
-  3. **nonlinear dynamics and chaos (steven strogatz):** [kitap ve ders sayfası](https://www.youtube.com/playlist?list=PLbN57C5Zdl6j_qJA-pARJnKsmROzPnO9V) — doğrusal olmayan sistemler ve kararlılık analizi
+- **turkish resources:**
+  1. **buders – differential equations:** [youtube channel](https://www.youtube.com/@Buders) — turkish lectures on odes, initial value problems, and laplace transforms
+- **video lectures:**
+  1. **3blue1brown – differential equations:** [youtube playlist](https://www.youtube.com/playlist?list=PLZHQObOWTQDNPOjrT6KVlfJuKtYTftqH6) — visual intuition for phase space, stability, and dynamical systems
+  2. **steve brunton – differential equations & dynamical systems:** [youtube playlist](https://www.youtube.com/playlist?list=PLMrJAkhIeNNTYaOnVI3QpH7jgULnAmvPA) — practical engineering lectures for robot kinematics, control systems, and nonlinear dynamics
+  3. **mit 18.03 differential equations (prof. arthur mattuck):** [youtube lecture series](https://www.youtube.com/playlist?list=PL49CF3715CB9EF31D) — classic mit differential equations curriculum
+- **books, papers & repositories:**
+  1. **data-driven science and engineering (brunton & kutz):** [databookuw.com](https://databookuw.com/) — dynamical systems, control, and machine learning (free course materials)
+  2. **paul’s online math notes – differential equations:** [tutorial.math.lamar.edu/classes/de/de.aspx](https://tutorial.math.lamar.edu/Classes/DE/DE.aspx) — practical solution methods and worked examples
+  3. **nonlinear dynamics and chaos (steven strogatz):** [youtube playlist](https://www.youtube.com/playlist?list=PLbN57C5Zdl6j_qJA-pARJnKsmROzPnO9V) — nonlinear systems and stability analysis
 
-#### 2.5 optimization – optimizasyon
+#### 2.5 optimization
 
-**temel konular:**
+**core topics:**
 
 - [ ] convex optimization
 - [ ] nonlinear optimization
@@ -228,23 +228,23 @@ engineering curriculum, mathematical proofs, derivations, and curated resources 
 - [ ] gauss-newton
 - [ ] levenberg-marquardt
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **tr (türkçe kaynaklar):**
-  1. **itü / odtü sayısal optimizasyon açık ders notları:** [odtü ocw](https://ocw.metu.edu.tr/) — kısıtlı/kısıtsız optimizasyon, lagrange çarpanları ve kkt koşulları
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **cyrill stachniss – least squares, gauss-newton & levenberg-marquardt (slam dersleri):** [youtube ders videoları](https://www.youtube.com/results?search_query=cyrill+stachniss+least+squares+gauss+newton) — **[ilk izlenecek]** robotik, kamera kalibrasyonu ve slam'de doğrusal olmayan en küçük karelerin nasıl çalıştığını doğrudan anlatır
-  2. **stanford ee364a – convex optimization (prof. stephen boyd):** [youtube ders serisi](https://www.youtube.com/playlist?list=PL3940DD956CDF0622) — **[ana akademik ders]** konveks optimizasyon, qp, lagrange ve kkt için dünyadaki referans ders
-  3. **steve brunton – optimization bootcamp:** [youtube videoları](https://www.youtube.com/results?search_query=steve+brunton+optimization) — gradyan inişi ve mühendislik optimizasyonu özeti
-- **oku & repo (kitap, rehber ve kütüphaneler — önem sırasıyla):**
-  1. **ceres solver tutorial (non-linear least squares):** [ceres-solver.org/nnls_tutorial.html](https://github.com/ceres-solver/ceres-solver) — **[uygulamalı c++ kütüphanesi]** google'ın slam ve bundle adjustment için geliştirdiği c++ optimizasyon kütüphanesi
-  2. **convex optimization (boyd & vandenberghe):** [web.stanford.edu/~boyd/cvxbook](https://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf) — tam metin ücretsiz pdf kitap
-  3. **methods for non-linear least squares problems (madsen, nielsen, tingleff – dtu):** [ücretsiz pdf rehber](https://www2.imm.dtu.dk/pubdb/edoc/imm3215.pdf) — gauss-newton ve levenberg-marquardt algoritmalarının en net 60 sayfalık matematiksel türetimi
-  4. **numerical optimization (nocedal & wright):** [springer kitap sayfası](https://link.springer.com/book/10.1007/978-0-387-40065-5) — sayısal optimizasyon teorisi
+- **turkish resources:**
+  1. **itu / metu numerical optimization open courseware:** [metu ocw](https://ocw.metu.edu.tr/) — turkish/english course notes on constrained optimization, lagrange multipliers, and kkt conditions
+- **video lectures:**
+  1. **cyrill stachniss – least squares, gauss-newton & levenberg-marquardt:** [youtube lecture videos](https://www.youtube.com/results?search_query=cyrill+stachniss+least+squares+gauss+newton) — clear explanation of nonlinear least squares in robotics, camera calibration, and slam
+  2. **stanford ee364a – convex optimization (prof. stephen boyd):** [youtube lecture series](https://www.youtube.com/playlist?list=PL3940DD956CDF0622) — standard reference course for convex optimization, qp, lagrangian duality, and kkt
+  3. **steve brunton – optimization bootcamp:** [youtube videos](https://www.youtube.com/results?search_query=steve+brunton+optimization) — overview of gradient descent and engineering optimization
+- **books, papers & repositories:**
+  1. **ceres solver (non-linear least squares):** [github.com/ceres-solver/ceres-solver](https://github.com/ceres-solver/ceres-solver) — google's c++ optimization library built for slam and bundle adjustment
+  2. **convex optimization (boyd & vandenberghe):** [web.stanford.edu/~boyd/cvxbook](https://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf) — full textbook available as free pdf
+  3. **methods for non-linear least squares problems (madsen, nielsen, tingleff – dtu):** [free pdf guide](https://www2.imm.dtu.dk/pubdb/edoc/imm3215.pdf) — clean 60-page math derivation of gauss-newton and levenberg-marquardt
+  4. **numerical optimization (nocedal & wright):** [springer book page](https://link.springer.com/book/10.1007/978-0-387-40065-5) — core textbook on numerical optimization theory
 
-#### 2.6 numerical methods – sayısal yöntemler
+#### 2.6 numerical methods
 
-**temel konular:**
+**core topics:**
 
 - [ ] numerical integration
 - [ ] numerical differentiation
@@ -259,24 +259,22 @@ engineering curriculum, mathematical proofs, derivations, and curated resources 
 - [ ] euler methods
 - [ ] heun’s method
 
-**neden önemli?** matematiksel olarak tanımladığın bir sistemin bilgisayar üzerinde nasıl hesaplanacağını öğrenirsin.
+**resources:**
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+- **turkish resources:**
+  1. **buders – numerical analysis:** [youtube channel](https://www.youtube.com/@Buders) — turkish lectures on euler, runge-kutta (rk4), root finding, and numerical integration
+- **video lectures:**
+  1. **jeffrey chasnov – numerical methods for engineers (hkust):** [youtube playlist](https://www.youtube.com/playlist?list=PLkZjai-2Jcxn35XnijUtqqEg0Wi5Sn8ab) — rk4, ode solvers, and numerical stability for engineers
+  2. **mit 18.085 computational science and engineering (prof. gilbert strang):** [youtube lecture series](https://www.youtube.com/playlist?list=PL49CF3715CB9EF31D) — numerical linear algebra and differential equation solvers
+- **books, papers & repositories:**
+  1. **numerical computing with matlab (cleve moler):** [mathworks.com/moler/chapters.html](https://www.mathworks.com/moler/chapters.html) — free chapters on floating-point math, ode solvers, and svd
+  2. **what every computer scientist should know about floating-point arithmetic (david goldberg):** [free article (oracle docs)](https://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html) — essential read to understand fp32/fp16 precision loss and rounding errors in c++ and gpu code
+  3. **numerical linear algebra (trefethen & bau):** [siam book page](https://my.siam.org/Store/Product/viewproduct/?ProductId=950) — numerical stability and matrix algorithms
+  4. **conjugate gradient without the agonizing pain (jonathan richard shewchuk – cmu):** [cs.cmu.edu/~quake-papers/painless-conjugate-gradient.pdf](https://www.cs.cmu.edu/~quake-papers/painless-conjugate-gradient.pdf) — intuitive guide to the conjugate gradient method used for large sparse linear systems in slam (ceres/gtsam) and physics
 
-- **tr (türkçe kaynaklar):**
-  1. **buders boğaziçiliden özel ders:** [youtube kanalı oynatma listeleri (@buders5730)](https://www.youtube.com/@Buders) — euler, runge-kutta (rk4), kök bulma, interpolasyon ve sayısal türev/integral (kanal içinde "sayısal analiz" olarak arat)
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **jeffrey chasnov – numerical methods for engineers (hkust):** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLkZjai-2Jcxn35XnijUtqqEg0Wi5Sn8ab) — **[ilk izlenecek]** mühendisler için rk4, ode çözücüleri ve sayısal kararlılık
-  2. **mit 18.085 computational science and engineering (prof. gilbert strang):** [youtube ders serisi](https://www.youtube.com/playlist?list=PL49CF3715CB9EF31D) — sayısal lineer cebir ve diferansiyel denklem çözümleri
-- **oku (kitap ve makaleler — önem sırasıyla):**
-  1. **numerical computing with matlab (cleve moler):** [mathworks.com/moler/chapters.html](https://www.mathworks.com/moler/chapters.html) — ücretsiz okunabilir bölümler (kayan nokta aritmetiği, ode çözücüleri, svd)
-  2. **what every computer scientist should know about floating-point arithmetic (david goldberg):** [ücretsiz makale (oracle docs)](https://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html) — c++ ve gpu programlamada hassasiyet kaybı (fp32/fp16) ve yuvarlama hatalarını anlamak için zorunlu okuma
-  3. **numerical linear algebra (trefethen & bau):** [siam kitap sayfası](https://my.siam.org/Store/Product/viewproduct/?ProductId=950) — sayısal kararlılık ve matris algoritmaları
-  4. **conjugate gradient without the agonizing pain (jonathan richard shewchuk – cmu):** [cs.cmu.edu/~quake-papers/painless-conjugate-gradient.pdf](https://www.cs.cmu.edu/~quake-papers/painless-conjugate-gradient.pdf) — **[seyrek sistemler ve optimizasyon başyapıtı]** robotikte, slam'de (ceres/gtsam) ve fizikte büyük seyrek lineer denklem sistemlerini ve kuadratik optimizasyonu çözen konjüge gradyan (cg) yöntemini dünyada en berrak ve sezgisel anlatan kült doküman
+#### 2.7 other mathematics topics
 
-#### 2.7 diğer matematik alanları
-
-**temel konular:**
+**core topics:**
 
 - [ ] discrete mathematics
 - [ ] graph theory
@@ -292,25 +290,25 @@ engineering curriculum, mathematical proofs, derivations, and curated resources 
 - [ ] tensor algebra
 - [ ] lie groups and lie algebras ($so(3)$, $se(3)$)
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **tr (türkçe kaynaklar):**
-  1. **bilgisayar kavramları (şadi evren şeker) – ayrık matematik & graf teorisi:** [resmi site ve ders listesi (sadievrenseker.com)](https://sadievrenseker.com/) — kümeler, mantık, kombinatorik ve çizge (graf) kuramı temelleri
-  2. **buders boğaziçiliden özel ders:** [youtube kanalı oynatma listeleri (@buders5730)](https://www.youtube.com/@Buders) — üniversite düzeyi ayrık matematik konuları (kanal içinde "ayrık matematik" olarak arat)
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **mit 6.042j mathematics for computer science (prof. tom leighton):** [youtube ders serisi](https://www.youtube.com/playlist?list=PLB7540DEDD482705B) — **[ilk izlenecek]** bilgisayar bilimi için ispat yöntemleri, graf teorisi ve ayrık matematik
-  2. **william fiset – graph theory playlist:** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLDV1Zeh2NRsDGO4--qE8yH72HFL1Km93P) — algoritmalar ve yol planlama (path planning) öncesi en iyi görsel graf teorisi serisi
-  3. **brad osgood – the fourier transform and its applications (stanford ee261):** [youtube ders serisi](https://www.youtube.com/playlist?list=PLB24BC7956EE040CD) — görüntü işleme ve sinyal analizi için fourier dönüşümü
-  4. **mit 6.003 signals and systems (prof. dennis freeman):** [mit ocw / youtube serisi](https://www.youtube.com/playlist?list=PL41692B571DD0AF9B) — laplace ve z-dönüşümü, filtreleme ve frekans uzayı
-  5. **eigenchris – tensors for beginners & lie groups:** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLJHszsWbB6hrkmmq57lX8BV-o-YIOFsiG) — tensör cebiri ve diferansiyel geometri
-  6. **welch labs – imaginary numbers are real:** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLiaHhY2iBX9g6KIvZ_703G3KJXapKkNaF) — karmaşık sayıların görsel sezgisi
-- **oku (kitap ve makaleler — önem sırasıyla):**
-  1. **a micro lie theory for state estimation in robotics (joan solà et al.):** [arxiv:1812.01537 (ücretsiz pdf)](https://arxiv.org/pdf/1812.01537.pdf) — **[robotik & slam için zorunlu makale]** $so(3)$ ve $se(3)$ lie gruplarını mühendisler için en sade anlatan başucu makalesi
-  2. **lie groups for 2d and 3d transformations (ethan eade):** [ethaneade.com/lie.pdf](https://ethaneade.com/lie.pdf) — 3b dönüşüm matrisleri ve üstel haritalama (exponential map) el kitabı
-  3. **optimization on smooth manifolds (nicolas boumal):** [nicolasboumal.net/book](https://www.nicolasboumal.net/book/) — **[manifold optimizasyonunun kutsal kitabı]** lie grupları ($so(3), se(3)$), grassmannian ve riemann manifoldları üzerinde türev alma ve gradyan inişi (riemannian optimization) yapmanın dünyadaki 1 numaralı açık kaynak referans kitabı
-  4. **mathematics for computer science (lehman, leighton, meyer – mit):** [ücretsiz tam kitap pdf](https://courses.csail.mit.edu/6.042/spring18/mcs.pdf) — mit'nin resmi ayrık matematik ders kitabı
-  5. **the scientist and engineer's guide to digital signal processing (steven w. smith):** [dspguide.com](https://www.dspguide.com/pdfbook.htm) — sensör filtreleme ve dsp için ücretsiz pratik kitap
-  6. **information theory, inference, and learning algorithms (david mackay):** [inference.org.uk/itprnn/book.pdf](https://www.inference.org.uk/itprnn/book.pdf) — bilgi teorisi (entropi, kl-divergence) ve olasılıksal çıkarım
+- **turkish resources:**
+  1. **bilgisayar kavramları (şadi evren şeker) – discrete math & graph theory:** [sadievrenseker.com](https://sadievrenseker.com/) — turkish notes on sets, logic, combinatorics, and graph theory
+  2. **buders – discrete mathematics:** [youtube channel](https://www.youtube.com/@Buders) — university-level discrete math lectures in turkish
+- **video lectures:**
+  1. **mit 6.042j mathematics for computer science (prof. tom leighton):** [youtube lecture series](https://www.youtube.com/playlist?list=PLB7540DEDD482705B) — proof techniques, graph theory, and discrete math for computer science
+  2. **william fiset – graph theory playlist:** [youtube playlist](https://www.youtube.com/playlist?list=PLDV1Zeh2NRsDGO4--qE8yH72HFL1Km93P) — visual graph theory series before studying algorithms and path planning
+  3. **brad osgood – the fourier transform and its applications (stanford ee261):** [youtube lecture series](https://www.youtube.com/playlist?list=PLB24BC7956EE040CD) — fourier transforms for image processing and signal analysis
+  4. **mit 6.003 signals and systems (prof. dennis freeman):** [youtube lecture series](https://www.youtube.com/playlist?list=PL41692B571DD0AF9B) — laplace and z-transforms, filtering, and frequency domain
+  5. **eigenchris – tensors for beginners & lie groups:** [youtube playlist](https://www.youtube.com/playlist?list=PLJHszsWbB6hrkmmq57lX8BV-o-YIOFsiG) — tensor algebra and differential geometry
+  6. **welch labs – imaginary numbers are real:** [youtube playlist](https://www.youtube.com/playlist?list=PLiaHhY2iBX9g6KIvZ_703G3KJXapKkNaF) — visual intuition for complex numbers
+- **books, papers & repositories:**
+  1. **a micro lie theory for state estimation in robotics (joan solà et al.):** [arxiv:1812.01537 (free pdf)](https://arxiv.org/pdf/1812.01537.pdf) — clear practical paper explaining $so(3)$ and $se(3)$ lie groups for robotics and slam engineers
+  2. **lie groups for 2d and 3d transformations (ethan eade):** [ethaneade.com/lie.pdf](https://ethaneade.com/lie.pdf) — handbook on 3d transformation matrices and exponential maps
+  3. **optimization on smooth manifolds (nicolas boumal):** [nicolasboumal.net/book](https://www.nicolasboumal.net/book/) — open-source textbook on differentiation and gradient descent on lie groups ($so(3), se(3)$) and riemannian manifolds
+  4. **mathematics for computer science (lehman, leighton, meyer – mit):** [free pdf](https://courses.csail.mit.edu/6.042/spring18/mcs.pdf) — mit's official discrete mathematics textbook
+  5. **the scientist and engineer's guide to digital signal processing (steven w. smith):** [dspguide.com](https://www.dspguide.com/pdfbook.htm) — free practical book on sensor filtering and dsp
+  6. **information theory, inference, and learning algorithms (david mackay):** [inference.org.uk/itprnn/book.pdf](https://www.inference.org.uk/itprnn/book.pdf) — information theory (entropy, kl-divergence) and probabilistic inference
 
 ---
 
@@ -329,13 +327,13 @@ engineering curriculum, mathematical proofs, derivations, and curated resources 
 - [ ] monte carlo simulation
 - [ ] computational modeling
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **steve brunton – scientific computing & data-driven engineering in python:** [youtube kanalı](https://www.youtube.com/@Eigensteve) — bilimsel hesaplama, diferansiyel çözücüler, fft ve simülasyon
-- **oku & doküman (önem sırasıyla):**
-  1. **python scientific lecture notes (scipy lectures):** [scipy-lectures.org](https://scipy-lectures.org/) — **[ilk okunacak]** numpy iç yapısı (strides, broadcasting), scipy optimizasyon/entegrasyon ve hızlandırma rehberi
-  2. **jax official documentation (autograd and xla – google):** [jax.readthedocs.io/en/latest/quickstart.html](https://jax.readthedocs.io/en/latest/quickstart.html) — gpu/tpu üzerinde otomatik türev (`grad`), vektörizasyon (`vmap`) ve jit derleme (`jit`) ile ultra-hızlı bilimsel hesaplama ve robot simülasyonu (mujoco mjx)
+- **video lectures:**
+  1. **steve brunton – scientific computing & data-driven engineering in python:** [youtube channel](https://www.youtube.com/@Eigensteve) — scientific computing, ode solvers, fft, and simulation
+- **books, papers & repositories:**
+  1. **python scientific lecture notes (scipy lectures):** [scipy-lectures.org](https://scipy-lectures.org/) — free engineering guide covering numpy internals (strides, broadcasting), scipy optimization, and speedup techniques
+  2. **jax official documentation (autograd and xla – google):** [jax.readthedocs.io/en/latest/quickstart.html](https://jax.readthedocs.io/en/latest/quickstart.html) — autodiff (`grad`), vectorization (`vmap`), and jit compilation (`jit`) on gpu/tpu for fast scientific computing and mujoco mjx simulation
 
 #### 17.2 research methodology
 
@@ -352,14 +350,14 @@ engineering curriculum, mathematical proofs, derivations, and curated resources 
 - [ ] research writing (latex)
 - [ ] technical documentation
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **andrew ng (stanford cs230) – career advice & reading research papers:** [youtube videosu](https://www.youtube.com/watch?v=733m6qBH-jI) — **[ilk izlenecek]** bir ai makalesini 3 geçişte (three-pass method) nasıl okuyacağın ve literatür taramasını nasıl yapacağın
-  2. **overleaf official latex tutorials:** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLPN-43XehstNCE7EzhxX513R2qmjbwc8K) — akademik makale ve teknik rapor yazımı
-- **oku (zorunlu rehberler — önem sırasıyla):**
-  1. **how to read a paper (prof. s. keshav – university of waterloo):** [ccr.sigcomm.org/online/files/p83-keshava.pdf (ücretsiz 2 sayfalık pdf)](https://ccr.sigcomm.org/online/files/p83-keshavA.pdf) — **[zorunlu okuma]** makalelerde kaybolmadan çekirdek fikri ve matematiği çıkarma tekniği
-  2. **learn latex in 30 minutes (overleaf documentation):** [overleaf.com/learn/latex/learn_latex_in_30_minutes](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes) — denklem, algoritma bloğu ve kaynakça (bibtex) yazımı
+- **video lectures:**
+  1. **andrew ng (stanford cs230) – reading research papers:** [youtube video](https://www.youtube.com/watch?v=733m6qBH-jI) — how to read ai papers effectively and review literature
+  2. **overleaf official latex tutorials:** [youtube playlist](https://www.youtube.com/playlist?list=PLPN-43XehstNCE7EzhxX513R2qmjbwc8K) — writing technical reports and papers in latex
+- **books, papers & repositories:**
+  1. **how to read a paper (prof. s. keshav – university of waterloo):** [ccr.sigcomm.org/online/files/p83-keshava.pdf (free 2-page pdf)](https://ccr.sigcomm.org/online/files/p83-keshavA.pdf) — three-pass technique to extract core ideas and math from papers quickly
+  2. **learn latex in 30 minutes (overleaf documentation):** [overleaf.com/learn/latex/learn_latex_in_30_minutes](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes) — writing equations, algorithm blocks, and bibliographies (bibtex)
 
 #### 17.3 advanced research areas
 
@@ -376,14 +374,14 @@ engineering curriculum, mathematical proofs, derivations, and curated resources 
 - [ ] robust machine learning
 - [ ] uncertainty-aware ai
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **steve brunton – physics-informed machine learning (piml & pinns):** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLMrJAkhIeNNQ0BaKuBKY43k4xMo6NSbBa) — **[ilk izlenecek]** fizik yasalarını (diferansiyel denklemleri ve korunum yasalarını) doğrudan sinir ağının loss fonksiyonuna ve mimarisine gömme
-  2. **prof. michael bronstein (oxford) – geometric deep learning course:** [youtube ders serisi](https://www.youtube.com/playlist?list=PLn2-dEmQeTfSLXW8yXP4q_Ii58wFdxb3C) — **[ileri akademik ders]** simetriler, değişmezlik (equivariance/invariance), gruplar, graflar ve 3b manifoldlar üzerinde derin öğrenme
-- **oku (ücretsiz kitap ve proje sayfaları — önem sırasıyla):**
-  1. **geometric deep learning: grids, groups, graphs, geodesics, and gauges (bronstein, bruna, cohen, veličković):** [geometricdeeplearning.com (ücretsiz tam kitap pdf)](https://geometricdeeplearning.com/) — cnn, gnn ve transformer'ları tek bir geometrik çatı altında birleştiren başyapıt
-  2. **physics-informed neural networks – pinns (maziar raissi et al.):** [maziarraissi.github.io/pinns](https://maziarraissi.github.io/PINNs/) — fizik tabanlı derin öğrenme makale ve kodları
+- **video lectures:**
+  1. **steve brunton – physics-informed machine learning (piml & pinns):** [youtube playlist](https://www.youtube.com/playlist?list=PLMrJAkhIeNNQ0BaKuBKY43k4xMo6NSbBa) — embedding differential equations and physical laws into neural network losses and architectures
+  2. **prof. michael bronstein (oxford) – geometric deep learning course:** [youtube lecture series](https://www.youtube.com/playlist?list=PLn2-dEmQeTfSLXW8yXP4q_Ii58wFdxb3C) — deep learning on symmetries, equivariance, groups, graphs, and 3d manifolds
+- **books, papers & repositories:**
+  1. **geometric deep learning: grids, groups, graphs, geodesics, and gauges (bronstein, bruna, cohen, veličković):** [geometricdeeplearning.com (free pdf)](https://geometricdeeplearning.com/) — book unifying cnns, gnns, and transformers under one geometric framework
+  2. **physics-informed neural networks – pinns (maziar raissi et al.):** [maziarraissi.github.io/pinns](https://maziarraissi.github.io/PINNs/) — papers and code for physics-informed deep learning
 
 #### 17.4 graduate-level specializations
 
@@ -398,9 +396,9 @@ engineering curriculum, mathematical proofs, derivations, and curated resources 
 - [ ] embedded ai
 - [ ] computational imaging
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **oku & platformlar (akademik sıralama ve makale takibi — önem sırasıyla):**
-  1. **csrankings: computer science rankings (prof. emery berger):** [csrankings.org](https://csrankings.org/#/fromyear/2016/toyear/2026/index?ai&vision&mlmining&robotics&world) — **[akademik laboratuvar arama platformu]** abd, avrupa ve dünyadaki üniversiteleri doğrudan computer vision (cvpr/iccv), robotics (icra/iros/rss) ve ml (neurips/icml) yayın güçlerine göre filtreleyip hangi profesörün hangi laboratuvarı yönettiğini gösteren site
-  2. **arxiv computer science (robotics`cs.ro`& computer vision`cs.cv`):** [arxiv.org/list/cs.ro/recent](https://arxiv.org/list/cs.RO/recent) · [arxiv.org/list/cs.cv/recent](https://arxiv.org/list/cs.CV/recent) — günlük yeni araştırmaları takip etme
-  3. **hugging face daily papers & connected papers:** [huggingface.co/papers](https://huggingface.co/papers) · [connectedpapers.com](https://www.connectedpapers.com/) —  bir araştırma konusundaki en etkili makalelerin atıf ağacını görsel olarak çıkarma
+- **books, papers & repositories:**
+  1. **csrankings (prof. emery berger):** [csrankings.org](https://csrankings.org/#/fromyear/2016/toyear/2026/index?ai&vision&mlmining&robotics&world) — tool to find universities and research labs by cvpr, icra, iros, and neurips publication output
+  2. **arxiv computer science (`cs.ro` & `cs.cv`):** [arxiv.org/list/cs.ro/recent](https://arxiv.org/list/cs.RO/recent) · [arxiv.org/list/cs.cv/recent](https://arxiv.org/list/cs.CV/recent) — daily robotics and computer vision preprints
+  3. **hugging face daily papers & connected papers:** [huggingface.co/papers](https://huggingface.co/papers) · [connectedpapers.com](https://www.connectedpapers.com/) — visual citation graphs and trending ai papers

@@ -26,7 +26,7 @@ engineering curriculum, mathematical modeling, middleware, physical ai, robotics
 
 ## complete checklist and resources
 
-### 01. robotics – robotik
+### 01. robotics
 
 #### 8.1 robotics fundamentals
 
@@ -44,14 +44,14 @@ engineering curriculum, mathematical modeling, middleware, physical ai, robotics
 - [ ] workspace
 - [ ] manipulators
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **kevin lynch – modern robotics: mechanics, planning, and control (northwestern university):** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLggLP4f-rq02vX0OQQ5vrCxbJrzamYDfx) — **[ilk izlenecek – temel akademik ders]** vida teorisi (screw theory), konfigürasyon uzayı ve modern robotik matematiği
-  2. **eth zürich – autonomous mobile robots (prof. roland siegwart):** [youtube ders serisi](https://www.youtube.com/playlist?list=PLpUPoM7Rgzi_7YWn14Va2FODh7LzADBSm) — **[mobil robotik & otonomi dersi]** tekerlekli/uçan mobil robotlarda algılama, kinematik, lokalizasyon ve planlamayı birleştiren üniversite dersi
-- **oku (ücretsiz başucu kitapları — önem sırasıyla):**
-  1. **modern robotics: mechanics, planning, and control (kevin m. lynch & frank c. park):** [modernrobotics.org (ücretsiz tam kitap pdf & kodlar)](http://hades.mech.northwestern.edu/images/7/7f/MR.pdf) — python/matlab/c++ kütüphanesi (`modernrobotics`) ile birlikte gelen modern ders kitabı
-  2. **introduction to robotics: mechanics and control (john j. craig):** [kitap sayfası](https://www.pearson.com/en-us/subject-catalog/p/introduction-to-robotics-mechanics-and-control/P200000003304) — klasik robotik mekaniği referansı
+- **video lectures:**
+  1. **kevin lynch – modern robotics (northwestern university):** [youtube playlist](https://www.youtube.com/playlist?list=PLggLP4f-rq02vX0OQQ5vrCxbJrzamYDfx) — screw theory, configuration spaces, and modern robotics math
+  2. **eth zürich – autonomous mobile robots (roland siegwart):** [youtube lecture series](https://www.youtube.com/playlist?list=PLpUPoM7Rgzi_7YWn14Va2FODh7LzADBSm) — mobile robotics lectures covering perception, kinematics, localization, and planning
+- **books, papers & repositories:**
+  1. **modern robotics: mechanics, planning, and control (lynch & park):** [free pdf](http://hades.mech.northwestern.edu/images/7/7f/MR.pdf) — textbook paired with python/matlab/c++ robotics libraries
+  2. **introduction to robotics (john j. craig):** [book page](https://www.pearson.com/en-us/subject-catalog/p/introduction-to-robotics-mechanics-and-control/P200000003304) — classic textbook on robot mechanics and control
 
 #### 8.2 robot kinematics
 
@@ -64,14 +64,14 @@ engineering curriculum, mathematical modeling, middleware, physical ai, robotics
 - [ ] singularities
 - [ ] redundant manipulators
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **angela sodemann (robogrok) – robot kinematics & denavit-hartenberg (d-h) frames:** [youtube kanalı](https://www.youtube.com/@asodemann3) & [arama bağlantısı](https://www.youtube.com/results?search_query=angela+sodemann+robotics+kinematics) — **[ilk izlenecek]** homojen dönüşüm matrisleri, d-h tablosu çıkarma ve ileri/ters kinematiği en sezgisel anlatan pratik seri
-  2. **kevin lynch – modern robotics chapters 4, 5 & 6 (forward/inverse kinematics & velocity jacobian):** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLggLP4f-rq02vX0OQQ5vrCxbJrzamYDfx) — **[ana akademik ders]** uzaysal hız (twist), jacobian matrisi ve tekillik (singularity) analizi
-- **oku (kitaplar — önem sırasıyla):**
-  1. **modern robotics – bölüm 4 (forward kinematics), bölüm 5 (velocity kinematics and statics) & bölüm 6 (inverse kinematics):** [ücretsiz kitap pdf](http://hades.mech.northwestern.edu/images/7/7f/MR.pdf)
-  2. **robot modeling and control (mark w. spong, seth hutchinson, m. vidyasagar):** [kitap sayfası](https://www.wiley.com/en-us/Robot+Modeling+and+Control%2C+2nd+Edition-p-9781119523994) — klasik d-h parametrizasyonu ve jakobiyen türetimleri için standart kaynak
+- **video lectures:**
+  1. **angela sodemann (robogrok) – robot kinematics & dh frames:** [youtube channel](https://www.youtube.com/@asodemann3) & [youtube search](https://www.youtube.com/results?search_query=angela+sodemann+robotics+kinematics) — step-by-step tutorials on homogeneous transforms, dh tables, and forward/inverse kinematics
+  2. **kevin lynch – modern robotics ch. 4–6:** [youtube playlist](https://www.youtube.com/playlist?list=PLggLP4f-rq02vX0OQQ5vrCxbJrzamYDfx) — twists, velocity jacobians, and singularity analysis
+- **books, papers & repositories:**
+  1. **modern robotics – chapters 4, 5 & 6:** [free pdf](http://hades.mech.northwestern.edu/images/7/7f/MR.pdf) — forward kinematics, velocity jacobians, and inverse kinematics
+  2. **robot modeling and control (spong, hutchinson, vidyasagar):** [book page](https://www.wiley.com/en-us/Robot+Modeling+and+Control%2C+2nd+Edition-p-9781119523994) — classic textbook for dh parameterization and jacobian derivations
 
 #### 8.3 robot dynamics
 
@@ -83,19 +83,19 @@ engineering curriculum, mathematical modeling, middleware, physical ai, robotics
 - [ ] dynamic modeling
 - [ ] contact dynamics
 - [ ] actuator dynamics
-- [ ] fixed-wing & aerodynamic dynamics (sabit kanat iha uçuş dinamiği)
+- [ ] fixed-wing & aerodynamic dynamics
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **kevin lynch – modern robotics chapter 8 (dynamics of open chains):** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLggLP4f-rq02vX0OQQ5vrCxbJrzamYDfx) — **[ilk izlenecek]** lagrange ve newton-euler formülasyonları, kütle/atalet matrisi ($m(\theta)$) ve coriolis kuvvetleri
-  2. **mit 6.832 – underactuated robotics (prof. russ tedrake):** [youtube tam dönem ders serisi](https://www.youtube.com/playlist?list=PLkx8KyIQkMfU5szP43GlE_S1QGSPQfL9s) — **[dünya zirvesi]** iha'lar, dört ayaklı/insansı robotlar ve doğrusal olmayan dinamik sistemlerin modellemesi
-  3. **steve brunton – lagrangian mechanics & robot dynamics:** [youtube videoları](https://www.youtube.com/results?search_query=steve+brunton+lagrangian+dynamics) — analitik mekanik özeti
-- **oku & kütüphane (kitap ve c++ dinamik motorları — önem sırasıyla):**
-  1. **modern robotics – bölüm 8 (dynamics of open chains):** [ücretsiz kitap pdf](http://hades.mech.northwestern.edu/images/7/7f/MR.pdf)
-  2. **rigid body dynamics algorithms (roy featherstone):** [springer kitap sayfası](https://link.springer.com/book/10.1007/978-1-4899-7560-7) — yüksek hızlı robotik simülatörlerin (mujoco, pinocchio, drake) arkasındaki algoritmalar
-  3. **repo – stack-of-tasks/pinocchio:** [github.com/stack-of-tasks/pinocchio](https://github.com/stack-of-tasks/pinocchio) — c++ ve python ile mikro-saniye seviyesinde rijit gövde dinamiği ve kinematiği hesaplayan endüstriyel kütüphane
-  4. **small unmanned aircraft: theory and practice (randy beard & tim mclain – princeton university press):** [kitap bilgisi (press.princeton.edu)](https://press.princeton.edu/books/hardcover/9780691149219/small-unmanned-aircraft) & [resmi python simülatörü (byu-magicc/mavsim_public)](https://github.com/byu-magicc/mavsim_public) — **[sabit kanatlı iha uçuş dinamiğinin kutsal kitabı]** byu magicc laboratuvarının geliştirdiği; koordinat çerçeveleri (gövde, rüzgar, ned), aerodinamik kuvvet ve momentler, 12 durum değişkenli 6-dof rijit gövde dinamiği, ardışık döngü kapatmalı otopilot ve ekf durum kestirimi içeren dünya çapındaki 1 numaralı referans ders kitabı ve 1k+ yıldızlı resmi python simülatörü
+- **video lectures:**
+  1. **kevin lynch – modern robotics ch. 8 (dynamics of open chains):** [youtube playlist](https://www.youtube.com/playlist?list=PLggLP4f-rq02vX0OQQ5vrCxbJrzamYDfx) — lagrangian and newton-euler equations, inertia matrices $m(\theta)$, and coriolis forces
+  2. **mit 6.832 – underactuated robotics (russ tedrake):** [youtube lecture series](https://www.youtube.com/playlist?list=PLkx8KyIQkMfU5szP43GlE_S1QGSPQfL9s) — modeling nonlinear dynamics for uavs, legged robots, and manipulators
+  3. **steve brunton – lagrangian mechanics & robot dynamics:** [youtube search](https://www.youtube.com/results?search_query=steve+brunton+lagrangian+dynamics) — concise overview of analytical mechanics
+- **books, papers & repositories:**
+  1. **modern robotics – chapter 8 (dynamics of open chains):** [free pdf](http://hades.mech.northwestern.edu/images/7/7f/MR.pdf)
+  2. **rigid body dynamics algorithms (roy featherstone):** [book page](https://link.springer.com/book/10.1007/978-1-4899-7560-7) — algorithms powering physics engines like mujoco, pinocchio, and drake
+  3. **stack-of-tasks/pinocchio:** [github repo](https://github.com/stack-of-tasks/pinocchio) — fast c++ library computing rigid-body kinematics and dynamics in microseconds
+  4. **small unmanned aircraft (beard & mclain):** [book info](https://press.princeton.edu/books/hardcover/9780691149219/small-unmanned-aircraft) & [python simulator](https://github.com/byu-magicc/mavsim_public) — core uav textbook covering coordinate frames, aerodynamics, 12-state 6-dof dynamics, and autopilot loops
 
 #### 8.4 robot operating system (ros / ros 2)
 
@@ -117,24 +117,24 @@ engineering curriculum, mathematical modeling, middleware, physical ai, robotics
 - [ ] ros 2 control
 - [ ] navigation stack (nav2)
 - [ ] moveit 2
-- [ ] plotjuggler & gerçek zamanlı telemetri analizi
+- [ ] plotjuggler & real-time telemetry analysis
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **tr (türkçe kaynaklar):**
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **articulated robotics (josh newans) – ros 2 complete guide & building a mobile robot:** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLunhqkrRNRhYAffV8JDiFOatQXuU-NnxT) — **[ilk izlenecek – uygulamalı ros 2 serisi]** sıfırdan urdf, tf2, `ros2_control`, gazebo, lidar/kamera ve nav2 ile otonom robot kurmayı öğreten kapsamlı seri
-  2. **the construct – ros 2 tutorials (c++ & python):** [youtube kanalı](https://www.youtube.com/@TheConstruct) — lifecycle nodes, dds, qos profilleri ve endüstriyel ros 2 pratikleri
-- **oku & repo (resmi doküman ve endüstriyel kodlar — önem sırasıyla):**
-  1. **ros 2 official documentation (güncel lts: lyrical luth — mayıs 2026 – mayıs 2031):** [docs.ros.org/en/lyrical](https://docs.ros.org/en/lyrical/) & [release schedule](https://docs.ros.org/en/lyrical/The-ROS2-Project/Release-Schedule.html) — **[resmi kurulum ve api referansı]** güncel lts sürümü mayıs 2026 çıkışlı **lyrical luth**'tur. eski sürümlerle (humble/jazzy) çekilmiş videolardan kavramları öğrenebilirsin ama kurulum ve c++ (`rclcpp`) / python (`rclpy`) geliştirme için lyrical dokümanını kullan
-  2. **nav2 (ros 2 navigation stack) official documentation & repo:** [docs.nav2.org](https://docs.nav2.org/) & [github.com/ros-planning/navigation2](https://github.com/ros-planning/navigation2) — **[otonom mobil robotların kalbi]** haritalama, lokalizasyon (amcl), maliyet haritaları (costmaps) ve behavior tree tabanlı navigasyon c++ kodu
-  3. **moveit 2 (robotic manipulation framework):** [moveit.picknik.ai](https://moveit.picknik.ai/main/index.html) & [github.com/moveit/moveit2](https://github.com/moveit/moveit2) — robot kolları ve manipülatörler için hareket planlama yığını
-  4. **plotjuggler: fast & intuitive time series visualizer (davide faconti):** [plotjuggler.io](https://www.plotjuggler.io/) & [github repo (plotjuggler/plotjuggler)](https://github.com/PlotJuggler/PlotJuggler) — **[robot telemetri & rosbag analiz standardı]** gerçek zamanlı ros/ros 2 topic verilerini, udp akışlarını ve kaydedilmiş rosbag (.db3 / .bag) dosyalarını anında görselleştiren; motor hızları, kontrolcü hataları ve sensör verilerini lua fonksiyonlarıyla canlı analiz etmeyi sağlayan, opengl hızlandırmalı 4.6k+ yıldızlı vazgeçilmez robotik hata ayıklama aracı
+- **turkish resources:**
+- **video lectures:**
+  1. **articulated robotics (josh newans) – ros 2 guide:** [youtube playlist](https://www.youtube.com/playlist?list=PLunhqkrRNRhYAffV8JDiFOatQXuU-NnxT) — practical step-by-step series building a robot with urdf, tf2, `ros2_control`, gazebo, and nav2
+  2. **the construct – ros 2 tutorials (c++ & python):** [youtube channel](https://www.youtube.com/@TheConstruct) — tutorials on lifecycle nodes, dds, qos profiles, and ros 2 patterns
+- **books, papers & repositories:**
+  1. **ros 2 official documentation (lyrical luth lts):** [docs.ros.org](https://docs.ros.org/en/lyrical/) & [release schedule](https://docs.ros.org/en/lyrical/The-ROS2-Project/Release-Schedule.html) — official installation and c++ (`rclcpp`) / python (`rclpy`) api reference
+  2. **nav2 (ros 2 navigation stack):** [docs.nav2.org](https://docs.nav2.org/) & [github repo](https://github.com/ros-planning/navigation2) — mapping, localization (amcl), costmaps, and behavior tree navigation in c++
+  3. **moveit 2:** [moveit.picknik.ai](https://moveit.picknik.ai/main/index.html) & [github repo](https://github.com/moveit/moveit2) — standard motion planning stack for robot arms and manipulators
+  4. **plotjuggler (davide faconti):** [plotjuggler.io](https://www.plotjuggler.io/) & [github repo](https://github.com/PlotJuggler/PlotJuggler) — fast opengl visualizer for ros topics, udp telemetry streams, and rosbag debugging
 
 #### 8.5 robot simulation
 
 - [ ] gazebo / gazebo sim (ignition)
-- [ ] nvidia isaac sim & isaaclab (gpu-paralel robotik simülasyonu)
+- [ ] nvidia isaac sim & isaaclab (gpu-parallel robot simulation)
 - [ ] mujoco
 - [ ] webots
 - [ ] pybullet
@@ -144,26 +144,26 @@ engineering curriculum, mathematical modeling, middleware, physical ai, robotics
 - [ ] sensor simulation
 - [ ] hardware-in-the-loop (hil)
 - [ ] software-in-the-loop (sitl)
-- [ ] flightmare & iha/dron simülasyonu
-- [ ] rotors & gazebo mav simülasyonu
-- [ ] aerial gym simulator & gpu-paralel hava robotiği
-- [ ] drake (mit csail) & matematiksel simülasyon
+- [ ] flightmare & uav simulation
+- [ ] rotors & gazebo mav simulation
+- [ ] aerial gym simulator & gpu-parallel aerial robotics
+- [ ] drake (mit csail) & mathematical simulation
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **articulated robotics – simulating a robot with gazebo & ros 2:** [youtube videosu](https://www.youtube.com/watch?v=laWn7_cj434) — **[ilk izlenecek]** urdf/xacro modeline fizik, kamera ve lidar ekleyip gazebo'da sürme
-  2. **nvidia developer – nvidia isaac sim & isaac ros tutorials:** [youtube oynatma listesi](https://www.youtube.com/results?search_query=nvidia+isaac+sim+tutorial+ros2) — **[fotogerçekçi gpu simülasyonu]** ray-tracing tabanlı sensör simülasyonu, sentetik veri üretimi ve donanım hızlandırmalı robotik
-- **oku & simülatör dokümanları (önem sırasıyla):**
-  1. **gazebo sim (modern ignition gazebo) official docs:** [gazebosim.org/docs](https://gazebosim.org/docs) — ros 2 ile entegre açık kaynak fizik ve sensör simülatörü
-  2. **nvidia isaac sim & isaaclab (nvidia & eth zürich):** [isaac-sim.github.io/isaaclab](https://isaac-sim.github.io/IsaacLab/) & [github (isaac-sim/isaaclab)](https://github.com/isaac-sim/IsaacLab) — **[gpu-paralel robot öğrenmesi standartı]** tek bir gpu üzerinde binlerce robotu eşzamanlı simüle ederek insansı ve bacaklı robotlara dakikalar içinde yürüme ve manipülasyon politikaları eğiten 8.6k+ yıldızlı resmi simülasyon ve rl çerçevesi
-  3. **mujoco (multi-joint dynamics with contact – deepmind):** [mujoco.readthedocs.io](https://mujoco.readthedocs.io/en/stable/overview.html) & [github.com/google-deepmind/mujoco](https://github.com/google-deepmind/mujoco) — robot öğrenmesi (rl) ve temas dinamiği için dünyanın en hızlı c/c++ fizik motoru
-  4. **px4 & ardupilot sitl (software-in-the-loop) simulation guides:** [docs.px4.io/main/en/simulation](https://docs.px4.io/main/en/simulation/) · [ardupilot sitl (ardupilot.org)](https://ardupilot.org/dev/docs/sitl-simulator-software-in-the-loop.html) — iha ve otonom araç algoritmalarını (copter, plane, vtol, rover) gerçek uçuş öncesi gazebo, jsbsim ve ros üzerinde donanımsız simüle edip test etme
-  5. **luckyengine & luckyrobots (mujoco robotik simülatörü):** [luckyrobots (github)](https://github.com/luckyrobots/luckyrobots) & [luckyrobots.readthedocs.io](https://luckyrobots.readthedocs.io) — mujoco fizik motorunu grpc ile python'a bağlayan; robot manipülatörleri, dört bacaklı (unitree go2) ve insansı (g1) robotlar için gymnasium (`luckyenv`) rl arayüzü sunan yeni nesil simülasyon ortamı
-  6. **flightmare: flexible quadrotor simulator (uzh rpg – corl):** [flightmare.bitbucket.io](https://github.com/uzh-rpg/flightmare) & [github repo (uzh-rpg/flightmare)](https://github.com/uzh-rpg/flightmare) — **[otonom iha & dron yarışı simülatörü]** davide scaramuzza ekibinin geliştirdiği; saniyede yüzbinlerce adım simüle eden ultra hızlı c++ çok rotorlu aerodinamik motoru ile unity fotogerçekçi render motorunu ayıran, otonom iha'lara takviyeli öğrenme (rl) ile çevik uçuş ve engelden kaçma öğreten açık kaynak simülatör
-  7. **rotors: modular gazebo mav simulator (eth zürich asl – springer):** [github repo (ethz-asl/rotors_simulator)](https://github.com/ethz-asl/rotors_simulator) & [wiki](https://github.com/ethz-asl/rotors_simulator/wiki) — **[ros & gazebo çok rotorlu iha simülasyonu standartı]** prof. roland siegwart ekibinin geliştirdiği; asctec firefly ve hummingbird gibi çok rotorlu iha modelleri, gerçekçi imu gürültü modelleri, stereo/kamera/lidar sensör simülasyonları ve se(3) geometrik uçuş kontrolcüleri (lee controller) sunan 1.5k+ yıldızlı gazebo/ros simülatör çerçevesi
-  8. **aerial gym simulator (ntnu arl & nvidia isaac gym):** [github repo (ntnu-arl/aerial_gym_simulator)](https://github.com/ntnu-arl/aerial_gym_simulator) & [aerialgym.com](https://aerialgym.com/) — **[gpu-paralel uçan robotik & rl simülasyonu]** prof. kostas alexis ekibinin geliştirdiği; nvidia isaac gym üzerinde tek bir gpu'da on binlerce iha'yı eşzamanlı simüle eden, derin pekiştirmeli öğrenme (rl) ile aerodinamik etkiler altında çevik uçuş, engelden kaçma ve görsel navigasyon politikaları eğiten 780+ yıldızlı yüksek başarımlı simülasyon çerçevesi
-  9. **drake: model-based design and verification for robotics (mit csail – robotlocomotion):** [drake.mit.edu](https://drake.mit.edu/) & [github repo (robotlocomotion/drake)](https://github.com/RobotLocomotion/drake) — **[matematiksel robotik simülasyonu & yörünge optimizasyonu]** prof. russ tedrake ekibinin geliştirdiği; c++ ile yazılmış, kinematik, temas dinamiği, doğrusal olmayan optimizasyon (snopt, ipopt), lqr ve lyapunov kararlılık analizi sunan, humanoid ve manipülatör sistemleri için 4.3k+ yıldızlı mit csail simülasyon ve kontrol motoru
+- **video lectures:**
+  1. **articulated robotics – simulating a robot with gazebo & ros 2:** [youtube video](https://www.youtube.com/watch?v=laWn7_cj434) — adding physics, cameras, and lidar to urdf/xacro models in gazebo
+  2. **nvidia developer – isaac sim & isaac ros:** [youtube search](https://www.youtube.com/results?search_query=nvidia+isaac+sim+tutorial+ros2) — ray-traced sensor simulation, synthetic data, and gpu-accelerated robotics
+- **books, papers & repositories:**
+  1. **gazebo sim official docs:** [gazebosim.org/docs](https://gazebosim.org/docs) — open-source physics and sensor simulator integrated with ros 2
+  2. **nvidia isaac sim & isaaclab:** [docs](https://isaac-sim.github.io/IsaacLab/) & [github repo](https://github.com/isaac-sim/IsaacLab) — gpu-parallel simulation framework training thousands of robots simultaneously with rl
+  3. **mujoco (deepmind):** [docs](https://mujoco.readthedocs.io/en/stable/overview.html) & [github repo](https://github.com/google-deepmind/mujoco) — fast c/c++ physics engine for contact dynamics and robot learning
+  4. **px4 & ardupilot sitl simulation guides:** [px4 simulation](https://docs.px4.io/main/en/simulation/) · [ardupilot sitl](https://ardupilot.org/dev/docs/sitl-simulator-software-in-the-loop.html) — testing flight stacks in gazebo/jsbsim without physical hardware
+  5. **luckyengine & luckyrobots:** [github repo](https://github.com/luckyrobots/luckyrobots) & [docs](https://luckyrobots.readthedocs.io) — mujoco simulator with grpc python sdk and gymnasium interface for legged/humanoid robots
+  6. **flightmare (uzh rpg):** [github repo](https://github.com/uzh-rpg/flightmare) — high-speed c++ quadrotor aerodynamics combined with photorealistic unity rendering for agile rl drone flight
+  7. **rotors gazebo mav simulator (eth zürich):** [github repo](https://github.com/ethz-asl/rotors_simulator) & [wiki](https://github.com/ethz-asl/rotors_simulator/wiki) — modular gazebo multirotor models with realistic imu noise, sensors, and lee se(3) controller
+  8. **aerial gym simulator (ntnu arl):** [github repo](https://github.com/ntnu-arl/aerial_gym_simulator) & [aerialgym.com](https://aerialgym.com/) — simulates thousands of multirotors in parallel on one gpu for aerial rl navigation
+  9. **drake (mit csail):** [drake.mit.edu](https://drake.mit.edu/) & [github repo](https://github.com/RobotLocomotion/drake) — c++ modeling, contact dynamics, trajectory optimization, lqr, and lyapunov control toolbox
 
 #### 8.6 robot perception
 
@@ -177,21 +177,21 @@ engineering curriculum, mathematical modeling, middleware, physical ai, robotics
 - [ ] semantic segmentation
 - [ ] scene understanding
 - [ ] occupancy mapping
-- [ ] 2.5d elevation mapping & traversability (gpu-hızlandırmalı yükseklik haritalama)
-- [ ] doğrudan kamera-lidar dışsal kalibrasyonu (direct_visual_lidar_calibration)
+- [ ] 2.5d elevation mapping & traversability (gpu-accelerated)
+- [ ] direct targetless camera-lidar extrinsic calibration
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **cyrill stachniss – mobile sensing and robotics (kamera, lidar & 3b doluluk haritaları):** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLgnQpQtFTOGQrZ4O5QzbIHgl3b1JHimN_) — **[ilk izlenecek]** lidar nokta bulutu işleme, octomap / occupancy grid mapping ve sensör kalibrasyonu
-  2. **eth zürich – autonomous mobile robots (perception & mapping lectures – prof. roland siegwart):** [youtube ders serisi](https://www.youtube.com/playlist?list=PLpUPoM7Rgzi_7YWn14Va2FODh7LzADBSm) — mobil robotlarda görsel ve lazer tabanlı algılama hattı
-- **oku & repo (endüstriyel algılama yığınları — önem sırasıyla):**
-  1. **autoware universe perception stack documentation:** [autowarefoundation.github.io/autoware-documentation/main/design/autoware-architecture/perception](https://autowarefoundation.github.io/autoware-documentation/main/) & [github repo](https://github.com/autowarefoundation/autoware.universe) — **[gerçek otonom araç mimarisini incele]** kamera-lidar-radar füzyonu, 3b nesne tespiti (centerpoint) ve doluluk haritalarının ros 2 c++ ile nasıl kurulduğunu gösteren açık kaynak sistem
-  2. **nvidia isaac ros perception packages (nitros):** [nvidia-isaac-ros.github.io](https://nvidia-isaac-ros.github.io/) — gpu/tensorrt hızlandırmalı ros 2 algılama, derinlik ve visual slam düğümleri
-  3. **repo –ethz-asl/kalibr:** [github.com/ethz-asl/kalibr](https://github.com/ethz-asl/kalibr) — çoklu kamera ve kamera-imu dışsal (extrinsic) kalibrasyonu için standart açık kaynak araç kutusu
-  4. **elevation_mapping_cupy: gpu-accelerated 2.5d elevation mapping (eth zürich rsl – iros):** [github repo (leggedrobotics/elevation_mapping_cupy)](https://github.com/leggedrobotics/elevation_mapping_cupy) & [dokümantasyon](https://leggedrobotics.github.io/elevation_mapping_cupy/) — **[bacaklı robotlar için gpu yükseklik ve geçilebilirlik haritalaması]** anymal robotunu geliştiren eth zürih ekibinin geliştirdiği; engebeli arazilerde, merdivenlerde ve doğada bacaklı ve tekerlekli robotların güvenle basabileceği yüzeyleri (footholds) ve yüzey normallerini nvidia gpu (cupy) üzerinde 50+ hz gerçek zamanlı hesaplayan 1.1k+ yıldızlı 2.5b haritalama paketi
-  5. **wavemap: real-time 3d multi-resolution occupancy mapping (eth zürich asl – rss / ieee t-ro):** [github repo (ethz-asl/wavemap)](https://github.com/ethz-asl/wavemap) & [makale (arxiv:2304.14813)](https://arxiv.org/abs/2304.14813) — **[3b hacimsel doluluk haritalama standartı]** prof. roland siegwart ekibinin geliştirdiği; klasik octomap'in ışın izleme (raycasting) gecikmesini ve ayrıklaştırma hatalarını dalgacık (wavelet) sıkıştırmasıyla aşan, lidar ve derinlik kameraları için çok çözünürlüklü ve ultra hafif 3b doluluk/çarpışma haritaları üreten açık kaynak c++ haritalama motoru
-  6. **direct_visual_lidar_calibration: targetless lidar-camera extrinsic calibration (kenji koide – aist):** [github repo (koide3/direct_visual_lidar_calibration)](https://github.com/koide3/direct_visual_lidar_calibration) — **[hedefsiz kamera-lidar kalibrasyon standardı]** kamera ile lidar arasındaki dışsal (extrinsic) rotasyon ve öteleme parametrelerini, dama tahtası veya hedef plaka gerektirmeden doğrudan ortamın kenar ve düzlem özellikleri üzerinden milimetrik hassasiyetle hesaplayan endüstri standardı c++/ros 2 kalibrasyon aracı
+- **video lectures:**
+  1. **cyrill stachniss – mobile sensing and robotics:** [youtube playlist](https://www.youtube.com/playlist?list=PLgnQpQtFTOGQrZ4O5QzbIHgl3b1JHimN_) — lidar processing, octomap occupancy grid mapping, and sensor calibration
+  2. **eth zürich – autonomous mobile robots (perception & mapping):** [youtube lecture series](https://www.youtube.com/playlist?list=PLpUPoM7Rgzi_7YWn14Va2FODh7LzADBSm) — visual and laser perception pipelines for mobile robots
+- **books, papers & repositories:**
+  1. **autoware universe perception stack:** [docs](https://autowarefoundation.github.io/autoware-documentation/main/) & [github repo](https://github.com/autowarefoundation/autoware.universe) — ros 2 c++ camera-lidar-radar fusion, 3d object detection, and occupancy mapping
+  2. **nvidia isaac ros perception (nitros):** [nvidia-isaac-ros.github.io](https://nvidia-isaac-ros.github.io/) — gpu/tensorrt accelerated ros 2 packages for stereo depth and visual slam
+  3. **ethz-asl/kalibr:** [github repo](https://github.com/ethz-asl/kalibr) — standard toolbox for multi-camera and camera-imu spatiotemporal calibration
+  4. **elevation_mapping_cupy (eth zürich):** [github repo](https://github.com/leggedrobotics/elevation_mapping_cupy) & [docs](https://leggedrobotics.github.io/elevation_mapping_cupy/) — 50+ hz gpu-accelerated terrain elevation and traversability mapping for rough terrain
+  5. **wavemap (eth zürich asl):** [github repo](https://github.com/ethz-asl/wavemap) & [arxiv:2304.14813](https://arxiv.org/abs/2304.14813) — fast multi-resolution 3d occupancy mapping using wavelet compression in c++
+  6. **direct_visual_lidar_calibration:** [github repo](https://github.com/koide3/direct_visual_lidar_calibration) — targetless c++/ros 2 extrinsic calibration between lidar and cameras
 
 #### 8.7 robot learning
 
@@ -204,25 +204,25 @@ engineering curriculum, mathematical modeling, middleware, physical ai, robotics
 - [ ] sim-to-real transfer
 - [ ] domain randomization
 - [ ] robot foundation models
-- [ ] airstack & saha robotiği sim-to-real yığını
+- [ ] airstack & field robotics sim-to-real stack
 - [ ] diffusion policy & umi (stanford real lab)
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **uc berkeley cs285 – deep reinforcement learning (prof. sergey levine):** [youtube ders serisi](https://www.youtube.com/playlist?list=PL_iWQOsE6TfVYGEGiAOMaOzzv41Jfm_Ps) & [ders sitesi](https://rail.eecs.berkeley.edu/deeprlcourse/) — **[temel akademik robot learning dersi]** imitation learning, behavior cloning, policy gradients, ppo, sac ve model-based rl
-  2. **prof. shuran song (stanford real lab & columbia) – visuomotor policy learning & diffusion in robotics:** [youtube seminer & ders videoları](https://www.youtube.com/results?search_query=shuran+song+diffusion+policy+robotics) — **[görsel-motor politika & difüzyon dersi]** diffusion policy ve umi'ın arkasındaki eylem difüzyon modelleri (ddpm), çok modlu insan gösterimlerinden eylem dağılımı öğrenme ve sim2real aktarımının ders anlatımı
-- **oku & repo (rehber, makale ve kütüphaneler — önem sırasıyla):**
-  1. **openai spinning up in deep rl:** [spinningup.openai.com](https://spinningup.openai.com/en/latest/) — **[ilk okunacak]** pekiştirmeli öğrenme (ppo, sac, td3) algoritmalarının en temiz matematiksel ve pytorch kodlu başlangıç rehberi
-  2. **robot learning from demonstration (lfd): a survey (ravichandar et al.):** [ieee / arxiv makalesi](https://arxiv.org/abs/1911.09052) — taklit yoluyla öğrenme yöntemlerinin kapsamlı incelemesi
-  3. **repo – huggingface/lerobot:** [github.com/huggingface/lerobot](https://github.com/huggingface/lerobot) — gerçek dünya robotları için pytorch tabanlı imitation learning (act, diffusion policy) ve rl kütüphanesi
-  4. **repo & sim2real köprüsü – luckyrobots / luckyengine:** [luckyrobots (github)](https://github.com/luckyrobots/luckyrobots) & [lerobot sim2real tutorial](https://luckyrobots.github.io/lerobot-luckyengine-tutorial/) — **[mujoco + lerobot sim2real hattı]** mujoco tabanlı fotogerçekçi luckyengine simülatöründe gösterim (demonstration) toplayıp hugging face lerobot ile politika eğiterek so-100 kolu ve unitree go2/g1 robotlarına sıfır gerçek veriyle %72 sim2real başarı sağlayan grpc python sdk'sı
-  5. **learning high-speed flight in the wild (uzh rpg – science robotics):** [agile_autonomy (github)](https://github.com/uzh-rpg/agile_autonomy) & [science robotics makalesi](https://www.science.org/doi/10.1126/scirobotics.abg5810) — **[uç nokta sim-to-real otonom uçuş]** davide scaramuzza ve vladlen koltun ekibinin geliştirdiği; yalnızca simülasyonda eğitilip sıfır gerçek dünya verisiyle (zero-shot sim-to-real) bilinmeyen ormanlarda ve haritasız harabelerde 40 km/s hızla engellerden kaçan tam otonom iha derin öğrenme seyrüsefer politikası
-  6. **rlkit & softlearning: rl toolkit & resmi soft actor-critic (uc berkeley rail lab – sergey levine):** [rlkit (github)](https://github.com/rail-berkeley/rlkit) · [softlearning (github)](https://github.com/rail-berkeley/softlearning) — **[sürekli kontrol, robot öğrenmesi & resmi sac reposu]** prof. sergey levine ve tuomas haarnoja ekibinin geliştirdiği; robot manipülasyonu ve bacaklı robotlarda dünya standardı olan maksimum entropi rl / soft actor-critic (sac), td3 ve meta-rl (pearl) algoritmalarının resmi uygulama ve araştırma kod tabanları
-  7. **hil-serl & serl: sample-efficient robotic reinforcement learning (uc berkeley rail lab – corl / icra):** [hil-serl (github)](https://github.com/rail-berkeley/hil-serl) · [serl (github)](https://github.com/rail-berkeley/serl) · [serl-robot.github.io](https://serl-robot.github.io/) — **[fiziksel robot üzerinde gerçek zamanlı rl devrimi]** sergey levine ekibinin geliştirdiği; simülasyona gerek kalmadan doğrudan gerçek robot kolu üzerinde (franka, ur5) insan müdahaleleri (human-in-the-loop) ve öncül verilerle (rlpd) sadece 1-2 saat içinde hassas montaj (kablo takma, pcb montajı) öğreten en son teknoloji robot öğrenmesi yığını
-  8. **rsl_rl: fast gpu-accelerated rl for robotics (eth zürich rsl – corl / science robotics):** [github repo (leggedrobotics/rsl_rl)](https://github.com/leggedrobotics/rsl_rl) — **[bacaklı ve insansı robot lokomosyonu ppo standardı]** marco hutter ekibinin geliştirdiği; nvidia isaaclab ve isaac gym üzerinde binlerce robotu tamamen gpu vram üzerinde dakikalar içinde yürüten (science robotics makalesi), dünyadaki insansı ve dört bacaklı robot lokomosyonunun 1 numaralı gpu-paralel ppo pekiştirmeli öğrenme kütüphanesi
-  9. **airstack: agent-native autonomy stack for field robotics (cmu airlab):** [github repo (castacks/airstack)](https://github.com/castacks/AirStack) & [theairlab.org/airstack](https://github.com/castacks/AirStack) — **[saha robotiği ve iha sim-to-real otonomi yığını]** prof. sebastian scherer ekibinin geliştirdiği; ros 2, nvidia isaac sim (pegasussimulator) ve gövde üstü otonomiyi birleştiren, iha'lar ve saha robotlarında yapay zekâ politikalarının simülasyondan fiziksel donanıma hızlı aktarımını (sim-to-real) sağlayan açık kaynak otonomi çerçevesi
-  10. **diffusion policy: visuomotor policy learning via action diffusion (stanford real lab & columbia – shuran song / rss):** [diffusion-policy.cs.columbia.edu](https://diffusion-policy.cs.columbia.edu/) · [github repo (real-stanford/diffusion_policy)](https://github.com/real-stanford/diffusion_policy) & [umi handheld gripper (github)](https://github.com/real-stanford/universal_manipulation_interface) — **[modern robot öğrenmesi & görsel-motor politika devrimi]** prof. shuran song ekibinin geliştirdiği; robot manipülasyonunda eylemleri difüzyon modeli (denoising diffusion probabilistic models) ile üreterek çok modlu (multimodal) insan gösterimlerini ve karmaşık montaj görevlerini başarıyla çözen, tesla optimus, figure ai ve lerobot tarafından benimsenen 2.5k+ yıldızlı temel robot öğrenmesi mimarisi
+- **video lectures:**
+  1. **uc berkeley cs285 – deep reinforcement learning:** [youtube lecture series](https://www.youtube.com/playlist?list=PL_iWQOsE6TfVYGEGiAOMaOzzv41Jfm_Ps) & [course site](https://rail.eecs.berkeley.edu/deeprlcourse/) — imitation learning, behavior cloning, ppo, sac, and model-based rl
+  2. **prof. shuran song – visuomotor policy learning & diffusion:** [youtube search](https://www.youtube.com/results?search_query=shuran+song+diffusion+policy+robotics) — learning multimodal robot action policies via diffusion models
+- **books, papers & repositories:**
+  1. **openai spinning up in deep rl:** [spinningup.openai.com](https://spinningup.openai.com/en/latest/) — clean math and pytorch starter guide for ppo, sac, and td3
+  2. **robot learning from demonstration (survey):** [arxiv:1911.09052](https://arxiv.org/abs/1911.09052) — comprehensive survey on imitation learning algorithms
+  3. **huggingface/lerobot:** [github repo](https://github.com/huggingface/lerobot) — pytorch toolkit for real-world robot imitation learning (act, diffusion policy) and rl
+  4. **luckyrobots & lerobot sim2real bridge:** [github repo](https://github.com/luckyrobots/luckyrobots) & [tutorial](https://luckyrobots.github.io/lerobot-luckyengine-tutorial/) — collecting mujoco demos to train sim2real policies with lerobot
+  5. **learning high-speed flight in the wild (uzh rpg):** [github repo](https://github.com/uzh-rpg/agile_autonomy) & [paper](https://www.science.org/doi/10.1126/scirobotics.abg5810) — zero-shot sim-to-real neural navigation flying autonomous drones through forests at 40 km/h
+  6. **rlkit & softlearning (uc berkeley):** [rlkit](https://github.com/rail-berkeley/rlkit) · [softlearning](https://github.com/rail-berkeley/softlearning) — official codebases for sac, td3, and continuous-control robotics rl
+  7. **hil-serl & serl (uc berkeley):** [hil-serl](https://github.com/rail-berkeley/hil-serl) · [serl](https://github.com/rail-berkeley/serl) · [project page](https://serl-robot.github.io/) — real-world human-in-the-loop reinforcement learning training robot assembly in 1-2 hours
+  8. **rsl_rl (eth zürich):** [github repo](https://github.com/leggedrobotics/rsl_rl) — fast gpu-accelerated ppo library used for quadruped and humanoid locomotion in isaaclab
+  9. **airstack (cmu airlab):** [github repo](https://github.com/castacks/AirStack) — ros 2 and isaac sim autonomy stack for field robots and uav sim-to-real transfer
+  10. **diffusion policy (stanford / columbia):** [project page](https://diffusion-policy.cs.columbia.edu/) · [github repo](https://github.com/real-stanford/diffusion_policy) & [umi gripper](https://github.com/real-stanford/universal_manipulation_interface) — generating multimodal robot action trajectories with diffusion models
 
 #### 8.8 robot applications
 
@@ -238,13 +238,13 @@ engineering curriculum, mathematical modeling, middleware, physical ai, robotics
 - [ ] humanoid robotics
 - [ ] autonomous vehicles
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **yt (yabancı video kanalları — önem sırasıyla):**
-  1. **ieee spectrum robotics:** [youtube kanalı](https://www.youtube.com/@IEEESpectrum) — dünyadaki en yeni endüstriyel, medikal, tarımsal ve insansı robotik sistemlerin mühendislik incelemeleri
-  2. **boston dynamics & agility robotics technical talks:** [boston dynamics youtube](https://www.youtube.com/@BostonDynamics) — atlas ve spot robotlarının algılama, mpc kontrol ve hareket planlama mimarileri
-- **oku (referans ansiklopedi):**
-  1. **springer handbook of robotics (bruno siciliano & oussama khatib):** [springer kitap sayfası](https://link.springer.com/book/10.1007/978-3-319-32552-1) — tüm robotik alt disiplinlerini kapsayan 2000+ sayfalık başucu ansiklopedisi
+- **video lectures:**
+  1. **ieee spectrum robotics:** [youtube channel](https://www.youtube.com/@IEEESpectrum) — engineering coverage of industrial, medical, field, and humanoid robots
+  2. **boston dynamics technical talks:** [youtube channel](https://www.youtube.com/@BostonDynamics) — talks on perception, mpc control, and planning for atlas and spot
+- **books, papers & repositories:**
+  1. **springer handbook of robotics:** [book page](https://link.springer.com/book/10.1007/978-3-319-32552-1) — comprehensive handbook across all robotics fields
 
 ---
 
@@ -257,7 +257,7 @@ engineering curriculum, mathematical modeling, middleware, physical ai, robotics
 - [ ] world models
 - [ ] agentic ai
 - [ ] test-time compute
-- [ ] reasoning models (o1, deepseek-r1 vb.)
+- [ ] reasoning models (o1, deepseek-r1, etc.)
 - [ ] neuro-symbolic ai
 - [ ] continual learning
 - [ ] self-supervised learning
@@ -265,13 +265,13 @@ engineering curriculum, mathematical modeling, middleware, physical ai, robotics
 - [ ] efficient ai
 - [ ] small language models (slm)
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **yt (yabancı video kanalları — önem sırasıyla):**
-  1. **ai explained:** [youtube kanalı](https://www.youtube.com/@aiexplained-official) — yeni çıkan reasoning (o1, deepseek-r1), test-time compute ve foundation modellerinin abartıdan uzak, benchmark verilerine dayalı analizi
-  2. **yannic kilcher:** [youtube kanalı](https://www.youtube.com/@YannicKilcher) — derinlemesine makale incelemeleri
-- **oku (etkileşimli makale ve arşiv — önem sırasıyla):**
-  1. **world models (david ha & jürgen schmidhuber):** [worldmodels.github.io (etkileşimli makale)](https://worldmodels.github.io/) — bir ajanın kendi içinde çevresinin simülasyonunu (dünya modelini) öğrenip rüyasında (latent space) plan yapmasını anlatan kurucu makale
+- **video lectures:**
+  1. **ai explained:** [youtube channel](https://www.youtube.com/@aiexplained-official) — grounded benchmark analysis of reasoning and foundation models
+  2. **yannic kilcher:** [youtube channel](https://www.youtube.com/@YannicKilcher) — technical machine learning paper reviews
+- **books, papers & repositories:**
+  1. **world models (ha & schmidhuber):** [interactive article](https://worldmodels.github.io/) — classic article on learning compressed latent world models for planning
   2. **arxiv artificial intelligence (`cs.ai`) recent submissions:** [arxiv.org/list/cs.ai/recent](https://arxiv.org/list/cs.AI/recent)
 
 #### 19.2 physical ai & embodied intelligence
@@ -287,13 +287,13 @@ engineering curriculum, mathematical modeling, middleware, physical ai, robotics
 - [ ] human-robot interaction
 - [ ] autonomous manipulation
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **yt (yabancı araştırma seminerleri — önem sırasıyla):**
-  1. **berkeley artificial intelligence research (bair) & robot learning lab (pieter abbeel / sergey levine):** [youtube arama bağlantısı](https://www.youtube.com/results?search_query=berkeley+robot+learning+embodied+ai)
-  2. **stanford robotics center seminars:** [youtube kanalı](https://www.youtube.com/@stanfordonline) — physical ai, vla ve insansı robot manipülasyonu
-- **oku (konferans ve benchmark platformu):**
-  1. **embodied ai workshop (cvpr):** [embodied-ai.org](https://embodied-ai.org/) — fiziksel dünyada algılama ve hareket eden yapay zekâ sistemlerinin yıllık zirve çalıştayı ve açık kaynak simülatör listesi
+- **video lectures:**
+  1. **bair robot learning seminars:** [youtube search](https://www.youtube.com/results?search_query=berkeley+robot+learning+embodied+ai)
+  2. **stanford robotics center seminars:** [youtube channel](https://www.youtube.com/@stanfordonline) — talks on physical ai, vlas, and manipulation
+- **books, papers & repositories:**
+  1. **embodied ai workshop (cvpr):** [embodied-ai.org](https://embodied-ai.org/) — annual workshop talks and benchmarks on embodied ai simulators
 
 #### 19.3 advanced robotics
 
@@ -308,27 +308,27 @@ engineering curriculum, mathematical modeling, middleware, physical ai, robotics
 - [ ] agricultural robotics
 - [ ] assistive robotics
 - [ ] autonomous mobile manipulation
-- [ ] behavior-1k & omnigibson mobil manipülasyon
-- [ ] mit mini cheetah software & convex mpc dört bacaklı lokomosyon
-- [ ] 6-dof robotik kavrama tespiti (graspnet-1billion)
-- [ ] eklemli nesne manipülasyonu ve parça seviyesi algılama (gapartnet)
+- [ ] behavior-1k & omnigibson mobile manipulation
+- [ ] mit mini cheetah software & convex mpc locomotion
+- [ ] 6-dof robotic grasping detection (graspnet-1billion)
+- [ ] articulated object manipulation & part perception (gapartnet)
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **yt (yabancı video dersler & mühendislik kanalları — önem sırasıyla):**
-  1. **prof. russ tedrake (mit 6.4210 / 6.800 – robotic manipulation: perception, tracking, and grasping):** [youtube oynatma listesi (mit)](https://www.youtube.com/playlist?list=PLkx8KyIQkMfWr191lqbN8WfV08j-ui8WX) & [ders notları (manipulation.csail.mit.edu)](https://manipulation.csail.mit.edu/) — **[robotik kavrama & manipülasyon başucu dersi]** graspnet ve gapartnet'in teorik temelini oluşturan; 3b nokta bulutlarından 6-dof kavrama (grasping), kuvvet/sürtünme konileri (friction cones), eklemli (articulated) nesne etkileşimi ve temas mekaniğini amfide tahtada anlatan mit başvuru dersi
-  2. **prof. marco hutter (eth zürich rsl) – legged robotics & quadruped locomotion lectures:** [youtube ders & sunum serisi](https://www.youtube.com/results?search_query=marco+hutter+legged+robotics+lecture) — **[bacaklı robotik & lokomosyon dersi]** anymal ve bacaklı robotların arkasındaki basitleştirilmiş dinamik modeller (slip, zmp), convex mpc, tüm vücut kontrolü (wbc) ve sim2real aktarımının akademik dersleri
-  3. **boston dynamics & unitree robotics official channels:** [boston dynamics youtube](https://www.youtube.com/@BostonDynamics) · [unitree robotics youtube](https://www.youtube.com/@UnitreeRobotics) — dört ayaklı (quadruped) ve insansı (humanoid) robotlarda tüm-vücut kontrolü (whole-body mpc & rl) saha uygulamaları
-  4. **ieee spectrum robotics:** [youtube kanalı](https://www.youtube.com/@IEEESpectrum)
-- **oku (referans kitap):**
-  1. **humanoid robotics: a reference (ambarish goswami & prahlad vadakkepat):** [springer kitap sayfası](https://link.springer.com/referencework/10.1007/978-94-007-6046-2) — iki ayaklı denge (zmp), yürüyüş üretimi ve insansı robot mekaniği
-- **açık kaynak insansı robotik reposu (önem sırasıyla):**
-  1. **nvidia gr00t whole-body control (nvidia research gear lab):** [nvlabs/gr00t-wholebodycontrol (github)](https://github.com/NVlabs/GR00T-WholeBodyControl) & [dokümantasyon](https://nvlabs.github.io/GR00T-WholeBodyControl/) — **[insansı robot tüm-vücut kontrolü (wbc)]** insansı (humanoid) robotlarda alt gövde yürümesini (locomotion rl) ve üst gövde manipülasyonunu (upper-body ik) birleştiren, nvidia isaaclab simülasyonu ve jetson orin donanımında çalışan resmi gear-sonic ve decoupled wbc kontrol mimarisi
-  2. **pace: sim-to-real actuator identification for legged robots (eth zürich rsl – marco hutter):** [github repo (leggedrobotics/pace-sim2real)](https://github.com/leggedrobotics/pace-sim2real) & [makale (arxiv:2403.07663)](https://arxiv.org/abs/2403.07663) — **[bacaklı robotlarda eyleyici sim2real standartı]** efsanevi anymal robotunu geliştiren eth zürih ekibinin açık kaynak projesi; bacaklı ve insansı robotların simülasyondan (isaaclab) gerçeğe aktarımında en büyük engel olan motor ve eklem dinamiklerini (gecikme, sürtünme, dişli boşluğu) harici tork sensörü gerektirmeden standart eklem enkoderleriyle kalibre eden sistem kimlikleme (system identification) çerçevesi
-  3. **behavior-1k, omnigibson & robosuite (stanford vision and learning lab – fei-fei li & silvio savarese):** [behavior.stanford.edu](https://behavior.stanford.edu/) · [github repo (stanfordvl/behavior-1k)](https://github.com/StanfordVL/BEHAVIOR-1K) & [robosuite (github)](https://github.com/ARISE-Initiative/robosuite) — **[insansı & mobil manipülasyon embodied ai standardı]** stanford vl laboratuvarının geliştirdiği; ev ve ofis ortamlarında 1.000 günlük insan aktivitesini (yemek yapma, temizlik, nesne manipülasyonu) fotogerçekçi fizik motorunda (omnigibson) simüle eden ve robot kollarında taklit öğrenmesi (imitation learning) için dünya standardı kabul edilen 1.5k+ yıldızlı robotik ekosistemi
-  4. **mit mini cheetah software & convex mpc (mit biomimetic robotics lab – sangbae kim / ieee t-ro):** [github repo (mit-biomimetic/cheetah-software)](https://github.com/mit-biomimetics/Cheetah-Software) — **[dört bacaklı robot dinamiği ve mpc kontrol standartı]** prof. sangbae kim ekibinin geliştirdiği; mit mini cheetah robotunun tüm kontrol mimarisini açık kaynak sunan; basitleştirilmiş tek sert gövde modeli üzerinde convex model predictive control (mpc), tüm vücut itki kontrolü (whole-body impulse control - wbic), lcm mesajlaşma ve durum kestirimi içeren 2.5k+ yıldızlı bacaklı robotik başyapıtı
-  5. **graspnet-1billion & anygrasp: 6-dof robotik kavrama ve nokta bulutu manipülasyon standardı (sjtu mvig lab – cewu lu / cvpr):** [github repo (graspnet/graspnet-baseline)](https://github.com/graspnet/graspnet-baseline) & [graspnet.net](https://graspnet.net/) — **[robotik kavramada dünya standardı benchmark & model]** prof. cewu lu ekibinin geliştirdiği; robot kollarının (franka, ur5 vb.) dağınık ve karmaşık 3b sahnelerdeki bilinmeyen nesneleri nokta bulutu üzerinden 6 serbestlik dereceli (6-dof) yakalama pozisyonlarını yüksek doğrulukla tespit etmesini sağlayan 1.5k+ yıldızlı küresel kavrama (grasping) ve manipülasyon standardı
-  6. **gapartnet: 3d articulated object perception and interaction (pku epic lab – he wang / cvpr highlight):** [github repo (pku-epic/gapartnet)](https://github.com/PKU-EPIC/GAPartNet) & [pku-epic.github.io/gapartnet](https://pku-epic.github.io/GAPartNet/) — **[eklemli nesne manipülasyonu & genellenebilir parça temsili]** pekin üniversitesi epic laboratuvarının geliştirdiği; robotların dolap kapağı, çekmece, fırın, kapı gibi eklemli (articulated) nesneleri 3b ortamda algılamasını, tutamak/kol pozlarını kestirmesini ve isaac gym simülasyonuyla genel geçer etkileşim politikaları (manipulation policies) öğrenmesini sağlayan referans açık kaynak çerçeve
+- **video lectures:**
+  1. **prof. russ tedrake (mit 6.4210 – robotic manipulation):** [youtube playlist](https://www.youtube.com/playlist?list=PLkx8KyIQkMfWr191lqbN8WfV08j-ui8WX) & [lecture notes](https://manipulation.csail.mit.edu/) — 6-dof point cloud grasping, contact mechanics, and manipulation control
+  2. **prof. marco hutter (eth zürich) – legged robotics lectures:** [youtube search](https://www.youtube.com/results?search_query=marco+hutter+legged+robotics+lecture) — reduced-order models, convex mpc, whole-body control, and sim2real for quadrupeds
+  3. **boston dynamics & unitree official channels:** [boston dynamics](https://www.youtube.com/@BostonDynamics) · [unitree](https://www.youtube.com/@UnitreeRobotics) — field demos of whole-body mpc and rl for quadrupeds and humanoids
+  4. **ieee spectrum robotics:** [youtube channel](https://www.youtube.com/@IEEESpectrum)
+- **books, papers & repositories:**
+  1. **humanoid robotics: a reference:** [book page](https://link.springer.com/referencework/10.1007/978-94-007-6046-2) — bipedal balance (zmp), gait generation, and humanoid mechanics
+- **books, papers & repositories:**
+  1. **nvidia gr00t whole-body control:** [github repo](https://github.com/NVlabs/GR00T-WholeBodyControl) & [docs](https://nvlabs.github.io/GR00T-WholeBodyControl/) — combining lower-body rl locomotion with upper-body ik manipulation on humanoids
+  2. **pace (eth zürich rsl):** [github repo](https://github.com/leggedrobotics/pace-sim2real) & [arxiv:2403.07663](https://arxiv.org/abs/2403.07663) — sim-to-real actuator system identification using standard joint encoders
+  3. **behavior-1k, omnigibson & robosuite (stanford):** [project page](https://behavior.stanford.edu/) · [behavior-1k](https://github.com/StanfordVL/BEHAVIOR-1K) & [robosuite](https://github.com/ARISE-Initiative/robosuite) — photorealistic indoor mobile manipulation environments for embodied ai
+  4. **mit mini cheetah software & convex mpc:** [github repo](https://github.com/mit-biomimetics/Cheetah-Software) — complete open-source c++ quadruped stack with convex mpc, whole-body impulse control, and state estimation
+  5. **graspnet-1billion (sjtu mvig lab):** [github repo](https://github.com/graspnet/graspnet-baseline) & [graspnet.net](https://graspnet.net/) — 6-dof robotic grasping predictions directly from 3d point clouds
+  6. **gapartnet (pku epic lab):** [github repo](https://github.com/PKU-EPIC/GAPartNet) & [project page](https://pku-epic.github.io/GAPartNet/) — 3d pose estimation and manipulation of articulated objects (cabinets, drawers, doors)
 
 #### 19.4 advanced perception
 
@@ -341,13 +341,13 @@ engineering curriculum, mathematical modeling, middleware, physical ai, robotics
 - [ ] 4d scene understanding
 - [ ] dynamic 3d reconstruction
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **yt (yabancı araştırma grubu — önem sırasıyla):**
-  1. **rpg lab uzh (prof. davide scaramuzza – university of zurich):** [youtube kanalı](https://www.youtube.com/@ailabRPG/playlists) — **[dünya lideri laboratuvar]** event-based (nöromorfik) kameralar ve geleneksel rgb kameraların füzyonu ile yüksek hızlı iha algılaması
-- **oku & repo (makale ve veri setleri — önem sırasıyla):**
-  1. **event-based vision resources (awesome event-based vision – uzh rpg):** [github.com/uzh-rpg/event-based_vision_resources](https://github.com/uzh-rpg/event-based_vision_resources) — nöromorfik kameralar üzerine tüm makaleler, açık kaynak c++/python kodları ve simülatörler
-  2. **4d imaging radar for autonomous driving surveys (ieee):** [arxiv arama bağlantısı](https://arxiv.org/search/?query=4D+imaging+radar+autonomous+driving&searchtype=all) — kötü hava koşullarında lidar'ı tamamlayan 4b radar algılaması
+- **video lectures:**
+  1. **rpg lab uzh (davide scaramuzza):** [youtube playlists](https://www.youtube.com/@ailabRPG/playlists) — high-speed uav perception fusing event-based cameras with rgb frames
+- **books, papers & repositories:**
+  1. **awesome event-based vision (uzh rpg):** [github repo](https://github.com/uzh-rpg/event-based_vision_resources) — curated papers, c++/python codebases, and simulators for neuromorphic cameras
+  2. **4d imaging radar surveys (ieee):** [arxiv search](https://arxiv.org/search/?query=4D+imaging+radar+autonomous+driving&searchtype=all) — 4d mmwave radar perception complementing lidar in bad weather
 
 #### 19.5 advanced computing
 
@@ -359,16 +359,16 @@ engineering curriculum, mathematical modeling, middleware, physical ai, robotics
 - [ ] high performance computing (hpc)
 - [ ] accelerated computing
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **yt (yabancı video kanalları — önem sırasıyla):**
-  1. **ibm technology & qiskit youtube channels:** [qiskit youtube](https://www.youtube.com/@qiskit) · [ibm technology youtube](https://www.youtube.com/@IBMTechnology) — heterojen hesaplama, hpc ve kuantum hesaplama temelleri
-- **oku (etkileşimli eğitim):**
-  1. **ibm quantum learning:** [learning.quantum.ibm.com](https://learning.quantum.ibm.com/) — kuantum bilgi teorisi ve algoritmalarına ücretsiz giriş
+- **video lectures:**
+  1. **ibm technology & qiskit:** [qiskit youtube](https://www.youtube.com/@qiskit) · [ibm technology](https://www.youtube.com/@IBMTechnology) — heterogeneous computing, hpc, and quantum computing fundamentals
+- **books, papers & repositories:**
+  1. **ibm quantum learning:** [learning.quantum.ibm.com](https://learning.quantum.ibm.com/) — free intro to quantum information and algorithms
 
 #### 19.6 advanced learning methods
 
-- [ ] meta-learning & maml (öğrenmeyi öğrenme)
+- [ ] meta-learning & maml (learning to learn)
 - [ ] few-shot learning
 - [ ] lifelong learning
 - [ ] active learning
@@ -378,14 +378,14 @@ engineering curriculum, mathematical modeling, middleware, physical ai, robotics
 - [ ] reinforcement learning
 - [ ] multi-agent reinforcement learning
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **judea pearl – causal inference & the book of why lectures:** [youtube arama bağlantısı](https://www.youtube.com/results?search_query=judea+pearl+causal+inference+lecture) — korelasyon ile nedensellik (causality) arasındaki fark ve müdahale (intervention) matematiği
-- **oku & repo (kitap, makale ve meta-learning kod tabanları — önem sırasıyla):**
-  1. **meta-learning in neural networks: a survey (hospedales et al. – ieee tpami):** [arxiv:2004.05439](https://arxiv.org/abs/2004.05439) — "öğrenmeyi öğrenme" (meta-learning) algoritmalarının kapsamlı özeti
-  2. **maml & maml-rl: model-agnostic meta-learning (finn, abbeel, levine – icml):** [arxiv:1703.03400](https://arxiv.org/abs/1703.03400) · [maml (cbfinn/maml)](https://github.com/cbfinn/maml) · [maml-rl (cbfinn/maml_rl)](https://github.com/cbfinn/maml_rl) · [pytorch (learnables/learn2learn)](https://github.com/learnables/learn2learn) — **[öğrenmeyi öğrenme, few-shot & meta-rl standartı]** chelsea finn ekibinin geliştirdiği; sınıflandırma, regresyon ve takviyeli öğrenmede (meta-rl) robotun/ajanın sadece birkaç denemede yeni ortama ve göreve adapte olmasını sağlayan 9.000+ atıflı çığır açan makale, orijinal rl kodu ve modern pytorch ekosistemi
-  3. **causal inference in statistics: a primer (judea pearl, madelyn glymour, nicholas p. jewell):** [kitap sayfası](https://www.wiley.com/en-us/Causal+Inference+in+Statistics%3A+A+Primer-p-9781119186847) — nedensel çıkarıma matematiksel giriş
+- **video lectures:**
+  1. **judea pearl – causal inference lectures:** [youtube search](https://www.youtube.com/results?search_query=judea+pearl+causal+inference+lecture) — correlation vs causality and intervention math
+- **books, papers & repositories:**
+  1. **meta-learning in neural networks: a survey:** [arxiv:2004.05439](https://arxiv.org/abs/2004.05439) — thorough survey on few-shot and meta-learning algorithms
+  2. **maml & maml-rl (finn, abbeel, levine):** [arxiv:1703.03400](https://arxiv.org/abs/1703.03400) · [maml](https://github.com/cbfinn/maml) · [maml-rl](https://github.com/cbfinn/maml_rl) · [learn2learn](https://github.com/learnables/learn2learn) — foundational paper and pytorch repos for fast task adaptation in few-shot rl
+  3. **causal inference in statistics: a primer (pearl et al.):** [book page](https://www.wiley.com/en-us/Causal+Inference+in+Statistics%3A+A+Primer-p-9781119186847) — concise math intro to causal graphs and inference
 
 ---
 
@@ -395,7 +395,6 @@ engineering curriculum, mathematical modeling, middleware, physical ai, robotics
 
 ##### neural scaling laws
 * neural scaling laws for embodied ai: neural scaling laws for embodied ai [[paper]](https://arxiv.org/abs/2405.14005)
-
 
 ##### robot policy learning for decision-making and controls
 ###### language-conditioned imitation learning

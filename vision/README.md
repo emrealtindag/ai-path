@@ -26,7 +26,7 @@ engineering curriculum, algorithmic foundations, geometric representations, and 
 
 ## complete checklist and resources
 
-### 01. computer vision – bilgisayarlı görü
+### 01. computer vision
 
 #### 6.1 image processing
 
@@ -49,19 +49,19 @@ engineering curriculum, algorithmic foundations, geometric representations, and 
 - [ ] image restoration
 - [ ] image enhancement
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **tr (türkçe akademik ve uygulamalı kaynaklar):**
-  1. **odtü ceng 483 – introduction to computer vision (prof. dr. sinan kalkan & doç. dr. emre akbaş):** [kovan lab / akademik sayfa](https://kovan.ceng.metu.edu.tr/~sinan/) — filtreleme, kenar tespiti ve görüntü temsilleri üzerine odtü müfredatı
-  2. **itü blg 453e – bilgisayarlı görü (computer vision):** [itü ders katalog & içeriği](https://www.sis.itu.edu.tr/TR/ogrenci/lisans/ders-planlari/plan/BLGE/201810.html) — akademik ders izlencesi ve proje konuları
-  3. **bilgisayar kavramları – görüntü işleme (image processing):** [resmi site (sadievrenseker.com)](https://sadievrenseker.com/) — temel filtreler, morfoloji ve histogram eşitleme mantığı
-  4. **zafer demirkol (@zaferdemirkol):** [youtube kanalı](https://www.youtube.com/@zaferdemirkol) — genel yapay zekâ ve tensorflow söyleşileri
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **shree nayar – first principles of computer vision (columbia university):** [youtube kanalı & oynatma listeleri](https://www.youtube.com/@firstprinciplesofcomputerv3258/playlists) — **[ilk izlenecek – akademik seri]** görüntü oluşumu, filtreleme, kenar bulma ve frekans uzayını berrak görsellerle anlatan üniversite serisi
-  2. **murtaza's workshop – robotics and ai (opencv python & c++):** [youtube kanalı](https://www.youtube.com/@murtazasworkshop) — **[pratik kodlama]** opencv ile görüntü işleme boru hatlarını sıfırdan hızlıca kodlamak için
-- **oku & doküman (önem sırasıyla):**
-  1. **opencv 4.x official image processing tutorials (python & c++):** [docs.opencv.org/4.x/d2/d96/tutorial_py_table_of_contents_imgproc.html](https://docs.opencv.org/4.x/d2/d96/tutorial_py_table_of_contents_imgproc.html) — canny, sobel, otsu, morfoloji ve renk uzaylarını doğrudan kodlayarak öğrenme
-  2. **digital image processing (rafael c. gonzalez & richard e. woods):** [imageprocessingplace.com](http://www.imageprocessingplace.com/) — görüntü işlemenin klasik referans ders kitabı
+- **turkish resources:**
+  1. **metu ceng 483 – introduction to computer vision (sinan kalkan & emre akbaş):** [academic page](https://kovan.ceng.metu.edu.tr/~sinan/) — university syllabus on image filtering, edge detection, and representations
+  2. **itu blg 453e – computer vision:** [syllabus](https://www.sis.itu.edu.tr/TR/ogrenci/lisans/ders-planlari/plan/BLGE/201810.html) — turkish university computer vision syllabus and topics
+  3. **bilgisayar kavramları – image processing:** [sadievrenseker.com](https://sadievrenseker.com/) — turkish intro to basic filters, morphology, and histogram equalization
+  4. **zafer demirkol (@zaferdemirkol):** [youtube channel](https://www.youtube.com/@zaferdemirkol) — turkish talks on general ai and tensorflow
+- **video lectures:**
+  1. **shree nayar – first principles of computer vision (columbia university):** [youtube playlists](https://www.youtube.com/@firstprinciplesofcomputerv3258/playlists) — clear university lectures on image formation, filtering, edge detection, and frequency analysis
+  2. **murtaza's workshop – opencv python & c++:** [youtube channel](https://www.youtube.com/@murtazasworkshop) — hands-on coding tutorials for opencv pipelines
+- **books, papers & repositories:**
+  1. **opencv 4.x image processing tutorials:** [docs.opencv.org](https://docs.opencv.org/4.x/d2/d96/tutorial_py_table_of_contents_imgproc.html) — code walkthroughs for canny, sobel, otsu thresholding, morphology, and color spaces
+  2. **digital image processing (gonzalez & woods):** [imageprocessingplace.com](http://www.imageprocessingplace.com/) — classic textbook on classical image processing
 
 #### 6.2 classical computer vision
 
@@ -85,25 +85,25 @@ engineering curriculum, algorithmic foundations, geometric representations, and 
 - [ ] background subtraction
 - [ ] motion detection
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **tr (türkçe akademik kaynaklar):**
-  1. **odtü ceng 483 & itü blg 453e – öznitelik çıkarımı, ransac ve optik akış modülleri:** [odtü ceng 483 sayfası](https://user.ceng.metu.edu.tr/~skalkan/)
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **shree nayar – first principles of cv (features, ransac, optical flow & tracking):** [youtube oynatma listeleri](https://www.youtube.com/@firstprinciplesofcomputerv3258/playlists) — **[ilk izlenecek]** harris, sift, homografi, ransac ve lucas-kanade optik akış'ın kusursuz matematiksel anlatımı
-  2. **cyrill stachniss – photogrammetry i & ii (bonn üniversitesi):** [youtube oynatma listeleri](https://www.youtube.com/@CyrillStachniss/playlists) — **[ana mühendislik dersi]** doğrudan robotik, iha haritalama ve slam perspektifinden öznitelik eşleştirme (feature matching)
-- **oku & repo (kitap, doküman ve endüstriyel kodlar — önem sırasıyla):**
-  1. **opencv feature detection, description & homography tutorials:** [docs.opencv.org/4.x/db/d27/tutorial_py_table_of_contents_feature2d.html](https://docs.opencv.org/4.x/db/d27/tutorial_py_table_of_contents_feature2d.html) — orb, sift, flann ve ransac ile pratik görüntü eşleştirme kodları
-  2. **computer vision: algorithms and applications, 2nd ed. (richard szeliski):** [szeliski.org/book (ücretsiz tam kitap pdf)](https://szeliski.org/Book/) — **[başucu kitabı]** bölüm 7 (feature detection & matching), bölüm 8 (alignment) ve bölüm 9 (motion/optical flow)
-  3. **repo – cvg/lightglue (eth zürich):** [github.com/cvg/lightglue](https://github.com/cvg/LightGlue) — klasik sift/orb'un ötesine geçen, modern derin öğrenme tabanlı ultra-hızlı yerel öznitelik eşleştirme reposu
-  4. **repo – zju3dv/loftr:** [github.com/zju3dv/loftr](https://github.com/zju3dv/LoFTR) — dokusu zayıf yüzeylerde bile çalışan transformer tabanlı dedektörsüz öznitelik eşleştirme
+- **turkish resources:**
+  1. **metu ceng 483 – features, ransac & optical flow modules:** [course page](https://user.ceng.metu.edu.tr/~skalkan/)
+- **video lectures:**
+  1. **shree nayar – features, ransac, optical flow & tracking:** [youtube playlists](https://www.youtube.com/@firstprinciplesofcomputerv3258/playlists) — clear math lectures on harris corners, sift, homography, ransac, and lucas-kanade optical flow
+  2. **cyrill stachniss – photogrammetry i & ii (university of bonn):** [youtube playlists](https://www.youtube.com/@CyrillStachniss/playlists) — feature detection and matching taught from a robotics, uav mapping, and slam perspective
+- **books, papers & repositories:**
+  1. **opencv feature detection & homography tutorials:** [docs.opencv.org](https://docs.opencv.org/4.x/db/d27/tutorial_py_table_of_contents_feature2d.html) — practical image matching tutorials with orb, sift, flann, and ransac
+  2. **computer vision: algorithms and applications, 2nd ed. (richard szeliski):** [free pdf](https://szeliski.org/Book/) — chapters 7–9 covering feature matching, alignment, and optical flow
+  3. **cvg/lightglue (eth zürich):** [github.com/cvg/lightglue](https://github.com/cvg/LightGlue) — fast learned local feature matcher outperforming classical sift/orb matching
+  4. **zju3dv/loftr:** [github.com/zju3dv/loftr](https://github.com/zju3dv/LoFTR) — detector-free transformer matcher that handles low-texture surfaces
 
 #### 6.3 camera geometry
 
 - [ ] pinhole camera model
 - [ ] intrinsic parameters ($k$)
 - [ ] extrinsic parameters ($[r \mid t]$)
-- [ ] camera calibration (zhang yöntemi)
+- [ ] camera calibration (zhang's method)
 - [ ] lens distortion
 - [ ] radial distortion
 - [ ] tangential distortion
@@ -117,18 +117,18 @@ engineering curriculum, algorithmic foundations, geometric representations, and 
 - [ ] essential matrix ($e$)
 - [ ] stereo geometry
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **tr (türkçe kaynaklar):**
-  1. **odtü ceng 483 – kamera modeli, kalibrasyon ve stereo geometri ders notları:** [odtü ceng](https://user.ceng.metu.edu.tr/~skalkan/)
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **shree nayar – camera calibration & epipolar geometry (first principles of cv):** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PL2zRqk16wsdoCCLpou-dGo7QQNks1Ppzo) — **[ilk izlenecek]** iğneada (pinhole) kamera modeli, iç/dış matrisler ($k, [r\mid t]$) ve fundamental/essential matrislerin ($f, e$) en net sezgisel anlatımı
-  2. **cyrill stachniss – camera calibration (zhang's method) & epipolar geometry:** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLgnQpQtFTOGRYjqjdZxTEQPZuFHQa7O7Y) — **[ana mühendislik dersi]** kamera kalibrasyonu ve stereo geometrinin matrislerle adım adım tahtada çözümü
-  3. **prof. daniel cremers – multiple view geometry in computer vision (tum - münih teknik üniversitesi):** [youtube tam dönem ders serisi](https://www.youtube.com/playlist?list=PLTBdjV_4f-EJn6udZ34tht9EVIW7lbeo4) — **[zirve akademik ders]** 3b kamera geometrisi ve görsel odometrinin matematiksel derinliği
-- **oku & uygulama (kitap ve kalibrasyon rehberi — önem sırasıyla):**
-  1. **opencv camera calibration and 3d reconstruction tutorials:** [docs.opencv.org/4.x/d9/db7/tutorial_py_table_of_contents_calib3d.html](https://docs.opencv.org/4.x/d9/db7/tutorial_py_table_of_contents_calib3d.html) — satranç tahtası (checkerboard) ile gerçek bir kamerayı kalibre etme ve lens distorsiyonunu giderme kodu
-  2. **multiple view geometry in computer vision (richard hartley & andrew zisserman):** [robots.ox.ac.uk/~vgg/hzbook](https://www.robots.ox.ac.uk/~vgg/hzbook/) — **[birincil referans kitap]** kamera geometrisi, epipolar geometri ve 3b yeniden yapılandırmanın standart akademik referansı
-  3. **an invitation to 3-d vision (yi ma, stefano soatto, jana kosecka, shankar sastry):** [ücretsiz yazar taslağı / kitap sayfası](https://link.springer.com/book/10.1007/978-0-387-21779-6) — rijit gövde hareketi ve çoklu görünüm geometrisi
+- **turkish resources:**
+  1. **metu ceng 483 – camera model, calibration & stereo geometry notes:** [course page](https://user.ceng.metu.edu.tr/~skalkan/)
+- **video lectures:**
+  1. **shree nayar – camera calibration & epipolar geometry:** [youtube playlist](https://www.youtube.com/playlist?list=PL2zRqk16wsdoCCLpou-dGo7QQNks1Ppzo) — clear intuitive breakdown of pinhole cameras, $k, [r\mid t]$ matrices, and essential/fundamental matrices
+  2. **cyrill stachniss – camera calibration & epipolar geometry:** [youtube playlist](https://www.youtube.com/playlist?list=PLgnQpQtFTOGRYjqjdZxTEQPZuFHQa7O7Y) — step-by-step whiteboard matrix derivations for camera calibration and stereo geometry
+  3. **prof. daniel cremers – multiple view geometry (tum):** [youtube lecture series](https://www.youtube.com/playlist?list=PLTBdjV_4f-EJn6udZ34tht9EVIW7lbeo4) — university course on 3d camera geometry and visual odometry math
+- **books, papers & repositories:**
+  1. **opencv camera calibration & 3d reconstruction tutorials:** [docs.opencv.org](https://docs.opencv.org/4.x/d9/db7/tutorial_py_table_of_contents_calib3d.html) — calibrating real cameras with a checkerboard and removing lens distortion
+  2. **multiple view geometry in computer vision (hartley & zisserman):** [robots.ox.ac.uk/~vgg/hzbook](https://www.robots.ox.ac.uk/~vgg/hzbook/) — standard reference book on projective camera geometry, epipolar geometry, and 3d reconstruction
+  3. **an invitation to 3-d vision (yi ma et al.):** [book page](https://link.springer.com/book/10.1007/978-0-387-21779-6) — textbook on rigid-body motion and multi-view geometry
 
 #### 6.4 deep learning for vision
 
@@ -146,18 +146,18 @@ engineering curriculum, algorithmic foundations, geometric representations, and 
 - [ ] vision transformers (vit)
 - [ ] swin transformer
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **tr (türkçe akademik kaynaklar):**
-  1. **odtü ceng 501 – deep learning (prof. dr. sinan kalkan):** [resmi ders sayfası](https://kovan.ceng.metu.edu.tr/~sinan/) & [github repo](https://github.com/sinankalkan/CENG501-Spring2021) — resnet, fpn, vit ve görsel derin öğrenme mimarilerinin akademik sunumları
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **stanford cs231n – deep learning for computer vision (fei-fei li, justin johnson, serena yeung):** [youtube ders serisi](https://www.youtube.com/playlist?list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv) & [ders notları (cs231n.github.io)](https://cs231n.github.io/) — **[temel akademik cv dersi – zorunlu]** görsel derin öğrenmeye başlayan her mühendisin bitirmesi gereken standart stanford dersi
-  2. **michigan eecs 498-007 / 598-005 – deep learning for computer vision (prof. justin johnson):** [youtube ders serisi](https://www.youtube.com/playlist?list=PL5-TkQAfAZFbzxjBHtzdVCWE0Zbhomg7r) — cs231n'in pytorch ve modern transformer (vit) eklenmiş daha güncel versiyonu
-- **oku & kütüphane (makale ve kod tabanları — önem sırasıyla):**
-  1. **pytorch image models (`timm`– ross wightman):** [huggingface.co/docs/timm](https://huggingface.co/docs/timm/index) & [github repo](https://github.com/huggingface/pytorch-image-models) — **[endüstri standardı kütüphane]** resnet, efficientnet, convnext, vit ve swin dahil yüzlerce omurga (backbone) modelini tek satırda kullanma
-  2. **deep residual learning for image recognition – resnet (he et al., cvpr 2016):** [arxiv:1512.03385](https://arxiv.org/abs/1512.03385) — tarihin en çok atıf alan ai makalesi
-  3. **swin transformer: hierarchical vision transformer using shifted windows (liu et al., iccv 2021):** [arxiv:2103.14030](https://arxiv.org/abs/2103.14030) — yoğun algılama (detection/segmentation) için standart vit omurgası
-  4. **deeplearning-models: pytorch architecture implementations (sebastian raschka):** [github repo (rasbt/deeplearning-models)](https://github.com/rasbt/deeplearning-models) — **[görsel derin öğrenme modelleri kod deposu]** sebastian raschka'nın hazırladığı; lenet, alexnet, vgg, resnet, densenet, mobilenet gibi klasik ve modern cnn omurgalarını, vae/gan üretici modellerini ve eğitim numaralarını (lr warmup, gradyan biriktirme) saf pytorch ile sade jupyter notebook'lar halinde sunan 17.6k+ yıldızlı başvuru deposu
+- **turkish resources:**
+  1. **metu ceng 501 – deep learning (sinan kalkan):** [course page](https://kovan.ceng.metu.edu.tr/~sinan/) & [github repo](https://github.com/sinankalkan/CENG501-Spring2021) — slides on resnet, fpn, vit, and visual deep learning
+- **video lectures:**
+  1. **stanford cs231n – deep learning for computer vision:** [youtube lecture series](https://www.youtube.com/playlist?list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv) & [lecture notes](https://cs231n.github.io/) — classic stanford course on deep learning for visual tasks
+  2. **michigan eecs 498-007 – deep learning for computer vision (justin johnson):** [youtube lecture series](https://www.youtube.com/playlist?list=PL5-TkQAfAZFbzxjBHtzdVCWE0Zbhomg7r) — updated cs231n covering pytorch and vision transformers
+- **books, papers & repositories:**
+  1. **pytorch image models (`timm`):** [docs](https://huggingface.co/docs/timm/index) & [github repo](https://github.com/huggingface/pytorch-image-models) — standard library providing pretrained resnet, efficientnet, convnext, vit, and swin backbones
+  2. **deep residual learning for image recognition – resnet (he et al.):** [arxiv:1512.03385](https://arxiv.org/abs/1512.03385) — foundational paper introducing residual skip connections
+  3. **swin transformer (liu et al.):** [arxiv:2103.14030](https://arxiv.org/abs/2103.14030) — hierarchical vision transformer backbone for detection and segmentation
+  4. **deeplearning-models (sebastian raschka):** [github repo](https://github.com/rasbt/deeplearning-models) — clean pure-pytorch notebooks for lenet, resnet, mobilenet, vaes, gans, and training tricks
 
 #### 6.5 object detection
 
@@ -174,19 +174,19 @@ engineering curriculum, algorithmic foundations, geometric representations, and 
 - [ ] object tracking
 - [ ] non-maximum suppression (nms)
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **tr (türkçe kaynaklar):**
-  1. **odtü ceng 783 – object detection (r-cnn, yolo, detr) ders notları:** [odtü ceng](https://user.ceng.metu.edu.tr/~skalkan/DL/)
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **justin johnson (michigan eecs 498) – object detection lectures (two-stage & single-stage):** [youtube ders videosu](https://www.youtube.com/watch?v=TB-fdISzpHQ) — **[ilk izlenecek]** r-cnn, fast/faster r-cnn, anchor boxes, nms ve ssd/yolo matematiğinin en net akademik anlatımı
-  2. **murtaza's workshop – yolo custom object detection & real-time projects:** [youtube kanalı](https://www.youtube.com/@murtazasworkshop) — **[hızlı uygulama]** kendi veri setinle yolo eğitip gerçek zamanlı kamera üzerinde çalıştırma
-  3. [**deeplearning.ai**](http://DeepLearning.AI)**– convolutional neural networks (object detection module):** [youtube oynatma listesi](https://www.youtube.com/playlist?list=PLkDaE6sCZn6Gl29AoE31iwdVwSG-KnDzF) — iou, anchor box ve non-maximum suppression (nms) temelleri
-- **oku & repo (doküman, makale ve kod tabanları — önem sırasıyla):**
-  1. **ultralytics yolo official documentation (yolov8 / yolov11):** [docs.ultralytics.com](https://docs.ultralytics.com/) & [github repo](https://github.com/ultralytics/ultralytics) — **[gerçek zamanlı endüstri standardı]** eğitim, doğrulama ve tensorrt/onnx dışa aktarma kılavuzu
-  2. **end-to-end object detection with transformers – detr (carion et al., meta ai):** [arxiv:2005.12872](https://arxiv.org/abs/2005.12872) & [rt-detr repo](https://github.com/lyuwenyu/RT-DETR) — nms gerektirmeyen modern transformer tabanlı nesne tespiti
-  3. **repo – open-mmlab/mmdetection:** [github.com/open-mmlab/mmdetection](https://github.com/open-mmlab/mmdetection) — araştırma ve karşılaştırma (benchmark) için kapsamlı modüler nesne tespiti kutusu
-  4. **hugging face trending papers & arxiv computer vision (**[**cs.cv**](https://arxiv.org/list/cs.CV/recent)**):** [huggingface.co/papers/trending](https://huggingface.co/papers/trending) · [arxiv.org/list/cs.cv/recent](https://arxiv.org/list/cs.CV/recent) — güncel sota modellerin ve makalelerin takibi (not: meta, papers with code'u temmuz 2025'te kapattığı için güncel makale takibi hugging face papers ve arxiv üzerinden yapılır)
+- **turkish resources:**
+  1. **metu ceng 783 – object detection (r-cnn, yolo, detr) notes:** [course page](https://user.ceng.metu.edu.tr/~skalkan/DL/)
+- **video lectures:**
+  1. **justin johnson (eecs 498) – object detection lectures:** [youtube lecture video](https://www.youtube.com/watch?v=TB-fdISzpHQ) — clear breakdown of r-cnn, faster r-cnn, anchor boxes, nms, and yolo
+  2. **murtaza's workshop – yolo custom object detection:** [youtube channel](https://www.youtube.com/@murtazasworkshop) — practical tutorials on training yolo on custom datasets and running live cameras
+  3. **deeplearning.ai – object detection module:** [youtube playlist](https://www.youtube.com/playlist?list=PLkDaE6sCZn6Gl29AoE31iwdVwSG-KnDzF) — fundamentals of iou, anchor boxes, and non-maximum suppression (nms)
+- **books, papers & repositories:**
+  1. **ultralytics yolo documentation:** [docs.ultralytics.com](https://docs.ultralytics.com/) & [github repo](https://github.com/ultralytics/ultralytics) — guide to training, validating, and exporting yolo models to onnx/tensorrt
+  2. **detr & rt-detr (end-to-end detection with transformers):** [arxiv:2005.12872](https://arxiv.org/abs/2005.12872) & [rt-detr repo](https://github.com/lyuwenyu/RT-DETR) — nms-free transformer-based real-time object detection
+  3. **open-mmlab/mmdetection:** [github.com/open-mmlab/mmdetection](https://github.com/open-mmlab/mmdetection) — modular object detection toolbox for research and benchmarking
+  4. **hugging face trending papers & arxiv cs.cv:** [huggingface.co/papers/trending](https://huggingface.co/papers/trending) · [arxiv.org/list/cs.cv/recent](https://arxiv.org/list/cs.CV/recent) — tracking latest computer vision papers and models
 
 #### 6.6 image segmentation
 
@@ -201,18 +201,18 @@ engineering curriculum, algorithmic foundations, geometric representations, and 
 - [ ] mask2former
 - [ ] segment anything models (sam, sam 2)
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **tr (türkçe kaynaklar):**
-  1. **odtü ceng 783 – semantic, instance & panoptic segmentation sunumları:** [odtü ceng](https://user.ceng.metu.edu.tr/~skalkan/DL/)
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **stanford cs231n / michigan eecs 498 – image segmentation (semantic & instance):** [youtube ders videosu](https://www.youtube.com/watch?v=6CCXyfvubvY) — **[ilk izlenecek]** fcn, transposed convolution, u-net ve mask r-cnn mimarilerinin teorik temeli
-  2. **digitalsreeni – image segmentation with u-net, mask r-cnn & sam in python:** [youtube kanalı](https://www.youtube.com/@DigitalSreeni) — **[uygulamalı kodlama]** medikal, uydu ve endüstriyel görüntülerde adım adım segmentasyon eğitimi
-- **oku & repo (makale ve kod tabanları — önem sırasıyla):**
-  1. **segment anything model 2 – sam 2 (meta ai research):** [ai.meta.com/sam2](https://ai.meta.com/sam2/) & [github repo (facebookresearch/sam2)](https://github.com/facebookresearch/sam2) — **[modern görsel vakıf modeli]** hem görüntü hem videoda sıfır-atış (zero-shot) gerçek zamanlı segmentasyon
-  2. **u-net: convolutional networks for biomedical image segmentation (ronneberger et al.):** [arxiv:1505.04597](https://arxiv.org/abs/1505.04597) — az veriyle piksel düzeyinde segmentasyonun en ünlü mimarisi
-  3. **mask r-cnn (he et al., iccv 2017):** [arxiv:1703.06870](https://arxiv.org/abs/1703.06870) — instance segmentation ve roialign mekanizmasının temel makalesi
-  4. **repo – qubvel/segmentation_models.pytorch:** [github.com/qubvel-org/segmentation_models.pytorch](https://github.com/qubvel-org/segmentation_models.pytorch) — u-net, deeplabv3+ ve fpn modellerini hazır omurgalarla birkaç satırda eğitme kütüphanesi
+- **turkish resources:**
+  1. **metu ceng 783 – semantic, instance & panoptic segmentation slides:** [course page](https://user.ceng.metu.edu.tr/~skalkan/DL/)
+- **video lectures:**
+  1. **stanford cs231n / michigan eecs 498 – image segmentation:** [youtube lecture video](https://www.youtube.com/watch?v=6CCXyfvubvY) — theoretical foundations of fcn, transposed convolution, u-net, and mask r-cnn
+  2. **digitalsreeni – image segmentation in python:** [youtube channel](https://www.youtube.com/@DigitalSreeni) — practical step-by-step training of u-net, mask r-cnn, and sam
+- **books, papers & repositories:**
+  1. **segment anything model 2 – sam 2 (meta ai):** [project page](https://ai.meta.com/sam2/) & [github repo](https://github.com/facebookresearch/sam2) — real-time zero-shot segmentation across images and video
+  2. **u-net (ronneberger et al.):** [arxiv:1505.04597](https://arxiv.org/abs/1505.04597) — classic encoder-decoder skip-connection architecture for pixel segmentation
+  3. **mask r-cnn (he et al.):** [arxiv:1703.06870](https://arxiv.org/abs/1703.06870) — core instance segmentation paper introducing roialign
+  4. **qubvel/segmentation_models.pytorch:** [github repo](https://github.com/qubvel-org/segmentation_models.pytorch) — easy pytorch library for u-net, deeplabv3+, and fpn segmentation models
 
 #### 6.7 visual tracking
 
@@ -227,17 +227,17 @@ engineering curriculum, algorithmic foundations, geometric representations, and 
 - [ ] re-identification (reid)
 - [ ] tracking-by-detection
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **tr (türkçe kaynaklar):**
-  1. **teknofest savaşan iha & hava savunma takımları teknik paylaşımları:** kalman filtresi + yolo + bytetrack entegrasyonu üzerine açık kaynak türkiye topluluk repoları
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **nicolai nielsen – object tracking tutorials (sort, deepsort, bytetrack, kalman filter):** [youtube kanalı](https://www.youtube.com/@NicolaiAI) — **[ilk izlenecek]** çoklu nesne takibi (mot), macar algoritması (hungarian algorithm) ve kalman kestiriminin c++/python ile pratik anlatımı
-  2. **roboflow – bytetrack & supervision multi-object tracking tutorials:** [youtube kanalı](https://www.youtube.com/@Roboflow) — tespit edilen nesnelere id atama, yörünge çizme ve hız/bölge analizi
-- **oku & repo (makale ve endüstriyel kodlar — önem sırasıyla):**
-  1. **bytetrack: multi-object tracking by associating every detection box (zhang et al., eccv 2022):** [arxiv:2110.06864](https://arxiv.org/abs/2110.06864) & [github repo (ifzhang/bytetrack)](https://github.com/ifzhang/ByteTrack) — **[endüstri standardı çoklu nesne takipçisi]** düşük güven skorlu kutuları da kullanarak örtüşme (occlusion) altında hedefi kaybetmeyen algoritma (c++ / tensorrt kodu repoda mevcut!)
-  2. **simple online and realtime tracking with a deep association metric – deepsort (wojke et al.):** [arxiv:1703.07402](https://arxiv.org/abs/1703.07402) — kalman filtresi + görsel re-id özniteliklerini birleştiren temel takip makalesi
-  3. **repo – mikel-brostrom/boxmot:** [github.com/mikel-brostrom/boxmot](https://github.com/mikel-brostrom/boxmot) — bytetrack, bot-sort, deepocsort ve strongsort algoritmalarını tek çatı altında toplayan modüler takip kütüphanesi
+- **turkish resources:**
+  1. **teknofest uav & air defense team technical notes:** turkish community open-source repos combining kalman filtering, yolo, and bytetrack
+- **video lectures:**
+  1. **nicolai nielsen – object tracking tutorials:** [youtube channel](https://www.youtube.com/@NicolaiAI) — practical tutorials on sort, deepsort, bytetrack, hungarian matching, and kalman filters in c++/python
+  2. **roboflow – bytetrack & supervision tracking:** [youtube channel](https://www.youtube.com/@Roboflow) — assigning track ids, plotting paths, and speed/zone analytics
+- **books, papers & repositories:**
+  1. **bytetrack (zhang et al.):** [arxiv:2110.06864](https://arxiv.org/abs/2110.06864) & [github repo](https://github.com/ifzhang/ByteTrack) — robust multi-object tracking associating low-confidence boxes under occlusion (includes c++/tensorrt code)
+  2. **deepsort (wojke et al.):** [arxiv:1703.07402](https://arxiv.org/abs/1703.07402) — multi-object tracking combining kalman motion estimation with visual appearance features
+  3. **mikel-brostrom/boxmot:** [github.com/mikel-brostrom/boxmot](https://github.com/mikel-brostrom/boxmot) — modular tracking library wrapping bytetrack, bot-sort, deepocsort, and strongsort
 
 #### 6.8 modern visual ai
 
@@ -260,16 +260,16 @@ engineering curriculum, algorithmic foundations, geometric representations, and 
 - [ ] open-vocabulary detection
 - [ ] open-vocabulary segmentation
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **umar jamil – coding clip & vision-language models from scratch in pytorch:** [youtube kanalı](https://www.youtube.com/@umarjamilai) — **[ilk izlenecek – kodlama]** kontrastif görüntü-metin eşleştirmesini (clip) ve görsel gömmeleri (embeddings) sıfırdan kodlama
-  2. **yannic kilcher – dinov2 & clip paper explanations:** [youtube videosu (dinov2)](https://www.youtube.com/watch?v=h3ij3F3cPIk) & [youtube videosu (clip)](https://www.youtube.com/watch?v=T9XSU0pKX2E) — **[teorik derinlik]** öz-denetimli görsel vakıf modellerinin mimari analizi
-  3. **ai coffee break with letitia – vision transformers, clip, dino & siglip:** [youtube kanalı](https://www.youtube.com/@AICoffeeBreak) — görsel temsil öğreniminin hızlı ve anlaşılır özetleri
-- **oku & repo (makale ve resmi kod tabanları — önem sırasıyla):**
-  1. **dinov2: learning robust visual features without supervision (oquab et al. – meta ai):** [arxiv:2304.07193](https://arxiv.org/abs/2304.07193) · [demo & site](https://dinov2.metademolab.com/) · [github repo (facebookresearch/dinov2)](https://github.com/facebookresearch/dinov2) — **[görsel eşleştirme & derinlik için zirve]** ince ayar (fine-tuning) yapmadan bile derinlik kestirimi, görsel arama ve çapraz görünüm eşleştirmede (cross-view matching) mucizeler yaratan temel model
-  2. **learning transferable visual models from natural language supervision – clip (radford et al. – openai):** [arxiv:2103.00020](https://arxiv.org/abs/2103.00020) & [github repo (mlfoundations/open_clip)](https://github.com/mlfoundations/open_clip) — açık kelime dağarcıklı (open-vocabulary) algılamanın temeli
-  3. **sigmoid loss for language image pre-training – siglip (zhai et al. – google research):** [arxiv:2303.15343](https://arxiv.org/abs/2303.15343) — clip'in daha verimli ve modern halefi
+- **video lectures:**
+  1. **umar jamil – coding clip & vlms from scratch:** [youtube channel](https://www.youtube.com/@umarjamilai) — writing contrastive image-text alignment (clip) and embeddings from scratch in pytorch
+  2. **yannic kilcher – dinov2 & clip paper breakdowns:** [dinov2 video](https://www.youtube.com/watch?v=h3ij3F3cPIk) & [clip video](https://www.youtube.com/watch?v=T9XSU0pKX2E) — detailed architecture breakdowns of self-supervised vision foundation models
+  3. **ai coffee break with letitia:** [youtube channel](https://www.youtube.com/@AICoffeeBreak) — concise clear summaries of vision transformers, clip, dino, and siglip
+- **books, papers & repositories:**
+  1. **dinov2 (meta ai):** [arxiv:2304.07193](https://arxiv.org/abs/2304.07193) · [demo](https://dinov2.metademolab.com/) · [github repo](https://github.com/facebookresearch/dinov2) — strong self-supervised visual backbone for depth, retrieval, and cross-view matching without fine-tuning
+  2. **clip (openai / open_clip):** [arxiv:2103.00020](https://arxiv.org/abs/2103.00020) & [github repo](https://github.com/mlfoundations/open_clip) — foundational paper and open-source training for open-vocabulary perception
+  3. **siglip (google research):** [arxiv:2303.15343](https://arxiv.org/abs/2303.15343) — more efficient sigmoid loss successor to clip
 
 #### 6.9 advanced vision research
 
@@ -287,21 +287,21 @@ engineering curriculum, algorithmic foundations, geometric representations, and 
 - [ ] temporal modeling
 - [ ] event-based vision
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **yt (yabancı video dersler — önem sırasıyla):**
-  1. **prof. davide scaramuzza (rpg lab, uzh) – event-based vision & agile autonomous drones:** [youtube kanalı (robotics and perception group)](https://www.youtube.com/@ailabRPG/playlists) — **[ilk izlenecek – iha & yüksek hızlı görü]** milisaniye altı gecikmeli nöromorfik olay tabanlı kameralar (event cameras) ve yüksek hızlı otonom iha algılaması
-  2. **cvpr / iccv / eccv workshop kayıtları (low-light, adverse weather & robustness):** [computer vision foundation youtube](https://www.youtube.com/@ComputerVisionFoundation) — sis, yağmur, gece görüşü ve hareket bulanıklığı altında çalışan sağlam (robust) görüş algoritmaları
-- **oku & repo (makale ve kütüphaneler — önem sırasıyla):**
-  1. **event-based vision: a survey (gallego, scaramuzza et al. – ieee tpami):** [arxiv:1904.08405 (ücretsiz pdf)](https://arxiv.org/pdf/1904.08405.pdf) — olay tabanlı kameraların ve algoritmalarının kapsamlı derleme makalesi
-  2. **repo – openvinotoolkit/anomalib:** [github.com/openvinotoolkit/anomalib](https://github.com/openvinotoolkit/anomalib) — görsel anomali ve kusur tespiti (visual anomaly detection) için endüstriyel derin öğrenme kütüphanesi
-  3. **hugging face trending papers & arxiv computer vision (**[**cs.cv**](https://arxiv.org/list/cs.CV/recent)**):** [huggingface.co/papers/trending](https://huggingface.co/papers/trending) · [arxiv.org/list/cs.cv/recent](https://arxiv.org/list/cs.CV/recent) — görüntü iyileştirme (image restoration), düşük ışık (low-light) ve süper çözünürlük sota makaleleri
+- **video lectures:**
+  1. **prof. davide scaramuzza (rpg lab, uzh) – event cameras & agile drones:** [youtube playlists](https://www.youtube.com/@ailabRPG/playlists) — sub-millisecond neuromorphic event cameras and high-speed autonomous uav perception
+  2. **cvpr / iccv / eccv workshop recordings:** [computer vision foundation youtube](https://www.youtube.com/@ComputerVisionFoundation) — vision algorithms for fog, rain, low light, and motion blur
+- **books, papers & repositories:**
+  1. **event-based vision: a survey (gallego, scaramuzza et al.):** [arxiv:1904.08405 (free pdf)](https://arxiv.org/pdf/1904.08405.pdf) — comprehensive survey on event-based cameras and algorithms
+  2. **openvinotoolkit/anomalib:** [github.com/openvinotoolkit/anomalib](https://github.com/openvinotoolkit/anomalib) — industrial deep learning library for visual anomaly and defect detection
+  3. **hugging face trending & arxiv cs.cv:** [huggingface.co/papers/trending](https://huggingface.co/papers/trending) · [arxiv.org/list/cs.cv/recent](https://arxiv.org/list/cs.CV/recent) — latest papers on image restoration, low-light vision, and super-resolution
 
 ---
 
-### 02. applied vision – uygulamalı bilgisayarlı görü: ocr, poz, video ve uzaktan algılama
+### 02. applied vision
 
-#### 38.1 ocr & document ai – optik karakter tanıma ve belge yapay zekâsı
+#### 38.1 ocr & document ai
 
 - [ ] text detection (east, dbnet)
 - [ ] text recognition (crnn, trocr)
@@ -315,7 +315,7 @@ engineering curriculum, algorithmic foundations, geometric representations, and 
 - [ ] key information extraction
 - [ ] tesseract, paddleocr, easyocr
 
-#### 38.2 face & biometrics – yüz tanıma ve biyometri
+#### 38.2 face & biometrics
 
 - [ ] face detection (mtcnn, retinaface)
 - [ ] face alignment and landmarks
@@ -326,7 +326,7 @@ engineering curriculum, algorithmic foundations, geometric representations, and 
 - [ ] gait recognition
 - [ ] biometric privacy and regulation
 
-#### 38.3 human understanding – insan poz, hareket ve niyet analizi
+#### 38.3 human understanding
 
 - [ ] 2d human pose estimation (openpose, hrnet, rtmpose)
 - [ ] 3d human pose and mesh recovery (smpl)
@@ -339,7 +339,7 @@ engineering curriculum, algorithmic foundations, geometric representations, and 
 - [ ] human motion prediction
 - [ ] motion capture
 
-#### 38.4 video understanding – video anlama ve optik akış
+#### 38.4 video understanding
 
 - [ ] video classification (i3d, slowfast)
 - [ ] video transformers (timesformer, vivit, videomae)
@@ -352,7 +352,7 @@ engineering curriculum, algorithmic foundations, geometric representations, and 
 - [ ] long video understanding
 - [ ] video compression basics (h.264, h.265)
 
-#### 38.5 remote sensing & aerial imagery – uzaktan algılama ve hava/uydu görüntüsü analizi
+#### 38.5 remote sensing & aerial imagery
 
 - [ ] satellite and aerial image basics
 - [ ] multispectral and hyperspectral imaging
@@ -367,7 +367,7 @@ engineering curriculum, algorithmic foundations, geometric representations, and 
 - [ ] geospatial foundation models
 - [ ] uav imagery analytics
 
-#### 38.6 captioning, grounding & visual reasoning – görsel konumlandırma ve akıl yürütme
+#### 38.6 captioning, grounding & visual reasoning
 
 - [ ] image captioning
 - [ ] referring expression comprehension
@@ -376,7 +376,7 @@ engineering curriculum, algorithmic foundations, geometric representations, and 
 - [ ] dense captioning
 - [ ] visual reasoning benchmarks
 
-#### 38.7 image generation & editing – görüntü üretimi ve düzenleme
+#### 38.7 image generation & editing
 
 - [ ] inpainting and outpainting
 - [ ] image-to-image translation (pix2pix, cyclegan)
@@ -390,14 +390,14 @@ engineering curriculum, algorithmic foundations, geometric representations, and 
 - [ ] colorization
 - [ ] deepfake generation and detection
 
-**kaynaklar (önem ve çalışma sırasına göre):**
+**resources:**
 
-- **tr:** [itü / odtü uzaktan algılama & cbs (gis) ders notları ve açık kaynak seminerleri](https://www.itu.edu.tr/) — koordinat referans sistemleri (crs), multispektral/sar görüntüleme ve hava fotoğrafçılığı temelleri.
-- **yt:**
-  1. **[ilk izlenecek — optik akış & video]** [princeton vision & robotics — raft: recurrent all-pairs field transforms for optical flow](https://github.com/princeton-vl/RAFT) — derin optik akış ve hareket analizi.
-  2. **[uzaktan algılama & cbs]** [qgis & gdal spatial analysis tutorials (spatial thoughts / youtube)](https://www.youtube.com/@SpatialThoughts) — georeferanslama, koordinat dönüşümleri ve raster görüntü işleme.
-- **oku & repo:**
-  1. [mmrotate — openmmlab oriented object detection benchmark & toolbox (github)](https://github.com/open-mmlab/mmrotate) & [ultralytics yolo obb (oriented bounding boxes)](https://docs.ultralytics.com/tasks/obb/) — iha ve uydu görüntülerinde yönelimli (döndürülmüş kutulu) ve küçük nesne tespiti için temel kod depoları.
-  2. [sahi — slicing aided hyper inference (github — fatih cagatay akyon)](https://github.com/obss/sahi) — yüksek çözünürlüklü iha/hava görüntülerinde küçük nesne tespitini (visdrone, dota, xview) dilimleyerek güçlendiren açık kaynak kütüphane.
-  3. [torchgeo — microsoft geospatial deep learning library (github)](https://github.com/microsoft/torchgeo) — multispektral, hiperspektral, sar ve coğrafi koordinatlı veri setlerini pytorch ile işleme standardı.
-  4. [paddleocr (github)](https://github.com/PaddlePaddle/PaddleOCR) & [mmpose (github)](https://github.com/open-mmlab/mmpose) & [groundingdino (github)](https://github.com/IDEA-Research/GroundingDINO) — ocr, insan poz kestirimi ve açık kelime dağarcıklı görsel konumlandırma araçları.
+- **turkish resource:** [itu / metu remote sensing & gis notes](https://www.itu.edu.tr/) — coordinate reference systems (crs), multispectral/sar imaging, and aerial photogrammetry basics
+- **video lectures:**
+  1. **raft (princeton vision & robotics):** [github.com/princeton-vl/raft](https://github.com/princeton-vl/RAFT) — deep optical flow estimation and motion analysis
+  2. [qgis & gdal spatial analysis tutorials (spatial thoughts / youtube)](https://www.youtube.com/@SpatialThoughts) — georeferencing, coordinate transforms, and raster image processing
+- **books, papers & repositories:**
+  1. [mmrotate (github)](https://github.com/open-mmlab/mmrotate) & [ultralytics yolo obb](https://docs.ultralytics.com/tasks/obb/) — oriented bounding box and small object detection codebases for uav and satellite imagery
+  2. [sahi — slicing aided hyper inference (github)](https://github.com/obss/sahi) — sliced inference library improving small object detection in high-res aerial imagery (visdrone, dota)
+  3. [torchgeo (microsoft, github)](https://github.com/microsoft/torchgeo) — pytorch library for multispectral, hyperspectral, sar, and geospatial datasets
+  4. [paddleocr (github)](https://github.com/PaddlePaddle/PaddleOCR) · [mmpose (github)](https://github.com/open-mmlab/mmpose) · [groundingdino (github)](https://github.com/IDEA-Research/GroundingDINO) — tools for ocr, human pose estimation, and open-vocabulary visual grounding
