@@ -6,7 +6,7 @@ engineering curriculum, mathematical proofs, derivations, and curated resources 
 
 ## handwritten modules & implementations
 
-- **[linear algebra](./linear-algebra/)** — matrix proofs, eigenvalues/eigenvectors, matrix exponential, special hermitian/unitary matrices, 3d vector geometry, and vector spaces.
+- **[linear algebra](./linear-algebra/)** — matrix proofs, eigenvalues/eigenvectors, matrix exponential, special hermitian/unitary matrices, 3d vector geometry, vector spaces, and linear transformations.
 - **[calculus](./calculus/)** — 3d euclidean vector geometry, dot/cross products, projections, and multivariable foundations.
 
 ---
