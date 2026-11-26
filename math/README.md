@@ -40,23 +40,23 @@ engineering curriculum, mathematical proofs, derivations, and curated resources 
 **core topics:**
 
 - [x] scalars, vectors, matrices
-- [ ] vector spaces
-- [ ] linear independence
-- [ ] basis and dimension
+- [x] vector spaces
+- [x] linear independence
+- [x] basis and dimension
 - [x] matrix operations
 - [x] matrix inverse
 - [x] determinants
-- [ ] rank and null space
+- [x] rank and null space
 - [x] eigenvalues and eigenvectors
-- [ ] orthogonality
-- [ ] orthogonal projection
+- [x] orthogonality
+- [x] orthogonal projection
 - [ ] matrix decomposition
 - [ ] lu decomposition
-- [ ] qr decomposition
+- [x] qr decomposition
 - [ ] singular value decomposition (svd)
 - [ ] positive definite matrices
-- [ ] least squares
-- [ ] matrix calculus
+- [x] least squares
+- [x] matrix calculus
 
 **advanced connections:**
 
